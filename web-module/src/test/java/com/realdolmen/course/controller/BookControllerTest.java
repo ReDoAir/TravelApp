@@ -24,7 +24,7 @@ public class BookControllerTest extends Mockito {
     }
 
     @Test
-    public void removeDelegatesToBookReposotory() throws Exception {
+    public void removeDelegatesToBookRepository() throws Exception {
         controller.remove(1507);
         verify(bookRepository).remove(1507);
         verifyNoMoreInteractions(bookRepository);
