@@ -1,9 +1,10 @@
 package com.realdolmen.course.persistence;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Passenger {
+public class Passenger implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
