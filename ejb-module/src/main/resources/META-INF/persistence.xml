@@ -7,9 +7,6 @@
 
     <persistence-unit name="MyPersistenceUnit" transaction-type="JTA">
         <jta-data-source>java:/MyDataSource</jta-data-source>
-        <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-        </properties>
     </persistence-unit>
 
 </persistence>
