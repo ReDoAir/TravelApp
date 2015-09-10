@@ -1,4 +1,4 @@
-package com.realdolmen.course.persistence;
+package com.realdolmen.course.domain;
 
 import javax.persistence.Embeddable;
 import javax.persistence.EnumType;

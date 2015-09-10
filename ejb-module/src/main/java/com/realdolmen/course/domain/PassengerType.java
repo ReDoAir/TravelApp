@@ -1,4 +1,4 @@
-package com.realdolmen.course.persistence;
+package com.realdolmen.course.domain;
 
 /**
  * Created by SSTAX38 on 9/09/2015.

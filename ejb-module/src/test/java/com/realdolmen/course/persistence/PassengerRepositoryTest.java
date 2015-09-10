@@ -1,6 +1,6 @@
 package com.realdolmen.course.persistence;
 
-import com.realdolmen.course.domain.Book;
+import com.realdolmen.course.domain.Passenger;
 import org.junit.Before;
 import org.junit.Test;
 
