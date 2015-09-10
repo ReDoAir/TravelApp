@@ -38,6 +38,9 @@ public class Passenger implements Serializable{
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastFlight;
 
+    @Lob
+    private byte[] picture;
+
     @ElementCollection
     @CollectionTable(name = "passenger_pref")
     @Column(name = "preferences")
@@ -48,6 +51,12 @@ public class Passenger implements Serializable{
 
     @Embedded
     private CreditCard creditCard;
+
+    @OneToMany
+    private List<Ticket> tickets;
+
+    @ManyToMany
+    private List<Flight> flights;
 
     public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, PassengerType passengerType, Integer frequentFlyerMiles, Date lastFlight, List<String> preferences, Address address, CreditCard creditCard) {
         this.ssn = ssn;
@@ -170,5 +179,29 @@ public class Passenger implements Serializable{
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
+    }
+
+    public byte[] getPicture() {
+        return picture;
+    }
+
+    public void setPicture(byte[] picture) {
+        this.picture = picture;
+    }
+
+    public List<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(List<Flight> flights) {
+        this.flights = flights;
     }
 }
