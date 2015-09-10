@@ -1,6 +1,8 @@
 package com.realdolmen.course.persistence;
 
 import javax.persistence.Embeddable;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 /**
  * Created by SSTAX38 on 10/09/2015.
@@ -10,6 +12,7 @@ public class CreditCard {
     private String number;
     private String expiryDate;
     private Integer controlNumber;
+    @Enumerated(EnumType.STRING)
     private CreditCardType creditCardType;
 
     public CreditCard(String number, String expiryDate, Integer controlNumber, CreditCardType creditCardType) {
@@ -17,6 +20,9 @@ public class CreditCard {
         this.expiryDate = expiryDate;
         this.controlNumber = controlNumber;
         this.creditCardType = creditCardType;
+    }
+
+    public CreditCard() {
     }
 
     public String getNumber() {

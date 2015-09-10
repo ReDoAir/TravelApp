@@ -2,6 +2,8 @@ package com.realdolmen.course.persistence;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -38,6 +40,7 @@ public class Passenger implements Serializable{
 
     @ElementCollection
     @CollectionTable(name = "passenger_pref")
+    @Column(name = "preferences")
     private List<String> preferences = new ArrayList<>();
 
     @Embedded
@@ -46,12 +49,11 @@ public class Passenger implements Serializable{
     @Embedded
     private CreditCard creditCard;
 
-    public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, Integer age, PassengerType passengerType, Integer frequentFlyerMiles, Date lastFlight, List<String> preferences, Address address, CreditCard creditCard) {
+    public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, PassengerType passengerType, Integer frequentFlyerMiles, Date lastFlight, List<String> preferences, Address address, CreditCard creditCard) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.age = age;
+        setDateOfBirth(dateOfBirth);
         this.passengerType = passengerType;
         this.frequentFlyerMiles = frequentFlyerMiles;
         this.lastFlight = lastFlight;
@@ -60,17 +62,16 @@ public class Passenger implements Serializable{
         this.creditCard = creditCard;
     }
 
-    public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, PassengerType passengerType, Integer frequentFlyerMiles, Date lastFlight) {
-        this.ssn = ssn;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.passengerType = passengerType;
-        this.frequentFlyerMiles = frequentFlyerMiles;
-        this.lastFlight = lastFlight;
+    public Passenger() {
     }
 
-    public Passenger() {
+    @PostLoad
+    private void calculateAge(){
+        if(dateOfBirth != null){
+            LocalDate now = LocalDate.now();
+            LocalDate birth = ((java.sql.Date)dateOfBirth).toLocalDate();
+            age = Period.between(now,birth).getYears();
+        }
     }
 
     public Integer getId() {
@@ -107,6 +108,12 @@ public class Passenger implements Serializable{
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+
+        /*if(dateOfBirth != null){
+            LocalDate now = LocalDate.now();
+            LocalDate birth = ((java.sql.Date) dateOfBirth).toLocalDate();
+            age = Period.between(now,birth).getYears();
+        }*/
     }
 
     public PassengerType getPassengerType() {
@@ -155,5 +162,13 @@ public class Passenger implements Serializable{
 
     public void setCreditCard(CreditCard creditCard) {
         this.creditCard = creditCard;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }

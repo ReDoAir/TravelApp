@@ -9,6 +9,7 @@ import javax.persistence.PersistenceException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class PassengerPersistenceTest extends DataSetPersistenceTest {
@@ -17,14 +18,14 @@ public class PassengerPersistenceTest extends DataSetPersistenceTest {
 //new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").parse(String.valueOf(Instant.now()).replace("T"," "))
     @Test
     public void passengerCanBePersisted() throws Exception {
-        Passenger passenger = new Passenger("6666","Leo", "Ole",new SimpleDateFormat("yyyy-mm-dd").parse(String.valueOf(LocalDate.of(1993, 12, 31))) ,PassengerType.OCCASIONAL,5555, new Date());
+        Passenger passenger = new Passenger("6666","Leo", "Ole",new SimpleDateFormat("yyyy-mm-dd").parse(String.valueOf(LocalDate.of(1993, 12, 31))) ,PassengerType.OCCASIONAL,5555, new Date(),new ArrayList<String>(),new Address("Irisstraat","","Boom","2850","Belgium"),new CreditCard("0123456789","12/18",123,CreditCardType.VISA));
         entityManager().persist(passenger);
         assertNotNull(passenger.getId());
     }
 
     @Test(expected = PersistenceException.class)
     public void passengerCanNotBePersistedWithoutSnn() throws Exception {
-        Passenger passenger = new Passenger(null,"Leo", "Ole",new SimpleDateFormat("dd-mm-yyyy").parse(String.valueOf(LocalDate.of(1993, 12, 31))) ,PassengerType.OCCASIONAL,5555, new Date());
+        Passenger passenger = new Passenger(null,"Leo", "Ole",new SimpleDateFormat("yyyy-mm-dd").parse(String.valueOf(LocalDate.of(1993, 12, 31))) ,PassengerType.OCCASIONAL,5555, new Date(),new ArrayList<String>(),new Address("Irisstraat","","Boom","2850","Belgium"),new CreditCard("0123456789","12/18",123,CreditCardType.VISA));
         entityManager().persist(passenger);
     }
 
