@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+//Zorgt voor errors
 //@PrimaryKeyJoinColumn(name = "domesticFlighId")
 public class DomesticFlight extends Flight {
     private String airlineCompany;

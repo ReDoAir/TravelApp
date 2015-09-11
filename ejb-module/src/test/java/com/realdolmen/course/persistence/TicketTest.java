@@ -4,11 +4,7 @@ import com.realdolmen.course.domain.Ticket;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.function.ToDoubleBiFunction;
 
-/**
- * Created by SSTAX38 on 10/09/2015.
- */
 public class TicketTest extends DataSetPersistenceTest {
 
     @Test
@@ -25,12 +21,8 @@ public class TicketTest extends DataSetPersistenceTest {
     }
 
     @Test
-    public void flightCanBeAssignedToTicket(){
+    public void ticketCanBeCreated(){
 
     }
 
-    @Test
-    public void passengerCanBeAssignedToTicket(){
-
-    }
 }

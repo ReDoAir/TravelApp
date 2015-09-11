@@ -15,11 +15,24 @@ public class PassengerRepository {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Passenger> findAll(){
-        return entityManager.createQuery("select p from Passenger p",Passenger.class).getResultList();
+    public void create(Passenger p){
+        entityManager.persist(p);
     }
 
-    public void remove(int id) {
+    public Passenger getById(int id){
+        return entityManager.find(Passenger.class, id);
+    }
+
+    public void update(Passenger p){
+        entityManager.merge(p);
+    }
+
+    public void delete(int id) {
         entityManager.remove(entityManager.getReference(Passenger.class, id));
+    }
+
+    public Passenger refresh(Passenger p){
+        entityManager.refresh(p);
+        return p;
     }
 }

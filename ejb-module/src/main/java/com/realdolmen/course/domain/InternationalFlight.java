@@ -5,6 +5,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 import java.util.Date;
 
 @Entity
+//Zorgt voor errors
 //@PrimaryKeyJoinColumn(name = "internationalFlightId")
 public class InternationalFlight extends Flight {
     private boolean blacklisted;

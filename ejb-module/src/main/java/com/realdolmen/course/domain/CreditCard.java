@@ -4,9 +4,6 @@ import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-/**
- * Created by SSTAX38 on 10/09/2015.
- */
 @Embeddable
 public class CreditCard {
     private String number;
