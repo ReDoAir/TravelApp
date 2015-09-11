@@ -1,13 +1,18 @@
 package com.realdolmen.course.persistence;
 
-import com.realdolmen.course.domain.Passenger;
+import com.realdolmen.course.domain.*;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Created by SSTAX38 on 9/09/2015.
- */
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 public class PassengerRepositoryTest extends DataSetPersistenceTest{
+
     private PassengerRepository repository;
 
     @Before
@@ -17,13 +22,9 @@ public class PassengerRepositoryTest extends DataSetPersistenceTest{
     }
 
     @Test
-    public void allPassengersCanBeRetrieved() throws Exception {
-        assertEquals(3, repository.findAll().size());
-    }
-
-    @Test
-    public void passengerCanBeRemovedById() throws Exception {
-        repository.remove(1000);
-        assertNull(entityManager().find(Passenger.class, 1000));
+    public void testTicketsByPassId() throws Exception {
+        List<Ticket> tickets = repository.findTicketsByPassId(1000);
+        Passenger p = entityManager().find(Passenger.class,1000);
+        assertTrue(p.getTickets().size() == tickets.size());
     }
 }
