@@ -1,5 +1,6 @@
 package com.realdolmen.course.persistence;
 
+import org.h2.engine.Database;
 import org.junit.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +27,7 @@ public abstract class PersistenceTest extends Assert {
     public static final String PASSWORD = "javax.persistence.jdbc.password";
 
     private static final Logger logger = LoggerFactory.getLogger(PersistenceTest.class);
+    public static final String DATABASE_ENGINE_SYSTEM_PARAMETER = "databaseEngine";
 
     private static EntityManagerFactory entityManagerFactory;
 
@@ -43,12 +45,20 @@ public abstract class PersistenceTest extends Assert {
      * @return Map of JPA properties.
      */
     protected static Map<String, String> properties() {
+        DatabaseEngine databaseEngine = databaseEngine();
         HashMap<String, String> properties = new HashMap<>();
-        properties.put(DRIVER, "com.mysql.jdbc.Driver");
-        properties.put(URL, "jdbc:mysql://localhost:3306/test");
-        properties.put(USER, "root");
-        properties.put(PASSWORD, "root");
+        properties.put(DRIVER, databaseEngine.driverClass);
+        properties.put(URL, databaseEngine.url);
+        properties.put(USER, databaseEngine.username);
+        properties.put(PASSWORD, databaseEngine.password);
         return Collections.unmodifiableMap(properties);
+    }
+
+    private static DatabaseEngine databaseEngine() {
+        String databaseEngine = System.getProperty(DATABASE_ENGINE_SYSTEM_PARAMETER);
+        DatabaseEngine engine = databaseEngine != null ? DatabaseEngine.valueOf(databaseEngine) : DatabaseEngine.mysql;
+        logger.info("Using database enigine: " + engine);
+        return engine;
     }
 
     @Before
