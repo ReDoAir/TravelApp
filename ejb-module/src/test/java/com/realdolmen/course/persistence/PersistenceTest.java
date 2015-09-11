@@ -5,6 +5,7 @@ import org.junit.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -12,6 +13,7 @@ import javax.persistence.Persistence;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.text.ParseException;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -62,7 +64,7 @@ public abstract class PersistenceTest extends Assert {
     }
 
     @Before
-    public void initialize() {
+    public void initialize() throws NamingException, ParseException, Exception {
         logger.info("Creating transacted EntityManager");
         entityManager = entityManagerFactory.createEntityManager();
         transaction = entityManager.getTransaction();

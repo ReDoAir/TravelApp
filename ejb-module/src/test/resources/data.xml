@@ -4,6 +4,7 @@
     <book id="3000" author="Bram Stoker" title="Dracula" genre="fiction"/>
 
     <passenger id="1000" firstName="Sam" lastName="Smets" frequentFlyerMiles="1111" dateOfBirth="1993-12-31" lastFlight="2015-09-10 15:12:30" passengerType="REGULAR" ssn="1234"/>
+    <passenger id="9999" firstName="Leo" street="Irisstraat" street2="" city="Boom" zipCode="2850" country="Belgium" controlNumber="123" expiryDate="11/19" number="123456789" lastName="Ole" frequentFlyerMiles="1111" dateOfBirth="1993-12-31" lastFlight="2015-09-10 15:12:30" passengerType="OCCASIONAL" ssn="1234"/>
     <ticket id="1001" price="10" passenger_Id="1000" />
 
 

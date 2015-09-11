@@ -10,8 +10,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Stateless
-@LocalBean
-public class PassengerRepository {
+public class PassengerBean implements RemotePassengerBean{
 
     @PersistenceContext
     EntityManager entityManager;
@@ -20,24 +19,27 @@ public class PassengerRepository {
         entityManager.persist(p);
     }
 
-    public Passenger getById(int id){
+    @Override
+    public List<Passenger> findPassengers() {
+        return entityManager.createQuery("SELECT p FROM Passenger p",Passenger.class).getResultList();
+    }
+
+    @Override
+    public Passenger findPassengerById(int id){
         return entityManager.find(Passenger.class, id);
     }
 
+    @Override
     public void update(Passenger p){
         entityManager.merge(p);
     }
 
-    public void delete(int id) {
-        entityManager.remove(entityManager.getReference(Passenger.class, id));
+    @Override
+    public void delete(Passenger p) {
+        entityManager.remove(entityManager.getReference(Passenger.class, p.getId()));
     }
 
-    public Passenger refresh(Passenger p){
-        entityManager.refresh(p);
-        return p;
-    }
-
-    //QUERIES
+    /*QUERIES
 
     public List<Passenger> findAllPassengers(){
         return entityManager.createQuery("SELECT p FROM Passenger p",Passenger.class).getResultList();
@@ -57,5 +59,5 @@ public class PassengerRepository {
 
     public void deleteAll(){
         entityManager.createQuery("DELETE FROM Passenger p");
-    }
+    }*/
 }
