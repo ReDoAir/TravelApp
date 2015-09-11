@@ -9,7 +9,7 @@ public class Ticket {
     private Integer id;
     private double price;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Passenger passenger;
 
     public Ticket(double price) {
@@ -37,5 +37,10 @@ public class Ticket {
 
     public void setPassenger(Passenger passenger) {
         this.passenger = passenger;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("ID: %d - PRICE: %.2f",id,price);
     }
 }

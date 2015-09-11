@@ -2,6 +2,7 @@ package com.realdolmen.course.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
@@ -52,11 +53,14 @@ public class Passenger implements Serializable{
     @Embedded
     private CreditCard creditCard;
 
-    @OneToMany
-    private List<Ticket> tickets;
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "passenger")
+    private List<Ticket> tickets = new ArrayList<>();
 
     @ManyToMany
-    private List<Flight> flights;
+    private List<Flight> flights = new ArrayList<>();
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastUpdated;
 
     public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, PassengerType passengerType, Integer frequentFlyerMiles, Date lastFlight, List<String> preferences, Address address, CreditCard creditCard) {
         this.ssn = ssn;
@@ -75,12 +79,20 @@ public class Passenger implements Serializable{
     }
 
     @PostLoad
+    @PostUpdate
+    @PostPersist
     private void calculateAge(){
-        if(dateOfBirth != null){
+        /*if(dateOfBirth != null){
             LocalDate now = LocalDate.now();
             LocalDate birth = ((java.sql.Date)dateOfBirth).toLocalDate();
             age = Period.between(now,birth).getYears();
-        }
+        }*/
+    }
+
+    @PrePersist
+    @PreUpdate
+    public void changeLastUpdated(){
+        lastUpdated = Date.from(Instant.now());
     }
 
     public Integer getId() {
@@ -117,12 +129,6 @@ public class Passenger implements Serializable{
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
-
-        /*if(dateOfBirth != null){
-            LocalDate now = LocalDate.now();
-            LocalDate birth = ((java.sql.Date) dateOfBirth).toLocalDate();
-            age = Period.between(now,birth).getYears();
-        }*/
     }
 
     public PassengerType getPassengerType() {
@@ -203,5 +209,9 @@ public class Passenger implements Serializable{
 
     public void setFlights(List<Flight> flights) {
         this.flights = flights;
+    }
+
+    public Date getLastUpdated() {
+        return lastUpdated;
     }
 }
