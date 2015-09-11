@@ -1,6 +1,5 @@
 package com.realdolmen.course.persistence;
 import com.realdolmen.course.domain.Ticket;
-import com.sun.xml.internal.messaging.saaj.util.TeeInputStream;
 import org.junit.Before;
 import org.junit.Test;
 
