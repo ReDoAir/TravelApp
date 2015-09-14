@@ -75,6 +75,15 @@ public class Passenger implements Serializable{
         this.creditCard = creditCard;
     }
 
+    public Passenger(String ssn, String firstName, String lastName, Date dateOfBirth, PassengerType passengerType, Integer frequentFlyerMiles) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.passengerType = passengerType;
+        this.frequentFlyerMiles = frequentFlyerMiles;
+    }
+
     public Passenger() {
     }
 
@@ -213,5 +222,10 @@ public class Passenger implements Serializable{
 
     public Date getLastUpdated() {
         return lastUpdated;
+    }
+
+    public void addTicket(Ticket ticket){
+        if(ticket != null)
+        tickets.add(ticket);
     }
 }
