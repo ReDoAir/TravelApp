@@ -10,7 +10,8 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Stateless
-public class PassengerBean implements RemotePassengerBean{
+@LocalBean
+public class PassengerRepository implements RemotePassengerBean{
 
     @PersistenceContext
     EntityManager entityManager;
