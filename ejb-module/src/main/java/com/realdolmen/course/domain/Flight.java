@@ -16,7 +16,7 @@ public class Flight {
     @Temporal(TemporalType.TIMESTAMP)
     private Date arrivalTime;
 
-    @OneToMany(mappedBy = "flight")
+    @OneToMany(cascade = CascadeType.ALL , mappedBy = "flight")
     private List<Ticket> tickets;
 
     public Flight(String number, Date departureTime, Date arrivalTime) {
