@@ -9,7 +9,7 @@ import org.junit.Test;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-public class PaymentEJBTest extends RemoteJmsTest {
+public class PaymentEJBTest extends RemoteIntegrationTest {
 
     private RemotePaymentEJB remotePaymentEJB;
 

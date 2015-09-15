@@ -13,6 +13,9 @@ public class Ticket {
     @ManyToOne(cascade = CascadeType.ALL)
     private Passenger passenger;
 
+    @ManyToOne
+    private Flight flight;
+
     public Ticket(double price) {
         this.price = price;
     }

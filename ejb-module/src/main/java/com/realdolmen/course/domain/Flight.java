@@ -16,11 +16,8 @@ public class Flight {
     @Temporal(TemporalType.TIMESTAMP)
     private Date arrivalTime;
 
-    @OneToMany
+    @OneToMany(mappedBy = "flight")
     private List<Ticket> tickets;
-
-    @ManyToMany
-    private List<Passenger> passengers;
 
     public Flight(String number, Date departureTime, Date arrivalTime) {
         this.number = number;
@@ -71,11 +68,4 @@ public class Flight {
         this.tickets = tickets;
     }
 
-    public List<Passenger> getPassengers() {
-        return passengers;
-    }
-
-    public void setPassengers(List<Passenger> passengers) {
-        this.passengers = passengers;
-    }
 }

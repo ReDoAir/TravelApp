@@ -56,9 +56,6 @@ public class Passenger implements Serializable{
     @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "passenger")
     private List<Ticket> tickets = new ArrayList<>();
 
-    @ManyToMany
-    private List<Flight> flights = new ArrayList<>();
-
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastUpdated;
 
@@ -211,15 +208,6 @@ public class Passenger implements Serializable{
     public void setPicture(byte[] picture) {
         this.picture = picture;
     }
-
-    public List<Flight> getFlights() {
-        return flights;
-    }
-
-    public void setFlights(List<Flight> flights) {
-        this.flights = flights;
-    }
-
     public Date getLastUpdated() {
         return lastUpdated;
     }
