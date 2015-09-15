@@ -40,8 +40,8 @@ public class PassengerEJB implements RemotePassengerEJB{
     public void addTicket(double price){
         if(passenger != null) {
             Ticket ticket = new Ticket(price);
+            ticket.setPassenger(passenger);
             ticketRepository.create(ticket);
-
             passenger.addTicket(ticket);
         }
     }

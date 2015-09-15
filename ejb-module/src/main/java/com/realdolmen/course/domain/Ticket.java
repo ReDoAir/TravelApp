@@ -20,6 +20,12 @@ public class Ticket {
         this.price = price;
     }
 
+    public Ticket(double price, Passenger passenger, Flight flight) {
+        this.price = price;
+        this.passenger = passenger;
+        this.flight = flight;
+    }
+
     public Ticket() {
     }
 
@@ -46,5 +52,13 @@ public class Ticket {
     @Override
     public String toString() {
         return String.format("ID: %d - PRICE: %.2f",id,price);
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
     }
 }
