@@ -53,7 +53,7 @@ public class Passenger implements Serializable{
     @Embedded
     private CreditCard creditCard;
 
-    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "passenger")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "passenger")
     private List<Ticket> tickets = new ArrayList<>();
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -214,6 +214,7 @@ public class Passenger implements Serializable{
 
     public void addTicket(Ticket ticket){
         if(ticket != null)
-        tickets.add(ticket);
+            ticket.setPassenger(this);
+            tickets.add(ticket);
     }
 }

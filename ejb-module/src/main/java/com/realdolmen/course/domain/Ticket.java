@@ -10,7 +10,7 @@ public class Ticket {
     private Integer id;
     private double price;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Passenger passenger;
 
     @ManyToOne
