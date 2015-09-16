@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <h:outputStylesheet name="main.css" library="css"/>
+</h:head>
+
+<h:body>
+
+    <ui:insert name="header" >
+        <ui:include src="resources/template/header.xhtml" />
+    </ui:insert>
+
+    <h2>CREATE NEW PASSENGER</h2>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:panelGroup>
+                <p:outputLabel id="firstName" value="First name"/>
+                <p:inputText value="#{passengerController.passenger.firstName}"/><br/>
+
+                <p:outputLabel id="lastName" value="Last name"/>
+                <p:inputText value="#{passengerController.passenger.lastName}"/><br/>
+
+                <p:outputLabel id="snn" value="SSN"/>
+                <p:inputText value="#{passengerController.passenger.ssn}"/><br/>
+
+                <p:outputLabel id="fnn" value="FrequentFlyerNumber"/>
+                <p:inputText value="#{passengerController.passenger.frequentFlyerMiles}"/><br/><br/>
+
+                <p:commandButton value="Create" action="#{passengerController.createPassenger}"/>
+            </h:panelGroup>
+        </h:panelGrid>
+    </h:form>
+
+    <ui:insert name="footer" >
+        <ui:include src="resources/template/footer.xhtml" />
+    </ui:insert>
+
+</h:body>
+
+</html>
