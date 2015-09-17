@@ -3,31 +3,34 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 <h:head>
 
 </h:head>
 
 <h:body>
+    <ui:composition template="/resources/template/default.xhtml">
+        <ui:define name="content">
+            <h2>Create new ticket</h2>
+            <div id="content">
+            <h:form>
+                <h:outputLabel id="passnNameLbl" value="Passenger: "/>
+                <h:outputLabel id="passName" value="#{passengerController.passenger.fullName}"/><br/><br/>
 
-    <h1>CREATE NEW TICKET</h1>
+                <h:inputText styleClass="form-control" pt:placeholder="Price" value="#{ticketController.price}"/><br/><br/>
 
-    <h:form>
+                <p:outputLabel value="Flight"/><br/>
+                <h:selectOneMenu value="#{ticketController.flightId}">
+                    <f:selectItems value="#{flightController.flights}" var="flight" itemLabel="#{flight.number}" itemValue="#{flight.id}"/>
+                </h:selectOneMenu><br/><br/>
 
-        <p:outputLabel id="passName" value="#{passengerController.name}"/><br/>
-
-        <p:outputLabel id="price" value="Price: "/>
-        <p:inputText value="#{ticketController.price}"/><br/><br/>
-
-        <h:selectOneMenu value="#{ticketController.flightId}">
-            <f:selectItems value="#{flightController.flights}" var="flight" itemLabel="#{flight.number}" itemValue="#{flight.id}"/>
-        </h:selectOneMenu><br/><br/>
-
-        <p:commandButton value="CREATE" action="#{ticketController.createTicket(passengerController.passenger.id)}"/>
-
-    </h:form>
-
+                <h:commandButton styleClass="btn" value="CREATE" action="#{ticketController.createTicket(passengerController.passenger.id)}"/>
+            </h:form>
+            </div>
+        </ui:define>
+    </ui:composition>
 </h:body>
 
 </html>

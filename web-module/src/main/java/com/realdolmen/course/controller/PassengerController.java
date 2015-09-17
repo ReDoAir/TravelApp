@@ -5,12 +5,14 @@ import com.realdolmen.course.domain.PassengerType;
 import com.realdolmen.course.persistence.PassengerRepository;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.io.Serializable;
 
 @Named
-@RequestScoped
-public class PassengerController {
+@SessionScoped
+public class PassengerController implements Serializable {
     @Inject
     private PassengerRepository passengerRepository;
 
@@ -19,15 +21,11 @@ public class PassengerController {
     public String createPassenger(){
         passenger.setPassengerType(PassengerType.OCCASIONAL);
         passengerRepository.create(passenger);
-        return "bookTicket";
+        return "bookTicket?faces-redirect=true";
     }
 
     public Passenger getPassenger(){
         return passenger;
-    }
-
-    public String getName(){
-        return passenger.getFirstName() + " " + passenger.getLastName();
     }
 
 }

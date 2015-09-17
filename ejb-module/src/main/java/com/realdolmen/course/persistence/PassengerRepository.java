@@ -7,11 +7,12 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.io.Serializable;
 import java.util.List;
 
 @Stateless
 @LocalBean
-public class PassengerRepository implements RemotePassengerBean{
+public class PassengerRepository implements RemotePassengerBean, Serializable{
 
     @PersistenceContext
     EntityManager entityManager;

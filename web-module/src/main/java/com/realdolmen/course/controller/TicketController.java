@@ -8,12 +8,15 @@ import com.realdolmen.course.persistence.PassengerRepository;
 import com.realdolmen.course.persistence.TicketRepository;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.io.Serializable;
+import java.util.List;
 
 @Named
-@RequestScoped
-public class TicketController {
+@SessionScoped
+public class TicketController implements Serializable{
 
     private int price;
     private Integer flightId;
@@ -42,10 +45,14 @@ public class TicketController {
         return flightId;
     }
 
-    public String createTicket(String id){
+    public String createTicket(int id){
         Flight f = flightRepository.findFlightById(flightId);
-        Passenger p = passengerRepository.findPassengerById(Integer.parseInt(id));
+        Passenger p = passengerRepository.findPassengerById(id);
         ticketRepository.create(new Ticket(price,p,f));
-        return "tickets";
+        return "tickets?faces-redirect=true";
+    }
+
+    public List<Ticket> getTickets() {
+        return ticketRepository.getAllTickets();
     }
 }

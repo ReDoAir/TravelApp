@@ -7,10 +7,12 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.io.Serializable;
+import java.util.List;
 
 @Stateless
 @LocalBean
-public class TicketRepository  {
+public class TicketRepository implements Serializable {
 
     @PersistenceContext
     EntityManager entityManager;
@@ -34,5 +36,9 @@ public class TicketRepository  {
     public Ticket refresh(Ticket t){
         entityManager.refresh(t);
         return t;
+    }
+
+    public List<Ticket> getAllTickets() {
+        return entityManager.createQuery("SELECT t from Ticket t", Ticket.class).getResultList();
     }
 }
