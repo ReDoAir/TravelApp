@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -20,8 +21,10 @@ public class Passenger implements Serializable{
     @Column(updatable = false)
     private String ssn;
     @Column(length = 55)
+    @NotNull
     private String firstName;
     @Column(length = 55)
+    @NotNull
     private String lastName;
 
     @Temporal(TemporalType.DATE)
@@ -78,6 +81,14 @@ public class Passenger implements Serializable{
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.passengerType = passengerType;
+        this.frequentFlyerMiles = frequentFlyerMiles;
+    }
+
+    public Passenger(String firstName, String lastName, String ssn, Date dateOfBirth, Integer frequentFlyerMiles) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
+        this.dateOfBirth = dateOfBirth;
         this.frequentFlyerMiles = frequentFlyerMiles;
     }
 
@@ -216,5 +227,9 @@ public class Passenger implements Serializable{
         if(ticket != null)
             ticket.setPassenger(this);
             tickets.add(ticket);
+    }
+
+    public String getFullName(){
+        return firstName + " " + lastName;
     }
 }

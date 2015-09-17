@@ -1,8 +1,10 @@
 package com.realdolmen.course.domain;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.SimpleFormatter;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -50,6 +52,14 @@ public class Flight {
 
     public void setDepartureTime(Date departureTime) {
         this.departureTime = departureTime;
+    }
+
+    public String getFormattedDepTime(){
+        return new SimpleDateFormat("dd-MM-yyyy hh:mm").format(departureTime);
+    }
+
+    public String getFormattedArrTime(){
+        return new SimpleDateFormat("dd-MM-yyyy hh:mm").format(arrivalTime);
     }
 
     public Date getArrivalTime() {
