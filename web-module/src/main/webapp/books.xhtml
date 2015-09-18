@@ -11,7 +11,16 @@
     <h:body>
         <h1>Books</h1>
         <p>A list of books.</p>
-        <h:dataTable id="books" value="#{bookController.allBooks}" var="book">
+
+        <h:form>
+
+            <h:inputText value="#{bookController.bookTitle}"/>
+
+            <h:commandButton value="search books" style="margin-left: 2px;">
+                <f:ajax execute="@form" render="books" listener="#{bookController.filterBooks()}"/>
+            </h:commandButton>
+
+        <h:dataTable style="margin-top: 5px;" id="books" value="#{bookController.filterBooks()}" var="book">
             <h:column>
                 <f:facet name="header">
                     <h:outputText value="Id"/>
@@ -44,5 +53,6 @@
                 </h:form>
             </h:column>
         </h:dataTable>
+        </h:form>
     </h:body>
 </html>
