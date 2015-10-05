@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Book implements Serializable {
+public class Book implements Serializable{
     public enum Genre {
         fiction, fantasy, thriller, biography
     }
