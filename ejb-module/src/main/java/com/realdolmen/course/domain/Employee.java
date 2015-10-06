@@ -12,8 +12,6 @@ public class Employee extends User {
 
     public Employee(boolean admin) {
         this.admin = admin;
-        addRole(Role.ADMIN);
-        addRole(Role.EMPLOYEE);
     }
 
     protected Employee(){

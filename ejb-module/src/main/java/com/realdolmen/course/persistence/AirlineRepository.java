@@ -24,7 +24,11 @@ public class AirlineRepository {
 
     public List<Airline> findAirlinesByName(String airlineName)
     {
-        return em.createQuery("select a from Airline a where a.name LIKE :airlineName", Airline.class).setParameter("airlineName","%" + airlineName + "%").getResultList();
+        return em.createQuery("select a from Airline a where a.name LIKE :airlineName", Airline.class).setParameter("airlineName", "%" + airlineName + "%").getResultList();
+    }
+    public Airline findAirlineById(int id)
+    {
+        return em.find(Airline.class,id);
     }
 
     public void addAirline(Airline airline)
