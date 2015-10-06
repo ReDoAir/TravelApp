@@ -36,6 +36,13 @@ public class AirlinePersistenceTest extends DataPersistenceTest{
     }
 
     @Test
+    public void canRetrieveAirlinepartners()
+    {
+        Airline airline = entityManager().find(Airline.class,1000);
+        assertEquals(6,airline.getPartners().size());
+    }
+
+    @Test
     public void canRetrieveAirline() throws Exception {
 
         assertEquals("JetAir", entityManager().find(Airline.class, 1000).getName());
