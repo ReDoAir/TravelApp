@@ -6,22 +6,20 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Stateless
 @LocalBean
 public class PeriodeRepo {
 
-    @Inject
+    @PersistenceContext
     EntityManager em;
 
 
     public List<Periode> getAllPeriodes()
     {
-        return em.createQuery("select p from Periode p").getResultList();
+        return em.createQuery("select p from Periode p", Periode.class).getResultList();
     }
 
     //still needs more, but the shit is not clear yet

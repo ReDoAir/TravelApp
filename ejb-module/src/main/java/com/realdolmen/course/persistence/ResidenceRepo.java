@@ -6,22 +6,19 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
-
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 
 @Stateless
 @LocalBean
 public class ResidenceRepo {
 
-    @Inject
+    @PersistenceContext
     EntityManager em;
 
     public List<Residence> getAllResidence()
     {
-        return em.createQuery("select r from Residence r").getResultList();
+        return em.createQuery("select r from Residence r", Residence.class).getResultList();
     }
 
     public void addResidence(Residence r)

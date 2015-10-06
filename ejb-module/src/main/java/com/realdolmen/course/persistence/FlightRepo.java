@@ -6,22 +6,21 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
+
 @Stateless
 @LocalBean
 public class FlightRepo {
 
-    @Inject
+    @PersistenceContext
     EntityManager em;
 
     public List<Flight> getAllFlights()
     {
-        return em.createQuery("select f from Flight f").getResultList();
+        return em.createQuery("select f from Flight f", Flight.class).getResultList();
     }
 
 

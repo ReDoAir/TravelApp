@@ -7,10 +7,19 @@
 
     <persistence-unit name="MyPersistenceUnit" transaction-type="JTA">
         <jta-data-source>java:/MyDataSource</jta-data-source>
+
         <class>com.realdolmen.course.domain.User</class>
+        <class>com.realdolmen.course.domain.Airline</class>
+        <class>com.realdolmen.course.domain.Airport</class>
+        <class>com.realdolmen.course.domain.Booking</class>
+        <class>com.realdolmen.course.domain.Country</class>
+        <class>com.realdolmen.course.domain.Flight</class>
+        <class>com.realdolmen.course.domain.Trip</class>
+        <class>com.realdolmen.course.domain.Residence</class>
+        <class>com.realdolmen.course.domain.Periode</class>
 
         <properties>
-            <property name="hibernate.hbm2ddl.auto" value="validate" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
 

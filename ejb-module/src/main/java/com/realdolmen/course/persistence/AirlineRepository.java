@@ -6,17 +6,15 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Stateless
 @LocalBean
 public class AirlineRepository {
 
 
-    @Inject
+    @PersistenceContext
     EntityManager em;
 
     public List<Airline> findAllAirlines()
