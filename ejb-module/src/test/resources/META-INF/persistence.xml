@@ -44,10 +44,9 @@
 
     <persistence-unit name="MyTestPersistenceUnit" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+        <class>com.realdolmen.course.domain.User</class>
         <class>com.realdolmen.course.domain.Airline</class>
         <class>com.realdolmen.course.domain.Airport</class>
-        <class>com.realdolmen.course.domain.Book</class>
         <class>com.realdolmen.course.domain.Booking</class>
         <class>com.realdolmen.course.domain.Country</class>
         <class>com.realdolmen.course.domain.Flight</class>

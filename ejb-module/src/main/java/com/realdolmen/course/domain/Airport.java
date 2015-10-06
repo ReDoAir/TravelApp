@@ -2,6 +2,7 @@ package com.realdolmen.course.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by SDOAX36 on 5/10/2015.
@@ -21,9 +22,15 @@ public class Airport implements Serializable {
 
     private double pricePerDay;
 
-    //todo : mapping implementation
-    //private Flight flight;
+    @ManyToOne
+    private Country country;
 
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "arrivalAirport")
+    private List<Flight> arrivalFlights;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "departAirport")
+    private List<Flight> departFlights;
 
     public Airport() {
     }

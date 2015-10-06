@@ -21,6 +21,12 @@ public class Flight implements Serializable{
     @Temporal(TemporalType.TIMESTAMP)
     private Date arrivalDate;
 
+    @ManyToOne
+    private Airport arrivalAirport;
+
+    @ManyToOne
+    private Airport departAirport;
+
     public Flight(String flightCode, Date departureDate, Date arrivalDate) {
         this.flightCode = flightCode;
         this.departureDate = departureDate;

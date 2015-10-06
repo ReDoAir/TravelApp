@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <meta charset="UTF-8"/>
         <title>travelApp</title>
@@ -11,10 +11,18 @@
         <ui:composition template="/resources/template/default.xhtml">
 
             <ui:define name="content">
-                <h:form styleClass="login">
-                    <h:inputText styleClass="form-control" pt:placeholder="Username" id="userName"/>
-                    <h:inputText styleClass="form-control" pt:placeholder="Password" id="password"/>
-                    <h:commandButton styleClass="btn-default" value="Login"/>
+                <h:form id ="login" styleClass="userForm">
+                    <h2>Login</h2>
+                    <h:inputText styleClass="form-control formEle" pt:placeholder="Username" id="userName" value="#{login.username}"/>
+                    <h:inputSecret styleClass="form-control formEle" pt:placeholder="Password" id="password"  value="#{login.password}"/>
+                    <h:outputLabel styleClass="formEle" for="rememberMe" value="Remember Me: " />
+                    <h:selectBooleanCheckbox style="margin-left: 5px; " id="rememberMe" value="#{login.remember}" />
+                    <h:commandButton styleClass="form-control btn-default formEle" value="Login" action="#{login.submit}" >
+                        <f:ajax execute="@form" render="@form" />
+                    </h:commandButton>
+                    <h:messages globalOnly="true" layout="table" />
+
+                    <h:outputLabel styleClass="formEle form-control"> New user? Register <h:link outcome="register">here.</h:link></h:outputLabel>
                 </h:form>
             </ui:define>
 
