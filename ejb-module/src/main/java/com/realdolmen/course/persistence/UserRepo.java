@@ -9,10 +9,10 @@ import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.realdolmen.course.domain.User;
+import com.realdolmen.course.domain.auth.User;
 
 @Stateless
-public class UserService {
+public class UserRepo {
 
     @PersistenceContext
     private EntityManager em;

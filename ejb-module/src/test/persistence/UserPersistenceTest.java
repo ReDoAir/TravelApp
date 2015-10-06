@@ -1,10 +1,9 @@
-import com.realdolmen.course.domain.Role;
-import com.realdolmen.course.domain.User;
+import com.realdolmen.course.domain.auth.Role;
+import com.realdolmen.course.domain.auth.User;
 import org.junit.Test;
 
 import javax.persistence.PersistenceException;
 import javax.validation.ConstraintViolationException;
-import java.util.ArrayList;
 
 /**
  * Created by SDOAX36 on 6/10/2015.

@@ -8,7 +8,7 @@ import java.util.Date;
  * Created by SDOAX36 on 5/10/2015.
  */
 @Entity
-public class Periode implements Serializable
+public class Period implements Serializable
 {
 
 
@@ -22,12 +22,12 @@ public class Periode implements Serializable
     @Temporal(TemporalType.TIMESTAMP)
     private Date returnDate;
 
-    public Periode(Date departureDate, Date returnDate) {
+    public Period(Date departureDate, Date returnDate) {
         this.departureDate = departureDate;
         this.returnDate = returnDate;
     }
 
-    public Periode() {
+    public Period() {
     }
 
     public Date getDepartureDate() {

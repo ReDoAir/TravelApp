@@ -1,25 +1,24 @@
 package com.realdolmen.course.persistence;
 
-import com.realdolmen.course.domain.Periode;
+import com.realdolmen.course.domain.Period;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Stateless
 @LocalBean
-public class PeriodeRepo {
+public class PeriodRepo {
 
     @PersistenceContext
     EntityManager em;
 
 
-    public List<Periode> getAllPeriodes()
+    public List<Period> getAllPeriods()
     {
-        return em.createQuery("select p from Periode p", Periode.class).getResultList();
+        return em.createQuery("select p from Period p", Period.class).getResultList();
     }
 
     //still needs more, but the shit is not clear yet
