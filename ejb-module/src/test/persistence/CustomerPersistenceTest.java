@@ -1,5 +1,4 @@
-import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
-import com.realdolmen.course.domain.Customer;
+import com.realdolmen.course.domain.auth.Customer;
 import org.junit.Before;
 import org.junit.Test;
 

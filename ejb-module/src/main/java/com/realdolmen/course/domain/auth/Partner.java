@@ -1,6 +1,9 @@
-package com.realdolmen.course.domain;
+package com.realdolmen.course.domain.auth;
 
 
+import com.realdolmen.course.domain.Airline;
+import com.realdolmen.course.domain.Flight;
+import com.realdolmen.course.domain.auth.User;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;

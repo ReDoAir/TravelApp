@@ -1,5 +1,6 @@
 import com.realdolmen.course.domain.Airline;
-import com.realdolmen.course.domain.Partner;
+
+import com.realdolmen.course.domain.auth.Partner;
 import org.junit.Before;
 import org.junit.Test;
 
