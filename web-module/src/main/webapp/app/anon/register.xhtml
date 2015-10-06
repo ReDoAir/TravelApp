@@ -25,7 +25,7 @@
                         <h:message id="m_password" for="password" />
 
                         <h:panelGroup />
-                        <h:commandButton styleClass="btn-default form-control formEle" value="Register" action="#{register.submit}" >
+                        <h:commandButton styleClass="btn-default form-control formEle" value="Register" action="#{register.register}" >
                             <f:ajax execute="@form" render="@form" />
                         </h:commandButton>
                         <h:messages globalOnly="true" layout="table" />

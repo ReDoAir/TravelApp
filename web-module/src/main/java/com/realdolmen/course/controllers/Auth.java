@@ -16,24 +16,31 @@ import org.omnifaces.util.Messages;
 
 @Named
 @RequestScoped
-public class Login {
+public class Auth {
 
-    public static final String HOME_URL = "index.faces";
+    public static final String HOME_URL = "/web-module/app/anon/index.faces";
+    public static final String CUST_URL = "/web-module/app/cust/home.faces";
 
     private String username;
     private String password;
     private boolean remember;
 
-    public void submit() throws IOException {
+    public void login() throws IOException {
         try {
             SecurityUtils.getSubject().login(new UsernamePasswordToken(username, password, remember));
             SavedRequest savedRequest = WebUtils.getAndClearSavedRequest(Faces.getRequest());
-            Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : HOME_URL);
+            Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : CUST_URL);
         }
         catch (AuthenticationException e) {
             Messages.addGlobalError("Unknown user, please try again");
             e.printStackTrace(); // TODO: logger.
         }
+    }
+
+    public void logout() throws IOException {
+        SecurityUtils.getSubject().logout();
+        Faces.invalidateSession();
+        Faces.redirect(HOME_URL);
     }
 
     public String getUsername() {

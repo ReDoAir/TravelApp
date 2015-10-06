@@ -9,7 +9,10 @@ import com.realdolmen.course.domain.Customer;
 import com.realdolmen.course.domain.User;
 import com.realdolmen.course.persistence.UserService;
 import org.apache.shiro.crypto.hash.Sha256Hash;
+import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
+
+import java.io.IOException;
 
 
 @Named
@@ -26,11 +29,12 @@ public class Register {
         user = new Customer();
     }
 
-    public void submit() {
+    public void register() throws IOException {
         try {
             user.setPassword(new Sha256Hash(user.getPassword()).toHex());
             service.create(user);
             Messages.addGlobalInfo("Registration succeed, new user ID is: {0}", user.getId());
+            Faces.redirect("/web-module/app/anon/login.faces");
         }
         catch (RuntimeException e) {
             Messages.addGlobalError("Registration failed: {0}", e.getMessage());

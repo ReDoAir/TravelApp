@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta charset="UTF-8"/>
+        <title>travelApp</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/resources/template/default.xhtml">
+
+            <ui:define name="header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <h:form>
+                                        <h:commandLink style="color: white" action="#{auth.logout}">Log out</h:commandLink>
+                                    </h:form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </ui:define>
+
+            <ui:define name="content">
+                <h2>Homepage</h2>
+            </ui:define>
+
+        </ui:composition>
+
+    </h:body>
+</html>

@@ -10,7 +10,6 @@
     </h:head>
     <h:body>
         <ui:composition template="/resources/template/default.xhtml">
-
             <ui:define name="content">
                 <h2>Users</h2>
                 <h:dataTable value="#{users}" var="user">
@@ -20,8 +19,6 @@
                     <h:column>#{user.roles}</h:column>
                 </h:dataTable>
             </ui:define>
-
         </ui:composition>
-
     </h:body>
 </html>

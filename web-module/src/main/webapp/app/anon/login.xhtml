@@ -13,11 +13,11 @@
             <ui:define name="content">
                 <h:form id ="login" styleClass="userForm">
                     <h2>Login</h2>
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Username" id="userName" value="#{login.username}"/>
-                    <h:inputSecret styleClass="form-control formEle" pt:placeholder="Password" id="password"  value="#{login.password}"/>
+                    <h:inputText styleClass="form-control formEle" pt:placeholder="Username" id="userName" value="#{auth.username}"/>
+                    <h:inputSecret styleClass="form-control formEle" pt:placeholder="Password" id="password"  value="#{auth.password}"/>
                     <h:outputLabel styleClass="formEle" for="rememberMe" value="Remember Me: " />
-                    <h:selectBooleanCheckbox style="margin-left: 5px; " id="rememberMe" value="#{login.remember}" />
-                    <h:commandButton styleClass="form-control btn-default formEle" value="Login" action="#{login.submit}" >
+                    <h:selectBooleanCheckbox style="margin-left: 5px; " id="rememberMe" value="#{auth.remember}" />
+                    <h:commandButton styleClass="form-control btn-default formEle" value="Login" action="#{auth.login}" >
                         <f:ajax execute="@form" render="@form" />
                     </h:commandButton>
                     <h:messages globalOnly="true" layout="table" />

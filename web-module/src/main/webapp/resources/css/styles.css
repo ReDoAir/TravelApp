@@ -28,3 +28,13 @@
 .footer p{
     text-align: center;
 }
+
+.logout a{
+    color: #ffffff;
+}
+
+.logout a:hover,
+.logout a:focus,{
+    color: #ffffff;
+    background-color: #97310e;
+}

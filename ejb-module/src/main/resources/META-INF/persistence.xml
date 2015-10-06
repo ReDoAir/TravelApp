@@ -10,11 +10,8 @@
         <class>com.realdolmen.course.domain.User</class>
 
         <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.hbm2ddl.auto" value="validate" />
         </properties>
     </persistence-unit>
-
-
 
 </persistence>

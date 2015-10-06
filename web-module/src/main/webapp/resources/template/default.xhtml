@@ -6,11 +6,13 @@
       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
 <h:head>
-    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
+    <h:outputStylesheet library="css" name="styles.css"/>
+    <h:outputStylesheet library="css" name="bootstrap.css"/>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Redo Air webapp</title>
 </h:head>
+
 <h:body>
     <div id="wrapper">
     <ui:insert name="header" >
@@ -26,4 +28,5 @@
     </ui:insert>
     </div>
 </h:body>
+
 </html>
