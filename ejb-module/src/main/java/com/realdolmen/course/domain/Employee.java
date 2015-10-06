@@ -12,18 +12,11 @@ public class Employee extends User {
 
     public Employee(boolean admin) {
         this.admin = admin;
-        List<Role> roleList = new ArrayList<>();
-
-        if(admin) {
-            roleList.add(Role.ADMIN);
-        }else{
-            roleList.add(Role.EMPLOYEE);
-        }
-
-        this.setRoles(roleList);
+        addRole(Role.ADMIN);
+        addRole(Role.EMPLOYEE);
     }
 
-    public Employee(){
+    protected Employee(){
 
     }
 

@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
@@ -35,6 +36,15 @@ public class User {
     @Column(name = "role")
     private List<Role> roles;
 
+    public User(String username, String password,Role baseRole) {
+        this.username = username;
+        this.password = password;
+        addRole(baseRole);
+    }
+
+    public User() {
+    }
+
     public String getUsername() {
         return username;
     }
@@ -55,7 +65,24 @@ public class User {
         return id;
     }
 
-    public void setRoles(List<Role> roles) {
+    public void addRole(Role role)
+    {
+        if(roles==null)
+        {
+            roles = new ArrayList<>();
+        }
+        roles.add(role);
+    }
+
+    public void removeRole(Role role)
+    {
+        if(roles.contains(role))
+        {
+            roles.remove(role);
+        }
+    }
+
+    private void setRoles(List<Role> roles) {
         this.roles = roles;
     }
 

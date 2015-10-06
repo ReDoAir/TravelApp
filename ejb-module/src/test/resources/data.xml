@@ -1,4 +1,16 @@
 <dataset>
 
+
+    <airline id="1000" name="JetAir"/>
+    <airline id="2000" name="Thomas Cook"/>
+    <airline id="3000" name="Sun web"/>
+
+    <user id="1000" username="steven" password="secret"></user>
+    <userroles userId="1000" role="ADMIN"></userroles>
+
+    <country id="1552" iso="BE" name="Belgium"></country>
+    <airport id="1522" airportCode="BE1111" name="Brussels South" pricePerDay= "12.22" country_id="1552"></airport>
+    <airport id="1523" airportCode="BE1112" name="Brussels North" pricePerDay= "12.22" country_id="1552"></airport>
+
 </dataset>
 

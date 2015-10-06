@@ -14,9 +14,9 @@ public class Partner extends User {
 
     public Partner(String airlines) {
         this.airlines = airlines;
-        List<Role> roleList = new ArrayList<>();
-        roleList.add(Role.PARTNER);
-        this.setRoles(roleList);
+//method of superclass
+        addRole(Role.PARTNER);
+
     }
 
     public Partner(){
