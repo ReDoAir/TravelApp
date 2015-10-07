@@ -6,7 +6,7 @@
         version="2.1">
 
     <persistence-unit name="MyPersistenceUnit" transaction-type="JTA">
-        <jta-data-source>java:/MyDataSource</jta-data-source>
+        <jta-data-source>java:/realDataSource</jta-data-source>
 
         <class>com.realdolmen.course.domain.auth.User</class>
         <class>com.realdolmen.course.domain.Airline</class>
@@ -16,6 +16,12 @@
         <class>com.realdolmen.course.domain.Flight</class>
         <class>com.realdolmen.course.domain.Trip</class>
         <class>com.realdolmen.course.domain.Residence</class>
+        <class>com.realdolmen.course.domain.Period</class>
+        <class>com.realdolmen.course.domain.auth.Partner</class>
+        <class>com.realdolmen.course.domain.auth.Customer</class>
+        <class>com.realdolmen.course.domain.auth.Employee</class>
+        <class>com.realdolmen.course.domain.Plane</class>
+
         <class>com.realdolmen.course.domain.Period</class>
 
         <properties>

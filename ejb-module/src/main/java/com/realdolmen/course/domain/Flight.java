@@ -24,9 +24,6 @@ public class Flight implements Serializable{
 
     private int availablePlaces;
 
-    @OneToOne
-    private Airline airline;
-
     @ManyToOne
     private Airport arrivalAirport;
 
@@ -130,13 +127,5 @@ public class Flight implements Serializable{
 
     public void setAvailablePlaces(int availablePlaces) {
         this.availablePlaces = availablePlaces;
-    }
-
-    public Airline getAirline() {
-        return airline;
-    }
-
-    public void setAirline(Airline airline) {
-        this.airline = airline;
     }
 }

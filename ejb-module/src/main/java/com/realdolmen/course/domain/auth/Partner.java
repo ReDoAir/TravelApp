@@ -13,17 +13,10 @@ import java.util.List;
 @Entity
 public class Partner extends User {
 
-
     @ManyToOne
     @NotNull
     private Airline airline;
 
-    @Id
-    private Long id;
-
-    public Long getId() {
-        return id;
-    }
     public Partner(){
 
     }
@@ -46,9 +39,5 @@ public class Partner extends User {
     public void addNewFlightToAirline(Flight flight)
     {
         this.airline.addFlight(flight);
-    }
-    
-    public void setId(Long id) {
-        this.id = id;
     }
 }
