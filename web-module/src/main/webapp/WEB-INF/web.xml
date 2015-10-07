@@ -7,9 +7,6 @@
         <servlet-name>facesServlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name/>
-    </servlet>
 
     <servlet-mapping>
         <servlet-name>facesServlet</servlet-name>
