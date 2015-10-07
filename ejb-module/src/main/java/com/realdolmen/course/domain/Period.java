@@ -4,15 +4,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 public class Period implements Serializable
 {
-
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

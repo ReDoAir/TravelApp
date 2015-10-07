@@ -29,6 +29,11 @@
     text-align: center;
 }
 
+.errorMess{
+    margin-top: 5px;
+    float: left;
+}
+
 .logout a{
     color: #ffffff;
 }

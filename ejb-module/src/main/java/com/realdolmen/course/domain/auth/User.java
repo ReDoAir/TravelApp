@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain.auth;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +20,7 @@ import javax.validation.constraints.NotNull;
 */
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public class User {
+public class User implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

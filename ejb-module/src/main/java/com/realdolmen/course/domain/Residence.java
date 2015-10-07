@@ -5,9 +5,6 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 public class Residence implements Serializable{
 

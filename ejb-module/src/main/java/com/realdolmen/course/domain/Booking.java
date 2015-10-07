@@ -1,15 +1,12 @@
 package com.realdolmen.course.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.realdolmen.course.domain.auth.Customer;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 public class Booking implements Serializable {
 
@@ -17,23 +14,17 @@ public class Booking implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    //Don't know about this but I don't think this is right
-    private String bookName;
+    @ManyToOne
+    private Customer customer;
 
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date bookingDate;
 
-
-    public String getBookName() {
-        return bookName;
-    }
-
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
-    }
+    //customer included
+    private int count;
 
     //todo : mapping implementation
-    //private List<Trip>trips;
-
-
+    //private List<Trip> trips;
 
     public Integer getId() {
         return id;
@@ -41,5 +32,29 @@ public class Booking implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Date getBookingDate() {
+        return bookingDate;
+    }
+
+    public void setBookingDate(Date bookingDate) {
+        this.bookingDate = bookingDate;
     }
 }

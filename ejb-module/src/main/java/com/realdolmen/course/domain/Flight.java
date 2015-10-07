@@ -5,9 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
+
 @Entity
 public class Flight implements Serializable{
     @Id
@@ -23,6 +21,8 @@ public class Flight implements Serializable{
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date arrivalDate;
+
+    private int availablePlaces;
 
     @ManyToOne
     private Airport arrivalAirport;
@@ -122,5 +122,13 @@ public class Flight implements Serializable{
 
     public void setArrivalDate(Date arrivalDate) {
         this.arrivalDate = arrivalDate;
+    }
+
+    public int getAvailablePlaces() {
+        return availablePlaces;
+    }
+
+    public void setAvailablePlaces(int availablePlaces) {
+        this.availablePlaces = availablePlaces;
     }
 }
