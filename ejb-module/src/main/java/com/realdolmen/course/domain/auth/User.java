@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain.auth;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +18,7 @@ import javax.validation.constraints.NotNull;
                 query = "SELECT u FROM User u")
 })
 @Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

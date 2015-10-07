@@ -14,21 +14,22 @@
             <ui:define name="content">
                 <h:form id="register" styleClass="userForm">
                         <h2>Register</h2>
-                        <h:inputText styleClass="form-control formEle" id="username" pt:placeholder="Username" value="#{register.user.username}" required="true">
+                        <h:inputText styleClass="form-control formEle" id="username" pt:placeholder="Username" value="#{registerController.user.username}" required="true">
                             <f:ajax event="blur" render="m_username" />
                         </h:inputText>
-                        <h:message id="m_username" for="username" />
+                        <h:message errorClass="errorMess alert alert-danger" warnClass="alert alert-warning" id="m_username" for="username" />
 
-                        <h:inputSecret styleClass="form-control formEle" id="password" pt:placeholder="Password" value="#{register.user.password}" required="true">
+                        <h:inputSecret styleClass="form-control formEle" id="password" pt:placeholder="Password" value="#{registerController.user.password}" required="true">
                             <f:ajax event="blur" render="m_password" />
                         </h:inputSecret>
-                        <h:message id="m_password" for="password" />
+                        <h:message errorClass="errorMess alert alert-danger" warnClass="alert alert-warning" id="m_password" for="password" />
 
                         <h:panelGroup />
-                        <h:commandButton styleClass="btn-default form-control formEle" value="Register" action="#{register.register}" >
+                        <h:commandButton styleClass="btn-default form-control formEle" value="Register" action="#{registerController.register}" >
                             <f:ajax execute="@form" render="@form" />
                         </h:commandButton>
-                        <h:messages globalOnly="true" layout="table" />
+
+                        <h:messages errorClass="alert alert-danger" warnClass="alert alert-warning" globalOnly="true" layout="table" />
                 </h:form>
             </ui:define>
 

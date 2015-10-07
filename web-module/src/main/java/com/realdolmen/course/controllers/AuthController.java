@@ -3,6 +3,7 @@ package com.realdolmen.course.controllers;
 import java.io.IOException;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
 import org.apache.shiro.SecurityUtils;
@@ -16,7 +17,7 @@ import org.omnifaces.util.Messages;
 
 @Named
 @RequestScoped
-public class Auth {
+public class AuthController {
 
     public static final String HOME_URL = "/web-module/app/anon/index.faces";
     public static final String CUST_URL = "/web-module/app/cust/home.faces";
@@ -29,6 +30,7 @@ public class Auth {
         try {
             SecurityUtils.getSubject().login(new UsernamePasswordToken(username, password, remember));
             SavedRequest savedRequest = WebUtils.getAndClearSavedRequest(Faces.getRequest());
+            SecurityUtils.getSubject().getSession().setAttribute("userName", username);
             Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : CUST_URL);
         }
         catch (AuthenticationException e) {

@@ -1,12 +1,11 @@
 package com.realdolmen.course.domain;
 
+import javax.annotation.Resource;
+import javax.enterprise.context.RequestScoped;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 public class Trip implements Serializable{
 
@@ -16,10 +15,14 @@ public class Trip implements Serializable{
 
     private String tripName;
 
-  //todo : mapping options
-   // private List<Flight>flights;
+    @OneToMany
+    private List<Flight> flights;
 
+    @ManyToOne
+    private Destination destination;
 
+    @ManyToOne
+    private Residence residence;
 
     public Integer getId() {
         return id;
@@ -35,5 +38,29 @@ public class Trip implements Serializable{
 
     public void setTripName(String tripName) {
         this.tripName = tripName;
+    }
+
+    public List<Flight> getFlights() {
+        return flights;
+    }
+
+    public void setFlights(List<Flight> flights) {
+        this.flights = flights;
+    }
+
+    public Destination getDestination() {
+        return destination;
+    }
+
+    public void setDestination(Destination destination) {
+        this.destination = destination;
+    }
+
+    public Residence getResidence() {
+        return residence;
+    }
+
+    public void setResidence(Residence residence) {
+        this.residence = residence;
     }
 }

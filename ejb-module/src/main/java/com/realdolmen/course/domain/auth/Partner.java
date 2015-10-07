@@ -2,15 +2,18 @@ package com.realdolmen.course.domain.auth;
 
 
 
+import com.realdolmen.course.domain.Airline;
+
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Partner extends User {
 
-    private String airlines;
+    @OneToOne
+    private Airline airline;
 
-    public Partner(String airlines) {
-        this.airlines = airlines;
+    public Partner(Airline airlines) {
 //method of superclass
         addRole(Role.PARTNER);
 
@@ -20,11 +23,12 @@ public class Partner extends User {
 
     }
 
-    public String getAirlines() {
-        return airlines;
+
+    public Airline getAirline() {
+        return airline;
     }
 
-    public void setAirlines(String airlines) {
-        this.airlines = airlines;
+    public void setAirline(Airline airline) {
+        this.airline = airline;
     }
 }

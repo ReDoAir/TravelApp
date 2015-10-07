@@ -17,7 +17,7 @@ import java.io.IOException;
 
 @Named
 @RequestScoped
-public class Register {
+public class RegisterController {
 
     private User user;
 

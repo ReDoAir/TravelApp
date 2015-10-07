@@ -1,10 +1,17 @@
 package com.realdolmen.course.domain.auth;
 
+import com.realdolmen.course.domain.Booking;
+
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Customer extends User {
     private String creditCard;
+
+    @OneToMany(mappedBy = "customer")
+    private List<Booking> bookings;
 
     public Customer() {
         addRole(Role.CUSTOMER);
@@ -22,5 +29,13 @@ public class Customer extends User {
 
     public void setCreditCard(String creditCard) {
         this.creditCard = creditCard;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
     }
 }

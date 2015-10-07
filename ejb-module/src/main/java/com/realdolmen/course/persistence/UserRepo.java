@@ -9,6 +9,7 @@ import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import com.realdolmen.course.domain.auth.Customer;
 import com.realdolmen.course.domain.auth.User;
 
 @Stateless
