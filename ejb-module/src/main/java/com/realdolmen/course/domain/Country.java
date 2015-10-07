@@ -11,7 +11,6 @@ public class Country implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String iso;
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "country")
