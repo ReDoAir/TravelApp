@@ -21,7 +21,7 @@ public class Customer extends User {
     private List<Booking> bookings;
 
     public Customer() {
-        //addRole(Role.CUSTOMER);
+        addRole(Role.CUSTOMER);
 
     }
 

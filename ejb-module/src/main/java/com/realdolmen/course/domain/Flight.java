@@ -39,11 +39,14 @@ public class Flight implements Serializable{
     private Plane plane;
 
 
-    public Flight(String flightCode, Date departureDate, Date arrivalDate,Double price) {
+    public Flight(String flightCode, Date departureDate, Date arrivalDate,Double price,Airport arrivalAirport, Airport departAirport, Airline airline) {
         this.flightCode = flightCode;
         this.departureDate = departureDate;
         this.arrivalDate = arrivalDate;
         this.price = price;
+        this.departAirport = departAirport;
+        this.arrivalAirport = arrivalAirport;
+        this.airline = airline;
     }
 
     public Flight() {

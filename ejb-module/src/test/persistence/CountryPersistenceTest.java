@@ -15,8 +15,8 @@ public class CountryPersistenceTest extends DataPersistenceTest {
         Country country = new Country();
         country.setName("Belgie");
         List<Airport>airports = new ArrayList<>();
-        airports.add(new Airport("Brussels central","BE1111",5.555));
-        airports.add(new Airport("Brussels south","BE23113",53.55));
+        airports.add(new Airport("Brussels central","BE1111"));
+        airports.add(new Airport("Brussels south","BE23113"));
         entityManager().persist(country);
 
         assertNotNull(country.getId());
