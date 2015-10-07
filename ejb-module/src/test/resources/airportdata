@@ -1,0 +1,1072 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<airports>
+    <airport aiar="AAR" name="Aarhus" country="Denmark" />
+    <airport aiar="ABD" name="Abadan" country="Iran" />
+    <airport aiar="AEH" name="Abeche" country="Chad" />
+    <airport aiar="ABZ" name="Aberdeen" country="United Kingdom" />
+    <airport aiar="ABR" name="Aberdeen" country="USA" />
+    <airport aiar="ABJ" name="Abidjan" country="Ivory Coast" />
+    <airport aiar="ABI" name="Abilene" country="USA" />
+    <airport aiar="AUH" name="Abu Dhabi" country="UAE" />
+    <airport aiar="ABV" name="Abuja International" country="Nigeria" />
+    <airport aiar="AUE" name="Abu Rudeis" country="Egypt" />
+    <airport aiar="ABS" name="Abu Simbel" country="Egypt" />
+    <airport aiar="ACA" name="Acapulco" country="Mexico" />
+    <airport aiar="ACC" name="Accra" country="Ghana" />
+    <airport aiar="ADA" name="Adana" country="Turkey" />
+    <airport aiar="ADD" name="Addis Ababa" country="Ethiopia" />
+    <airport aiar="ADL" name="Adelaide" country="Australia" />
+    <airport aiar="ADE" name="Aden" country="Yemen" />
+    <airport aiar="AER" name="Adler/Sochi" country="Russia" />
+    <airport aiar="AJY" name="Agades" country="Niger" />
+    <airport aiar="AGA" name="Agadir" country="Morocco" />
+    <airport aiar="SUM" name="Agana" country="Guam" />
+    <airport aiar="AGZ" name="Aggeneys" country="South Africa" />
+    <airport aiar="BQN" name="Aguadilla" country="Puerto Rico" />
+    <airport aiar="AGU" name="Aguascaliente" country="Mexico" />
+    <airport aiar="AMD" name="Ahmedabad" country="India" />
+    <airport aiar="AJA" name="Ajaccio" country="France" />
+    <airport aiar="AXT" name="Akita" country="Japan" />
+    <airport aiar="CAK" name="Akron" country="USA" />
+    <airport aiar="AKT" name="Akrotiri - RAF" country="Cyprus" />
+    <airport aiar="ADX" name="Aktyubinsk" country="Kazakhstan" />
+    <airport aiar="AAC" name="Al Arish" country="Egypt" />
+    <airport aiar="AHU" name="Al Hoceima" country="Morocco" />
+    <airport aiar="ALH" name="Albany" country="Australia" />
+    <airport aiar="ABY" name="Albany" country="USA" />
+    <airport aiar="ALB" name="Albany" country="USA" />
+    <airport aiar="LBI" name="Albi" country="France" />
+    <airport aiar="AAL" name="Alborg" country="Denmark" />
+    <airport aiar="ABQ" name="Albuquerque" country="USA" />
+    <airport aiar="ABX" name="Albury" country="Australia" />
+    <airport aiar="AES" name="Alesund" country="Norway" />
+    <airport aiar="ALJ" name="Alexander Bay" country="South Africa" />
+    <airport aiar="ALY" name="Alexandria, El Nhouza Airport" country="Egypt" />
+    <airport aiar="ESF" name="Alexandria" country="USA" />
+    <airport aiar="FJR" name="Alfujairah (Fujairah)" country="UAE" />
+    <airport aiar="AHO" name="Alghero Sassari" country="Italy" />
+    <airport aiar="ALG" name="Algiers" country="Algeria" />
+    <airport aiar="ALC" name="Alicante" country="Spain" />
+    <airport aiar="ASP" name="Alice Springs" country="Australia" />
+    <airport aiar="ADY" name="Alldays" country="South Africa" />
+    <airport aiar="ABE" name="Allentown" country="USA" />
+    <airport aiar="ALA" name="Alma Ata" country="Kazakhstan" />
+    <airport aiar="LEI" name="Almeria" country="Spain" />
+    <airport aiar="ALP" name="Aleppo" country="Syria" />
+    <airport aiar="ALF" name="Alta" country="Norway" />
+    <airport aiar="ACH" name="Altenrhein" country="Switzerland" />
+    <airport aiar="AOO" name="Altoona" country="USA" />
+    <airport aiar="ASJ" name="Amami" country="Japan" />
+    <airport aiar="AMA" name="Amarillo" country="USA" />
+    <airport aiar="AMM" name="Amman" country="Jordan" />
+    <airport aiar="ATQ" name="Amritsar" country="India" />
+    <airport aiar="AMS" name="Amsterdam, Schiphol" country="Netherlands" />
+    <airport aiar="QNB" name="Anand" country="India" />
+    <airport aiar="ANC" name="Anchorage" country="USA" />
+    <airport aiar="AOI" name="Ancona" country="Italy" />
+    <airport aiar="ALV" name="Andorra La Vella H/P" country="Andorra" />
+    <airport aiar="AXA" name="Anguilla" country="Anguilla" />
+    <airport aiar="AJN" name="Anjouan" country="Comoros (Comores)" />
+    <airport aiar="ANK" name="Ankara" country="Turkey" />
+    <airport aiar="AAE" name="Annaba" country="Algeria" />
+    <airport aiar="ARB" name="Ann Arbor" country="USA" />
+    <airport aiar="NCY" name="Annecy" country="France" />
+    <airport aiar="ANB" name="Anniston" country="USA" />
+    <airport aiar="AYT" name="Antalya" country="Turkey" />
+    <airport aiar="TNR" name="Antananarivo (Tanannarive)" country="Madagascar" />
+    <airport aiar="ANU" name="Antigua" country="Antigua" />
+    <airport aiar="ANR" name="Antwerp" country="Belgium" />
+    <airport aiar="AOJ" name="Aomori" country="Japan" />
+    <airport aiar="APW" name="Apia" country="Samoa" />
+    <airport aiar="ATW" name="Appelton/Neenah/Menasha" country="USA" />
+    <airport aiar="AQJ" name="Aqaba" country="Jordan" />
+    <airport aiar="AJU" name="Aracaju" country="Brazil" />
+    <airport aiar="ARH" name="Arkhangelsk" country="Russian Federation" />
+    <airport aiar="ARK" name="Arusha" country="Tanzania" />
+    <airport aiar="GPA" name="Araxos" country="Greece" />
+    <airport aiar="RLT" name="Arlit" country="Niger" />
+    <airport aiar="AXS" name="Armenia" country="Colombia" />
+    <airport aiar="ACE" name="Arrecife/Lanzarote" country="Spain" />
+    <airport aiar="AUA" name="Aruba" country="Aruba" />
+    <airport aiar="AVL" name="Asheville" country="USA" />
+    <airport aiar="ASB" name="Ashgabat, Ashkhabat" country="Turkmenistan" />
+    <airport aiar="ASE" name="Aspen Snowmass" country="USA" />
+    <airport aiar="ATZ" name="Assiut" country="Egypt" />
+    <airport aiar="ASU" name="Asuncion" country="Paraguay" />
+    <airport aiar="ATH" name="Athens" country="Greece" />
+    <airport aiar="ASW" name="Aswan, Daraw Airport" country="Egypt" />
+    <airport aiar="HEW" name="Athens, Hellinikon Airport" country="Greece" />
+    <airport aiar="AHN" name="Athens" country="USA" />
+    <airport aiar="ATO" name="Athens" country="USA" />
+    <airport aiar="ATL" name="Atlanta" country="USA" />
+    <airport aiar="ACY" name="Atlantic City" country="USA" />
+    <airport aiar="YAT" name="Attawapiskat, NT" country="Canada" />
+    <airport aiar="AKL" name="Auckland" country="New Zealand" />
+    <airport aiar="AGB" name="Augsburg" country="Germany" />
+    <airport aiar="AGS" name="Augusta" country="USA" />
+    <airport aiar="AUG" name="Augusta" country="USA" />
+    <airport aiar="AUR" name="Aurillac" country="France" />
+    <airport aiar="AUS" name="Austin" country="USA" />
+    <airport aiar="AYQ" name="Ayers Rock" country="Australia" />
+    <airport aiar="AYR" name="Ayr" country="Australia" />
+    <airport aiar="BJZ" name="Badajoz" country="Spain" />
+    <airport aiar="BGW" name="Bagdad, Al Muthana" country="Iraq" />
+    <airport aiar="SDA" name="Bagdad, Saddam International" country="Iraq" />
+    <airport aiar="BHV" name="Bahawalpur" country="Pakistan" />
+    <airport aiar="BAH" name="Bahrain" country="Bahrain" />
+    <airport aiar="BSR" name="Basra, Basrah" country="Iraq" />
+    <airport aiar="BFL" name="Bakersfield" country="USA" />
+    <airport aiar="BAK" name="Baku" country="Azerbaijan" />
+    <airport aiar="BNK" name="Ballina" country="Australia" />
+    <airport aiar="BWI" name="Baltimore Washington Int'l Airport; MD" country="USA" />
+    <airport aiar="ABM" name="Bamaga" country="Australia" />
+    <airport aiar="BKO" name="Bamako" country="Mali" />
+    <airport aiar="BBY" name="Bambari" country="Central African Republic" />
+    <airport aiar="BWN" name="Bandar Seri Begawan" country="Brunei" />
+    <airport aiar="BLR" name="Bangalore" country="India" />
+    <airport aiar="BGU" name="Bangassou" country="Central African Republic" />
+    <airport aiar="BKK" name="Bangkok" country="Thailand" />
+    <airport aiar="BGR" name="Bangor" country="USA" />
+    <airport aiar="BGF" name="Bangui" country="Central African Republic" />
+    <airport aiar="BJL" name="Banjul" country="Gambia" />
+    <airport aiar="BNP" name="Bannu" country="Pakistan" />
+    <airport aiar="BCN" name="Barcelona" country="Spain" />
+    <airport aiar="BLA" name="Barcelona" country="Venezuela" />
+    <airport aiar="BDU" name="Bardufoss" country="Norway" />
+    <airport aiar="BRI" name="Bari" country="Italy" />
+    <airport aiar="BZL" name="Barisal" country="Bangladesh" />
+    <airport aiar="BDQ" name="Baronda" country="India" />
+    <airport aiar="BAQ" name="Barranquilla" country="Colombia" />
+    <airport aiar="BSL" name="Basel" country="Switzerland" />
+    <airport aiar="EAP" name="Basel/Mulhouse" country="Switzerland/France" />
+    <airport aiar="BIA" name="Bastia" country="France" />
+    <airport aiar="BTR" name="Baton Rouge" country="USA" />
+    <airport aiar="BYU" name="Bayreuth" country="Germany" />
+    <airport aiar="BPT" name="Beaumont/Pt. Arthur" country="USA" />
+    <airport aiar="BKW" name="Beckley" country="USA" />
+    <airport aiar="PEK" name="Beijing" country="China" />
+    <airport aiar="NAY" name="Beijing - Nanyuan Airport" country="China" />
+    <airport aiar="BEW" name="Beira" country="Mozambique" />
+    <airport aiar="BEY" name="Beirut" country="Lebanon" />
+    <airport aiar="BEL" name="Belem" country="Brazil" />
+    <airport aiar="BHD" name="Belfast - Harbour" country="United Kingdom" />
+    <airport aiar="BFS" name="Belfast International" country="United Kingdom" />
+    <airport aiar="IXG" name="Belgaum" country="India" />
+    <airport aiar="BEG" name="Belgrad (Beograd)" country="Yugoslavia" />
+    <airport aiar="BZE" name="Belize City" country="Belize" />
+    <airport aiar="BLI" name="Bellingham" country="USA" />
+    <airport aiar="CNF" name="Belo Horizonte" country="Brazil" />
+    <airport aiar="BJI" name="Bemidji" country="USA" />
+    <airport aiar="BEN" name="Bengasi" country="Libya" />
+    <airport aiar="BUG" name="Bengueka" country="Angola" />
+    <airport aiar="BEH" name="Benton Harbour" country="USA" />
+    <airport aiar="BBT" name="Berberati" country="Central African Republic" />
+    <airport aiar="BGY" name="Bergamo" country="Italy" />
+    <airport aiar="BGO" name="Bergen" country="Norway" />
+    <airport aiar="BER" name="Berlin" country="Germany" />
+    <airport aiar="SXF" name="Berlin, Schoenefeld" country="Germany" />
+    <airport aiar="TXL" name="Berlin, Tegel" country="Germany" />
+    <airport aiar="THF" name="Berlin, Tempelhof" country="Germany" />
+    <airport aiar="BDA" name="Bermuda" country="Bermuda" />
+    <airport aiar="BRN" name="Bern" country="Switzerland" />
+    <airport aiar="ZDJ" name="Bern" country="Switzerland" />
+    <airport aiar="BET" name="Bethel" country="USA" />
+    <airport aiar="BHO" name="Bhopal" country="India" />
+    <airport aiar="BBI" name="Bhubaneswar" country="India" />
+    <airport aiar="BIQ" name="Biarritz" country="France" />
+    <airport aiar="BIO" name="Bilbao" country="Spain" />
+    <airport aiar="BIL" name="Billings" country="USA" />
+    <airport aiar="BLL" name="Billund" country="Denmark" />
+    <airport aiar="BTU" name="Bintulu" country="Malaysia" />
+    <airport aiar="IRO" name="Biraro" country="Central African Republic" />
+    <airport aiar="BHX" name="Birmingham" country="United Kingdom" />
+    <airport aiar="BHM" name="Birmingham" country="USA" />
+    <airport aiar="BIS" name="Bismarck/Mandan" country="USA" />
+    <airport aiar="BXO" name="Bissau" country="Guinea Bissau" />
+    <airport aiar="BLT" name="Blackwater" country="Australia" />
+    <airport aiar="BLZ" name="Blantyre" country="Malawi" />
+    <airport aiar="BHE" name="Blenheim" country="New Zealand" />
+    <airport aiar="BFN" name="Bloemfontein" country="South Africa" />
+    <airport aiar="BMI" name="Bloomington" country="USA" />
+    <airport aiar="BMG" name="Bloomington" country="USA" />
+    <airport aiar="BLF" name="Bluefield" country="USA" />
+    <airport aiar="BVB" name="Boa Vista" country="Brazil" />
+    <airport aiar="BOY" name="Bobo/Dioulasso" country="Burkina Faso" />
+    <airport aiar="BOO" name="Bodo" country="Norway" />
+    <airport aiar="BOG" name="Bogota" country="Colombia" />
+    <airport aiar="BOI" name="Boise" country="USA" />
+    <airport aiar="BLQ" name="Bologna" country="Italy" />
+    <airport aiar="BOM" name="Bombay" country="India" />
+    <airport aiar="BON" name="Bonaire" country="Netherlands Antilles" />
+    <airport aiar="YVB" name="Bonaventure, PQ" country="Canada" />
+    <airport aiar="BOB" name="Bora Bora" country="French Polynesia" />
+    <airport aiar="BOD" name="Bordeaux" country="France" />
+    <airport aiar="HBH" name="Borg El Arab Airport" country="Egypt" />
+    <airport aiar="BXS" name="Borrego Springs" country="USA" />
+    <airport aiar="BOS" name="Boston - Logan" country="USA" />
+    <airport aiar="BYK" name="Bouake" country="Ivory Coast" />
+    <airport aiar="BOJ" name="Bourgas/Burgas" country="Bulgaria" />
+    <airport aiar="ZBO" name="Bowen" country="Australia" />
+    <airport aiar="BZN" name="Bozeman" country="USA" />
+    <airport aiar="BFD" name="Bradford/Warren" country="USA" />
+    <airport aiar="BRD" name="Brainerd" country="USA" />
+    <airport aiar="BMP" name="Brampton Island" country="Australia" />
+    <airport aiar="BSB" name="Brasilia" country="Brazil" />
+    <airport aiar="BTS" name="Bratislava" country="Slovakia" />
+    <airport aiar="BZV" name="Brazzaville" country="Congo" />
+    <airport aiar="BRE" name="Bremen" country="Germany" />
+    <airport aiar="BES" name="Brest" country="France" />
+    <airport aiar="BIV" name="Bria" country="Central African Republic" />
+    <airport aiar="BDR" name="Bridgeport" country="USA" />
+    <airport aiar="BGI" name="Bridgetown, Grantley Adams Int'l"
+          country="Barbados" />
+    <airport aiar="BDS" name="Brindisi" country="Italy" />
+    <airport aiar="BNE" name="Brisbane" country="Australia" />
+    <airport aiar="BRS" name="Bristol" country="United Kingdom" />
+    <airport aiar="BNN" name="Broennoeysund" country="Norway" />
+    <airport aiar="BHQ" name="Broken Hill" country="Australia" />
+    <airport aiar="BKX" name="Brookings" country="USA" />
+    <airport aiar="BME" name="Broome" country="Australia" />
+    <airport aiar="BQK" name="Brunswick" country="USA" />
+    <airport aiar="BRU" name="Brussels" country="Belgium" />
+    <airport aiar="BGA" name="Bucaramanga" country="Colombia" />
+    <airport aiar="BUD" name="Budapest, Ferihegy" country="Hungary" />
+    <airport aiar="BUE" name="Buenos Aires" country="Argentina" />
+    <airport aiar="EZE" name="Buenos Aires, Ezeiza Int'l Airport"
+          country="Argentina" />
+    <airport aiar="AEP" name="Buenos Aires, Jorge Newbery" country="Argentina" />
+    <airport aiar="BFO" name="Buffalo Range" country="Zimbabwe" />
+    <airport aiar="BUF" name="Buffalo/Niagara Falls" country="USA" />
+    <airport aiar="BJM" name="Bujumbura" country="Burundi" />
+    <airport aiar="BUH" name="Bucharest" country="Romania" />
+    <airport aiar="OTP" name="Bucharest, Otopeni" country="Romania" />
+    <airport aiar="BUQ" name="Bulawayo" country="Zimbabwe" />
+    <airport aiar="BHC" name="Bullhead City" country="USA" />
+    <airport aiar="BDB" name="Bundaberg" country="Australia" />
+    <airport aiar="BUR" name="Burbank" country="USA" />
+    <airport aiar="BRL" name="Burlington" country="USA" />
+    <airport aiar="BTV" name="Burlington" country="USA" />
+    <airport aiar="BWT" name="Burnie (Wynyard)" country="Australia" />
+    <airport aiar="BTM" name="Butte" country="USA" />
+    <airport aiar="CAB" name="Cabinda" country="Angola" />
+    <airport aiar="CAG" name="Cagliari" country="Italy" />
+    <airport aiar="CNS" name="Cairns" country="Australia" />
+    <airport aiar="CAI" name="Cairo Int'l" country="Egypt" />
+    <airport aiar="CCU" name="Calcutta (Kolkata)" country="India" />
+    <airport aiar="YYC" name="Calgary/Banff" country="Canada" />
+    <airport aiar="CLO" name="Cali" country="Colombia" />
+    <airport aiar="CCJ" name="Calicut" country="India" />
+    <airport aiar="CLY" name="Calvi" country="France" />
+    <airport aiar="YCB" name="Cambridge Bay" country="Canada" />
+    <airport aiar="CBG" name="Cambrigde" country="United Kingdom" />
+    <airport aiar="CGR" name="Campo Grande" country="Brazil" />
+    <airport aiar="CBR" name="Canberra" country="Australia" />
+    <airport aiar="CUN" name="Cancun" country="Mexico" />
+    <airport aiar="CPT" name="Cape Town" country="South Africa" />
+    <airport aiar="CCS" name="Caracas" country="Venezuela" />
+    <airport aiar="CWL" name="Cardiff" country="United Kingdom" />
+    <airport aiar="CLD" name="Carlsbad" country="USA" />
+    <airport aiar="CVQ" name="Carnarvon" country="Australia" />
+    <airport aiar="CRF" name="Carnot" country="Central African Republic" />
+    <airport aiar="LRM" name="Casa de Campo/La Romana" country="Dominican Republic" />
+    <airport aiar="CAS" name="Casablanca" country="Morocco" />
+    <airport aiar="CMN" name="Casablanca, Mohamed V" country="Morocco" />
+    <airport aiar="CSI" name="Casino" country="Australia" />
+    <airport aiar="CPR" name="Casper" country="USA" />
+    <airport aiar="CTG" name="Catagena" country="Colombia" />
+    <airport aiar="CTA" name="Catania" country="Italy" />
+    <airport aiar="CAY" name="Cayenne" country="French Guayana" />
+    <airport aiar="CBU" name="Cebu" country="Philippines" />
+    <airport aiar="CDC" name="Cedar City" country="USA" />
+    <airport aiar="CID" name="Cedar Rapids" country="USA" />
+    <airport aiar="CED" name="Ceduna" country="Australia" />
+    <airport aiar="CES" name="Cessnock" country="Australia" />
+    <airport aiar="KHV" name="Chabarovsk (Khabarovsk)" country="Russia" />
+    <airport aiar="CMF" name="Chambery" country="France" />
+    <airport aiar="CMI" name="Champaign" country="USA" />
+    <airport aiar="IXC" name="Chandigarh" country="India" />
+    <airport aiar="CHQ" name="Chania" country="Greece" />
+    <airport aiar="CHS" name="Charleston" country="USA" />
+    <airport aiar="CRW" name="Charleston" country="USA" />
+    <airport aiar="CLT" name="Charlotte" country="USA" />
+    <airport aiar="CHO" name="Charlottesville" country="USA" />
+    <airport aiar="CXT" name="Charters Towers" country="Australia" />
+    <airport aiar="CHA" name="Chattanooga" country="USA" />
+    <airport aiar="MAA" name="Chennai (Madras)" country="India" />
+    <airport aiar="CNX" name="Chiang Mai" country="Thailand" />
+    <airport aiar="QCB" name="Chiba City" country="Japan" />
+    <airport aiar="MDW" name="Chicago" country="USA" />
+    <airport aiar="ORD" name="Chicago O'Hare Int'l Airport" country="USA" />
+    <airport aiar="CHI" name="Chicago" country="USA" />
+    <airport aiar="CZA" name="Chichen Itza" country="Mexico" />
+    <airport aiar="CIC" name="Chico" country="USA" />
+    <airport aiar="CUU" name="Chihuahua, Gen Fierro Villalobos" country="Mexico" />
+    <airport aiar="JKH" name="Chios" country="Greece" />
+    <airport aiar="CIP" name="Chipata" country="Zambia" />
+    <airport aiar="HTA" name="Chita (Tschita)" country="Russia" />
+    <airport aiar="CTS" name="Chitose" country="Japan" />
+    <airport aiar="CJL" name="Chitral" country="Pakistan" />
+    <airport aiar="CGP" name="Chittagong" country="Bangladesh" />
+    <airport aiar="CHC" name="Christchurch" country="New Zealand" />
+    <airport aiar="CXI" name="Christmas Line" country="Iceland" />
+    <airport aiar="CCZ" name="Chub Cay" country="Bahamas" />
+    <airport aiar="YYQ" name="Churchill" country="Canada" />
+    <airport aiar="CFG" name="Cienfuegos" country="Canada" />
+    <airport aiar="CVG" name="Cincinnati" country="USA" />
+    <airport aiar="CME" name="Ciudad Del Carmen" country="Mexico" />
+    <airport aiar="CJS" name="Ciudad Juarez" country="Mexico" />
+    <airport aiar="CEN" name="Ciudad Obregon" country="Mexico" />
+    <airport aiar="CVM" name="Ciudad Victoria" country="Mexico" />
+    <airport aiar="CKB" name="Clarksburg" country="USA" />
+    <airport aiar="CMQ" name="Clermont" country="Australia" />
+    <airport aiar="CFE" name="Clermont Ferrand" country="France" />
+    <airport aiar="BKL" name="Cleveland" country="USA" />
+    <airport aiar="CLE" name="Cleveland" country="USA" />
+    <airport aiar="CBB" name="Cochabamba" country="Bolivia" />
+    <airport aiar="COK" name="Cochin" country="India" />
+    <airport aiar="COD" name="Cody/Powell/Yellowstone" country="USA" />
+    <airport aiar="KCC" name="Coffmann Cove" country="USA" />
+    <airport aiar="CFS" name="Coffs Harbour" country="Australia" />
+    <airport aiar="CJB" name="Coimbatore" country="India" />
+    <airport aiar="CLQ" name="Colima" country="Mexico" />
+    <airport aiar="CLL" name="College Station/Bryan" country="USA" />
+    <airport aiar="KCE" name="Collinsville" country="Australia" />
+    <airport aiar="CGN" name="Cologne (Koeln)/Bonn" country="Germany" />
+    <airport aiar="CMB" name="Colombo" country="Sri Lanka" />
+    <airport aiar="COS" name="Colorado Springs" country="USA" />
+    <airport aiar="CAE" name="Columbia" country="USA" />
+    <airport aiar="CSG" name="Columbus" country="USA" />
+    <airport aiar="CMH" name="Columbus" country="USA" />
+    <airport aiar="CKY" name="Conakry" country="Guinea" />
+    <airport aiar="CCR" name="Concord" country="USA" />
+    <airport aiar="CZL" name="Constantine" country="Algeria" />
+    <airport aiar="CND" name="Constanza" country="Romania" />
+    <airport aiar="CPD" name="Coober Pedy" country="Australia" />
+    <airport aiar="CTN" name="Cooktown" country="Australia" />
+    <airport aiar="OOM" name="Cooma" country="Australia" />
+    <airport aiar="CPH" name="Copenhagen" country="Denmark" />
+    <airport aiar="COR" name="Cordoba" country="Argentina" />
+    <airport aiar="ODB" name="Cordoba" country="Spain" />
+    <airport aiar="CDV" name="Cordova" country="USA" />
+    <airport aiar="CFU" name="Corfu" country="Greece" />
+    <airport aiar="ORK" name="Cork" country="Ireland" />
+    <airport aiar="CRP" name="Corpus Christi" country="USA" />
+    <airport aiar="COO" name="Cotonou" country="Benin" />
+    <airport aiar="CZM" name="Cozmel" country="Mexico" />
+    <airport aiar="CGA" name="Craig" country="USA" />
+    <airport aiar="CEC" name="Crescent City" country="USA" />
+    <airport aiar="CGB" name="Cuiaba" country="Brazil" />
+    <airport aiar="CUL" name="Culiacan" country="Mexico" />
+    <airport aiar="CUR" name="Curacao" country="Netherlands Antilles" />
+    <airport aiar="CWB" name="Curitiba" country="Brazil" />
+    <airport aiar="DKR" name="Dakar" country="Senegal" />
+    <airport aiar="DLM" name="Dalaman" country="Turkey" />
+    <airport aiar="DBY" name="Dalby" country="Australia" />
+    <airport aiar="DAL" name="Dallas" country="USA" />
+    <airport aiar="DFW" name="Dallas/Ft. Worth" country="USA" />
+    <airport aiar="DJO" name="Daloa" country="Ivory Coast" />
+    <airport aiar="DAM" name="Damaskus" country="Syria" />
+    <airport aiar="DAN" name="Danville" country="USA" />
+    <airport aiar="DAR" name="Dar es Salam (Daressalam)" country="Tanzania" />
+    <airport aiar="DRW" name="Darwin" country="Australia" />
+    <airport aiar="DDI" name="Daydream Island" country="Australia" />
+    <airport aiar="DAY" name="Dayton" country="USA" />
+    <airport aiar="DAB" name="Daytona Beach" country="USA" />
+    <airport aiar="DEC" name="Decatur" country="USA" />
+    <airport aiar="YDF" name="Deer Lake/Corner Brook" country="Canada" />
+    <airport aiar="DEL" name="Delhi, Indira Gandhi" country="India" />
+    <airport aiar="HAG" name="Den Haag (The Hague)" country="Netherlands" />
+    <airport aiar="DPS" name="Denpasar/Bali" country="Indonesia" />
+    <airport aiar="DEN" name="Denver International Airport" country="USA" />
+    <airport aiar="DSK" name="Dera Ismail Khan" country="Pakistan" />
+    <airport aiar="DRB" name="Derby" country="Australia" />
+    <airport aiar="EMA" name="Derby (East Midlands)" country="United Kingdom" />
+    <airport aiar="LDY" name="Derry (Londonderry)" country="United Kingdom" />
+    <airport aiar="DSM" name="Des Moines" country="USA" />
+    <airport aiar="DET" name="Detroit City" country="USA" />
+    <airport aiar="DTW" name="Detroit Metropolitan Wayne County Airport" country="USA" />
+    <airport aiar="DTT" name="Detroit Metropolitan Area" country="USA" />
+    <airport aiar="DVL" name="Devils Lake" country="USA" />
+    <airport aiar="DPO" name="Devonport" country="Australia" />
+    <airport aiar="DHA" name="Dhahran" country="Saudi Arabia" />
+    <airport aiar="DAC" name="Dhaka" country="Bangladesh" />
+    <airport aiar="DLG" name="Dillingham" country="USA" />
+    <airport aiar="DNR" name="Dinard" country="France" />
+    <airport aiar="DJE" name="Djerba" country="Tunisia" />
+    <airport aiar="JIB" name="Djibouti" country="Djibouti" />
+    <airport aiar="DOH" name="Doha" country="Qatar" />
+    <airport aiar="DTM" name="Dortmund" country="Germany" />
+    <airport aiar="DHN" name="Dothan" country="USA" />
+    <airport aiar="DLA" name="Douala" country="Cameroon" />
+    <airport aiar="DRS" name="Dresden" country="Germany" />
+    <airport aiar="DXB" name="Dubai" country="UAE" />
+    <airport aiar="DBO" name="Dubbo" country="Australia" />
+    <airport aiar="DUB" name="Dublin" country="Ireland" />
+    <airport aiar="DUJ" name="Dubois" country="USA" />
+    <airport aiar="DBV" name="Dubrovnik" country="Croatia (Hrvatska)" />
+    <airport aiar="DBQ" name="Dubuque" country="USA" />
+    <airport aiar="DUS" name="Duesseldorf" country="Germany" />
+    <airport aiar="DLH" name="Duluth" country="USA" />
+    <airport aiar="DUD" name="Dunedin" country="New Zealand" />
+    <airport aiar="DKI" name="Dunk Iceland" country="Australia" />
+    <airport aiar="DRO" name="Durango" country="USA" />
+    <airport aiar="DUR" name="Durban" country="South Africa" />
+    <airport aiar="DYU" name="Dushanbe (Duschanbe)" country="Tadschikistan" />
+    <airport aiar="DUT" name="Dutch Harbor" country="USA" />
+    <airport aiar="DYA" name="Dysart" country="Australia" />
+    <airport aiar="DZA" name="Dzaoudzi" country="Mayotte" />
+    <airport aiar="ELS" name="East London" country="South Africa" />
+    <airport aiar="IPC" name="Easter Island" country="Chile" />
+    <airport aiar="EAU" name="Eau Clarie" country="USA" />
+    <airport aiar="EDI" name="Edinburgh" country="United Kingdom" />
+    <airport aiar="YEA" name="Edmonton" country="Canada" />
+    <airport aiar="YEG" name="Edmonton, International" country="Canada" />
+    <airport aiar="YXD" name="Edmonton, Municipal" country="Canada" />
+    <airport aiar="EGS" name="Egilsstadir" country="Iceland" />
+    <airport aiar="EIN" name="Eindhoven" country="Netherlands" />
+    <airport aiar="ELP" name="El Paso" country="USA" />
+    <airport aiar="ETH" name="Elat" country="Israel" />
+    <airport aiar="VDA" name="Elat, Ovula" country="Israel" />
+    <airport aiar="EKI" name="Elkhart" country="USA" />
+    <airport aiar="EKO" name="Elko" country="USA" />
+    <airport aiar="ELL" name="Ellisras" country="South Africa" />
+    <airport aiar="EMY" name="El Minya" country="Egypt" />
+    <airport aiar="ELM" name="Elmira" country="USA" />
+    <airport aiar="ELY" name="Ely" country="USA" />
+    <airport aiar="EDR" name="Emerald" country="Australia" />
+    <airport aiar="EMD" name="Emerald" country="Australia" />
+    <airport aiar="ENF" name="Enontekioe" country="Finland" />
+    <airport aiar="EBB" name="Entebbe" country="Uganda" />
+    <airport aiar="ERF" name="Erfurt" country="Germany" />
+    <airport aiar="ERI" name="Erie" country="USA" />
+    <airport aiar="EVN" name="Eriwan (Yerevan, Jerevan)" country="Armenia" />
+    <airport aiar="EBJ" name="Esbjerg" country="Denmark" />
+    <airport aiar="ESC" name="Escabana" country="USA" />
+    <airport aiar="EPR" name="Esperance" country="Australia" />
+    <airport aiar="EUG" name="Eugene" country="USA" />
+    <airport aiar="ACV" name="Eureka" country="USA" />
+    <airport aiar="EVV" name="Evansville" country="USA" />
+    <airport aiar="EVE" name="Evenes" country="Norway" />
+    <airport aiar="FAI" name="Fairbanks" country="USA" />
+    <airport aiar="LYP" name="Faisalabad" country="Pakistan" />
+    <airport aiar="FAR" name="Fargo" country="USA" />
+    <airport aiar="FMN" name="Farmington" country="USA" />
+    <airport aiar="FAO" name="Faro" country="Portugal" />
+    <airport aiar="FAE" name="Faroer" country="Denmark" />
+    <airport aiar="FYV" name="Fayetteville" country="USA" />
+    <airport aiar="FAY" name="Fayetteville/Ft. Bragg" country="USA" />
+    <airport aiar="FEZ" name="Fes" country="Morocco" />
+    <airport aiar="FSC" name="Figari" country="France" />
+    <airport aiar="FLG" name="Flagstaff" country="USA" />
+    <airport aiar="YFO" name="Flin Flon" country="Canada" />
+    <airport aiar="FNT" name="Flint" country="USA" />
+    <airport aiar="FLR" name="Florence" country="Italy" />
+    <airport aiar="FLO" name="Florence" country="USA" />
+    <airport aiar="FLN" name="Florianopolis" country="Brazil" />
+    <airport aiar="FRO" name="Floro" country="Norway" />
+    <airport aiar="YFA" name="Fort Albert" country="Canada" />
+    <airport aiar="FDF" name="Fort de France" country="Martinique" />
+    <airport aiar="FOD" name="Fort Dodge" country="USA" />
+    <airport aiar="FHU" name="Fort Huachuca/Sierra Vista" country="USA" />
+    <airport aiar="FLL" name="Fort Lauderdale/Hollywood" country="USA" />
+    <airport aiar="YMM" name="Fort McMurray" country="Canada" />
+    <airport aiar="FMY" name="Fort Myers" country="USA" />
+    <airport aiar="RSW" name="Fort Myers" country="USA" />
+    <airport aiar="YSM" name="Fort Smith" country="Canada" />
+    <airport aiar="FSM" name="Fort Smith" country="USA" />
+    <airport aiar="YXJ" name="Fort St. John" country="Canada" />
+    <airport aiar="VPS" name="Fort Walton Beach" country="USA" />
+    <airport aiar="FWA" name="Fort Wayne" country="USA" />
+    <airport aiar="FOR" name="Fortaleza" country="Brazil" />
+    <airport aiar="FRW" name="Francistown" country="Zimbabwe" />
+    <airport aiar="FRA" name="Frankfurt/Main Int'l Airport" country="Germany" />
+    <airport aiar="HNN" name="Frankfurt/Hahn" country="Germany" />
+    <airport aiar="FKL" name="Franklin/Oil City" country="USA" />
+    <airport aiar="YFC" name="Fredericton" country="Canada" />
+    <airport aiar="FPO" name="Freeport" country="Bahamas" />
+    <airport aiar="FNA" name="Freetown" country="Sierra Leone" />
+    <airport aiar="FRJ" name="Frejus" country="France" />
+    <airport aiar="FAT" name="Fresno" country="USA" />
+    <airport aiar="FDH" name="Friedrichshafen" country="Germany" />
+    <airport aiar="FUE" name="Fuerteventura" country="Spain" />
+    <airport aiar="FUK" name="Fukuoka" country="Japan" />
+    <airport aiar="FKS" name="Fukushima-shi, Fukushima Airport" country="Japan" />
+    <airport aiar="FNC" name="Funchal" country="Portugal" />
+    <airport aiar="FUT" name="Futuna" country="Wallis and Futuna Islands" />
+    <airport aiar="GBE" name="Gaborone" country="Botswana" />
+    <airport aiar="GAD" name="Gadsden" country="USA" />
+    <airport aiar="GNV" name="Gainesville" country="USA" />
+    <airport aiar="GWY" name="Galway" country="Ireland" />
+    <airport aiar="YQX" name="Gander" country="Canada" />
+    <airport aiar="GOU" name="Garoua" country="Cameroon" />
+    <airport aiar="GDN" name="Gdansk" country="Poland" />
+    <airport aiar="GEX" name="Geelong" country="Australia" />
+    <airport aiar="GVA" name="Geneva" country="Switzerland" />
+    <airport aiar="GOA" name="Genoa" country="Italy" />
+    <airport aiar="GRJ" name="George" country="South Africa" />
+    <airport aiar="GEO" name="Georgetown" country="Guyana" />
+    <airport aiar="GET" name="Geraldton" country="Australia" />
+    <airport aiar="GRO" name="Gerona" country="Spain" />
+    <airport aiar="GIB" name="Gibraltar" country="Gibraltar" />
+    <airport aiar="GCC" name="Gilette" country="USA" />
+    <airport aiar="GIL" name="Gilgit" country="Pakistan" />
+    <airport aiar="YGX" name="Gillam" country="Canada" />
+    <airport aiar="GLT" name="Gladstone" country="Australia" />
+    <airport aiar="PIK" name="Glasgow, Prestwick" country="United Kingdom" />
+    <airport aiar="GLA" name="Glasgow" country="United Kingdom" />
+    <airport aiar="GGW" name="Glasgow" country="USA" />
+    <airport aiar="GDV" name="Glendive" country="USA" />
+    <airport aiar="GOI" name="Goa" country="India" />
+    <airport aiar="GYN" name="Goiania" country="Brazil" />
+    <airport aiar="OOL" name="Gold Coast" country="Australia" />
+    <airport aiar="GOO" name="Goondiwindi" country="Australia" />
+    <airport aiar="YYR" name="Goose Bay" country="Canada" />
+    <airport aiar="GOZ" name="Gorna" country="Bulgaria" />
+    <airport aiar="GOT" name="Goteborg" country="Sweden" />
+    <airport aiar="GOV" name="Gove (Nhulunbuy)" country="Australia" />
+    <airport aiar="GHB" name="Govenors Harbour" country="Bahamas" />
+    <airport aiar="GRX" name="Granada" country="Spain" />
+    <airport aiar="GBI" name="Grand Bahama" country="Bahamas" />
+    <airport aiar="GCN" name="Grand Canyon" country="USA" />
+    <airport aiar="GCM" name="Grand Cayman" country="Cayman Islands" />
+    <airport aiar="GFK" name="Grand Forks" country="USA" />
+    <airport aiar="GJT" name="Grand Junction" country="USA" />
+    <airport aiar="GRR" name="Grand Rapids" country="USA" />
+    <airport aiar="GPZ" name="Grand Rapids" country="USA" />
+    <airport aiar="GRZ" name="Graz" country="Austria" />
+    <airport aiar="GTF" name="Great Falls" country="USA" />
+    <airport aiar="GKL" name="Great Keppel Island" country="Australia" />
+    <airport aiar="GRB" name="Green Bay" country="USA" />
+    <airport aiar="LWB" name="Greenbrier/Lewisburg" country="USA" />
+    <airport aiar="GSO" name="Greensboro/Winston Salem" country="USA" />
+    <airport aiar="GLH" name="Greenville" country="USA" />
+    <airport aiar="PGV" name="Greenville" country="USA" />
+    <airport aiar="GSP" name="Greenville/Spartanburg" country="USA" />
+    <airport aiar="GND" name="Grenada" country="Grenada" />
+    <airport aiar="GNB" name="Grenoble" country="France" />
+    <airport aiar="GFF" name="Griffith" country="Australia" />
+    <airport aiar="GTE" name="Groote Eyeland" country="Australia" />
+    <airport aiar="GTI" name="Groote Eylandt" country="Australia" />
+    <airport aiar="GON" name="Groton/New London" country="USA" />
+    <airport aiar="GDL" name="Guadalajara" country="Mexico" />
+    <airport aiar="GSI" name="Guadalcanal" country="Solomon Islands" />
+    <airport aiar="GUM" name="Guam" country="Guam" />
+    <airport aiar="GRU" name="Guarulhos Int'l - Sao Paulo" country="Brazil" />
+    <airport aiar="GUA" name="Guatemala City" country="Guatemala" />
+    <airport aiar="GYE" name="Guayaquil" country="Ecuador" />
+    <airport aiar="GCI" name="Guernsey" country="United Kingdom" />
+    <airport aiar="GPT" name="Gulfport/Biloxi" country="USA" />
+    <airport aiar="ULU" name="Gulu" country="Uganda" />
+    <airport aiar="GUC" name="Gunnison/Crested Butte" country="USA" />
+    <airport aiar="GAU" name="Guwahati" country="India" />
+    <airport aiar="GWD" name="Gwadar" country="Pakistan" />
+    <airport aiar="GWE" name="Gweru" country="Zimbabwe" />
+    <airport aiar="GYP" name="Gympie" country="Australia" />
+    <airport aiar="HAC" name="Hachijo Jima" country="Japan" />
+    <airport aiar="HFA" name="Haifa" country="Israel" />
+    <airport aiar="HNS" name="Haines" country="USA" />
+    <airport aiar="HKD" name="Hakodate" country="Japan" />
+    <airport aiar="YHZ" name="Halifax Int'l" country="Canada" />
+    <airport aiar="YUX" name="Hall Beach" country="Canada" />
+    <airport aiar="HAM" name="Hamburg - Fuhlsbuettel" country="Germany" />
+    <airport aiar="HLT" name="Hamilton" country="Australia" />
+    <airport aiar="YHM" name="Hamilton" country="Canada" />
+    <airport aiar="HTI" name="Hamilton Island" country="Australia" />
+    <airport aiar="HFT" name="Hammerfest" country="Norway" />
+    <airport aiar="CMX" name="Hancock" country="USA" />
+    <airport aiar="HAJ" name="Hannover" country="Germany" />
+    <airport aiar="HAN" name="Hanoi - Noibai" country="Viet Nam" />
+    <airport aiar="HRE" name="Harare" country="Zimbabwe" />
+    <airport aiar="HRL" name="Harlington/South Padre Island" country="USA" />
+    <airport aiar="YHR" name="Harrington Harbour, PQ" country="Canada" />
+    <airport aiar="HAR" name="Harrisburg" country="USA" />
+    <airport aiar="MDT" name="Harrisburg" country="USA" />
+    <airport aiar="BDL" name="Hartford" country="USA" />
+    <airport aiar="HDY" name="Hatyai (Hat Yai)" country="Thailand" />
+    <airport aiar="HAU" name="Haugesund" country="Norway" />
+    <airport aiar="HAV" name="Havana - Jos&#xC3;&#xA9; Mart&#xC3; Int'l" country="Cuba" />
+    <airport aiar="HVR" name="Havre" country="USA" />
+    <airport aiar="HIS" name="Hayman Island" country="Australia" />
+    <airport aiar="HLN" name="Helena" country="USA" />
+    <airport aiar="JHE" name="Helsingborg" country="Sweden" />
+    <airport aiar="HEL" name="Helsinki - Vantaa" country="Finland" />
+    <airport aiar="HER" name="Heraklion" country="Greece" />
+    <airport aiar="HMO" name="Hermosillo - Gen. Pesqueira Garcia" country="Mexico" />
+    <airport aiar="HVB" name="Hervey Bay" country="Australia" />
+    <airport aiar="HIB" name="Hibbing" country="USA" />
+    <airport aiar="HKY" name="Hickory" country="USA" />
+    <airport aiar="ITO" name="Hilo" country="USA" />
+    <airport aiar="HHH" name="Hilton Head Island" country="USA" />
+    <airport aiar="HNK" name="Hinchinbrook Island" country="Australia" />
+    <airport aiar="SGN" name="Ho Chi Minh City (Saigon)" country="Viet Nam" />
+    <airport aiar="HBA" name="Hobart" country="Australia" />
+    <airport aiar="HOQ" name="Hof" country="Germany" />
+    <airport aiar="HOG" name="Holguin" country="Cuba" />
+    <airport aiar="HMH" name="Home Hill" country="Australia" />
+    <airport aiar="HOM" name="Homer" country="USA" />
+    <airport aiar="HKG" name="Hong Kong - Int'l Airport (HKIA)" country="Hong Kong" />
+    <airport aiar="ZJK" name="Hong Kong - Chek Lap Kok" country="Hong Kong" />
+    <airport aiar="HIR" name="Honiara Henderson Int'l" country="Solomon Islands" />
+    <airport aiar="HNL" name="Honolulu" country="USA" />
+    <airport aiar="HNH" name="Hoonah" country="USA" />
+    <airport aiar="HOR" name="Horta" country="Portugal" />
+    <airport aiar="HOU" name="Houston" country="USA" />
+    <airport aiar="IAH" name="Houston" country="USA" />
+    <airport aiar="HUH" name="Huahine" country="French Polynesia" />
+    <airport aiar="HUX" name="Huatulco" country="Mexico" />
+    <airport aiar="HUI" name="Hue - Phu Bai" country="Viet Nam" />
+    <airport aiar="HUY" name="Humberside" country="United Kingdom" />
+    <airport aiar="HTS" name="Huntington" country="USA" />
+    <airport aiar="HSV" name="Huntsville" country="USA" />
+    <airport aiar="HRG" name="Hurghada Int'l" country="Egypt" />
+    <airport aiar="HON" name="Huron" country="USA" />
+    <airport aiar="HWN" name="Hwange National Park" country="Zimbabwe" />
+    <airport aiar="HYA" name="Hyannis" country="USA" />
+    <airport aiar="HYG" name="Hydaburg" country="USA" />
+    <airport aiar="HYD" name="Hyderabad - Begumpet" country="India" />
+    <airport aiar="HDD" name="Hyderabad" country="Pakistan" />
+    <airport aiar="IBZ" name="Ibiza" country="Ibiza/Spain" />
+    <airport aiar="IDA" name="Idaho Falls" country="USA" />
+    <airport aiar="ILP" name="Ile des Pins" country="New Caledonia" />
+    <airport aiar="IOU" name="Ile Ouen" country="New Caledonia" />
+    <airport aiar="ILI" name="Iliamna" country="USA" />
+    <airport aiar="IPL" name="Imperial" country="USA" />
+    <airport aiar="IVC" name="Incercargill" country="New Zealand" />
+    <airport aiar="IND" name="Indianapolis" country="USA" />
+    <airport aiar="IGH" name="Ingham" country="Australia" />
+    <airport aiar="IFL" name="Innisfail" country="Australia" />
+    <airport aiar="INN" name="Innsbruck - Kranebitten" country="Austria" />
+    <airport aiar="INL" name="International Falls" country="USA" />
+    <airport aiar="YEV" name="Inuvik" country="Canada" />
+    <airport aiar="IVC" name="Invercargill" country="New Zealand" />
+    <airport aiar="INV" name="Inverness" country="United Kingdom" />
+    <airport aiar="IYK" name="Inykern" country="USA" />
+    <airport aiar="YFB" name="Iqaluit (Frobisher Bay)" country="Canada" />
+    <airport aiar="IQT" name="Iquitos" country="Peru" />
+    <airport aiar="IKT" name="Irkutsk" country="Russia" />
+    <airport aiar="LSG" name="Ishigaki" country="Japan" />
+    <airport aiar="ISB" name="Islamabad - Islamabad Int'l" country="Pakistan" />
+    <airport aiar="IOM" name="Isle of Man" country="United Kingdom" />
+    <airport aiar="IST" name="Istanbul - Ataturk" country="Turkey" />
+    <airport aiar="ITH" name="Ithaca/Cortland" country="USA" />
+    <airport aiar="IVL" name="Ivalo" country="Finland" />
+    <airport aiar="ZIH" name="Ixtapa/Zihuatenejo" country="Mexico" />
+    <airport aiar="IZM" name="Izmir" country="Turkey" />
+    <airport aiar="JAC" name="Jackson Hole" country="USA" />
+    <airport aiar="JXN" name="Jackson" country="USA" />
+    <airport aiar="JAN" name="Jackson" country="USA" />
+    <airport aiar="MKL" name="Jackson" country="USA" />
+    <airport aiar="JAX" name="Jacksonville" country="USA" />
+    <airport aiar="OAJ" name="Jacksonville" country="USA" />
+    <airport aiar="JAG" name="Jacobabad" country="Pakistan" />
+    <airport aiar="JAI" name="Jaipur - Sanganeer" country="India" />
+    <airport aiar="HLP" name="Jakarta - Halim Perdanakusma" country="Indonesia" />
+    <airport aiar="JKT" name="Jakarta - Kemayoran" country="Indonesia" />
+    <airport aiar="CGK" name="Jakarta - Soekarno-Hatta" country="Indonesia" />
+    <airport aiar="JLR" name="Jalandhar" country="India" />
+    <airport aiar="JMS" name="Jamestown" country="USA" />
+    <airport aiar="JHW" name="Jamestown" country="USA" />
+    <airport aiar="IXW" name="Jamshedpur - Sonari" country="India" />
+    <airport aiar="JED" name="Jeddah - King Abdulaziz Int'l" country="Saudi Arabia" />
+    <airport aiar="XRY" name="Jerez de la Frontera/Cadiz" country="Spain" />
+    <airport aiar="JER" name="Jersey" country="United Kingdom" />
+    <airport aiar="JRS" name="Jerusalem" country="Israel" />
+    <airport aiar="JIW" name="Jiwani" country="Pakistan" />
+    <airport aiar="JCB" name="Joacaba" country="Brazil" />
+    <airport aiar="JPA" name="Joao Pessoa - Castro Pinto" country="Brazil" />
+    <airport aiar="JKG" name="Joenkoeping" country="Sweden" />
+    <airport aiar="JOE" name="Joensuu" country="Finland" />
+    <airport aiar="JNB" name="Johannesburg - Johannesburg Int'l" country="South Africa" />
+    <airport aiar="JST" name="Johnstown" country="USA" />
+    <airport aiar="JHB" name="Johore Bahru" country="Malaysia" />
+    <airport aiar="JLN" name="Joplin" country="USA" />
+    <airport aiar="GJN" name="Jounieh" country="Lebanon" />
+    <airport aiar="JNU" name="Juneau" country="USA" />
+    <airport aiar="JYV" name="Jyvaeskylae" country="Finland" />
+    <airport aiar="KBL" name="Kabul - Khwaja Rawash" country="Afghanistan" />
+    <airport aiar="KOJ" name="Kagoshima" country="Japan" />
+    <airport aiar="OGG" name="Kahului" country="USA" />
+    <airport aiar="KAJ" name="Kajaani" country="Finland" />
+    <airport aiar="KLX" name="Kalamata" country="Greece" />
+    <airport aiar="AZO" name="Kalamazoo/Battle Creek" country="USA" />
+    <airport aiar="KGI" name="Kalgoorlie" country="Australia" />
+    <airport aiar="FCA" name="Kalispell" country="USA" />
+    <airport aiar="KLR" name="Kalmar" country="Sweden" />
+    <airport aiar="KAN" name="Kano" country="Nigeria" />
+    <airport aiar="MUE" name="Kamuela" country="USA" />
+    <airport aiar="QJU" name="Kanpur" country="India" />
+    <airport aiar="MCI" name="Kansas City" country="USA" />
+    <airport aiar="KHH" name="Kaohsiung Int'l" country="Taiwan" />
+    <airport aiar="JHM" name="Kapalua West" country="USA" />
+    <airport aiar="KHI" name="Karachi - Quaid-E-Azam Int'l" country="Pakistan" />
+    <airport aiar="KSD" name="Karlstad" country="Sweden" />
+    <airport aiar="AOK" name="Karpathos" country="Greece" />
+    <airport aiar="KTA" name="Karratha" country="Australia" />
+    <airport aiar="KRB" name="Karumba" country="Australia" />
+    <airport aiar="KRP" name="Karup" country="Denmark" />
+    <airport aiar="ZKE" name="Kaschechawan, PQ" country="Canada" />
+    <airport aiar="KSL" name="Kassala" country="Sudan" />
+    <airport aiar="KTR" name="Katherine" country="Australia" />
+    <airport aiar="KTM" name="Kathmandu - Tribhuvan" country="Nepal" />
+    <airport aiar="MPA" name="Katima Mulilo/Mpacha" country="Namibia" />
+    <airport aiar="KHJ" name="Kauhajoki" country="Finland" />
+    <airport aiar="MKK" name="Kaunakakai" country="USA" />
+    <airport aiar="KVA" name="Kavalla" country="Greece" />
+    <airport aiar="KZN" name="Kazan (Ka San)" country="Russia" />
+    <airport aiar="KMP" name="Keetmanshoop" country="Namibia" />
+    <airport aiar="YLW" name="Kelowna, BC" country="Canada" />
+    <airport aiar="KEM" name="Kemi/Tornio" country="Finland" />
+    <airport aiar="ZNS" name="Kempten" country="Germany" />
+    <airport aiar="ENA" name="Kenai" country="USA" />
+    <airport aiar="KIR" name="Kerry County" country="Ireland" />
+    <airport aiar="KTN" name="Ketchikan" country="USA" />
+    <airport aiar="EYW" name="Key West" country="USA" />
+    <airport aiar="AHB" name="Khamis Mushayat" country="Saudi Arabia" />
+    <airport aiar="UVL" name="Kharga - New Valley" country="Egypt" />
+    <airport aiar="KRT" name="Khartoum" country="Sudan" />
+    <airport aiar="KDD" name="Khuzdar" country="Pakistan" />
+    <airport aiar="KEL" name="Kiel - Holtenau" country="Germany" />
+    <airport aiar="KBP" name="Kiev - Borispol" country="Ukraine" />
+    <airport aiar="IEV" name="Kiev - Zhulhany" country="Ukraine" />
+    <airport aiar="KGL" name="Kigali - Gregoire Kayibanda" country="Rwanda" />
+    <airport aiar="JRO" name="Kilimadjaro" country="Tanzania" />
+    <airport aiar="ILE" name="Killeem" country="USA" />
+    <airport aiar="KIM" name="Kimberley" country="South Africa" />
+    <airport aiar="KNS" name="King Island" country="King Island" />
+    <airport aiar="AKN" name="King Salomon" country="USA" />
+    <airport aiar="KGC" name="Kingscote" country="Australia" />
+    <airport aiar="KIN" name="Kingston - Norman Manley" country="Jamaica" />
+    <airport aiar="ISO" name="Kingston" country="USA" />
+    <airport aiar="FIH" name="Kinshasa - N'Djili" country="Congo (Zaire)" />
+    <airport aiar="KKN" name="Kirkenes" country="Norway" />
+    <airport aiar="KIK" name="Kirkuk" country="Iraq" />
+    <airport aiar="KRN" name="Kiruna" country="Sweden" />
+    <airport aiar="FKI" name="Kisangani" country="Zaire" />
+    <airport aiar="KTT" name="Kittilae" country="Sweden" />
+    <airport aiar="KIW" name="Kitwe" country="Zambia" />
+    <airport aiar="KLU" name="Klagenfurt" country="Austria" />
+    <airport aiar="LMT" name="Klamath Fall" country="USA" />
+    <airport aiar="KLW" name="Klawock" country="USA" />
+    <airport aiar="KLZ" name="Kleinsee" country="South Africa" />
+    <airport aiar="NOC" name="Knock" country="Ireland" />
+    <airport aiar="TYS" name="Knoxville" country="USA" />
+    <airport aiar="UKB" name="Kobe" country="Japan" />
+    <airport aiar="KCZ" name="Kochi" country="Japan" />
+    <airport aiar="CGN" name="K&#xC3;&#xB6;ln, K&#xC3;&#xB6;ln/Bonn" country="Germany" />
+    <airport aiar="ADQ" name="Kodiak" country="USA" />
+    <airport aiar="OHT" name="Kohat" country="Pakistan" />
+    <airport aiar="KOK" name="Kokkola/Pietarsaari" country="Finland" />
+    <airport aiar="CCU" name="Kolkata (Calcutta) - Netaji Subhas Chandra" country="India" />
+    <airport aiar="KOA" name="Kona" country="USA" />
+    <airport aiar="HGO" name="Korhogo" country="Ivory Coast" />
+    <airport aiar="KGS" name="Kos" country="Greece" />
+    <airport aiar="BKI" name="Kota Kinabalu" country="Malaysia" />
+    <airport aiar="OTZ" name="Kotzbue" country="USA" />
+    <airport aiar="KWM" name="Kowanyama" country="Australia" />
+    <airport aiar="KRK" name="Krakau" country="Poland" />
+    <airport aiar="KRS" name="Kristiansand" country="Norway" />
+    <airport aiar="KID" name="Kristianstad" country="Sweden" />
+    <airport aiar="KSU" name="Kristiansund" country="Norway" />
+    <airport aiar="KUB" name="Kuala Belait" country="Brunei" />
+    <airport aiar="KUL" name="Kuala Lumpur - Int'l Airport" country="Malaysia" />
+    <airport aiar="SZB" name="Kuala Lumpur - Sultan Abdul Aziz Shah" country="Malaysia" />
+    <airport aiar="KUA" name="Kuantan" country="Malaysia" />
+    <airport aiar="KCH" name="Kuching" country="Malaysia" />
+    <airport aiar="KMJ" name="Kumamoto" country="Japan" />
+    <airport aiar="KNX" name="Kununurra" country="Australia" />
+    <airport aiar="KUO" name="Kuopio" country="Finland" />
+    <airport aiar="KUH" name="Kushiro" country="Japan" />
+    <airport aiar="YVP" name="Kuujjuaq (FortChimo)" country="Canada" />
+    <airport aiar="YGW" name="Kuujjuarapik" country="Canada" />
+    <airport aiar="KAO" name="Kuusamo" country="Finland" />
+    <airport aiar="KWI" name="Kuwait - Kuwait Int'l" country="Kuwait" />
+    <airport aiar="UKY" name="Kyoto" country="Japan" />
+    <airport aiar="LEK" name="Labe" country="Guinea" />
+    <airport aiar="WLB" name="Labouchere Bay" country="USA" />
+    <airport aiar="LBU" name="Labuan" country="Malaysia" />
+    <airport aiar="XLB" name="Lac Brochet, MB" country="Canada" />
+    <airport aiar="LCG" name="La Coruna" country="Spain" />
+    <airport aiar="LSE" name="La Crosse" country="USA" />
+    <airport aiar="LAE" name="Lae" country="Papua New Guinea" />
+    <airport aiar="LRH" name="La Rochelle" country="France" />
+    <airport aiar="LAF" name="Lafayette" country="USA" />
+    <airport aiar="LFT" name="Lafayette" country="USA" />
+    <airport aiar="LOS" name="Lagos - Murtala Muhammed" country="Nigeria" />
+    <airport aiar="YGL" name="La Grande" country="Canada" />
+    <airport aiar="LHE" name="Lahore" country="Pakistan" />
+    <airport aiar="LCH" name="Lake Charles" country="USA" />
+    <airport aiar="HII" name="Lake Havasu City" country="USA" />
+    <airport aiar="TVL" name="Lake Tahoe" country="USA" />
+    <airport aiar="LKL" name="Lakselv" country="Norway" />
+    <airport aiar="LBQ" name="Lambarene" country="Gabon" />
+    <airport aiar="SUF" name="Lamezia Terme" country="Italy" />
+    <airport aiar="LMP" name="Lampedusa" country="Italy" />
+    <airport aiar="LNY" name="Lanai City" country="USA" />
+    <airport aiar="LNS" name="Lancaster" country="USA" />
+    <airport aiar="LGK" name="Langkawi" country="Malaysia" />
+    <airport aiar="LAI" name="Lannion" country="France" />
+    <airport aiar="HLA" name="Lanseria" country="South Africa" />
+    <airport aiar="LAN" name="Lansing" country="USA" />
+    <airport aiar="LPB" name="La Paz - El Alto" country="Bolivia" />
+    <airport aiar="LAP" name="La Paz - Leon" country="Mexico" />
+    <airport aiar="LPP" name="Lappeenranta" country="Finland" />
+    <airport aiar="LAR" name="Laramie" country="USA" />
+    <airport aiar="LRD" name="Laredo" country="USA" />
+    <airport aiar="LCA" name="Larnaca" country="Cyprus" />
+    <airport aiar="LPA" name="Las Palmas" country="Spain" />
+    <airport aiar="LAS" name="Las Vegas" country="USA" />
+    <airport aiar="LBE" name="Latrobe" country="USA" />
+    <airport aiar="LST" name="Launceston" country="Australia" />
+    <airport aiar="PIB" name="Laurel/Hattisburg" country="USA" />
+    <airport aiar="LVO" name="Laverton" country="Australia" />
+    <airport aiar="LAW" name="Lawton" country="USA" />
+    <airport aiar="LZC" name="Lazaro Cardenas" country="Mexico" />
+    <airport aiar="YLR" name="Leaf Rapids" country="Canada" />
+    <airport aiar="LEA" name="Learmouth (Exmouth)" country="Australia" />
+    <airport aiar="LEB" name="Lebanon" country="USA" />
+    <airport aiar="LBA" name="Leeds/Bradford" country="United Kingdom" />
+    <airport aiar="LER" name="Leinster" country="Australia" />
+    <airport aiar="LEJ" name="Leipzig" country="Germany" />
+    <airport aiar="BJX" name="Leon" country="Mexico" />
+    <airport aiar="LNO" name="Leonora" country="Australia" />
+    <airport aiar="LWS" name="Lewiston" country="USA" />
+    <airport aiar="LWT" name="Lewistown" country="USA" />
+    <airport aiar="LEX" name="Lexington" country="USA" />
+    <airport aiar="LBV" name="Libreville" country="Gabon" />
+    <airport aiar="LDK" name="Lidkoeping" country="Sweden" />
+    <airport aiar="LGG" name="Liege" country="Belgium" />
+    <airport aiar="Pazifik&quot;" name="Lifou" country="&quot;Loyaute" />
+    <airport aiar="LIH" name="Lihue" country="USA" />
+    <airport aiar="LIL" name="Lille" country="France" />
+    <airport aiar="LLW" name="Lilongwe - Lilongwe International" country="Malawi" />
+    <airport aiar="LIM" name="Lima - J Chavez Int'l" country="Peru" />
+    <airport aiar="QLI" name="Limassol" country="Cyprus" />
+    <airport aiar="LIG" name="Limoges" country="France" />
+    <airport aiar="LNK" name="Lincoln" country="USA" />
+    <airport aiar="LDC" name="Lindeman Island" country="Australia" />
+    <airport aiar="LNZ" name="Linz - Hoersching" country="Austria" />
+    <airport aiar="Democratic Republic of The&quot;" name="Lisala" country="&quot;Congo" />
+    <airport aiar="LIS" name="Lisbon - Lisboa" country="Portugal" />
+    <airport aiar="LSY" name="Lismore" country="Australia" />
+    <airport aiar="LIT" name="Little Rock" country="USA" />
+    <airport aiar="LPL" name="Liverpool" country="United Kingdom" />
+    <airport aiar="LZR" name="Lizard Island" country="Australia" />
+    <airport aiar="LJU" name="Ljubljana - Brnik" country="Slovenia" />
+    <airport aiar="IRG" name="Lockhart River" country="Australia" />
+    <airport aiar="LFW" name="Lome" country="Togo" />
+    <airport aiar="YXU" name="London" country="Canada" />
+    <airport aiar="LON" name="London" country="United Kingdom" />
+    <airport aiar="LCY" name="London - City Airport" country="United Kingdom" />
+    <airport aiar="LGW" name="London - Gatwick" country="United Kingdom" />
+    <airport aiar="LHR" name="London - Heathrow" country="United Kingdom" />
+    <airport aiar="LTN" name="London - Luton" country="United Kingdom" />
+    <airport aiar="STN" name="London - Stansted" country="United Kingdom" />
+    <airport aiar="LGB" name="Long Beach" country="USA" />
+    <airport aiar="LIJ" name="Long Island" country="USA" />
+    <airport aiar="ISP" name="Long Island" country="USA" />
+    <airport aiar="LRE" name="Longreach" country="Australia" />
+    <airport aiar="GGG" name="Longview/Kilgore" country="USA" />
+    <airport aiar="LYR" name="Longyearbyen - Svalbard" country="Svalbard/Norway" />
+    <airport aiar="LTO" name="Loreto" country="Mexico" />
+    <airport aiar="LRT" name="Lorient" country="France" />
+    <airport aiar="LAX" name="Los Angeles" country="USA" />
+    <airport aiar="SJD" name="Los Cabos" country="Mexico" />
+    <airport aiar="LMM" name="Los Mochis" country="Mexico" />
+    <airport aiar="TFN" name="Los Rodeos" country="Teneriffa/Spain" />
+    <airport aiar="LSZ" name="(Mali) Losinj - Losinj Arpt" country="Croatia (Hrvatska)" />
+    <airport aiar="LDE" name="Lourdes/Tarbes" country="France" />
+    <airport aiar="SDF" name="Louisville" country="USA" />
+    <airport aiar="LAD" name="Luanda - 4 de Fevereiro" country="Angola" />
+    <airport aiar="LBB" name="Lubbock" country="USA" />
+    <airport aiar="LKO" name="Lucknow" country="India" />
+    <airport aiar="LUD" name="Luederitz" country="Namibia" />
+    <airport aiar="MLA" name="Luga" country="Malta" />
+    <airport aiar="LUG" name="Lugano" country="Switzerland" />
+    <airport aiar="LLA" name="Lulea" country="Sweden" />
+    <airport aiar="FBM" name="Lumbumbashi" country="Zaire" />
+    <airport aiar="LUN" name="Lusaka" country="Zambia" />
+    <airport aiar="LUJ" name="Lusisiki" country="South Africa" />
+    <airport aiar="LUX" name="Luxembourg" country="Luxembourg" />
+    <airport aiar="LXR" name="Luxor" country="Egypt" />
+    <airport aiar="LWO" name="Lvov (Lwow, Lemberg)" country="Ukraine" />
+    <airport aiar="LYH" name="Lynchburg" country="USA" />
+    <airport aiar="LYS" name="Lyon" country="France" />
+    <airport aiar="MST" name="Maastricht/Aachen" country="Netherlands" />
+    <airport aiar="MCP" name="Macapa" country="Brazil" />
+    <airport aiar="MCZ" name="Maceio" country="Brazil" />
+    <airport aiar="MKY" name="Mackay" country="Australia" />
+    <airport aiar="MCN" name="Macon" country="USA" />
+    <airport aiar="NOP" name="Mactan Island - Nab" country="Philippines" />
+    <airport aiar="MSN" name="Madison" country="USA" />
+    <airport aiar="MAA" name="Madras (Chennai)" country="India" />
+    <airport aiar="MAD" name="Madrid - Barajas" country="Spain" />
+    <airport aiar="SEZ" name="Mahe - Seychelles Int'l" country="Seychelles" />
+    <airport aiar="MAH" name="Mahon" country="Spain" />
+    <airport aiar="MTL" name="Maitland" country="Australia" />
+    <airport aiar="MJN" name="Majunga" country="Madagascar" />
+    <airport aiar="MZG" name="Makung" country="Taiwan" />
+    <airport aiar="SSG" name="Malabo" country="Equatorial Guinea" />
+    <airport aiar="AGP" name="Malaga" country="Spain" />
+    <airport aiar="MLE" name="Male - International" country="Maledives" />
+    <airport aiar="MYD" name="Malindi" country="Kenya" />
+    <airport aiar="MMA" name="Malmo (Malmoe)" country="Sweden" />
+    <airport aiar="MMX" name="Malmo (Malmoe) - Sturup" country="Sweden" />
+    <airport aiar="MJC" name="Man" country="Ivory Coast" />
+    <airport aiar="MGA" name="Managua - Augusto C Sandino" country="Nicaragua" />
+    <airport aiar="MAO" name="Manaus" country="Brazil" />
+    <airport aiar="MAN" name="Manchester" country="United Kingdom" />
+    <airport aiar="MHT" name="Manchester" country="USA" />
+    <airport aiar="MFO" name="Manguna" country="Papua New Guinea" />
+    <airport aiar="XMH" name="Manihi" country="French Polynesia" />
+    <airport aiar="MNL" name="Manila - Ninoy Aquino Int'l" country="Philippines" />
+    <airport aiar="ZLO" name="Manzanillo" country="Mexico" />
+    <airport aiar="MTS" name="Manzini - Matsapha Int'l" country="Swaziland" />
+    <airport aiar="MPM" name="Maputo - Maputo International" country="Mozambique" />
+    <airport aiar="MDQ" name="Mar del Plata" country="Argentina" />
+    <airport aiar="MAR" name="Maracaibo - La Chinita" country="Venezuela" />
+    <airport aiar="MFQ" name="Maradi" country="Niger" />
+    <airport aiar="MTH" name="Marathon" country="USA" />
+    <airport aiar="MEE" name="Mare" country="New Caledonia" />
+    <airport aiar="MGH" name="Margate" country="South Africa" />
+    <airport aiar="PMV" name="Margerita" country="Venezuela" />
+    <airport aiar="MBX" name="Maribor" country="Slovenia" />
+    <airport aiar="MHQ" name="Mariehamn (Maarianhamina)" country="Finland" />
+    <airport aiar="MVR" name="Maroua" country="Cameroon" />
+    <airport aiar="MQT" name="Marquette" country="USA" />
+    <airport aiar="RAK" name="Marrakech - Menara" country="Morocco" />
+    <airport aiar="MUH" name="Marsa Matrah (Marsa Matruh)" country="Egypt" />
+    <airport aiar="MRS" name="Marseille" country="France" />
+    <airport aiar="MHH" name="Marsh Harbour" country="Bahamas" />
+    <airport aiar="MVY" name="Martha's Vineyard" country="USA" />
+    <airport aiar="MBH" name="Maryborough" country="Australia" />
+    <airport aiar="MSU" name="Maseru - Moshoeshoe Int'l" country="Lesotho" />
+    <airport aiar="MCW" name="Mason City" country="USA" />
+    <airport aiar="MVZ" name="Masvingo" country="Zimbabwe" />
+    <airport aiar="MMJ" name="Matsumoto, Nagano" country="Japan" />
+    <airport aiar="MYJ" name="Matsuyama" country="Japan" />
+    <airport aiar="MTO" name="Mattoon" country="USA" />
+    <airport aiar="MUB" name="Maun" country="Botswana" />
+    <airport aiar="MAU" name="Maupiti" country="French Polynesia" />
+    <airport aiar="MRU" name="Mauritius - S.Seewoosagur Ram Int'l" country="Mauritius" />
+    <airport aiar="MAZ" name="Mayaguez" country="Puerto Rico" />
+    <airport aiar="MZT" name="Mazatlan" country="Mexico" />
+    <airport aiar="MFE" name="McAllen" country="USA" />
+    <airport aiar="MES" name="Medan" country="Indonesia" />
+    <airport aiar="MDE" name="Medellin" country="Colombia" />
+    <airport aiar="MFR" name="Medford" country="USA" />
+    <airport aiar="MED" name="Medina" country="Saudi Arabia" />
+    <airport aiar="MKR" name="Meekatharra" country="Australia" />
+    <airport aiar="MEL" name="Melbourne - Tullamarine" country="Australia" />
+    <airport aiar="MLB" name="Melbourne" country="USA" />
+    <airport aiar="MEM" name="Memphis" country="USA" />
+    <airport aiar="MDZ" name="Mendoza" country="Argentina" />
+    <airport aiar="MDC" name="Manado" country="Indonesia" />
+    <airport aiar="MCE" name="Merced" country="USA" />
+    <airport aiar="MID" name="Merida" country="Mexico" />
+    <airport aiar="MEI" name="Meridian" country="USA" />
+    <airport aiar="MIM" name="Merimbula" country="Australia" />
+    <airport aiar="MEZ" name="Messina" country="South Africa" />
+    <airport aiar="MTM" name="Metlakatla" country="USA" />
+    <airport aiar="MZM" name="Metz" country="France" />
+    <airport aiar="MXL" name="Mexicali" country="Mexico" />
+    <airport aiar="MEX" name="Mexico City" country="Mexico" />
+    <airport aiar="MEX" name="Mexico City - Juarez International" country="Mexico" />
+    <airport aiar="MFU" name="Mfuwe" country="Zambia" />
+    <airport aiar="MIA" name="Miami" country="USA" />
+    <airport aiar="MWD" name="Mianwali" country="Pakistan" />
+    <airport aiar="MMM" name="Middlemount" country="Australia" />
+    <airport aiar="MAF" name="Midland/Odessa" country="USA" />
+    <airport aiar="MIK" name="Mikkeli" country="Finland" />
+    <airport aiar="MIL" name="Milan" country="Italy" />
+    <airport aiar="LIN" name="Milan - Linate" country="Italy" />
+    <airport aiar="MXP" name="Milan - Malpensa" country="Italy" />
+    <airport aiar="BGY" name="Milan - Orio Al Serio" country="Italy" />
+    <airport aiar="MQL" name="Mildura" country="Australia" />
+    <airport aiar="MLS" name="Miles City" country="USA" />
+    <airport aiar="MFN" name="Milford Sound" country="New Zealand" />
+    <airport aiar="MKE" name="Milwaukee" country="USA" />
+    <airport aiar="MTT" name="Minatitlan" country="Mexico" />
+    <airport aiar="MRV" name="Mineralnye Vody" country="Russia" />
+    <airport aiar="MSP" name="Minneapolis - St. Paul Int'l Airport" country="USA" />
+    <airport aiar="MOT" name="Minot" country="USA" />
+    <airport aiar="MSQ" name="Minsk, International" country="Belarus" />
+    <airport aiar="MYY" name="Miri" country="Malaysia" />
+    <airport aiar="QML" name="Mirpur" country="Pakistan" />
+    <airport aiar="MSO" name="Missula" country="USA" />
+    <airport aiar="MHE" name="Mitchell" country="USA" />
+    <airport aiar="MMY" name="Miyako Jima (Ryuku Islands) - Hirara" country="Japan" />
+    <airport aiar="MBM" name="Mkambati" country="South Africa" />
+    <airport aiar="MFF" name="Moanda" country="Gabon" />
+    <airport aiar="MOB" name="Mobile" country="USA" />
+    <airport aiar="MOD" name="Modesto" country="USA" />
+    <airport aiar="MJD" name="Moenjodaro" country="Pakistan" />
+    <airport aiar="MGQ" name="Mogadischu" country="Somalia" />
+    <airport aiar="OKU" name="Mokuti" country="Namibia" />
+    <airport aiar="MLI" name="Moline/Quad Cities" country="USA" />
+    <airport aiar="MBA" name="Mombasa - Moi International" country="Kenya" />
+    <airport aiar="MIR" name="Monastir" country="Tunisia" />
+    <airport aiar="MLU" name="Monroe" country="USA" />
+    <airport aiar="MLW" name="Monrovia" country="Liberia" />
+    <airport aiar="ROB" name="Monrovia - Roberts Int'l" country="Liberia" />
+    <airport aiar="MBJ" name="Montenego Bay" country="Jamaica" />
+    <airport aiar="QGF" name="Montenegro" country="Brazil" />
+    <airport aiar="MRY" name="Monterey" country="USA" />
+    <airport aiar="MTY" name="Monterrey" country="Mexico" />
+    <airport aiar="NTR" name="Monterrey - Aeropuerto Del Norte" country="Mexico" />
+    <airport aiar="MVD" name="Montevideo - Carrasco" country="Uruguay" />
+    <airport aiar="MGM" name="Montgomery" country="USA" />
+    <airport aiar="MPL" name="Montpellier - Frejorgues" country="France" />
+    <airport aiar="YMQ" name="Montreal" country="Canada" />
+    <airport aiar="YUL" name="Montreal - Dorval" country="Canada" />
+    <airport aiar="YMX" name="Montreal - Mirabel" country="Canada" />
+    <airport aiar="MTJ" name="Montrose/Tellruide" country="USA" />
+    <airport aiar="MOZ" name="Moorea" country="French Polynesia" />
+    <airport aiar="MOV" name="Moranbah" country="Australia" />
+    <airport aiar="MRZ" name="Moree" country="Australia" />
+    <airport aiar="MLM" name="Morelia" country="Mexico" />
+    <airport aiar="MGW" name="Morgantown" country="USA" />
+    <airport aiar="HNA" name="Morioka, Hanamaki" country="Japan" />
+    <airport aiar="HAH" name="Moroni - Prince Said Ibrahim" country="Comoros (Comores)" />
+    <airport aiar="YVA" name="Moroni - Iconi" country="Comoros (Comores)" />
+    <airport aiar="MOW" name="Moscow - Metropolitan Area" country="Russia" />
+    <airport aiar="DME" name="Moscow - Domodedovo" country="Russia" />
+    <airport aiar="SVO" name="Moscow - Sheremetyevo" country="Russia" />
+    <airport aiar="VKO" name="Moscow - Vnukovo" country="Russia" />
+    <airport aiar="MWH" name="Moses Lake" country="USA" />
+    <airport aiar="OMO" name="Mostar" country="Bosnia and Herzegovina" />
+    <airport aiar="OSM" name="Mosul" country="Iraq" />
+    <airport aiar="MJL" name="Mouila" country="Gabon" />
+    <airport aiar="MQQ" name="Moundou" country="Chad" />
+    <airport aiar="GTN" name="Mount Cook" country="New Zealand" />
+    <airport aiar="MGB" name="Mount Gambier" country="Australia" />
+    <airport aiar="MMG" name="Mount Magnet" country="Australia" />
+    <airport aiar="ISA" name="Mt. Isa" country="Australia" />
+    <airport aiar="MCL" name="Mt. McKinley" country="USA" />
+    <airport aiar="MUC" name="Muenchen (Munich) - Franz Josef Strauss" country="Germany" />
+    <airport aiar="FMO" name="Muenster/Osnabrueck" country="Germany" />
+    <airport aiar="MSR" name="Muenster/Osnabrueck" country="Germany" />
+    <airport aiar="MLH" name="Mulhouse" country="France" />
+    <airport aiar="MUX" name="Multan" country="Pakistan" />
+    <airport aiar="MJV" name="Murcia" country="Spain" />
+    <airport aiar="MMK" name="Murmansk" country="Russia" />
+    <airport aiar="MCT" name="Muscat - Seeb" country="Oman" />
+    <airport aiar="MSL" name="Muscle Shoals" country="USA" />
+    <airport aiar="MKG" name="Muskegon" country="USA" />
+    <airport aiar="MFG" name="Muzaffarabad" country="Pakistan" />
+    <airport aiar="MVB" name="Mvengue" country="Gabon" />
+    <airport aiar="JMK" name="Mykonos" country="Greece" />
+    <airport aiar="MYR" name="Myrtle Beach" country="USA" />
+    <airport aiar="MJT" name="Mytilene (Lesbos)" country="Greece" />
+    <airport aiar="MZF" name="Mzamba" country="South Africa" />
+    <airport aiar="NAN" name="Nadi" country="Fiji" />
+    <airport aiar="NGS" name="Nagasaki" country="Japan" />
+    <airport aiar="NGO" name="Nagoya - Komaki AFB" country="Japan" />
+    <airport aiar="NAG" name="Nagpur" country="India" />
+    <airport aiar="NBO" name="Nairobi" country="Kenya" />
+    <airport aiar="ENC" name="Nancy" country="France" />
+    <airport aiar="YSR" name="Nanisivik" country="Canada" />
+    <airport aiar="NTE" name="Nantes" country="France" />
+    <airport aiar="ACK" name="Nantucket" country="USA" />
+    <airport aiar="NAP" name="Naples" country="Italy" />
+</airports>
