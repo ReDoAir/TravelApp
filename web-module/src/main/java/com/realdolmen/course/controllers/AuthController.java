@@ -20,7 +20,7 @@ import org.omnifaces.util.Messages;
 public class AuthController {
 
     public static final String HOME_URL = "/web-module/app/anon/index.faces";
-    public static final String CUST_URL = "/web-module/app/cust/home.faces";
+    public static final String CUST_URL = "/web-module/app/part/home.faces";
 
     private String username;
     private String password;

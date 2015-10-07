@@ -3,8 +3,10 @@ package com.realdolmen.course.controllers;
 import com.realdolmen.course.domain.Airport;
 import com.realdolmen.course.domain.Flight;
 import com.realdolmen.course.domain.Plane;
+import com.realdolmen.course.persistence.AirportRepo;
 import com.realdolmen.course.persistence.FlightRepo;
 import com.realdolmen.course.persistence.PartnerRepo;
+import com.realdolmen.course.persistence.PlaneRepo;
 import org.apache.shiro.SecurityUtils;
 
 import javax.ejb.EJB;
@@ -20,29 +22,51 @@ public class FlightController {
     private Date arrivalDate;
     private Date departureDate;
     private String flightCode;
+
     private Double price;
-    private Airport arrivalAirport;
-    private Airport departureAirport;
-    private Plane plane;
+    private String arrivalAirport;
+    private String departureAirport;
+    private String plane;
 
     @EJB
     private FlightRepo flightRepo;
     @EJB
     private PartnerRepo partnerRepo;
+    @EJB
+    private PlaneRepo planeRepo;
+    @EJB
+    private AirportRepo airportRepo;
 
     public void createFlight(){
         Flight flight = new Flight();
 
-        flight.setAirline(partnerRepo.findPartner((String)SecurityUtils.getSubject().getSession().getAttribute("userName")).getAirline());
+        flight.setAirline(partnerRepo.findPartner((String) SecurityUtils.getSubject().getSession().getAttribute("userName")).getAirline());
         flight.setFlightCode(flightCode);
         flight.setArrivalDate(arrivalDate);
         flight.setDepartureDate(departureDate);
         flight.setPrice(price);
-        flight.setDepartAirport(departureAirport);
-        flight.setArrivalAirport(arrivalAirport);
-        flight.setPlane(plane);
+        flight.setDepartAirport(airportRepo.getAirportByCode(departureAirport));
+        flight.setArrivalAirport(airportRepo.getAirportByCode(arrivalAirport));
+        flight.setPlane(planeRepo.getPlaneByCode(plane));
 
         flightRepo.addFlight(flight);
+    }
+
+
+    public Date getArrivalDate() {
+        return arrivalDate;
+    }
+
+    public Date getDepartureDate() {
+        return departureDate;
+    }
+
+    public String getFlightCode() {
+        return flightCode;
+    }
+
+    public Double getPrice() {
+        return price;
     }
 
     public void setArrivalDate(Date arrivalDate) {
@@ -61,15 +85,28 @@ public class FlightController {
         this.price = price;
     }
 
-    public void setArrivalAirport(Airport arrivalAirport) {
+    public void setArrivalAirport(String arrivalAirport) {
         this.arrivalAirport = arrivalAirport;
     }
 
-    public void setDepartureAirport(Airport departureAirport) {
+    public void setDepartureAirport(String departureAirport) {
         this.departureAirport = departureAirport;
     }
 
-    public void setPlane(Plane plane) {
+    public void setPlane(String plane) {
         this.plane = plane;
+    }
+
+
+    public String getArrivalAirport() {
+        return arrivalAirport;
+    }
+
+    public String getDepartureAirport() {
+        return departureAirport;
+    }
+
+    public String getPlane() {
+        return plane;
     }
 }

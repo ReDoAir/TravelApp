@@ -1,3 +1,3 @@
-/**
- * Created by SSTAX38 on 7/10/2015.
- */
+$.fn.datepicker.dates['en'] = {
+    format: "dd/mm/yyyy"
+};
