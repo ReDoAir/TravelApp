@@ -14,7 +14,7 @@ public class Customer extends User {
     private String creditCard;
 
     public Customer() {
-        //addRole(Role.CUSTOMER);
+        addRole(Role.CUSTOMER);
 
     }
 

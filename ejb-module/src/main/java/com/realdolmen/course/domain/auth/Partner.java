@@ -22,12 +22,14 @@ public class Partner extends User {
     private Airline airline;
 
     public Partner(){
-
+        addRole(Role.PARTNER);
     }
 
     public Partner(String username, String password,Airline airline) {
         super(username,password);
+        addRole(Role.PARTNER);
         this.airline = airline;
+
     }
 
     public Airline getAirline() {
