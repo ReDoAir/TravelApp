@@ -41,37 +41,37 @@
                     </h:inputText>
 
                     <div class="lblForm">
-                    <h:outputLabel for="depature">Departure date: </h:outputLabel>
-                        <b:datepicker data-date-format="dd-mm-yyyy"  showButtonPanel="true" changeMonth="true" changeYear="true" id="depature" mode="popup-icon" value="#{flightController.departureDate}"/>
+                        <h:outputLabel for="depature">Departure date: </h:outputLabel>
+                            <b:datepicker data-date-format="dd-mm-yyyy"  showButtonPanel="true" changeMonth="true" changeYear="true" id="depature" mode="popup-icon" value="#{flightController.departureDate}"/>
                     </div>
 
                     <div class="lblForm">
-                    <h:outputLabel for="depAir">Depature Airport: </h:outputLabel>
-                    <h:selectOneMenu id="depAir" styleClass="form-control" value="#{flightController.departureAirport}">
-                        <f:selectItems value="#{airportController.airports}" var="departure"
-                                       itemLabel="#{departure.name}" itemValue="#{departure.airportCode}" />
-                    </h:selectOneMenu>
+                        <h:outputLabel for="depAir">Depature Airport: </h:outputLabel>
+                        <h:selectOneMenu id="depAir" styleClass="form-control" value="#{flightController.departureAirport}">
+                            <f:selectItems value="#{airportController.airports}" var="departure"
+                                           itemLabel="#{departure.name}" itemValue="#{departure.airportCode}" />
+                        </h:selectOneMenu>
                     </div>
 
                     <div class="lblForm">
-                    <h:outputLabel id="arrAir" styleClass="formEle" for="arrival">Arrival date: </h:outputLabel>
-                        <b:datepicker data-date-format="dd-mm-yyyy" showButtonPanel="true" changeMonth="true" changeYear="true" id="arrival" mode="popup-icon" value="#{flightController.arrivalDate}"/>
+                        <h:outputLabel id="arrAir" styleClass="formEle" for="arrival">Arrival date: </h:outputLabel>
+                            <b:datepicker data-date-format="dd-mm-yyyy" showButtonPanel="true" changeMonth="true" changeYear="true" id="arrival" mode="popup-icon" value="#{flightController.arrivalDate}"/>
                     </div>
 
                     <div class="lblForm">
-                    <h:outputLabel for="arrAir">Arrival Airport: </h:outputLabel>
-                    <h:selectOneMenu styleClass="form-control" value="#{flightController.arrivalAirport}">
-                        <f:selectItems value="#{airportController.airports}" var="arrival"
-                                       itemLabel="#{arrival.name}" itemValue="#{arrival.airportCode}" />
-                    </h:selectOneMenu>
+                        <h:outputLabel for="arrAir">Arrival Airport: </h:outputLabel>
+                        <h:selectOneMenu styleClass="form-control" value="#{flightController.arrivalAirport}">
+                            <f:selectItems value="#{airportController.airports}" var="arrival"
+                                           itemLabel="#{arrival.name}" itemValue="#{arrival.airportCode}" />
+                        </h:selectOneMenu>
                     </div>
 
                     <div class="lblForm">
-                    <h:outputLabel for="plane">Choose a plane: </h:outputLabel>
-                    <h:selectOneMenu id="plane" styleClass="form-control" value="#{flightController.plane}">
-                        <f:selectItems value="#{planeController.planes}" var="plane"
-                                       itemLabel="#{plane.planeCode}" itemValue="#{plane.planeCode}" />
-                    </h:selectOneMenu>
+                        <h:outputLabel for="plane">Choose a plane: </h:outputLabel>
+                        <h:selectOneMenu id="plane" styleClass="form-control" value="#{flightController.plane}">
+                            <f:selectItems value="#{planeController.planes}" var="plane"
+                                           itemLabel="#{plane.planeCode}" itemValue="#{plane.planeCode}" />
+                        </h:selectOneMenu>
                     </div>
 
                     <h:commandButton styleClass="form-control formEle btn-default" value="Create" action="#{flightController.createFlight()}"/>
