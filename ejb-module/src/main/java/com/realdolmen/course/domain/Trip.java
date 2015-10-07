@@ -21,6 +21,9 @@ public class Trip implements Serializable{
     @ManyToOne
     private Period period;
 
+    @ManyToOne
+    private Destination destination;
+
     @ManyToMany
     @JoinTable(
             name="trip_res",
@@ -87,17 +90,25 @@ public class Trip implements Serializable{
         this.fromFlight = fromFlight;
     }
 
-    public Period getPeriode() {
+    public Period getPeriod() {
         return period;
     }
 
-    public void setPeriode(Period periode) {
-        this.period = periode;
+    public void setPeriod(Period period) {
+        this.period = period;
     }
 // Price of a trip is calculated by flight costs + 5% each + residence costs+ maybe something for our company
     public double getTripPriceForResidence(Residence residence)
     {
         double res = (fromFlight.getPrice()*1.05)+(toFlight.getPrice()*1.05)+(residence.getTotalPrice());
         return res;
+    }
+
+    public Destination getDestination() {
+        return destination;
+    }
+
+    public void setDestination(Destination destination) {
+        this.destination = destination;
     }
 }
