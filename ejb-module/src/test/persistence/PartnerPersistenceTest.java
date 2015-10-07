@@ -7,9 +7,7 @@ import org.junit.Test;
 import javax.persistence.PersistenceException;
 import javax.validation.ConstraintViolationException;
 
-/**
- * Created by SDOAX36 on 6/10/2015.
- */
+
 public class PartnerPersistenceTest extends DataPersistenceTest{
 
 

@@ -34,10 +34,10 @@ public class Trip implements Serializable{
 
     private String tripName;
 
-    public Trip(Flight toFlight, Flight fromFlight, Period periode, String tripName) {
+    public Trip(Flight toFlight, Flight fromFlight, Period period, String tripName) {
         this.toFlight = toFlight;
         this.fromFlight = fromFlight;
-        this.period = periode;
+        this.period = period;
         this.tripName = tripName;
         residences = new ArrayList<>();
     }
