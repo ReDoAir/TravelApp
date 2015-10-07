@@ -5,6 +5,7 @@ import com.realdolmen.course.persistence.TripRepo;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ public class TripController {
 
     private List<Trip> trips = new ArrayList<>();
 
-    @EJB
+    @Inject
     private TripRepo tripRepo;
 
     public void tripsToDestination(int count){

@@ -11,6 +11,7 @@ import org.apache.shiro.SecurityUtils;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.Date;
 import java.util.DoubleSummaryStatistics;
@@ -28,13 +29,13 @@ public class FlightController {
     private String departureAirport;
     private String plane;
 
-    @EJB
+    @Inject
     private FlightRepo flightRepo;
-    @EJB
+    @Inject
     private PartnerRepo partnerRepo;
-    @EJB
+    @Inject
     private PlaneRepo planeRepo;
-    @EJB
+    @Inject
     private AirportRepo airportRepo;
 
     public void createFlight(){

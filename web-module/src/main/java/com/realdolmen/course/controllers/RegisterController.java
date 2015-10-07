@@ -3,6 +3,7 @@ package com.realdolmen.course.controllers;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import com.realdolmen.course.domain.auth.Customer;
@@ -21,7 +22,7 @@ public class RegisterController {
 
     private User user;
 
-    @EJB
+    @Inject
     private UserRepo service;
 
     @PostConstruct

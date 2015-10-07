@@ -8,6 +8,7 @@ import com.realdolmen.course.persistence.TripRepo;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
@@ -15,11 +16,11 @@ import java.util.List;
 @RequestScoped
 public class BookingController {
 
-    @EJB
+    @Inject
     private BookingRepo bookingRepo;
-    @EJB
+    @Inject
     private CustomerRepo customerRepo;
-    @EJB
+    @Inject
     private TripRepo tripRepo;
 
     private Booking booking;

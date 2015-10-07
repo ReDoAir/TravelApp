@@ -7,6 +7,7 @@ import com.realdolmen.course.persistence.PlaneRepo;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
@@ -14,7 +15,7 @@ import java.util.List;
 @RequestScoped
 public class PlaneController {
 
-    @EJB
+    @Inject
     private PlaneRepo planeRepo;
 
     public List<Plane> getPlanes(){
