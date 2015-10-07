@@ -1,7 +1,6 @@
 package com.realdolmen.course.controllers;
 
 import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -12,7 +11,6 @@ import com.realdolmen.course.persistence.UserRepo;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
-
 import java.io.IOException;
 
 

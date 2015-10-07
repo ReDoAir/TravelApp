@@ -25,12 +25,13 @@ public class CountryPersistenceTest extends DataPersistenceTest {
     @Test
     public void canRetreveCountry()throws Exception
     {
-        assertEquals("Belgium", entityManager().find(Country.class, 1552).getName());
+        assertEquals("Denmark", entityManager().find(Country.class, 1).getName());
     }
 
     @Test
     public void canRetrieveCountryAirportList()throws Exception
     {
-        assertEquals(2,entityManager().find(Country.class,1552).getAirports().size());
+        //todo : fix test
+        assertEquals(7,entityManager().find(Country.class,1).getAirports().size());
     }
 }

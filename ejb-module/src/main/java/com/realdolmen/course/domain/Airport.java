@@ -17,6 +17,40 @@ public class Airport implements Serializable {
     @Basic(optional = false)
     private String airportCode;
 
+    private String city;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
+    public List<Flight> getArrivalFlights() {
+        return arrivalFlights;
+    }
+
+    public void setArrivalFlights(List<Flight> arrivalFlights) {
+        this.arrivalFlights = arrivalFlights;
+    }
+
+    public List<Flight> getDepartFlights() {
+        return departFlights;
+    }
+
+    public void setDepartFlights(List<Flight> departFlights) {
+        this.departFlights = departFlights;
+    }
+
     @ManyToOne
     private Country country;
 
@@ -36,7 +70,6 @@ public class Airport implements Serializable {
 
     }
 
-
     public String getName() {
         return name;
     }
@@ -53,6 +86,8 @@ public class Airport implements Serializable {
         this.airportCode = airportCode;
     }
 
+
+
     public Integer getId() {
         return id;
     }
@@ -60,5 +95,4 @@ public class Airport implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
-
 }
