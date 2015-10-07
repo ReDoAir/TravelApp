@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <meta charset="UTF-8"/>
         <title>travelApp</title>
@@ -35,7 +35,39 @@
             </ui:define>
 
             <ui:define name="content">
-                <h:inputText pt:placeholder="Flight code" />
+                <h:form styleClass="userForm">
+                    <h:inputText styleClass="form-control formEle" pt:placeholder="Flight code (format: ABC-123)" value="#{flightController.flightCode}">
+                        <f:validateRegex pattern="(([a-z]{3}\-[0-9]{3}))" />
+                    </h:inputText>
+
+                    <h:inputText styleClass="form-control formEle" pt:placeholder="Price" value="#{flightController.price}">
+                        <f:convertNumber integerOnly="true" type="number"/>
+                    </h:inputText>
+
+                    <h:outputLabel for="depature">Departure</h:outputLabel>
+                    <h:inputText id="depature" styleClass="date-picker" data-date-format="yyyy-mm-dd" value="#{flightController.departureDate}"/>
+
+                    <h:selectOneMenu styleClass="form-control formEle" value="#{flightController.departureAirport}">
+                        <f:selectItems value="#{airportController.airports}" var="departure"
+                                       itemLabel="#{departure.name}" itemValue="#{departure}}" />
+                    </h:selectOneMenu>
+
+                    <h:outputLabel styleClass="form-control formEle" for="arrival">Arrival</h:outputLabel>
+                    <h:inputText id="arrival" styleClass="date-picker" data-date-format="yyyy-mm-dd" value="#{flightController.arrivalDate}"/>
+
+                    <h:selectOneMenu styleClass="form-control formEle" value="#{flightController.departureAirport}">
+                        <f:selectItems value="#{airportController.airports}" var="arrival"
+                                       itemLabel="#{arrival.name}" itemValue="#{arrival}}" />
+                    </h:selectOneMenu>
+
+                    <h:selectOneMenu styleClass="form-control formEle" value="#{flightController.plane}">
+                        <f:selectItems value="#{planeController.planes}" var="plane"
+                                       itemLabel="#{plane.planeCode}" itemValue="#{plane}}" />
+                    </h:selectOneMenu>
+
+                    <h:commandButton styleClass="form-control formEle btn-default" value="Create" action="#{flightController.createFlight()}"/>
+                </h:form>
+
             </ui:define>
 
         </ui:composition>

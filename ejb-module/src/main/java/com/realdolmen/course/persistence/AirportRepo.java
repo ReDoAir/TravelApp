@@ -16,7 +16,7 @@ public class AirportRepo {
     @PersistenceContext
     EntityManager em;
 
-    private List<Airport> getAllAirports()
+    public List<Airport> getAllAirports()
     {
         return em.createQuery("select a from Airport a", Airport.class).getResultList();
     }

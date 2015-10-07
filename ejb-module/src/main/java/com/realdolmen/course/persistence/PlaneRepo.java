@@ -29,6 +29,10 @@ public class PlaneRepo {
         return em.createQuery("select p from Plane p where p.planeCode like :code", Plane.class).setParameter("code", "%" + code + "%").getResultList();
     }
 
+    public Plane getPlaneByCode(String code){
+        return em.createQuery("select p from Plane p where p.planeCode = :code", Plane.class).setParameter("code", code).getSingleResult();
+    }
+
     public Plane getPlaneById(int id)
     {
         return em.find(Plane.class,id);
