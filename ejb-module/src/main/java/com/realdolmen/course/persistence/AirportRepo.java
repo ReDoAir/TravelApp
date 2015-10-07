@@ -47,7 +47,7 @@ public class AirportRepo {
     }
 
 
-
-
-
+    public Airport getAirportByCode(String code) {
+        return em.createQuery("select a from Airport a where a.airportCode = :code", Airport.class).setParameter("code",code).getSingleResult();
+    }
 }

@@ -6,16 +6,22 @@
     <airline id="3000" name="Sun web"/>
 
 
-    <country id="1552" iso="BE" name="Belgium"/>
-    <airport id="1522" airportCode="BE1111" name="Brussels South" country_id="1552"/>
-    <airport id="1523" airportCode="BE1112" name="Brussels North" country_id="1552"/>
+    <country id="1552" iso="BE" name="Belgium"></country>
+    <airport id="1522" airportCode="BE1111" name="Brussels South" country_id="1552"></airport>
+    <airport id="1523" airportCode="BE1112" name="Brussels North" country_id="1552"></airport>
 
-    <user id="1200" password="mqsldkjfsmdkljfq" username="partner1"/>
-    <user id="1202" password="mqsldkjfsmdkljfq" username="partner2"/>
-    <user id="1203" password="mqsldkjfsmdkljfq" username="partner3"/>
-    <user id="1204" password="mqsldkjfsmdkljfq" username="partner4"/>
-    <user id="1205" password="mqsldkjfsmdkljfq" username="partner5"/>
-    <user id="1206" password="mqsldkjfsmdkljfq" username="partner6"/>
+    <user id="1200" password="mqsldkjfsmdkljfq" username="partner1"></user>
+    <user id="1202" password="mqsldkjfsmdkljfq" username="partner2"></user>
+    <user id="1203" password="mqsldkjfsmdkljfq" username="partner3"></user>
+    <user id="1204" password="mqsldkjfsmdkljfq" username="partner4"></user>
+    <user id="1205" password="mqsldkjfsmdkljfq" username="partner5"></user>
+    <user id="1206" password="mqsldkjfsmdkljfq" username="partner6"></user>
+    <userroles userId="1200" role="PARTNER"></userroles>
+    <userroles userId="1202" role="PARTNER"></userroles>
+    <userroles userId="1203" role="PARTNER"></userroles>
+    <userroles userId="1204" role="PARTNER"></userroles>
+    <userroles userId="1205" role="PARTNER"></userroles>
+    <userroles userId="1206" role="PARTNER"></userroles>
 
     <partner id="1200" airline_id="1000"/>
     <partner id="1202" airline_id="1000"/>
@@ -30,18 +36,25 @@
     <user id="1304" password="mqsldkjfsmdkljfq" username="customer4"/>
     <user id="1305" password="mqsldkjfsmdkljfq" username="customer5"/>
     <user id="1306" password="mqsldkjfsmdkljfq" username="customer6"/>
-
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1300"/>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1302"/>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1303"/>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1304"/>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1305"/>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1306"/>
+    
 
     <plane id="1111" planeCode="AAAA" numberOfSeats="50" />
     <plane id="2222" planeCode="BBBB" numberOfSeats="100" />
     <plane id="3333" planeCode="CCCC" numberOfSeats="150" />
 
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1300"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1302"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1303"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1304"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1305"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1306"></customer>
+
+    <userroles userId="1300" role="CUSTOMER"></userroles>
+    <userroles userId="1302" role="CUSTOMER"></userroles>
+    <userroles userId="1303" role="CUSTOMER"></userroles>
+    <userroles userId="1304" role="CUSTOMER"></userroles>
+    <userroles userId="1305" role="CUSTOMER"></userroles>
+    <userroles userId="1306" role="CUSTOMER"></userroles>
 
 </dataset>
 

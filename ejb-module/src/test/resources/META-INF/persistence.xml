@@ -57,7 +57,6 @@
         <class>com.realdolmen.course.domain.auth.Customer</class>
         <class>com.realdolmen.course.domain.auth.Employee</class>
         <class>com.realdolmen.course.domain.Plane</class>
-
         <class>com.realdolmen.course.domain.Period</class>
 
         <properties>

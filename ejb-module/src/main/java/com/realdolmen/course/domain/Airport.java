@@ -33,7 +33,9 @@ public class Airport implements Serializable {
     public Airport(String name, String airportCode) {
         this.name = name;
         this.airportCode = airportCode;
+
     }
+
 
     public String getName() {
         return name;
@@ -58,4 +60,5 @@ public class Airport implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+
 }

@@ -26,7 +26,7 @@ public class Flight implements Serializable{
     @ManyToOne
     private Airport arrivalAirport;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne
     private Airline airline;
 
     @ManyToOne
@@ -38,11 +38,14 @@ public class Flight implements Serializable{
     private Plane plane;
 
 
-    public Flight(String flightCode, Date departureDate, Date arrivalDate,Double price) {
+    public Flight(String flightCode, Date departureDate, Date arrivalDate,Double price,Airport arrivalAirport, Airport departAirport, Airline airline) {
         this.flightCode = flightCode;
         this.departureDate = departureDate;
         this.arrivalDate = arrivalDate;
         this.price = price;
+        this.departAirport = departAirport;
+        this.arrivalAirport = arrivalAirport;
+        this.airline = airline;
     }
 
     public Flight() {
@@ -86,6 +89,7 @@ public class Flight implements Serializable{
 
     public void setPlane(Plane plane) {
         this.plane = plane;
+        setAvailablePlaces(plane.getNumberOfSeats());
     }
 
     public void setPrice(Double price) {

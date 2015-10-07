@@ -21,8 +21,8 @@ public class Trip implements Serializable{
     @ManyToOne
     private Period period;
 
-    @ManyToOne
-    private Destination destination;
+    @Basic(optional = false)
+    private String destination;
 
     @ManyToMany
     @JoinTable(
@@ -40,6 +40,14 @@ public class Trip implements Serializable{
         this.period = periode;
         this.tripName = tripName;
         residences = new ArrayList<>();
+    }
+
+    public Trip(String tripName, String destination, Period period, Flight fromFlight, Flight toFlight) {
+        this.tripName = tripName;
+        this.destination = destination;
+        this.period = period;
+        this.fromFlight = fromFlight;
+        this.toFlight = toFlight;
     }
 
     public Trip() {
@@ -104,11 +112,11 @@ public class Trip implements Serializable{
         return res;
     }
 
-    public Destination getDestination() {
+    public String getDestination() {
         return destination;
     }
 
-    public void setDestination(Destination destination) {
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 }

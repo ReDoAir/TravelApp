@@ -8,11 +8,16 @@ public class Employee extends User {
     private boolean admin = false;
 
     public Employee(boolean admin) {
-        this.admin = admin;
+        if(admin)
+        {
+            addRole(Role.ADMIN);
+        }
+
+        addRole(Role.EMPLOYEE);
     }
 
     protected Employee(){
-
+        addRole(Role.EMPLOYEE);
     }
 
     public boolean isAdmin() {

@@ -40,6 +40,12 @@
             <version>2.1</version>
         </dependency>
 
-    </dependencies>
+		<dependency>
+			<groupId>net.bootsfaces</groupId>
+			<artifactId>bootsfaces</artifactId>
+			<version>0.7.0</version>
+		</dependency>
+
+	</dependencies>
 
 </project>

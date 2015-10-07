@@ -17,7 +17,7 @@ public class PlaneRepo {
     @PersistenceContext
     EntityManager em;
 
-    public List<Plane>getAllPlanes()
+    public List<Plane> getAllPlanes()
     {
         return em.createQuery("select p from Plane p", Plane.class).getResultList();
     }
