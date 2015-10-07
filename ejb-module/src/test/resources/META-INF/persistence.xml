@@ -44,7 +44,7 @@
 
     <persistence-unit name="MyTestPersistenceUnit" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.realdolmen.course.domain.User</class>
+        <class>com.realdolmen.course.domain.auth.User</class>
         <class>com.realdolmen.course.domain.Airline</class>
         <class>com.realdolmen.course.domain.Airport</class>
         <class>com.realdolmen.course.domain.Booking</class>
@@ -52,12 +52,13 @@
         <class>com.realdolmen.course.domain.Flight</class>
         <class>com.realdolmen.course.domain.Trip</class>
         <class>com.realdolmen.course.domain.Residence</class>
-        <class>com.realdolmen.course.domain.Periode</class>
-        <class>com.realdolmen.course.domain.Partner</class>
-        <class>com.realdolmen.course.domain.Customer</class>
-        <class>com.realdolmen.course.domain.Employee</class>
+        <class>com.realdolmen.course.domain.Period</class>
+        <class>com.realdolmen.course.domain.auth.Partner</class>
+        <class>com.realdolmen.course.domain.auth.Customer</class>
+        <class>com.realdolmen.course.domain.auth.Employee</class>
         <class>com.realdolmen.course.domain.Plane</class>
 
+        <class>com.realdolmen.course.domain.Period</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

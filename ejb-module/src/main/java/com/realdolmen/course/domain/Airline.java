@@ -1,5 +1,7 @@
 package com.realdolmen.course.domain;
 
+import com.realdolmen.course.domain.auth.Partner;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;

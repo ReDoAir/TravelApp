@@ -5,9 +5,9 @@ import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
-import com.realdolmen.course.domain.Customer;
-import com.realdolmen.course.domain.User;
-import com.realdolmen.course.persistence.UserService;
+import com.realdolmen.course.domain.auth.Customer;
+import com.realdolmen.course.domain.auth.User;
+import com.realdolmen.course.persistence.UserRepo;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
@@ -22,7 +22,7 @@ public class Register {
     private User user;
 
     @EJB
-    private UserService service;
+    private UserRepo service;
 
     @PostConstruct
     public void init() {

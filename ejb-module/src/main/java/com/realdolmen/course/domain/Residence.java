@@ -16,12 +16,12 @@ public class Residence implements Serializable{
     private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Periode periode;
+    private Period periode;
 
     @NotNull
     private Double priceByDay;
 
-    public Residence(Periode periode, Double priceByDay) {
+    public Residence(Period periode, Double priceByDay) {
         this.periode = periode;
         this.priceByDay = priceByDay;
     }

@@ -22,7 +22,7 @@ public class Trip implements Serializable{
     private Flight fromFlight;
 
     @ManyToOne
-    private Periode periode;
+    private Period period;
 
     @ManyToMany
     @JoinTable(
@@ -34,10 +34,10 @@ public class Trip implements Serializable{
 
     private String tripName;
 
-    public Trip(Flight toFlight, Flight fromFlight, Periode periode, String tripName) {
+    public Trip(Flight toFlight, Flight fromFlight, Period periode, String tripName) {
         this.toFlight = toFlight;
         this.fromFlight = fromFlight;
-        this.periode = periode;
+        this.period = periode;
         this.tripName = tripName;
         residences = new ArrayList<>();
     }
@@ -90,12 +90,12 @@ public class Trip implements Serializable{
         this.fromFlight = fromFlight;
     }
 
-    public Periode getPeriode() {
-        return periode;
+    public Period getPeriode() {
+        return period;
     }
 
-    public void setPeriode(Periode periode) {
-        this.periode = periode;
+    public void setPeriode(Period periode) {
+        this.period = periode;
     }
 // Price of a trip is calculated by flight costs + 5% each + residence costs+ maybe something for our company
     public double getTripPriceForResidence(Residence residence)
