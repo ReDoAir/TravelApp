@@ -5,12 +5,39 @@
     <airline id="2000" name="Thomas Cook"/>
     <airline id="3000" name="Sun web"/>
 
-    <user id="1000" username="steven" password="secret"></user>
-    <userroles userId="1000" role="ADMIN"></userroles>
 
     <country id="1552" iso="BE" name="Belgium"></country>
     <airport id="1522" airportCode="BE1111" name="Brussels South" pricePerDay= "12.22" country_id="1552"></airport>
     <airport id="1523" airportCode="BE1112" name="Brussels North" pricePerDay= "12.22" country_id="1552"></airport>
+
+    <user id="1200" password="mqsldkjfsmdkljfq" username="partner1"></user>
+    <user id="1202" password="mqsldkjfsmdkljfq" username="partner2"></user>
+    <user id="1203" password="mqsldkjfsmdkljfq" username="partner3"></user>
+    <user id="1204" password="mqsldkjfsmdkljfq" username="partner4"></user>
+    <user id="1205" password="mqsldkjfsmdkljfq" username="partner5"></user>
+    <user id="1206" password="mqsldkjfsmdkljfq" username="partner6"></user>
+
+    <partner id="1200" airline_id="1000"></partner>
+    <partner id="1202" airline_id="1000"></partner>
+    <partner id="1203" airline_id="1000"></partner>
+    <partner id="1204" airline_id="1000"></partner>
+    <partner id="1205" airline_id="1000"></partner>
+    <partner id="1206" airline_id="1000"></partner>
+
+    <user id="1300" password="mqsldkjfsmdkljfq" username="customer1"></user>
+    <user id="1302" password="mqsldkjfsmdkljfq" username="customer2"></user>
+    <user id="1303" password="mqsldkjfsmdkljfq" username="customer3"></user>
+    <user id="1304" password="mqsldkjfsmdkljfq" username="customer4"></user>
+    <user id="1305" password="mqsldkjfsmdkljfq" username="customer5"></user>
+    <user id="1306" password="mqsldkjfsmdkljfq" username="customer6"></user>
+
+
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1300"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1302"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1303"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1304"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1305"></customer>
+    <customer creditCard="sdmlqkfjqsdmlfkj" id="1306"></customer>
 
 </dataset>
 

@@ -53,6 +53,12 @@
         <class>com.realdolmen.course.domain.Trip</class>
         <class>com.realdolmen.course.domain.Residence</class>
         <class>com.realdolmen.course.domain.Period</class>
+        <class>com.realdolmen.course.domain.auth.Partner</class>
+        <class>com.realdolmen.course.domain.auth.Customer</class>
+        <class>com.realdolmen.course.domain.auth.Employee</class>
+        <class>com.realdolmen.course.domain.Plane</class>
+
+        <class>com.realdolmen.course.domain.Period</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

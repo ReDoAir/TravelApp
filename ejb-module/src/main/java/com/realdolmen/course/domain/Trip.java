@@ -1,9 +1,8 @@
 package com.realdolmen.course.domain;
 
-import javax.annotation.Resource;
-import javax.enterprise.context.RequestScoped;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,16 +12,44 @@ public class Trip implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne
+    private Flight toFlight;
+
+    @ManyToOne
+    private Flight fromFlight;
+
+    @ManyToOne
+    private Period period;
+
+    @ManyToMany
+    @JoinTable(
+            name="trip_res",
+            joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
+            inverseJoinColumns={@JoinColumn(name="res", referencedColumnName="id")}
+    )
+    private List<Residence> residences;
+
     private String tripName;
 
-    @OneToMany
-    private List<Flight> flights;
+    public Trip(Flight toFlight, Flight fromFlight, Period periode, String tripName) {
+        this.toFlight = toFlight;
+        this.fromFlight = fromFlight;
+        this.period = periode;
+        this.tripName = tripName;
+        residences = new ArrayList<>();
+    }
 
-    @ManyToOne
-    private Destination destination;
+    public Trip() {
+    }
 
-    @ManyToOne
-    private Residence residence;
+    public void addResidence(Residence residence)
+    {
+        if(residences == null)
+        {
+            residences = new ArrayList<>();
+        }
+        residences.add(residence);
+    }
 
     public Integer getId() {
         return id;
@@ -40,27 +67,37 @@ public class Trip implements Serializable{
         this.tripName = tripName;
     }
 
-    public List<Flight> getFlights() {
-        return flights;
+    public Flight getToFlight() {
+        return toFlight;
     }
 
-    public void setFlights(List<Flight> flights) {
-        this.flights = flights;
+    public void setToFlight(Flight toFlight) {
+        this.toFlight = toFlight;
     }
 
-    public Destination getDestination() {
-        return destination;
+    public Flight getFromFlight() {
+        return fromFlight;
     }
 
-    public void setDestination(Destination destination) {
-        this.destination = destination;
+    public List<Residence> getResidences() {
+        return residences;
     }
 
-    public Residence getResidence() {
-        return residence;
+    public void setFromFlight(Flight fromFlight) {
+        this.fromFlight = fromFlight;
     }
 
-    public void setResidence(Residence residence) {
-        this.residence = residence;
+    public Period getPeriode() {
+        return period;
+    }
+
+    public void setPeriode(Period periode) {
+        this.period = periode;
+    }
+// Price of a trip is calculated by flight costs + 5% each + residence costs+ maybe something for our company
+    public double getTripPriceForResidence(Residence residence)
+    {
+        double res = (fromFlight.getPrice()*1.05)+(toFlight.getPrice()*1.05)+(residence.getTotalPrice());
+        return res;
     }
 }

@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,26 +12,18 @@ public class Residence implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Period periode;
 
-    @Temporal(TemporalType.DATE)
-    private Date startDate;
-    @Temporal(TemporalType.DATE)
-    private Date endDate;
+    @NotNull
+    private Double priceByDay;
 
-    public Date getStartDate() {
-        return startDate;
+    public Residence(Period periode, Double priceByDay) {
+        this.periode = periode;
+        this.priceByDay = priceByDay;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public Residence() {
     }
 
     public Integer getId() {
@@ -39,5 +32,11 @@ public class Residence implements Serializable{
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public double getTotalPrice()
+    {
+        int aantalDagen = periode.getDepartureDate().getDate() - periode.getReturnDate().getDate();
+        return aantalDagen*priceByDay;
     }
 }

@@ -1,7 +1,10 @@
 package com.realdolmen.course.domain;
 
+import com.realdolmen.course.domain.auth.Partner;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,15 +19,24 @@ public class Airline implements Serializable {
 
     @Basic(optional = false)
     private String name;
-    //todo : mapping implementation
-    //private List<Flight>flights;
-    //private PartnerUser parnter;
+
+
+    @OneToMany (cascade = CascadeType.ALL, mappedBy = "airline")
+    private List<Flight>flights;
+
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "airline")
+    private List<Partner> partners;
 
     public Airline(String name) {
         this.name = name;
+        flights = new ArrayList<>();
+        partners = new ArrayList<>();
     }
 
-    public Airline() {
+    public Airline()
+    {
+        flights = new ArrayList<>();
     }
 
     public String getName() {
@@ -41,5 +53,35 @@ public class Airline implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public void addFlight(Flight flight)
+    {
+        if(flights == null)
+        {
+            flights = new ArrayList<>();
+        }
+        flights.add(flight);
+    }
+
+    private void setFlights(List<Flight> flights) {
+        this.flights = flights;
+    }
+
+    private void setPartners(List<Partner> partners) {
+        this.partners = partners;
+    }
+
+    public List<Flight> getFlights() {
+        return flights;
+    }
+
+    public List<Partner> getPartners() {
+        return partners;
+    }
+
+    public void addPartner(Partner partner)
+    {
+
     }
 }

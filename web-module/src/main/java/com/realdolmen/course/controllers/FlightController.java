@@ -24,7 +24,7 @@ public class FlightController {
 
     public void createFlight(String userName){
         Flight flight = new Flight();
-        flight.setAirline(partnerRepo.findPartner(userName).getAirline());
+        //flight.setAirline(partnerRepo.findPartner(userName).getAirline());
         flight.setFlightCode(flightCode);
         flight.setArrivalDate(arrivalDate);
         flight.setDepartureDate(departureDate);

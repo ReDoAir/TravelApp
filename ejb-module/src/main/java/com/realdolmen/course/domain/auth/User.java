@@ -8,8 +8,8 @@ import java.util.List;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-@Entity
-@NamedQueries({
+//@Entity
+/*@NamedQueries({
         @NamedQuery(
                 name = "User.find",
                 query = "SELECT u FROM User u WHERE u.username = :username AND u.password = :password"),
@@ -17,8 +17,10 @@ import javax.validation.constraints.NotNull;
                 name = "User.list",
                 query = "SELECT u FROM User u")
 })
-@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-public class User implements Serializable {
+*/
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public class User implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,17 +32,17 @@ public class User implements Serializable {
 
     @NotNull
     private String password;
-
+/*
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "UserRoles", joinColumns = { @JoinColumn(name = "userId") })
     @Column(name = "role")
     private List<Role> roles;
-
-    public User(String username, String password,Role baseRole) {
+*/
+    public User(String username, String password/*,Role baseRole*/) {
         this.username = username;
         this.password = password;
-        addRole(baseRole);
+        ///addRole(baseRole);
     }
 
     public User() {
@@ -65,7 +67,7 @@ public class User implements Serializable {
     public Long getId() {
         return id;
     }
-
+/*
     public void addRole(Role role)
     {
         if(roles==null)
@@ -90,5 +92,6 @@ public class User implements Serializable {
     public List<Role> getRoles() {
         return roles;
     }
+    */
 }
 
