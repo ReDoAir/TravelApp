@@ -3,7 +3,6 @@ package com.realdolmen.course.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 
 @Entity
@@ -27,7 +26,7 @@ public class Flight implements Serializable{
     @ManyToOne
     private Airport arrivalAirport;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Airline airline;
 
     @ManyToOne
@@ -98,7 +97,11 @@ public class Flight implements Serializable{
     }
 
     public void setArrivalAirport(Airport arrivalAirport) {
-        this.arrivalAirport = arrivalAirport;
+        if(!arrivalAirport.equals(departAirport)) {
+            this.arrivalAirport = arrivalAirport;
+        }else{
+            throw new DepartAndArrivalAreTheSameException("");
+        }
     }
 
     public Airline getAirline() {

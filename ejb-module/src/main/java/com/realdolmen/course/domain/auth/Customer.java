@@ -22,10 +22,8 @@ public class Customer extends User {
 
     public Customer() {
         //addRole(Role.CUSTOMER);
-
     }
 
-    //
     public Customer(String username, String password, String creditCard ) {
 
         super(username, password);

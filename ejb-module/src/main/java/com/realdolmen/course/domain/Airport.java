@@ -4,9 +4,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 public class Airport implements Serializable {
 
@@ -19,8 +16,6 @@ public class Airport implements Serializable {
 
     @Basic(optional = false)
     private String airportCode;
-
-    private double pricePerDay;
 
     @ManyToOne
     private Country country;
@@ -35,10 +30,9 @@ public class Airport implements Serializable {
     public Airport() {
     }
 
-    public Airport(String name, String airportCode, double pricePerDay) {
+    public Airport(String name, String airportCode) {
         this.name = name;
         this.airportCode = airportCode;
-        this.pricePerDay = pricePerDay;
     }
 
     public String getName() {
@@ -55,14 +49,6 @@ public class Airport implements Serializable {
 
     public void setAirportCode(String airportCode) {
         this.airportCode = airportCode;
-    }
-
-    public double getPricePerDay() {
-        return pricePerDay;
-    }
-
-    public void setPricePerDay(double pricePerDay) {
-        this.pricePerDay = pricePerDay;
     }
 
     public Integer getId() {
