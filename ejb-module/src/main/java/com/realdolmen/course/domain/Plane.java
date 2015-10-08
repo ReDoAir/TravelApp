@@ -26,8 +26,10 @@ public class Plane implements Serializable{
     private Integer id;
 
     @NotNull
+    @Column(unique = true)
     private String planeCode;
-    @NotNull
+
+    @Basic(optional = false)
     private int numberOfSeats;
 
     public Integer getId() {

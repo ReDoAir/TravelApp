@@ -1,6 +1,3 @@
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 public enum DatabaseEngine {
     mysql("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/test", "root", "root"),
     h2("org.h2.Driver", "jdbc:h2:mem:test", "sa", "");

@@ -1,0 +1,1244 @@
+<dataset>
+
+    <country id="1" name="Denmark"/>
+    <country id="2" name="Iran"/>
+    <country id="3" name="Chad"/>
+    <country id="4" name="United Kingdom"/>
+    <country id="5" name="USA"/>
+    <country id="6" name="Ivory Coast"/>
+    <country id="7" name="UAE"/>
+    <country id="8" name="Nigeria"/>
+    <country id="9" name="Egypt"/>
+    <country id="10" name="Mexico"/>
+    <country id="11" name="Ghana"/>
+    <country id="12" name="Turkey"/>
+    <country id="13" name="Ethiopia"/>
+    <country id="14" name="Australia"/>
+    <country id="15" name="Yemen"/>
+    <country id="16" name="Russia"/>
+    <country id="17" name="Niger"/>
+    <country id="18" name="Morocco"/>
+    <country id="19" name="Guam"/>
+    <country id="20" name="South Africa"/>
+    <country id="21" name="Puerto Rico"/>
+    <country id="22" name="India"/>
+    <country id="23" name="France"/>
+    <country id="24" name="Japan"/>
+    <country id="25" name="Cyprus"/>
+    <country id="26" name="Kazakhstan"/>
+    <country id="27" name="Norway"/>
+    <country id="28" name="Italy"/>
+    <country id="29" name="Algeria"/>
+    <country id="30" name="Spain"/>
+    <country id="31" name="Syria"/>
+    <country id="32" name="Switzerland"/>
+    <country id="33" name="Jordan"/>
+    <country id="34" name="Netherlands"/>
+    <country id="35" name="Andorra"/>
+    <country id="36" name="Anguilla"/>
+    <country id="37" name="Comoros (Comores)"/>
+    <country id="38" name="Madagascar"/>
+    <country id="39" name="Antigua"/>
+    <country id="40" name="Belgium"/>
+    <country id="41" name="Samoa"/>
+    <country id="42" name="Brazil"/>
+    <country id="43" name="Russian Federation"/>
+    <country id="44" name="Tanzania"/>
+    <country id="45" name="Greece"/>
+    <country id="46" name="Colombia"/>
+    <country id="47" name="Aruba"/>
+    <country id="48" name="Turkmenistan"/>
+    <country id="49" name="Paraguay"/>
+    <country id="50" name="Canada"/>
+    <country id="51" name="New Zealand"/>
+    <country id="52" name="Germany"/>
+    <country id="53" name="Iraq"/>
+    <country id="54" name="Pakistan"/>
+    <country id="55" name="Bahrain"/>
+    <country id="56" name="Azerbaijan"/>
+    <country id="57" name="Mali"/>
+    <country id="58" name="Central African Republic"/>
+    <country id="59" name="Brunei"/>
+    <country id="60" name="Thailand"/>
+    <country id="61" name="Gambia"/>
+    <country id="62" name="Venezuela"/>
+    <country id="63" name="Bangladesh"/>
+    <country id="64" name="Switzerland/France"/>
+    <country id="65" name="China"/>
+    <country id="66" name="Mozambique"/>
+    <country id="67" name="Lebanon"/>
+    <country id="68" name="Yugoslavia"/>
+    <country id="69" name="Belize"/>
+    <country id="70" name="Libya"/>
+    <country id="71" name="Angola"/>
+    <country id="72" name="Bermuda"/>
+    <country id="73" name="Malaysia"/>
+    <country id="74" name="Guinea Bissau"/>
+    <country id="75" name="Malawi"/>
+    <country id="76" name="Burkina Faso"/>
+    <country id="77" name="Netherlands Antilles"/>
+    <country id="78" name="French Polynesia"/>
+    <country id="79" name="Bulgaria"/>
+    <country id="80" name="Slovakia"/>
+    <country id="81" name="Congo"/>
+    <country id="82" name="Barbados"/>
+    <country id="83" name="Hungary"/>
+    <country id="84" name="Argentina"/>
+    <country id="85" name="Zimbabwe"/>
+    <country id="86" name="Burundi"/>
+    <country id="87" name="Romania"/>
+    <country id="88" name="Dominican Republic"/>
+    <country id="89" name="French Guayana"/>
+    <country id="90" name="Philippines"/>
+    <country id="91" name="Zambia"/>
+    <country id="92" name="Iceland"/>
+    <country id="93" name="Bahamas"/>
+    <country id="94" name="Bolivia"/>
+    <country id="95" name="Sri Lanka"/>
+    <country id="96" name="Guinea"/>
+    <country id="97" name="Ireland"/>
+    <country id="98" name="Benin"/>
+    <country id="99" name="Senegal"/>
+    <country id="100" name="Indonesia"/>
+    <country id="101" name="Saudi Arabia"/>
+    <country id="102" name="Tunisia"/>
+    <country id="103" name="Djibouti"/>
+    <country id="104" name="Qatar"/>
+    <country id="105" name="Cameroon"/>
+    <country id="106" name="Croatia (Hrvatska)"/>
+    <country id="107" name="Tadschikistan"/>
+    <country id="108" name="Mayotte"/>
+    <country id="109" name="Chile"/>
+    <country id="110" name="Israel"/>
+    <country id="111" name="Finland"/>
+    <country id="112" name="Uganda"/>
+    <country id="113" name="Armenia"/>
+    <country id="114" name="Portugal"/>
+    <country id="115" name="Martinique"/>
+    <country id="116" name="Sierra Leone"/>
+    <country id="117" name="Wallis and Futuna Islands"/>
+    <country id="118" name="Botswana"/>
+    <country id="119" name="Poland"/>
+    <country id="120" name="Guyana"/>
+    <country id="121" name="Gibraltar"/>
+    <country id="122" name="Sweden"/>
+    <country id="123" name="Cayman Islands"/>
+    <country id="124" name="Austria"/>
+    <country id="125" name="Grenada"/>
+    <country id="126" name="Solomon Islands"/>
+    <country id="127" name="Guatemala"/>
+    <country id="128" name="Ecuador"/>
+    <country id="129" name="Viet Nam"/>
+    <country id="130" name="Cuba"/>
+    <country id="131" name="Hong Kong"/>
+    <country id="132" name="Ibiza/Spain"/>
+    <country id="133" name="New Caledonia"/>
+    <country id="134" name="Peru"/>
+    <country id="135" name="Afghanistan"/>
+    <country id="136" name="Taiwan"/>
+    <country id="137" name="Sudan"/>
+    <country id="138" name="Nepal"/>
+    <country id="139" name="Namibia"/>
+    <country id="140" name="Ukraine"/>
+    <country id="141" name="Rwanda"/>
+    <country id="142" name="King Island"/>
+    <country id="143" name="Jamaica"/>
+    <country id="144" name="Congo (Zaire)"/>
+    <country id="145" name="Zaire"/>
+    <country id="146" name="Kuwait"/>
+    <country id="147" name="Papua New Guinea"/>
+    <country id="148" name="Gabon"/>
+    <country id="149" name="Pazifik Loyaute"/>
+    <country id="150" name="Democratic Republic of The Congo"/>
+    <country id="151" name="Slovenia"/>
+    <country id="152" name="Togo"/>
+    <country id="153" name="Svalbard/Norway"/>
+    <country id="154" name="Teneriffa/Spain"/>
+    <country id="155" name="Malta"/>
+    <country id="156" name="Luxembourg"/>
+    <country id="157" name="Seychelles"/>
+    <country id="158" name="Equatorial Guinea"/>
+    <country id="159" name="Maledives"/>
+    <country id="160" name="Kenya"/>
+    <country id="161" name="Nicaragua"/>
+    <country id="162" name="Swaziland"/>
+    <country id="163" name="Lesotho"/>
+    <country id="164" name="Mauritius"/>
+    <country id="165" name="Belarus"/>
+    <country id="166" name="Somalia"/>
+    <country id="167" name="Liberia"/>
+    <country id="168" name="Uruguay"/>
+    <country id="169" name="Bosnia and Herzegovina"/>
+    <country id="170" name="Oman"/>
+    <country id="171" name="Fiji"/>
+
+    <airport id="1" airportCode="AAR" name="Aarhus" city="Aarhus" country_id="1"/>
+    <airport id="2" airportCode="ABD" name="Abadan" city="Abadan" country_id="2"/>
+    <airport id="3" airportCode="AEH" name="Abeche" city="Abeche" country_id="3"/>
+    <airport id="4" airportCode="ABZ" name="Aberdeen" city="Aberdeen" country_id="4"/>
+    <airport id="5" airportCode="ABR" name="Aberdeen" city="Aberdeen" country_id="5"/>
+    <airport id="6" airportCode="ABJ" name="Abidjan" city="Abidjan" country_id="6"/>
+    <airport id="7" airportCode="ABI" name="Abilene" city="Abilene" country_id="5"/>
+    <airport id="8" airportCode="AUH" name="Abu Dhabi" city="Abu" country_id="7"/>
+    <airport id="9" airportCode="ABV" name="Abuja International" city="Abuja" country_id="8"/>
+    <airport id="10" airportCode="AUE" name="Abu Rudeis" city="Abu" country_id="9"/>
+    <airport id="11" airportCode="ABS" name="Abu Simbel" city="Abu" country_id="9"/>
+    <airport id="12" airportCode="ACA" name="Acapulco" city="Acapulco" country_id="10"/>
+    <airport id="13" airportCode="ACC" name="Accra" city="Accra" country_id="11"/>
+    <airport id="14" airportCode="ADA" name="Adana" city="Adana" country_id="12"/>
+    <airport id="15" airportCode="ADD" name="Addis Ababa" city="Addis" country_id="13"/>
+    <airport id="16" airportCode="ADL" name="Adelaide" city="Adelaide" country_id="14"/>
+    <airport id="17" airportCode="ADE" name="Aden" city="Aden" country_id="15"/>
+    <airport id="18" airportCode="AER" name="Adler/Sochi" city="Adler/Sochi" country_id="16"/>
+    <airport id="19" airportCode="AJY" name="Agades" city="Agades" country_id="17"/>
+    <airport id="20" airportCode="AGA" name="Agadir" city="Agadir" country_id="18"/>
+    <airport id="21" airportCode="SUM" name="Agana" city="Agana" country_id="19"/>
+    <airport id="22" airportCode="AGZ" name="Aggeneys" city="Aggeneys" country_id="20"/>
+    <airport id="23" airportCode="BQN" name="Aguadilla" city="Aguadilla" country_id="21"/>
+    <airport id="24" airportCode="AGU" name="Aguascaliente" city="Aguascaliente" country_id="10"/>
+    <airport id="25" airportCode="AMD" name="Ahmedabad" city="Ahmedabad" country_id="22"/>
+    <airport id="26" airportCode="AJA" name="Ajaccio" city="Ajaccio" country_id="23"/>
+    <airport id="27" airportCode="AXT" name="Akita" city="Akita" country_id="24"/>
+    <airport id="28" airportCode="CAK" name="Akron" city="Akron" country_id="5"/>
+    <airport id="29" airportCode="AKT" name="Akrotiri - RAF" city="Akrotiri" country_id="25"/>
+    <airport id="30" airportCode="ADX" name="Aktyubinsk" city="Aktyubinsk" country_id="26"/>
+    <airport id="31" airportCode="AAC" name="Al Arish" city="Al" country_id="9"/>
+    <airport id="32" airportCode="AHU" name="Al Hoceima" city="Al" country_id="18"/>
+    <airport id="33" airportCode="ALH" name="Albany" city="Albany" country_id="14"/>
+    <airport id="34" airportCode="ABY" name="Albany" city="Albany" country_id="5"/>
+    <airport id="35" airportCode="ALB" name="Albany" city="Albany" country_id="5"/>
+    <airport id="36" airportCode="LBI" name="Albi" city="Albi" country_id="23"/>
+    <airport id="37" airportCode="AAL" name="Alborg" city="Alborg" country_id="1"/>
+    <airport id="38" airportCode="ABQ" name="Albuquerque" city="Albuquerque" country_id="5"/>
+    <airport id="39" airportCode="ABX" name="Albury" city="Albury" country_id="14"/>
+    <airport id="40" airportCode="AES" name="Alesund" city="Alesund" country_id="27"/>
+    <airport id="41" airportCode="ALJ" name="Alexander Bay" city="Alexander" country_id="20"/>
+    <airport id="42" airportCode="ALY" name="Alexandria, El Nhouza Airport" city="Alexandria," country_id="9"/>
+    <airport id="43" airportCode="ESF" name="Alexandria" city="Alexandria" country_id="5"/>
+    <airport id="44" airportCode="FJR" name="Alfujairah (Fujairah)" city="Alfujairah" country_id="7"/>
+    <airport id="45" airportCode="AHO" name="Alghero Sassari" city="Alghero" country_id="28"/>
+    <airport id="46" airportCode="ALG" name="Algiers" city="Algiers" country_id="29"/>
+    <airport id="47" airportCode="ALC" name="Alicante" city="Alicante" country_id="30"/>
+    <airport id="48" airportCode="ASP" name="Alice Springs" city="Alice" country_id="14"/>
+    <airport id="49" airportCode="ADY" name="Alldays" city="Alldays" country_id="20"/>
+    <airport id="50" airportCode="ABE" name="Allentown" city="Allentown" country_id="5"/>
+    <airport id="51" airportCode="ALA" name="Alma Ata" city="Alma" country_id="26"/>
+    <airport id="52" airportCode="LEI" name="Almeria" city="Almeria" country_id="30"/>
+    <airport id="53" airportCode="ALP" name="Aleppo" city="Aleppo" country_id="31"/>
+    <airport id="54" airportCode="ALF" name="Alta" city="Alta" country_id="27"/>
+    <airport id="55" airportCode="ACH" name="Altenrhein" city="Altenrhein" country_id="32"/>
+    <airport id="56" airportCode="AOO" name="Altoona" city="Altoona" country_id="5"/>
+    <airport id="57" airportCode="ASJ" name="Amami" city="Amami" country_id="24"/>
+    <airport id="58" airportCode="AMA" name="Amarillo" city="Amarillo" country_id="5"/>
+    <airport id="59" airportCode="AMM" name="Amman" city="Amman" country_id="33"/>
+    <airport id="60" airportCode="ATQ" name="Amritsar" city="Amritsar" country_id="22"/>
+    <airport id="61" airportCode="AMS" name="Amsterdam, Schiphol" city="Amsterdam," country_id="34"/>
+    <airport id="62" airportCode="QNB" name="Anand" city="Anand" country_id="22"/>
+    <airport id="63" airportCode="ANC" name="Anchorage" city="Anchorage" country_id="5"/>
+    <airport id="64" airportCode="AOI" name="Ancona" city="Ancona" country_id="28"/>
+    <airport id="65" airportCode="ALV" name="Andorra La Vella H/P" city="Andorra" country_id="35"/>
+    <airport id="66" airportCode="AXA" name="Anguilla" city="Anguilla" country_id="36"/>
+    <airport id="67" airportCode="AJN" name="Anjouan" city="Anjouan" country_id="37"/>
+    <airport id="68" airportCode="ANK" name="Ankara" city="Ankara" country_id="12"/>
+    <airport id="69" airportCode="AAE" name="Annaba" city="Annaba" country_id="29"/>
+    <airport id="70" airportCode="ARB" name="Ann Arbor" city="Ann" country_id="5"/>
+    <airport id="71" airportCode="NCY" name="Annecy" city="Annecy" country_id="23"/>
+    <airport id="72" airportCode="ANB" name="Anniston" city="Anniston" country_id="5"/>
+    <airport id="73" airportCode="AYT" name="Antalya" city="Antalya" country_id="12"/>
+    <airport id="74" airportCode="TNR" name="Antananarivo (Tanannarive)" city="Antananarivo" country_id="38"/>
+    <airport id="75" airportCode="ANU" name="Antigua" city="Antigua" country_id="39"/>
+    <airport id="76" airportCode="ANR" name="Antwerp" city="Antwerp" country_id="40"/>
+    <airport id="77" airportCode="AOJ" name="Aomori" city="Aomori" country_id="24"/>
+    <airport id="78" airportCode="APW" name="Apia" city="Apia" country_id="41"/>
+    <airport id="79" airportCode="ATW" name="Appelton/Neenah/Menasha" city="Appelton/Neenah/Menasha" country_id="5"/>
+    <airport id="80" airportCode="AQJ" name="Aqaba" city="Aqaba" country_id="33"/>
+    <airport id="81" airportCode="AJU" name="Aracaju" city="Aracaju" country_id="42"/>
+    <airport id="82" airportCode="ARH" name="Arkhangelsk" city="Arkhangelsk" country_id="43"/>
+    <airport id="83" airportCode="ARK" name="Arusha" city="Arusha" country_id="44"/>
+    <airport id="84" airportCode="GPA" name="Araxos" city="Araxos" country_id="45"/>
+    <airport id="85" airportCode="RLT" name="Arlit" city="Arlit" country_id="17"/>
+    <airport id="86" airportCode="AXS" name="Armenia" city="Armenia" country_id="46"/>
+    <airport id="87" airportCode="ACE" name="Arrecife/Lanzarote" city="Arrecife/Lanzarote" country_id="30"/>
+    <airport id="88" airportCode="AUA" name="Aruba" city="Aruba" country_id="47"/>
+    <airport id="89" airportCode="AVL" name="Asheville" city="Asheville" country_id="5"/>
+    <airport id="90" airportCode="ASB" name="Ashgabat, Ashkhabat" city="Ashgabat," country_id="48"/>
+    <airport id="91" airportCode="ASE" name="Aspen Snowmass" city="Aspen" country_id="5"/>
+    <airport id="92" airportCode="ATZ" name="Assiut" city="Assiut" country_id="9"/>
+    <airport id="93" airportCode="ASU" name="Asuncion" city="Asuncion" country_id="49"/>
+    <airport id="94" airportCode="ATH" name="Athens" city="Athens" country_id="45"/>
+    <airport id="95" airportCode="ASW" name="Aswan, Daraw Airport" city="Aswan," country_id="9"/>
+    <airport id="96" airportCode="HEW" name="Athens, Hellinikon Airport" city="Athens," country_id="45"/>
+    <airport id="97" airportCode="AHN" name="Athens" city="Athens" country_id="5"/>
+    <airport id="98" airportCode="ATO" name="Athens" city="Athens" country_id="5"/>
+    <airport id="99" airportCode="ATL" name="Atlanta" city="Atlanta" country_id="5"/>
+    <airport id="100" airportCode="ACY" name="Atlantic City" city="Atlantic" country_id="5"/>
+    <airport id="101" airportCode="YAT" name="Attawapiskat, NT" city="Attawapiskat," country_id="50"/>
+    <airport id="102" airportCode="AKL" name="Auckland" city="Auckland" country_id="51"/>
+    <airport id="103" airportCode="AGB" name="Augsburg" city="Augsburg" country_id="52"/>
+    <airport id="104" airportCode="AGS" name="Augusta" city="Augusta" country_id="5"/>
+    <airport id="105" airportCode="AUG" name="Augusta" city="Augusta" country_id="5"/>
+    <airport id="106" airportCode="AUR" name="Aurillac" city="Aurillac" country_id="23"/>
+    <airport id="107" airportCode="AUS" name="Austin" city="Austin" country_id="5"/>
+    <airport id="108" airportCode="AYQ" name="Ayers Rock" city="Ayers" country_id="14"/>
+    <airport id="109" airportCode="AYR" name="Ayr" city="Ayr" country_id="14"/>
+    <airport id="110" airportCode="BJZ" name="Badajoz" city="Badajoz" country_id="30"/>
+    <airport id="111" airportCode="BGW" name="Bagdad, Al Muthana" city="Bagdad," country_id="53"/>
+    <airport id="112" airportCode="SDA" name="Bagdad, Saddam International" city="Bagdad," country_id="53"/>
+    <airport id="113" airportCode="BHV" name="Bahawalpur" city="Bahawalpur" country_id="54"/>
+    <airport id="114" airportCode="BAH" name="Bahrain" city="Bahrain" country_id="55"/>
+    <airport id="115" airportCode="BSR" name="Basra, Basrah" city="Basra," country_id="53"/>
+    <airport id="116" airportCode="BFL" name="Bakersfield" city="Bakersfield" country_id="5"/>
+    <airport id="117" airportCode="BAK" name="Baku" city="Baku" country_id="56"/>
+    <airport id="118" airportCode="BNK" name="Ballina" city="Ballina" country_id="14"/>
+    <airport id="119" airportCode="BWI" name="Baltimore Washington Int'l Airport; MD" city="Baltimore" country_id="5"/>
+    <airport id="120" airportCode="ABM" name="Bamaga" city="Bamaga" country_id="14"/>
+    <airport id="121" airportCode="BKO" name="Bamako" city="Bamako" country_id="57"/>
+    <airport id="122" airportCode="BBY" name="Bambari" city="Bambari" country_id="58"/>
+    <airport id="123" airportCode="BWN" name="Bandar Seri Begawan" city="Bandar" country_id="59"/>
+    <airport id="124" airportCode="BLR" name="Bangalore" city="Bangalore" country_id="22"/>
+    <airport id="125" airportCode="BGU" name="Bangassou" city="Bangassou" country_id="58"/>
+    <airport id="126" airportCode="BKK" name="Bangkok" city="Bangkok" country_id="60"/>
+    <airport id="127" airportCode="BGR" name="Bangor" city="Bangor" country_id="5"/>
+    <airport id="128" airportCode="BGF" name="Bangui" city="Bangui" country_id="58"/>
+    <airport id="129" airportCode="BJL" name="Banjul" city="Banjul" country_id="61"/>
+    <airport id="130" airportCode="BNP" name="Bannu" city="Bannu" country_id="54"/>
+    <airport id="131" airportCode="BCN" name="Barcelona" city="Barcelona" country_id="30"/>
+    <airport id="132" airportCode="BLA" name="Barcelona" city="Barcelona" country_id="62"/>
+    <airport id="133" airportCode="BDU" name="Bardufoss" city="Bardufoss" country_id="27"/>
+    <airport id="134" airportCode="BRI" name="Bari" city="Bari" country_id="28"/>
+    <airport id="135" airportCode="BZL" name="Barisal" city="Barisal" country_id="63"/>
+    <airport id="136" airportCode="BDQ" name="Baronda" city="Baronda" country_id="22"/>
+    <airport id="137" airportCode="BAQ" name="Barranquilla" city="Barranquilla" country_id="46"/>
+    <airport id="138" airportCode="BSL" name="Basel" city="Basel" country_id="32"/>
+    <airport id="139" airportCode="EAP" name="Basel/Mulhouse" city="Basel/Mulhouse" country_id="64"/>
+    <airport id="140" airportCode="BIA" name="Bastia" city="Bastia" country_id="23"/>
+    <airport id="141" airportCode="BTR" name="Baton Rouge" city="Baton" country_id="5"/>
+    <airport id="142" airportCode="BYU" name="Bayreuth" city="Bayreuth" country_id="52"/>
+    <airport id="143" airportCode="BPT" name="Beaumont/Pt. Arthur" city="Beaumont/Pt." country_id="5"/>
+    <airport id="144" airportCode="BKW" name="Beckley" city="Beckley" country_id="5"/>
+    <airport id="145" airportCode="PEK" name="Beijing" city="Beijing" country_id="65"/>
+    <airport id="146" airportCode="NAY" name="Beijing - Nanyuan Airport" city="Beijing" country_id="65"/>
+    <airport id="147" airportCode="BEW" name="Beira" city="Beira" country_id="66"/>
+    <airport id="148" airportCode="BEY" name="Beirut" city="Beirut" country_id="67"/>
+    <airport id="149" airportCode="BEL" name="Belem" city="Belem" country_id="42"/>
+    <airport id="150" airportCode="BHD" name="Belfast - Harbour" city="Belfast" country_id="4"/>
+    <airport id="151" airportCode="BFS" name="Belfast International" city="Belfast" country_id="4"/>
+    <airport id="152" airportCode="IXG" name="Belgaum" city="Belgaum" country_id="22"/>
+    <airport id="153" airportCode="BEG" name="Belgrad (Beograd)" city="Belgrad" country_id="68"/>
+    <airport id="154" airportCode="BZE" name="Belize City" city="Belize" country_id="69"/>
+    <airport id="155" airportCode="BLI" name="Bellingham" city="Bellingham" country_id="5"/>
+    <airport id="156" airportCode="CNF" name="Belo Horizonte" city="Belo" country_id="42"/>
+    <airport id="157" airportCode="BJI" name="Bemidji" city="Bemidji" country_id="5"/>
+    <airport id="158" airportCode="BEN" name="Bengasi" city="Bengasi" country_id="70"/>
+    <airport id="159" airportCode="BUG" name="Bengueka" city="Bengueka" country_id="71"/>
+    <airport id="160" airportCode="BEH" name="Benton Harbour" city="Benton" country_id="5"/>
+    <airport id="161" airportCode="BBT" name="Berberati" city="Berberati" country_id="58"/>
+    <airport id="162" airportCode="BGY" name="Bergamo" city="Bergamo" country_id="28"/>
+    <airport id="163" airportCode="BGO" name="Bergen" city="Bergen" country_id="27"/>
+    <airport id="164" airportCode="BER" name="Berlin" city="Berlin" country_id="52"/>
+    <airport id="165" airportCode="SXF" name="Berlin, Schoenefeld" city="Berlin," country_id="52"/>
+    <airport id="166" airportCode="TXL" name="Berlin, Tegel" city="Berlin," country_id="52"/>
+    <airport id="167" airportCode="THF" name="Berlin, Tempelhof" city="Berlin," country_id="52"/>
+    <airport id="168" airportCode="BDA" name="Bermuda" city="Bermuda" country_id="72"/>
+    <airport id="169" airportCode="BRN" name="Bern" city="Bern" country_id="32"/>
+    <airport id="170" airportCode="ZDJ" name="Bern" city="Bern" country_id="32"/>
+    <airport id="171" airportCode="BET" name="Bethel" city="Bethel" country_id="5"/>
+    <airport id="172" airportCode="BHO" name="Bhopal" city="Bhopal" country_id="22"/>
+    <airport id="173" airportCode="BBI" name="Bhubaneswar" city="Bhubaneswar" country_id="22"/>
+    <airport id="174" airportCode="BIQ" name="Biarritz" city="Biarritz" country_id="23"/>
+    <airport id="175" airportCode="BIO" name="Bilbao" city="Bilbao" country_id="30"/>
+    <airport id="176" airportCode="BIL" name="Billings" city="Billings" country_id="5"/>
+    <airport id="177" airportCode="BLL" name="Billund" city="Billund" country_id="1"/>
+    <airport id="178" airportCode="BTU" name="Bintulu" city="Bintulu" country_id="73"/>
+    <airport id="179" airportCode="IRO" name="Biraro" city="Biraro" country_id="58"/>
+    <airport id="180" airportCode="BHX" name="Birmingham" city="Birmingham" country_id="4"/>
+    <airport id="181" airportCode="BHM" name="Birmingham" city="Birmingham" country_id="5"/>
+    <airport id="182" airportCode="BIS" name="Bismarck/Mandan" city="Bismarck/Mandan" country_id="5"/>
+    <airport id="183" airportCode="BXO" name="Bissau" city="Bissau" country_id="74"/>
+    <airport id="184" airportCode="BLT" name="Blackwater" city="Blackwater" country_id="14"/>
+    <airport id="185" airportCode="BLZ" name="Blantyre" city="Blantyre" country_id="75"/>
+    <airport id="186" airportCode="BHE" name="Blenheim" city="Blenheim" country_id="51"/>
+    <airport id="187" airportCode="BFN" name="Bloemfontein" city="Bloemfontein" country_id="20"/>
+    <airport id="188" airportCode="BMI" name="Bloomington" city="Bloomington" country_id="5"/>
+    <airport id="189" airportCode="BMG" name="Bloomington" city="Bloomington" country_id="5"/>
+    <airport id="190" airportCode="BLF" name="Bluefield" city="Bluefield" country_id="5"/>
+    <airport id="191" airportCode="BVB" name="Boa Vista" city="Boa" country_id="42"/>
+    <airport id="192" airportCode="BOY" name="Bobo/Dioulasso" city="Bobo/Dioulasso" country_id="76"/>
+    <airport id="193" airportCode="BOO" name="Bodo" city="Bodo" country_id="27"/>
+    <airport id="194" airportCode="BOG" name="Bogota" city="Bogota" country_id="46"/>
+    <airport id="195" airportCode="BOI" name="Boise" city="Boise" country_id="5"/>
+    <airport id="196" airportCode="BLQ" name="Bologna" city="Bologna" country_id="28"/>
+    <airport id="197" airportCode="BOM" name="Bombay" city="Bombay" country_id="22"/>
+    <airport id="198" airportCode="BON" name="Bonaire" city="Bonaire" country_id="77"/>
+    <airport id="199" airportCode="YVB" name="Bonaventure, PQ" city="Bonaventure," country_id="50"/>
+    <airport id="200" airportCode="BOB" name="Bora Bora" city="Bora" country_id="78"/>
+    <airport id="201" airportCode="BOD" name="Bordeaux" city="Bordeaux" country_id="23"/>
+    <airport id="202" airportCode="HBH" name="Borg El Arab Airport" city="Borg" country_id="9"/>
+    <airport id="203" airportCode="BXS" name="Borrego Springs" city="Borrego" country_id="5"/>
+    <airport id="204" airportCode="BOS" name="Boston - Logan" city="Boston" country_id="5"/>
+    <airport id="205" airportCode="BYK" name="Bouake" city="Bouake" country_id="6"/>
+    <airport id="206" airportCode="BOJ" name="Bourgas/Burgas" city="Bourgas/Burgas" country_id="79"/>
+    <airport id="207" airportCode="ZBO" name="Bowen" city="Bowen" country_id="14"/>
+    <airport id="208" airportCode="BZN" name="Bozeman" city="Bozeman" country_id="5"/>
+    <airport id="209" airportCode="BFD" name="Bradford/Warren" city="Bradford/Warren" country_id="5"/>
+    <airport id="210" airportCode="BRD" name="Brainerd" city="Brainerd" country_id="5"/>
+    <airport id="211" airportCode="BMP" name="Brampton Island" city="Brampton" country_id="14"/>
+    <airport id="212" airportCode="BSB" name="Brasilia" city="Brasilia" country_id="42"/>
+    <airport id="213" airportCode="BTS" name="Bratislava" city="Bratislava" country_id="80"/>
+    <airport id="214" airportCode="BZV" name="Brazzaville" city="Brazzaville" country_id="81"/>
+    <airport id="215" airportCode="BRE" name="Bremen" city="Bremen" country_id="52"/>
+    <airport id="216" airportCode="BES" name="Brest" city="Brest" country_id="23"/>
+    <airport id="217" airportCode="BIV" name="Bria" city="Bria" country_id="58"/>
+    <airport id="218" airportCode="BDR" name="Bridgeport" city="Bridgeport" country_id="5"/>
+    <airport id="219" airportCode="BGI" name="Bridgetown, Grantley Adams Int'l" city="Bridgetown," country_id="82"/>
+    <airport id="220" airportCode="BDS" name="Brindisi" city="Brindisi" country_id="28"/>
+    <airport id="221" airportCode="BNE" name="Brisbane" city="Brisbane" country_id="14"/>
+    <airport id="222" airportCode="BRS" name="Bristol" city="Bristol" country_id="4"/>
+    <airport id="223" airportCode="BNN" name="Broennoeysund" city="Broennoeysund" country_id="27"/>
+    <airport id="224" airportCode="BHQ" name="Broken Hill" city="Broken" country_id="14"/>
+    <airport id="225" airportCode="BKX" name="Brookings" city="Brookings" country_id="5"/>
+    <airport id="226" airportCode="BME" name="Broome" city="Broome" country_id="14"/>
+    <airport id="227" airportCode="BQK" name="Brunswick" city="Brunswick" country_id="5"/>
+    <airport id="228" airportCode="BRU" name="Brussels" city="Brussels" country_id="40"/>
+    <airport id="229" airportCode="BGA" name="Bucaramanga" city="Bucaramanga" country_id="46"/>
+    <airport id="230" airportCode="BUD" name="Budapest, Ferihegy" city="Budapest," country_id="83"/>
+    <airport id="231" airportCode="BUE" name="Buenos Aires" city="Buenos" country_id="84"/>
+    <airport id="232" airportCode="EZE" name="Buenos Aires, Ezeiza Int'l Airport" city="Buenos" country_id="84"/>
+    <airport id="233" airportCode="AEP" name="Buenos Aires, Jorge Newbery" city="Buenos" country_id="84"/>
+    <airport id="234" airportCode="BFO" name="Buffalo Range" city="Buffalo" country_id="85"/>
+    <airport id="235" airportCode="BUF" name="Buffalo/Niagara Falls" city="Buffalo/Niagara" country_id="5"/>
+    <airport id="236" airportCode="BJM" name="Bujumbura" city="Bujumbura" country_id="86"/>
+    <airport id="237" airportCode="BUH" name="Bucharest" city="Bucharest" country_id="87"/>
+    <airport id="238" airportCode="OTP" name="Bucharest, Otopeni" city="Bucharest," country_id="87"/>
+    <airport id="239" airportCode="BUQ" name="Bulawayo" city="Bulawayo" country_id="85"/>
+    <airport id="240" airportCode="BHC" name="Bullhead City" city="Bullhead" country_id="5"/>
+    <airport id="241" airportCode="BDB" name="Bundaberg" city="Bundaberg" country_id="14"/>
+    <airport id="242" airportCode="BUR" name="Burbank" city="Burbank" country_id="5"/>
+    <airport id="243" airportCode="BRL" name="Burlington" city="Burlington" country_id="5"/>
+    <airport id="244" airportCode="BTV" name="Burlington" city="Burlington" country_id="5"/>
+    <airport id="245" airportCode="BWT" name="Burnie (Wynyard)" city="Burnie" country_id="14"/>
+    <airport id="246" airportCode="BTM" name="Butte" city="Butte" country_id="5"/>
+    <airport id="247" airportCode="CAB" name="Cabinda" city="Cabinda" country_id="71"/>
+    <airport id="248" airportCode="CAG" name="Cagliari" city="Cagliari" country_id="28"/>
+    <airport id="249" airportCode="CNS" name="Cairns" city="Cairns" country_id="14"/>
+    <airport id="250" airportCode="CAI" name="Cairo Int'l" city="Cairo" country_id="9"/>
+    <airport id="251" airportCode="CCU" name="Calcutta (Kolkata)" city="Calcutta" country_id="22"/>
+    <airport id="252" airportCode="YYC" name="Calgary/Banff" city="Calgary/Banff" country_id="50"/>
+    <airport id="253" airportCode="CLO" name="Cali" city="Cali" country_id="46"/>
+    <airport id="254" airportCode="CCJ" name="Calicut" city="Calicut" country_id="22"/>
+    <airport id="255" airportCode="CLY" name="Calvi" city="Calvi" country_id="23"/>
+    <airport id="256" airportCode="YCB" name="Cambridge Bay" city="Cambridge" country_id="50"/>
+    <airport id="257" airportCode="CBG" name="Cambrigde" city="Cambrigde" country_id="4"/>
+    <airport id="258" airportCode="CGR" name="Campo Grande" city="Campo" country_id="42"/>
+    <airport id="259" airportCode="CBR" name="Canberra" city="Canberra" country_id="14"/>
+    <airport id="260" airportCode="CUN" name="Cancun" city="Cancun" country_id="10"/>
+    <airport id="261" airportCode="CPT" name="Cape Town" city="Cape" country_id="20"/>
+    <airport id="262" airportCode="CCS" name="Caracas" city="Caracas" country_id="62"/>
+    <airport id="263" airportCode="CWL" name="Cardiff" city="Cardiff" country_id="4"/>
+    <airport id="264" airportCode="CLD" name="Carlsbad" city="Carlsbad" country_id="5"/>
+    <airport id="265" airportCode="CVQ" name="Carnarvon" city="Carnarvon" country_id="14"/>
+    <airport id="266" airportCode="CRF" name="Carnot" city="Carnot" country_id="58"/>
+    <airport id="267" airportCode="LRM" name="Casa de Campo/La Romana" city="Casa" country_id="88"/>
+    <airport id="268" airportCode="CAS" name="Casablanca" city="Casablanca" country_id="18"/>
+    <airport id="269" airportCode="CMN" name="Casablanca, Mohamed V" city="Casablanca," country_id="18"/>
+    <airport id="270" airportCode="CSI" name="Casino" city="Casino" country_id="14"/>
+    <airport id="271" airportCode="CPR" name="Casper" city="Casper" country_id="5"/>
+    <airport id="272" airportCode="CTG" name="Catagena" city="Catagena" country_id="46"/>
+    <airport id="273" airportCode="CTA" name="Catania" city="Catania" country_id="28"/>
+    <airport id="274" airportCode="CAY" name="Cayenne" city="Cayenne" country_id="89"/>
+    <airport id="275" airportCode="CBU" name="Cebu" city="Cebu" country_id="90"/>
+    <airport id="276" airportCode="CDC" name="Cedar City" city="Cedar" country_id="5"/>
+    <airport id="277" airportCode="CID" name="Cedar Rapids" city="Cedar" country_id="5"/>
+    <airport id="278" airportCode="CED" name="Ceduna" city="Ceduna" country_id="14"/>
+    <airport id="279" airportCode="CES" name="Cessnock" city="Cessnock" country_id="14"/>
+    <airport id="280" airportCode="KHV" name="Chabarovsk (Khabarovsk)" city="Chabarovsk" country_id="16"/>
+    <airport id="281" airportCode="CMF" name="Chambery" city="Chambery" country_id="23"/>
+    <airport id="282" airportCode="CMI" name="Champaign" city="Champaign" country_id="5"/>
+    <airport id="283" airportCode="IXC" name="Chandigarh" city="Chandigarh" country_id="22"/>
+    <airport id="284" airportCode="CHQ" name="Chania" city="Chania" country_id="45"/>
+    <airport id="285" airportCode="CHS" name="Charleston" city="Charleston" country_id="5"/>
+    <airport id="286" airportCode="CRW" name="Charleston" city="Charleston" country_id="5"/>
+    <airport id="287" airportCode="CLT" name="Charlotte" city="Charlotte" country_id="5"/>
+    <airport id="288" airportCode="CHO" name="Charlottesville" city="Charlottesville" country_id="5"/>
+    <airport id="289" airportCode="CXT" name="Charters Towers" city="Charters" country_id="14"/>
+    <airport id="290" airportCode="CHA" name="Chattanooga" city="Chattanooga" country_id="5"/>
+    <airport id="291" airportCode="MAA" name="Chennai (Madras)" city="Chennai" country_id="22"/>
+    <airport id="292" airportCode="CNX" name="Chiang Mai" city="Chiang" country_id="60"/>
+    <airport id="293" airportCode="QCB" name="Chiba City" city="Chiba" country_id="24"/>
+    <airport id="294" airportCode="MDW" name="Chicago" city="Chicago" country_id="5"/>
+    <airport id="295" airportCode="ORD" name="Chicago O'Hare Int'l Airport" city="Chicago" country_id="5"/>
+    <airport id="296" airportCode="CHI" name="Chicago" city="Chicago" country_id="5"/>
+    <airport id="297" airportCode="CZA" name="Chichen Itza" city="Chichen" country_id="10"/>
+    <airport id="298" airportCode="CIC" name="Chico" city="Chico" country_id="5"/>
+    <airport id="299" airportCode="CUU" name="Chihuahua, Gen Fierro Villalobos" city="Chihuahua," country_id="10"/>
+    <airport id="300" airportCode="JKH" name="Chios" city="Chios" country_id="45"/>
+    <airport id="301" airportCode="CIP" name="Chipata" city="Chipata" country_id="91"/>
+    <airport id="302" airportCode="HTA" name="Chita (Tschita)" city="Chita" country_id="16"/>
+    <airport id="303" airportCode="CTS" name="Chitose" city="Chitose" country_id="24"/>
+    <airport id="304" airportCode="CJL" name="Chitral" city="Chitral" country_id="54"/>
+    <airport id="305" airportCode="CGP" name="Chittagong" city="Chittagong" country_id="63"/>
+    <airport id="306" airportCode="CHC" name="Christchurch" city="Christchurch" country_id="51"/>
+    <airport id="307" airportCode="CXI" name="Christmas Line" city="Christmas" country_id="92"/>
+    <airport id="308" airportCode="CCZ" name="Chub Cay" city="Chub" country_id="93"/>
+    <airport id="309" airportCode="YYQ" name="Churchill" city="Churchill" country_id="50"/>
+    <airport id="310" airportCode="CFG" name="Cienfuegos" city="Cienfuegos" country_id="50"/>
+    <airport id="311" airportCode="CVG" name="Cincinnati" city="Cincinnati" country_id="5"/>
+    <airport id="312" airportCode="CME" name="Ciudad Del Carmen" city="Ciudad" country_id="10"/>
+    <airport id="313" airportCode="CJS" name="Ciudad Juarez" city="Ciudad" country_id="10"/>
+    <airport id="314" airportCode="CEN" name="Ciudad Obregon" city="Ciudad" country_id="10"/>
+    <airport id="315" airportCode="CVM" name="Ciudad Victoria" city="Ciudad" country_id="10"/>
+    <airport id="316" airportCode="CKB" name="Clarksburg" city="Clarksburg" country_id="5"/>
+    <airport id="317" airportCode="CMQ" name="Clermont" city="Clermont" country_id="14"/>
+    <airport id="318" airportCode="CFE" name="Clermont Ferrand" city="Clermont" country_id="23"/>
+    <airport id="319" airportCode="BKL" name="Cleveland" city="Cleveland" country_id="5"/>
+    <airport id="320" airportCode="CLE" name="Cleveland" city="Cleveland" country_id="5"/>
+    <airport id="321" airportCode="CBB" name="Cochabamba" city="Cochabamba" country_id="94"/>
+    <airport id="322" airportCode="COK" name="Cochin" city="Cochin" country_id="22"/>
+    <airport id="323" airportCode="COD" name="Cody/Powell/Yellowstone" city="Cody/Powell/Yellowstone" country_id="5"/>
+    <airport id="324" airportCode="KCC" name="Coffmann Cove" city="Coffmann" country_id="5"/>
+    <airport id="325" airportCode="CFS" name="Coffs Harbour" city="Coffs" country_id="14"/>
+    <airport id="326" airportCode="CJB" name="Coimbatore" city="Coimbatore" country_id="22"/>
+    <airport id="327" airportCode="CLQ" name="Colima" city="Colima" country_id="10"/>
+    <airport id="328" airportCode="CLL" name="College Station/Bryan" city="College" country_id="5"/>
+    <airport id="329" airportCode="KCE" name="Collinsville" city="Collinsville" country_id="14"/>
+    <airport id="330" airportCode="CGN" name="Cologne (Koeln)/Bonn" city="Cologne" country_id="52"/>
+    <airport id="331" airportCode="CMB" name="Colombo" city="Colombo" country_id="95"/>
+    <airport id="332" airportCode="COS" name="Colorado Springs" city="Colorado" country_id="5"/>
+    <airport id="333" airportCode="CAE" name="Columbia" city="Columbia" country_id="5"/>
+    <airport id="334" airportCode="CSG" name="Columbus" city="Columbus" country_id="5"/>
+    <airport id="335" airportCode="CMH" name="Columbus" city="Columbus" country_id="5"/>
+    <airport id="336" airportCode="CKY" name="Conakry" city="Conakry" country_id="96"/>
+    <airport id="337" airportCode="CCR" name="Concord" city="Concord" country_id="5"/>
+    <airport id="338" airportCode="CZL" name="Constantine" city="Constantine" country_id="29"/>
+    <airport id="339" airportCode="CND" name="Constanza" city="Constanza" country_id="87"/>
+    <airport id="340" airportCode="CPD" name="Coober Pedy" city="Coober" country_id="14"/>
+    <airport id="341" airportCode="CTN" name="Cooktown" city="Cooktown" country_id="14"/>
+    <airport id="342" airportCode="OOM" name="Cooma" city="Cooma" country_id="14"/>
+    <airport id="343" airportCode="CPH" name="Copenhagen" city="Copenhagen" country_id="1"/>
+    <airport id="344" airportCode="COR" name="Cordoba" city="Cordoba" country_id="84"/>
+    <airport id="345" airportCode="ODB" name="Cordoba" city="Cordoba" country_id="30"/>
+    <airport id="346" airportCode="CDV" name="Cordova" city="Cordova" country_id="5"/>
+    <airport id="347" airportCode="CFU" name="Corfu" city="Corfu" country_id="45"/>
+    <airport id="348" airportCode="ORK" name="Cork" city="Cork" country_id="97"/>
+    <airport id="349" airportCode="CRP" name="Corpus Christi" city="Corpus" country_id="5"/>
+    <airport id="350" airportCode="COO" name="Cotonou" city="Cotonou" country_id="98"/>
+    <airport id="351" airportCode="CZM" name="Cozmel" city="Cozmel" country_id="10"/>
+    <airport id="352" airportCode="CGA" name="Craig" city="Craig" country_id="5"/>
+    <airport id="353" airportCode="CEC" name="Crescent City" city="Crescent" country_id="5"/>
+    <airport id="354" airportCode="CGB" name="Cuiaba" city="Cuiaba" country_id="42"/>
+    <airport id="355" airportCode="CUL" name="Culiacan" city="Culiacan" country_id="10"/>
+    <airport id="356" airportCode="CUR" name="Curacao" city="Curacao" country_id="77"/>
+    <airport id="357" airportCode="CWB" name="Curitiba" city="Curitiba" country_id="42"/>
+    <airport id="358" airportCode="DKR" name="Dakar" city="Dakar" country_id="99"/>
+    <airport id="359" airportCode="DLM" name="Dalaman" city="Dalaman" country_id="12"/>
+    <airport id="360" airportCode="DBY" name="Dalby" city="Dalby" country_id="14"/>
+    <airport id="361" airportCode="DAL" name="Dallas" city="Dallas" country_id="5"/>
+    <airport id="362" airportCode="DFW" name="Dallas/Ft. Worth" city="Dallas/Ft." country_id="5"/>
+    <airport id="363" airportCode="DJO" name="Daloa" city="Daloa" country_id="6"/>
+    <airport id="364" airportCode="DAM" name="Damaskus" city="Damaskus" country_id="31"/>
+    <airport id="365" airportCode="DAN" name="Danville" city="Danville" country_id="5"/>
+    <airport id="366" airportCode="DAR" name="Dar es Salam (Daressalam)" city="Dar" country_id="44"/>
+    <airport id="367" airportCode="DRW" name="Darwin" city="Darwin" country_id="14"/>
+    <airport id="368" airportCode="DDI" name="Daydream Island" city="Daydream" country_id="14"/>
+    <airport id="369" airportCode="DAY" name="Dayton" city="Dayton" country_id="5"/>
+    <airport id="370" airportCode="DAB" name="Daytona Beach" city="Daytona" country_id="5"/>
+    <airport id="371" airportCode="DEC" name="Decatur" city="Decatur" country_id="5"/>
+    <airport id="372" airportCode="YDF" name="Deer Lake/Corner Brook" city="Deer" country_id="50"/>
+    <airport id="373" airportCode="DEL" name="Delhi, Indira Gandhi" city="Delhi," country_id="22"/>
+    <airport id="374" airportCode="HAG" name="Den Haag (The Hague)" city="Den" country_id="34"/>
+    <airport id="375" airportCode="DPS" name="Denpasar/Bali" city="Denpasar/Bali" country_id="100"/>
+    <airport id="376" airportCode="DEN" name="Denver International Airport" city="Denver" country_id="5"/>
+    <airport id="377" airportCode="DSK" name="Dera Ismail Khan" city="Dera" country_id="54"/>
+    <airport id="378" airportCode="DRB" name="Derby" city="Derby" country_id="14"/>
+    <airport id="379" airportCode="EMA" name="Derby (East Midlands)" city="Derby" country_id="4"/>
+    <airport id="380" airportCode="LDY" name="Derry (Londonderry)" city="Derry" country_id="4"/>
+    <airport id="381" airportCode="DSM" name="Des Moines" city="Des" country_id="5"/>
+    <airport id="382" airportCode="DET" name="Detroit City" city="Detroit" country_id="5"/>
+    <airport id="383" airportCode="DTW" name="Detroit Metropolitan Wayne County Airport" city="Detroit" country_id="5"/>
+    <airport id="384" airportCode="DTT" name="Detroit Metropolitan Area" city="Detroit" country_id="5"/>
+    <airport id="385" airportCode="DVL" name="Devils Lake" city="Devils" country_id="5"/>
+    <airport id="386" airportCode="DPO" name="Devonport" city="Devonport" country_id="14"/>
+    <airport id="387" airportCode="DHA" name="Dhahran" city="Dhahran" country_id="101"/>
+    <airport id="388" airportCode="DAC" name="Dhaka" city="Dhaka" country_id="63"/>
+    <airport id="389" airportCode="DLG" name="Dillingham" city="Dillingham" country_id="5"/>
+    <airport id="390" airportCode="DNR" name="Dinard" city="Dinard" country_id="23"/>
+    <airport id="391" airportCode="DJE" name="Djerba" city="Djerba" country_id="102"/>
+    <airport id="392" airportCode="JIB" name="Djibouti" city="Djibouti" country_id="103"/>
+    <airport id="393" airportCode="DOH" name="Doha" city="Doha" country_id="104"/>
+    <airport id="394" airportCode="DTM" name="Dortmund" city="Dortmund" country_id="52"/>
+    <airport id="395" airportCode="DHN" name="Dothan" city="Dothan" country_id="5"/>
+    <airport id="396" airportCode="DLA" name="Douala" city="Douala" country_id="105"/>
+    <airport id="397" airportCode="DRS" name="Dresden" city="Dresden" country_id="52"/>
+    <airport id="398" airportCode="DXB" name="Dubai" city="Dubai" country_id="7"/>
+    <airport id="399" airportCode="DBO" name="Dubbo" city="Dubbo" country_id="14"/>
+    <airport id="400" airportCode="DUB" name="Dublin" city="Dublin" country_id="97"/>
+    <airport id="401" airportCode="DUJ" name="Dubois" city="Dubois" country_id="5"/>
+    <airport id="402" airportCode="DBV" name="Dubrovnik" city="Dubrovnik" country_id="106"/>
+    <airport id="403" airportCode="DBQ" name="Dubuque" city="Dubuque" country_id="5"/>
+    <airport id="404" airportCode="DUS" name="Duesseldorf" city="Duesseldorf" country_id="52"/>
+    <airport id="405" airportCode="DLH" name="Duluth" city="Duluth" country_id="5"/>
+    <airport id="406" airportCode="DUD" name="Dunedin" city="Dunedin" country_id="51"/>
+    <airport id="407" airportCode="DKI" name="Dunk Iceland" city="Dunk" country_id="14"/>
+    <airport id="408" airportCode="DRO" name="Durango" city="Durango" country_id="5"/>
+    <airport id="409" airportCode="DUR" name="Durban" city="Durban" country_id="20"/>
+    <airport id="410" airportCode="DYU" name="Dushanbe (Duschanbe)" city="Dushanbe" country_id="107"/>
+    <airport id="411" airportCode="DUT" name="Dutch Harbor" city="Dutch" country_id="5"/>
+    <airport id="412" airportCode="DYA" name="Dysart" city="Dysart" country_id="14"/>
+    <airport id="413" airportCode="DZA" name="Dzaoudzi" city="Dzaoudzi" country_id="108"/>
+    <airport id="414" airportCode="ELS" name="East London" city="East" country_id="20"/>
+    <airport id="415" airportCode="IPC" name="Easter Island" city="Easter" country_id="109"/>
+    <airport id="416" airportCode="EAU" name="Eau Clarie" city="Eau" country_id="5"/>
+    <airport id="417" airportCode="EDI" name="Edinburgh" city="Edinburgh" country_id="4"/>
+    <airport id="418" airportCode="YEA" name="Edmonton" city="Edmonton" country_id="50"/>
+    <airport id="419" airportCode="YEG" name="Edmonton, International" city="Edmonton," country_id="50"/>
+    <airport id="420" airportCode="YXD" name="Edmonton, Municipal" city="Edmonton," country_id="50"/>
+    <airport id="421" airportCode="EGS" name="Egilsstadir" city="Egilsstadir" country_id="92"/>
+    <airport id="422" airportCode="EIN" name="Eindhoven" city="Eindhoven" country_id="34"/>
+    <airport id="423" airportCode="ELP" name="El Paso" city="El" country_id="5"/>
+    <airport id="424" airportCode="ETH" name="Elat" city="Elat" country_id="110"/>
+    <airport id="425" airportCode="VDA" name="Elat, Ovula" city="Elat," country_id="110"/>
+    <airport id="426" airportCode="EKI" name="Elkhart" city="Elkhart" country_id="5"/>
+    <airport id="427" airportCode="EKO" name="Elko" city="Elko" country_id="5"/>
+    <airport id="428" airportCode="ELL" name="Ellisras" city="Ellisras" country_id="20"/>
+    <airport id="429" airportCode="EMY" name="El Minya" city="El" country_id="9"/>
+    <airport id="430" airportCode="ELM" name="Elmira" city="Elmira" country_id="5"/>
+    <airport id="431" airportCode="ELY" name="Ely" city="Ely" country_id="5"/>
+    <airport id="432" airportCode="EDR" name="Emerald" city="Emerald" country_id="14"/>
+    <airport id="433" airportCode="EMD" name="Emerald" city="Emerald" country_id="14"/>
+    <airport id="434" airportCode="ENF" name="Enontekioe" city="Enontekioe" country_id="111"/>
+    <airport id="435" airportCode="EBB" name="Entebbe" city="Entebbe" country_id="112"/>
+    <airport id="436" airportCode="ERF" name="Erfurt" city="Erfurt" country_id="52"/>
+    <airport id="437" airportCode="ERI" name="Erie" city="Erie" country_id="5"/>
+    <airport id="438" airportCode="EVN" name="Eriwan (Yerevan, Jerevan)" city="Eriwan" country_id="113"/>
+    <airport id="439" airportCode="EBJ" name="Esbjerg" city="Esbjerg" country_id="1"/>
+    <airport id="440" airportCode="ESC" name="Escabana" city="Escabana" country_id="5"/>
+    <airport id="441" airportCode="EPR" name="Esperance" city="Esperance" country_id="14"/>
+    <airport id="442" airportCode="EUG" name="Eugene" city="Eugene" country_id="5"/>
+    <airport id="443" airportCode="ACV" name="Eureka" city="Eureka" country_id="5"/>
+    <airport id="444" airportCode="EVV" name="Evansville" city="Evansville" country_id="5"/>
+    <airport id="445" airportCode="EVE" name="Evenes" city="Evenes" country_id="27"/>
+    <airport id="446" airportCode="FAI" name="Fairbanks" city="Fairbanks" country_id="5"/>
+    <airport id="447" airportCode="LYP" name="Faisalabad" city="Faisalabad" country_id="54"/>
+    <airport id="448" airportCode="FAR" name="Fargo" city="Fargo" country_id="5"/>
+    <airport id="449" airportCode="FMN" name="Farmington" city="Farmington" country_id="5"/>
+    <airport id="450" airportCode="FAO" name="Faro" city="Faro" country_id="114"/>
+    <airport id="451" airportCode="FAE" name="Faroer" city="Faroer" country_id="1"/>
+    <airport id="452" airportCode="FYV" name="Fayetteville" city="Fayetteville" country_id="5"/>
+    <airport id="453" airportCode="FAY" name="Fayetteville/Ft. Bragg" city="Fayetteville/Ft." country_id="5"/>
+    <airport id="454" airportCode="FEZ" name="Fes" city="Fes" country_id="18"/>
+    <airport id="455" airportCode="FSC" name="Figari" city="Figari" country_id="23"/>
+    <airport id="456" airportCode="FLG" name="Flagstaff" city="Flagstaff" country_id="5"/>
+    <airport id="457" airportCode="YFO" name="Flin Flon" city="Flin" country_id="50"/>
+    <airport id="458" airportCode="FNT" name="Flint" city="Flint" country_id="5"/>
+    <airport id="459" airportCode="FLR" name="Florence" city="Florence" country_id="28"/>
+    <airport id="460" airportCode="FLO" name="Florence" city="Florence" country_id="5"/>
+    <airport id="461" airportCode="FLN" name="Florianopolis" city="Florianopolis" country_id="42"/>
+    <airport id="462" airportCode="FRO" name="Floro" city="Floro" country_id="27"/>
+    <airport id="463" airportCode="YFA" name="Fort Albert" city="Fort" country_id="50"/>
+    <airport id="464" airportCode="FDF" name="Fort de France" city="Fort" country_id="115"/>
+    <airport id="465" airportCode="FOD" name="Fort Dodge" city="Fort" country_id="5"/>
+    <airport id="466" airportCode="FHU" name="Fort Huachuca/Sierra Vista" city="Fort" country_id="5"/>
+    <airport id="467" airportCode="FLL" name="Fort Lauderdale/Hollywood" city="Fort" country_id="5"/>
+    <airport id="468" airportCode="YMM" name="Fort McMurray" city="Fort" country_id="50"/>
+    <airport id="469" airportCode="FMY" name="Fort Myers" city="Fort" country_id="5"/>
+    <airport id="470" airportCode="RSW" name="Fort Myers" city="Fort" country_id="5"/>
+    <airport id="471" airportCode="YSM" name="Fort Smith" city="Fort" country_id="50"/>
+    <airport id="472" airportCode="FSM" name="Fort Smith" city="Fort" country_id="5"/>
+    <airport id="473" airportCode="YXJ" name="Fort St. John" city="Fort" country_id="50"/>
+    <airport id="474" airportCode="VPS" name="Fort Walton Beach" city="Fort" country_id="5"/>
+    <airport id="475" airportCode="FWA" name="Fort Wayne" city="Fort" country_id="5"/>
+    <airport id="476" airportCode="FOR" name="Fortaleza" city="Fortaleza" country_id="42"/>
+    <airport id="477" airportCode="FRW" name="Francistown" city="Francistown" country_id="85"/>
+    <airport id="478" airportCode="FRA" name="Frankfurt/Main Int'l Airport" city="Frankfurt/Main" country_id="52"/>
+    <airport id="479" airportCode="HNN" name="Frankfurt/Hahn" city="Frankfurt/Hahn" country_id="52"/>
+    <airport id="480" airportCode="FKL" name="Franklin/Oil City" city="Franklin/Oil" country_id="5"/>
+    <airport id="481" airportCode="YFC" name="Fredericton" city="Fredericton" country_id="50"/>
+    <airport id="482" airportCode="FPO" name="Freeport" city="Freeport" country_id="93"/>
+    <airport id="483" airportCode="FNA" name="Freetown" city="Freetown" country_id="116"/>
+    <airport id="484" airportCode="FRJ" name="Frejus" city="Frejus" country_id="23"/>
+    <airport id="485" airportCode="FAT" name="Fresno" city="Fresno" country_id="5"/>
+    <airport id="486" airportCode="FDH" name="Friedrichshafen" city="Friedrichshafen" country_id="52"/>
+    <airport id="487" airportCode="FUE" name="Fuerteventura" city="Fuerteventura" country_id="30"/>
+    <airport id="488" airportCode="FUK" name="Fukuoka" city="Fukuoka" country_id="24"/>
+    <airport id="489" airportCode="FKS" name="Fukushima-shi, Fukushima Airport" city="Fukushima-shi," country_id="24"/>
+    <airport id="490" airportCode="FNC" name="Funchal" city="Funchal" country_id="114"/>
+    <airport id="491" airportCode="FUT" name="Futuna" city="Futuna" country_id="117"/>
+    <airport id="492" airportCode="GBE" name="Gaborone" city="Gaborone" country_id="118"/>
+    <airport id="493" airportCode="GAD" name="Gadsden" city="Gadsden" country_id="5"/>
+    <airport id="494" airportCode="GNV" name="Gainesville" city="Gainesville" country_id="5"/>
+    <airport id="495" airportCode="GWY" name="Galway" city="Galway" country_id="97"/>
+    <airport id="496" airportCode="YQX" name="Gander" city="Gander" country_id="50"/>
+    <airport id="497" airportCode="GOU" name="Garoua" city="Garoua" country_id="105"/>
+    <airport id="498" airportCode="GDN" name="Gdansk" city="Gdansk" country_id="119"/>
+    <airport id="499" airportCode="GEX" name="Geelong" city="Geelong" country_id="14"/>
+    <airport id="500" airportCode="GVA" name="Geneva" city="Geneva" country_id="32"/>
+    <airport id="501" airportCode="GOA" name="Genoa" city="Genoa" country_id="28"/>
+    <airport id="502" airportCode="GRJ" name="George" city="George" country_id="20"/>
+    <airport id="503" airportCode="GEO" name="Georgetown" city="Georgetown" country_id="120"/>
+    <airport id="504" airportCode="GET" name="Geraldton" city="Geraldton" country_id="14"/>
+    <airport id="505" airportCode="GRO" name="Gerona" city="Gerona" country_id="30"/>
+    <airport id="506" airportCode="GIB" name="Gibraltar" city="Gibraltar" country_id="121"/>
+    <airport id="507" airportCode="GCC" name="Gilette" city="Gilette" country_id="5"/>
+    <airport id="508" airportCode="GIL" name="Gilgit" city="Gilgit" country_id="54"/>
+    <airport id="509" airportCode="YGX" name="Gillam" city="Gillam" country_id="50"/>
+    <airport id="510" airportCode="GLT" name="Gladstone" city="Gladstone" country_id="14"/>
+    <airport id="511" airportCode="PIK" name="Glasgow, Prestwick" city="Glasgow," country_id="4"/>
+    <airport id="512" airportCode="GLA" name="Glasgow" city="Glasgow" country_id="4"/>
+    <airport id="513" airportCode="GGW" name="Glasgow" city="Glasgow" country_id="5"/>
+    <airport id="514" airportCode="GDV" name="Glendive" city="Glendive" country_id="5"/>
+    <airport id="515" airportCode="GOI" name="Goa" city="Goa" country_id="22"/>
+    <airport id="516" airportCode="GYN" name="Goiania" city="Goiania" country_id="42"/>
+    <airport id="517" airportCode="OOL" name="Gold Coast" city="Gold" country_id="14"/>
+    <airport id="518" airportCode="GOO" name="Goondiwindi" city="Goondiwindi" country_id="14"/>
+    <airport id="519" airportCode="YYR" name="Goose Bay" city="Goose" country_id="50"/>
+    <airport id="520" airportCode="GOZ" name="Gorna" city="Gorna" country_id="79"/>
+    <airport id="521" airportCode="GOT" name="Goteborg" city="Goteborg" country_id="122"/>
+    <airport id="522" airportCode="GOV" name="Gove (Nhulunbuy)" city="Gove" country_id="14"/>
+    <airport id="523" airportCode="GHB" name="Govenors Harbour" city="Govenors" country_id="93"/>
+    <airport id="524" airportCode="GRX" name="Granada" city="Granada" country_id="30"/>
+    <airport id="525" airportCode="GBI" name="Grand Bahama" city="Grand" country_id="93"/>
+    <airport id="526" airportCode="GCN" name="Grand Canyon" city="Grand" country_id="5"/>
+    <airport id="527" airportCode="GCM" name="Grand Cayman" city="Grand" country_id="123"/>
+    <airport id="528" airportCode="GFK" name="Grand Forks" city="Grand" country_id="5"/>
+    <airport id="529" airportCode="GJT" name="Grand Junction" city="Grand" country_id="5"/>
+    <airport id="530" airportCode="GRR" name="Grand Rapids" city="Grand" country_id="5"/>
+    <airport id="531" airportCode="GPZ" name="Grand Rapids" city="Grand" country_id="5"/>
+    <airport id="532" airportCode="GRZ" name="Graz" city="Graz" country_id="124"/>
+    <airport id="533" airportCode="GTF" name="Great Falls" city="Great" country_id="5"/>
+    <airport id="534" airportCode="GKL" name="Great Keppel Island" city="Great" country_id="14"/>
+    <airport id="535" airportCode="GRB" name="Green Bay" city="Green" country_id="5"/>
+    <airport id="536" airportCode="LWB" name="Greenbrier/Lewisburg" city="Greenbrier/Lewisburg" country_id="5"/>
+    <airport id="537" airportCode="GSO" name="Greensboro/Winston Salem" city="Greensboro/Winston" country_id="5"/>
+    <airport id="538" airportCode="GLH" name="Greenville" city="Greenville" country_id="5"/>
+    <airport id="539" airportCode="PGV" name="Greenville" city="Greenville" country_id="5"/>
+    <airport id="540" airportCode="GSP" name="Greenville/Spartanburg" city="Greenville/Spartanburg" country_id="5"/>
+    <airport id="541" airportCode="GND" name="Grenada" city="Grenada" country_id="125"/>
+    <airport id="542" airportCode="GNB" name="Grenoble" city="Grenoble" country_id="23"/>
+    <airport id="543" airportCode="GFF" name="Griffith" city="Griffith" country_id="14"/>
+    <airport id="544" airportCode="GTE" name="Groote Eyeland" city="Groote" country_id="14"/>
+    <airport id="545" airportCode="GTI" name="Groote Eylandt" city="Groote" country_id="14"/>
+    <airport id="546" airportCode="GON" name="Groton/New London" city="Groton/New" country_id="5"/>
+    <airport id="547" airportCode="GDL" name="Guadalajara" city="Guadalajara" country_id="10"/>
+    <airport id="548" airportCode="GSI" name="Guadalcanal" city="Guadalcanal" country_id="126"/>
+    <airport id="549" airportCode="GUM" name="Guam" city="Guam" country_id="19"/>
+    <airport id="550" airportCode="GRU" name="Guarulhos Int'l - Sao Paulo" city="Guarulhos" country_id="42"/>
+    <airport id="551" airportCode="GUA" name="Guatemala City" city="Guatemala" country_id="127"/>
+    <airport id="552" airportCode="GYE" name="Guayaquil" city="Guayaquil" country_id="128"/>
+    <airport id="553" airportCode="GCI" name="Guernsey" city="Guernsey" country_id="4"/>
+    <airport id="554" airportCode="GPT" name="Gulfport/Biloxi" city="Gulfport/Biloxi" country_id="5"/>
+    <airport id="555" airportCode="ULU" name="Gulu" city="Gulu" country_id="112"/>
+    <airport id="556" airportCode="GUC" name="Gunnison/Crested Butte" city="Gunnison/Crested" country_id="5"/>
+    <airport id="557" airportCode="GAU" name="Guwahati" city="Guwahati" country_id="22"/>
+    <airport id="558" airportCode="GWD" name="Gwadar" city="Gwadar" country_id="54"/>
+    <airport id="559" airportCode="GWE" name="Gweru" city="Gweru" country_id="85"/>
+    <airport id="560" airportCode="GYP" name="Gympie" city="Gympie" country_id="14"/>
+    <airport id="561" airportCode="HAC" name="Hachijo Jima" city="Hachijo" country_id="24"/>
+    <airport id="562" airportCode="HFA" name="Haifa" city="Haifa" country_id="110"/>
+    <airport id="563" airportCode="HNS" name="Haines" city="Haines" country_id="5"/>
+    <airport id="564" airportCode="HKD" name="Hakodate" city="Hakodate" country_id="24"/>
+    <airport id="565" airportCode="YHZ" name="Halifax Int'l" city="Halifax" country_id="50"/>
+    <airport id="566" airportCode="YUX" name="Hall Beach" city="Hall" country_id="50"/>
+    <airport id="567" airportCode="HAM" name="Hamburg - Fuhlsbuettel" city="Hamburg" country_id="52"/>
+    <airport id="568" airportCode="HLT" name="Hamilton" city="Hamilton" country_id="14"/>
+    <airport id="569" airportCode="YHM" name="Hamilton" city="Hamilton" country_id="50"/>
+    <airport id="570" airportCode="HTI" name="Hamilton Island" city="Hamilton" country_id="14"/>
+    <airport id="571" airportCode="HFT" name="Hammerfest" city="Hammerfest" country_id="27"/>
+    <airport id="572" airportCode="CMX" name="Hancock" city="Hancock" country_id="5"/>
+    <airport id="573" airportCode="HAJ" name="Hannover" city="Hannover" country_id="52"/>
+    <airport id="574" airportCode="HAN" name="Hanoi - Noibai" city="Hanoi" country_id="129"/>
+    <airport id="575" airportCode="HRE" name="Harare" city="Harare" country_id="85"/>
+    <airport id="576" airportCode="HRL" name="Harlington/South Padre Island" city="Harlington/South" country_id="5"/>
+    <airport id="577" airportCode="YHR" name="Harrington Harbour, PQ" city="Harrington" country_id="50"/>
+    <airport id="578" airportCode="HAR" name="Harrisburg" city="Harrisburg" country_id="5"/>
+    <airport id="579" airportCode="MDT" name="Harrisburg" city="Harrisburg" country_id="5"/>
+    <airport id="580" airportCode="BDL" name="Hartford" city="Hartford" country_id="5"/>
+    <airport id="581" airportCode="HDY" name="Hatyai (Hat Yai)" city="Hatyai" country_id="60"/>
+    <airport id="582" airportCode="HAU" name="Haugesund" city="Haugesund" country_id="27"/>
+    <airport id="583" airportCode="HAV" name="Havana - JosÃ© MartÃ Int'l" city="Havana" country_id="130"/>
+    <airport id="584" airportCode="HVR" name="Havre" city="Havre" country_id="5"/>
+    <airport id="585" airportCode="HIS" name="Hayman Island" city="Hayman" country_id="14"/>
+    <airport id="586" airportCode="HLN" name="Helena" city="Helena" country_id="5"/>
+    <airport id="587" airportCode="JHE" name="Helsingborg" city="Helsingborg" country_id="122"/>
+    <airport id="588" airportCode="HEL" name="Helsinki - Vantaa" city="Helsinki" country_id="111"/>
+    <airport id="589" airportCode="HER" name="Heraklion" city="Heraklion" country_id="45"/>
+    <airport id="590" airportCode="HMO" name="Hermosillo - Gen. Pesqueira Garcia" city="Hermosillo" country_id="10"/>
+    <airport id="591" airportCode="HVB" name="Hervey Bay" city="Hervey" country_id="14"/>
+    <airport id="592" airportCode="HIB" name="Hibbing" city="Hibbing" country_id="5"/>
+    <airport id="593" airportCode="HKY" name="Hickory" city="Hickory" country_id="5"/>
+    <airport id="594" airportCode="ITO" name="Hilo" city="Hilo" country_id="5"/>
+    <airport id="595" airportCode="HHH" name="Hilton Head Island" city="Hilton" country_id="5"/>
+    <airport id="596" airportCode="HNK" name="Hinchinbrook Island" city="Hinchinbrook" country_id="14"/>
+    <airport id="597" airportCode="SGN" name="Ho Chi Minh City (Saigon)" city="Ho" country_id="129"/>
+    <airport id="598" airportCode="HBA" name="Hobart" city="Hobart" country_id="14"/>
+    <airport id="599" airportCode="HOQ" name="Hof" city="Hof" country_id="52"/>
+    <airport id="600" airportCode="HOG" name="Holguin" city="Holguin" country_id="130"/>
+    <airport id="601" airportCode="HMH" name="Home Hill" city="Home" country_id="14"/>
+    <airport id="602" airportCode="HOM" name="Homer" city="Homer" country_id="5"/>
+    <airport id="603" airportCode="HKG" name="Hong Kong - Int'l Airport (HKIA)" city="Hong" country_id="131"/>
+    <airport id="604" airportCode="ZJK" name="Hong Kong - Chek Lap Kok" city="Hong" country_id="131"/>
+    <airport id="605" airportCode="HIR" name="Honiara Henderson Int'l" city="Honiara" country_id="126"/>
+    <airport id="606" airportCode="HNL" name="Honolulu" city="Honolulu" country_id="5"/>
+    <airport id="607" airportCode="HNH" name="Hoonah" city="Hoonah" country_id="5"/>
+    <airport id="608" airportCode="HOR" name="Horta" city="Horta" country_id="114"/>
+    <airport id="609" airportCode="HOU" name="Houston" city="Houston" country_id="5"/>
+    <airport id="610" airportCode="IAH" name="Houston" city="Houston" country_id="5"/>
+    <airport id="611" airportCode="HUH" name="Huahine" city="Huahine" country_id="78"/>
+    <airport id="612" airportCode="HUX" name="Huatulco" city="Huatulco" country_id="10"/>
+    <airport id="613" airportCode="HUI" name="Hue - Phu Bai" city="Hue" country_id="129"/>
+    <airport id="614" airportCode="HUY" name="Humberside" city="Humberside" country_id="4"/>
+    <airport id="615" airportCode="HTS" name="Huntington" city="Huntington" country_id="5"/>
+    <airport id="616" airportCode="HSV" name="Huntsville" city="Huntsville" country_id="5"/>
+    <airport id="617" airportCode="HRG" name="Hurghada Int'l" city="Hurghada" country_id="9"/>
+    <airport id="618" airportCode="HON" name="Huron" city="Huron" country_id="5"/>
+    <airport id="619" airportCode="HWN" name="Hwange National Park" city="Hwange" country_id="85"/>
+    <airport id="620" airportCode="HYA" name="Hyannis" city="Hyannis" country_id="5"/>
+    <airport id="621" airportCode="HYG" name="Hydaburg" city="Hydaburg" country_id="5"/>
+    <airport id="622" airportCode="HYD" name="Hyderabad - Begumpet" city="Hyderabad" country_id="22"/>
+    <airport id="623" airportCode="HDD" name="Hyderabad" city="Hyderabad" country_id="54"/>
+    <airport id="624" airportCode="IBZ" name="Ibiza" city="Ibiza" country_id="132"/>
+    <airport id="625" airportCode="IDA" name="Idaho Falls" city="Idaho" country_id="5"/>
+    <airport id="626" airportCode="ILP" name="Ile des Pins" city="Ile" country_id="133"/>
+    <airport id="627" airportCode="IOU" name="Ile Ouen" city="Ile" country_id="133"/>
+    <airport id="628" airportCode="ILI" name="Iliamna" city="Iliamna" country_id="5"/>
+    <airport id="629" airportCode="IPL" name="Imperial" city="Imperial" country_id="5"/>
+    <airport id="630" airportCode="IVC" name="Incercargill" city="Incercargill" country_id="51"/>
+    <airport id="631" airportCode="IND" name="Indianapolis" city="Indianapolis" country_id="5"/>
+    <airport id="632" airportCode="IGH" name="Ingham" city="Ingham" country_id="14"/>
+    <airport id="633" airportCode="IFL" name="Innisfail" city="Innisfail" country_id="14"/>
+    <airport id="634" airportCode="INN" name="Innsbruck - Kranebitten" city="Innsbruck" country_id="124"/>
+    <airport id="635" airportCode="INL" name="International Falls" city="International" country_id="5"/>
+    <airport id="636" airportCode="YEV" name="Inuvik" city="Inuvik" country_id="50"/>
+    <airport id="637" airportCode="IVC" name="Invercargill" city="Invercargill" country_id="51"/>
+    <airport id="638" airportCode="INV" name="Inverness" city="Inverness" country_id="4"/>
+    <airport id="639" airportCode="IYK" name="Inykern" city="Inykern" country_id="5"/>
+    <airport id="640" airportCode="YFB" name="Iqaluit (Frobisher Bay)" city="Iqaluit" country_id="50"/>
+    <airport id="641" airportCode="IQT" name="Iquitos" city="Iquitos" country_id="134"/>
+    <airport id="642" airportCode="IKT" name="Irkutsk" city="Irkutsk" country_id="16"/>
+    <airport id="643" airportCode="LSG" name="Ishigaki" city="Ishigaki" country_id="24"/>
+    <airport id="644" airportCode="ISB" name="Islamabad - Islamabad Int'l" city="Islamabad" country_id="54"/>
+    <airport id="645" airportCode="IOM" name="Isle of Man" city="Isle" country_id="4"/>
+    <airport id="646" airportCode="IST" name="Istanbul - Ataturk" city="Istanbul" country_id="12"/>
+    <airport id="647" airportCode="ITH" name="Ithaca/Cortland" city="Ithaca/Cortland" country_id="5"/>
+    <airport id="648" airportCode="IVL" name="Ivalo" city="Ivalo" country_id="111"/>
+    <airport id="649" airportCode="ZIH" name="Ixtapa/Zihuatenejo" city="Ixtapa/Zihuatenejo" country_id="10"/>
+    <airport id="650" airportCode="IZM" name="Izmir" city="Izmir" country_id="12"/>
+    <airport id="651" airportCode="JAC" name="Jackson Hole" city="Jackson" country_id="5"/>
+    <airport id="652" airportCode="JXN" name="Jackson" city="Jackson" country_id="5"/>
+    <airport id="653" airportCode="JAN" name="Jackson" city="Jackson" country_id="5"/>
+    <airport id="654" airportCode="MKL" name="Jackson" city="Jackson" country_id="5"/>
+    <airport id="655" airportCode="JAX" name="Jacksonville" city="Jacksonville" country_id="5"/>
+    <airport id="656" airportCode="OAJ" name="Jacksonville" city="Jacksonville" country_id="5"/>
+    <airport id="657" airportCode="JAG" name="Jacobabad" city="Jacobabad" country_id="54"/>
+    <airport id="658" airportCode="JAI" name="Jaipur - Sanganeer" city="Jaipur" country_id="22"/>
+    <airport id="659" airportCode="HLP" name="Jakarta - Halim Perdanakusma" city="Jakarta" country_id="100"/>
+    <airport id="660" airportCode="JKT" name="Jakarta - Kemayoran" city="Jakarta" country_id="100"/>
+    <airport id="661" airportCode="CGK" name="Jakarta - Soekarno-Hatta" city="Jakarta" country_id="100"/>
+    <airport id="662" airportCode="JLR" name="Jalandhar" city="Jalandhar" country_id="22"/>
+    <airport id="663" airportCode="JMS" name="Jamestown" city="Jamestown" country_id="5"/>
+    <airport id="664" airportCode="JHW" name="Jamestown" city="Jamestown" country_id="5"/>
+    <airport id="665" airportCode="IXW" name="Jamshedpur - Sonari" city="Jamshedpur" country_id="22"/>
+    <airport id="666" airportCode="JED" name="Jeddah - King Abdulaziz Int'l" city="Jeddah" country_id="101"/>
+    <airport id="667" airportCode="XRY" name="Jerez de la Frontera/Cadiz" city="Jerez" country_id="30"/>
+    <airport id="668" airportCode="JER" name="Jersey" city="Jersey" country_id="4"/>
+    <airport id="669" airportCode="JRS" name="Jerusalem" city="Jerusalem" country_id="110"/>
+    <airport id="670" airportCode="JIW" name="Jiwani" city="Jiwani" country_id="54"/>
+    <airport id="671" airportCode="JCB" name="Joacaba" city="Joacaba" country_id="42"/>
+    <airport id="672" airportCode="JPA" name="Joao Pessoa - Castro Pinto" city="Joao" country_id="42"/>
+    <airport id="673" airportCode="JKG" name="Joenkoeping" city="Joenkoeping" country_id="122"/>
+    <airport id="674" airportCode="JOE" name="Joensuu" city="Joensuu" country_id="111"/>
+    <airport id="675" airportCode="JNB" name="Johannesburg - Johannesburg Int'l" city="Johannesburg" country_id="20"/>
+    <airport id="676" airportCode="JST" name="Johnstown" city="Johnstown" country_id="5"/>
+    <airport id="677" airportCode="JHB" name="Johore Bahru" city="Johore" country_id="73"/>
+    <airport id="678" airportCode="JLN" name="Joplin" city="Joplin" country_id="5"/>
+    <airport id="679" airportCode="GJN" name="Jounieh" city="Jounieh" country_id="67"/>
+    <airport id="680" airportCode="JNU" name="Juneau" city="Juneau" country_id="5"/>
+    <airport id="681" airportCode="JYV" name="Jyvaeskylae" city="Jyvaeskylae" country_id="111"/>
+    <airport id="682" airportCode="KBL" name="Kabul - Khwaja Rawash" city="Kabul" country_id="135"/>
+    <airport id="683" airportCode="KOJ" name="Kagoshima" city="Kagoshima" country_id="24"/>
+    <airport id="684" airportCode="OGG" name="Kahului" city="Kahului" country_id="5"/>
+    <airport id="685" airportCode="KAJ" name="Kajaani" city="Kajaani" country_id="111"/>
+    <airport id="686" airportCode="KLX" name="Kalamata" city="Kalamata" country_id="45"/>
+    <airport id="687" airportCode="AZO" name="Kalamazoo/Battle Creek" city="Kalamazoo/Battle" country_id="5"/>
+    <airport id="688" airportCode="KGI" name="Kalgoorlie" city="Kalgoorlie" country_id="14"/>
+    <airport id="689" airportCode="FCA" name="Kalispell" city="Kalispell" country_id="5"/>
+    <airport id="690" airportCode="KLR" name="Kalmar" city="Kalmar" country_id="122"/>
+    <airport id="691" airportCode="KAN" name="Kano" city="Kano" country_id="8"/>
+    <airport id="692" airportCode="MUE" name="Kamuela" city="Kamuela" country_id="5"/>
+    <airport id="693" airportCode="QJU" name="Kanpur" city="Kanpur" country_id="22"/>
+    <airport id="694" airportCode="MCI" name="Kansas City" city="Kansas" country_id="5"/>
+    <airport id="695" airportCode="KHH" name="Kaohsiung Int'l" city="Kaohsiung" country_id="136"/>
+    <airport id="696" airportCode="JHM" name="Kapalua West" city="Kapalua" country_id="5"/>
+    <airport id="697" airportCode="KHI" name="Karachi - Quaid-E-Azam Int'l" city="Karachi" country_id="54"/>
+    <airport id="698" airportCode="KSD" name="Karlstad" city="Karlstad" country_id="122"/>
+    <airport id="699" airportCode="AOK" name="Karpathos" city="Karpathos" country_id="45"/>
+    <airport id="700" airportCode="KTA" name="Karratha" city="Karratha" country_id="14"/>
+    <airport id="701" airportCode="KRB" name="Karumba" city="Karumba" country_id="14"/>
+    <airport id="702" airportCode="KRP" name="Karup" city="Karup" country_id="1"/>
+    <airport id="703" airportCode="ZKE" name="Kaschechawan, PQ" city="Kaschechawan," country_id="50"/>
+    <airport id="704" airportCode="KSL" name="Kassala" city="Kassala" country_id="137"/>
+    <airport id="705" airportCode="KTR" name="Katherine" city="Katherine" country_id="14"/>
+    <airport id="706" airportCode="KTM" name="Kathmandu - Tribhuvan" city="Kathmandu" country_id="138"/>
+    <airport id="707" airportCode="MPA" name="Katima Mulilo/Mpacha" city="Katima" country_id="139"/>
+    <airport id="708" airportCode="KHJ" name="Kauhajoki" city="Kauhajoki" country_id="111"/>
+    <airport id="709" airportCode="MKK" name="Kaunakakai" city="Kaunakakai" country_id="5"/>
+    <airport id="710" airportCode="KVA" name="Kavalla" city="Kavalla" country_id="45"/>
+    <airport id="711" airportCode="KZN" name="Kazan (Ka San)" city="Kazan" country_id="16"/>
+    <airport id="712" airportCode="KMP" name="Keetmanshoop" city="Keetmanshoop" country_id="139"/>
+    <airport id="713" airportCode="YLW" name="Kelowna, BC" city="Kelowna," country_id="50"/>
+    <airport id="714" airportCode="KEM" name="Kemi/Tornio" city="Kemi/Tornio" country_id="111"/>
+    <airport id="715" airportCode="ZNS" name="Kempten" city="Kempten" country_id="52"/>
+    <airport id="716" airportCode="ENA" name="Kenai" city="Kenai" country_id="5"/>
+    <airport id="717" airportCode="KIR" name="Kerry County" city="Kerry" country_id="97"/>
+    <airport id="718" airportCode="KTN" name="Ketchikan" city="Ketchikan" country_id="5"/>
+    <airport id="719" airportCode="EYW" name="Key West" city="Key" country_id="5"/>
+    <airport id="720" airportCode="AHB" name="Khamis Mushayat" city="Khamis" country_id="101"/>
+    <airport id="721" airportCode="UVL" name="Kharga - New Valley" city="Kharga" country_id="9"/>
+    <airport id="722" airportCode="KRT" name="Khartoum" city="Khartoum" country_id="137"/>
+    <airport id="723" airportCode="KDD" name="Khuzdar" city="Khuzdar" country_id="54"/>
+    <airport id="724" airportCode="KEL" name="Kiel - Holtenau" city="Kiel" country_id="52"/>
+    <airport id="725" airportCode="KBP" name="Kiev - Borispol" city="Kiev" country_id="140"/>
+    <airport id="726" airportCode="IEV" name="Kiev - Zhulhany" city="Kiev" country_id="140"/>
+    <airport id="727" airportCode="KGL" name="Kigali - Gregoire Kayibanda" city="Kigali" country_id="141"/>
+    <airport id="728" airportCode="JRO" name="Kilimadjaro" city="Kilimadjaro" country_id="44"/>
+    <airport id="729" airportCode="ILE" name="Killeem" city="Killeem" country_id="5"/>
+    <airport id="730" airportCode="KIM" name="Kimberley" city="Kimberley" country_id="20"/>
+    <airport id="731" airportCode="KNS" name="King Island" city="King" country_id="142"/>
+    <airport id="732" airportCode="AKN" name="King Salomon" city="King" country_id="5"/>
+    <airport id="733" airportCode="KGC" name="Kingscote" city="Kingscote" country_id="14"/>
+    <airport id="734" airportCode="KIN" name="Kingston - Norman Manley" city="Kingston" country_id="143"/>
+    <airport id="735" airportCode="ISO" name="Kingston" city="Kingston" country_id="5"/>
+    <airport id="736" airportCode="FIH" name="Kinshasa - N'Djili" city="Kinshasa" country_id="144"/>
+    <airport id="737" airportCode="KKN" name="Kirkenes" city="Kirkenes" country_id="27"/>
+    <airport id="738" airportCode="KIK" name="Kirkuk" city="Kirkuk" country_id="53"/>
+    <airport id="739" airportCode="KRN" name="Kiruna" city="Kiruna" country_id="122"/>
+    <airport id="740" airportCode="FKI" name="Kisangani" city="Kisangani" country_id="145"/>
+    <airport id="741" airportCode="KTT" name="Kittilae" city="Kittilae" country_id="122"/>
+    <airport id="742" airportCode="KIW" name="Kitwe" city="Kitwe" country_id="91"/>
+    <airport id="743" airportCode="KLU" name="Klagenfurt" city="Klagenfurt" country_id="124"/>
+    <airport id="744" airportCode="LMT" name="Klamath Fall" city="Klamath" country_id="5"/>
+    <airport id="745" airportCode="KLW" name="Klawock" city="Klawock" country_id="5"/>
+    <airport id="746" airportCode="KLZ" name="Kleinsee" city="Kleinsee" country_id="20"/>
+    <airport id="747" airportCode="NOC" name="Knock" city="Knock" country_id="97"/>
+    <airport id="748" airportCode="TYS" name="Knoxville" city="Knoxville" country_id="5"/>
+    <airport id="749" airportCode="UKB" name="Kobe" city="Kobe" country_id="24"/>
+    <airport id="750" airportCode="KCZ" name="Kochi" city="Kochi" country_id="24"/>
+    <airport id="751" airportCode="CGN" name="KÃ¶ln, KÃ¶ln/Bonn" city="KÃ¶ln," country_id="52"/>
+    <airport id="752" airportCode="ADQ" name="Kodiak" city="Kodiak" country_id="5"/>
+    <airport id="753" airportCode="OHT" name="Kohat" city="Kohat" country_id="54"/>
+    <airport id="754" airportCode="KOK" name="Kokkola/Pietarsaari" city="Kokkola/Pietarsaari" country_id="111"/>
+    <airport id="755" airportCode="CCU" name="Kolkata (Calcutta) - Netaji Subhas Chandra" city="Kolkata" country_id="22"/>
+    <airport id="756" airportCode="KOA" name="Kona" city="Kona" country_id="5"/>
+    <airport id="757" airportCode="HGO" name="Korhogo" city="Korhogo" country_id="6"/>
+    <airport id="758" airportCode="KGS" name="Kos" city="Kos" country_id="45"/>
+    <airport id="759" airportCode="BKI" name="Kota Kinabalu" city="Kota" country_id="73"/>
+    <airport id="760" airportCode="OTZ" name="Kotzbue" city="Kotzbue" country_id="5"/>
+    <airport id="761" airportCode="KWM" name="Kowanyama" city="Kowanyama" country_id="14"/>
+    <airport id="762" airportCode="KRK" name="Krakau" city="Krakau" country_id="119"/>
+    <airport id="763" airportCode="KRS" name="Kristiansand" city="Kristiansand" country_id="27"/>
+    <airport id="764" airportCode="KID" name="Kristianstad" city="Kristianstad" country_id="122"/>
+    <airport id="765" airportCode="KSU" name="Kristiansund" city="Kristiansund" country_id="27"/>
+    <airport id="766" airportCode="KUB" name="Kuala Belait" city="Kuala" country_id="59"/>
+    <airport id="767" airportCode="KUL" name="Kuala Lumpur - Int'l Airport" city="Kuala" country_id="73"/>
+    <airport id="768" airportCode="SZB" name="Kuala Lumpur - Sultan Abdul Aziz Shah" city="Kuala" country_id="73"/>
+    <airport id="769" airportCode="KUA" name="Kuantan" city="Kuantan" country_id="73"/>
+    <airport id="770" airportCode="KCH" name="Kuching" city="Kuching" country_id="73"/>
+    <airport id="771" airportCode="KMJ" name="Kumamoto" city="Kumamoto" country_id="24"/>
+    <airport id="772" airportCode="KNX" name="Kununurra" city="Kununurra" country_id="14"/>
+    <airport id="773" airportCode="KUO" name="Kuopio" city="Kuopio" country_id="111"/>
+    <airport id="774" airportCode="KUH" name="Kushiro" city="Kushiro" country_id="24"/>
+    <airport id="775" airportCode="YVP" name="Kuujjuaq (FortChimo)" city="Kuujjuaq" country_id="50"/>
+    <airport id="776" airportCode="YGW" name="Kuujjuarapik" city="Kuujjuarapik" country_id="50"/>
+    <airport id="777" airportCode="KAO" name="Kuusamo" city="Kuusamo" country_id="111"/>
+    <airport id="778" airportCode="KWI" name="Kuwait - Kuwait Int'l" city="Kuwait" country_id="146"/>
+    <airport id="779" airportCode="UKY" name="Kyoto" city="Kyoto" country_id="24"/>
+    <airport id="780" airportCode="LEK" name="Labe" city="Labe" country_id="96"/>
+    <airport id="781" airportCode="WLB" name="Labouchere Bay" city="Labouchere" country_id="5"/>
+    <airport id="782" airportCode="LBU" name="Labuan" city="Labuan" country_id="73"/>
+    <airport id="783" airportCode="XLB" name="Lac Brochet, MB" city="Lac" country_id="50"/>
+    <airport id="784" airportCode="LCG" name="La Coruna" city="La" country_id="30"/>
+    <airport id="785" airportCode="LSE" name="La Crosse" city="La" country_id="5"/>
+    <airport id="786" airportCode="LAE" name="Lae" city="Lae" country_id="147"/>
+    <airport id="787" airportCode="LRH" name="La Rochelle" city="La" country_id="23"/>
+    <airport id="788" airportCode="LAF" name="Lafayette" city="Lafayette" country_id="5"/>
+    <airport id="789" airportCode="LFT" name="Lafayette" city="Lafayette" country_id="5"/>
+    <airport id="790" airportCode="LOS" name="Lagos - Murtala Muhammed" city="Lagos" country_id="8"/>
+    <airport id="791" airportCode="YGL" name="La Grande" city="La" country_id="50"/>
+    <airport id="792" airportCode="LHE" name="Lahore" city="Lahore" country_id="54"/>
+    <airport id="793" airportCode="LCH" name="Lake Charles" city="Lake" country_id="5"/>
+    <airport id="794" airportCode="HII" name="Lake Havasu City" city="Lake" country_id="5"/>
+    <airport id="795" airportCode="TVL" name="Lake Tahoe" city="Lake" country_id="5"/>
+    <airport id="796" airportCode="LKL" name="Lakselv" city="Lakselv" country_id="27"/>
+    <airport id="797" airportCode="LBQ" name="Lambarene" city="Lambarene" country_id="148"/>
+    <airport id="798" airportCode="SUF" name="Lamezia Terme" city="Lamezia" country_id="28"/>
+    <airport id="799" airportCode="LMP" name="Lampedusa" city="Lampedusa" country_id="28"/>
+    <airport id="800" airportCode="LNY" name="Lanai City" city="Lanai" country_id="5"/>
+    <airport id="801" airportCode="LNS" name="Lancaster" city="Lancaster" country_id="5"/>
+    <airport id="802" airportCode="LGK" name="Langkawi" city="Langkawi" country_id="73"/>
+    <airport id="803" airportCode="LAI" name="Lannion" city="Lannion" country_id="23"/>
+    <airport id="804" airportCode="HLA" name="Lanseria" city="Lanseria" country_id="20"/>
+    <airport id="805" airportCode="LAN" name="Lansing" city="Lansing" country_id="5"/>
+    <airport id="806" airportCode="LPB" name="La Paz - El Alto" city="La" country_id="94"/>
+    <airport id="807" airportCode="LAP" name="La Paz - Leon" city="La" country_id="10"/>
+    <airport id="808" airportCode="LPP" name="Lappeenranta" city="Lappeenranta" country_id="111"/>
+    <airport id="809" airportCode="LAR" name="Laramie" city="Laramie" country_id="5"/>
+    <airport id="810" airportCode="LRD" name="Laredo" city="Laredo" country_id="5"/>
+    <airport id="811" airportCode="LCA" name="Larnaca" city="Larnaca" country_id="25"/>
+    <airport id="812" airportCode="LPA" name="Las Palmas" city="Las" country_id="30"/>
+    <airport id="813" airportCode="LAS" name="Las Vegas" city="Las" country_id="5"/>
+    <airport id="814" airportCode="LBE" name="Latrobe" city="Latrobe" country_id="5"/>
+    <airport id="815" airportCode="LST" name="Launceston" city="Launceston" country_id="14"/>
+    <airport id="816" airportCode="PIB" name="Laurel/Hattisburg" city="Laurel/Hattisburg" country_id="5"/>
+    <airport id="817" airportCode="LVO" name="Laverton" city="Laverton" country_id="14"/>
+    <airport id="818" airportCode="LAW" name="Lawton" city="Lawton" country_id="5"/>
+    <airport id="819" airportCode="LZC" name="Lazaro Cardenas" city="Lazaro" country_id="10"/>
+    <airport id="820" airportCode="YLR" name="Leaf Rapids" city="Leaf" country_id="50"/>
+    <airport id="821" airportCode="LEA" name="Learmouth (Exmouth)" city="Learmouth" country_id="14"/>
+    <airport id="822" airportCode="LEB" name="Lebanon" city="Lebanon" country_id="5"/>
+    <airport id="823" airportCode="LBA" name="Leeds/Bradford" city="Leeds/Bradford" country_id="4"/>
+    <airport id="824" airportCode="LER" name="Leinster" city="Leinster" country_id="14"/>
+    <airport id="825" airportCode="LEJ" name="Leipzig" city="Leipzig" country_id="52"/>
+    <airport id="826" airportCode="BJX" name="Leon" city="Leon" country_id="10"/>
+    <airport id="827" airportCode="LNO" name="Leonora" city="Leonora" country_id="14"/>
+    <airport id="828" airportCode="LWS" name="Lewiston" city="Lewiston" country_id="5"/>
+    <airport id="829" airportCode="LWT" name="Lewistown" city="Lewistown" country_id="5"/>
+    <airport id="830" airportCode="LEX" name="Lexington" city="Lexington" country_id="5"/>
+    <airport id="831" airportCode="LBV" name="Libreville" city="Libreville" country_id="148"/>
+    <airport id="832" airportCode="LDK" name="Lidkoeping" city="Lidkoeping" country_id="122"/>
+    <airport id="833" airportCode="LGG" name="Liege" city="Liege" country_id="40"/>
+    <airport id="834" airportCode="LPP" name="Lifou" city="Lifou" country_id="149"/>
+    <airport id="835" airportCode="LIH" name="Lihue" city="Lihue" country_id="5"/>
+    <airport id="836" airportCode="LIL" name="Lille" city="Lille" country_id="23"/>
+    <airport id="837" airportCode="LLW" name="Lilongwe - Lilongwe International" city="Lilongwe" country_id="75"/>
+    <airport id="838" airportCode="LIM" name="Lima - J Chavez Int'l" city="Lima" country_id="134"/>
+    <airport id="839" airportCode="QLI" name="Limassol" city="Limassol" country_id="25"/>
+    <airport id="840" airportCode="LIG" name="Limoges" city="Limoges" country_id="23"/>
+    <airport id="841" airportCode="LNK" name="Lincoln" city="Lincoln" country_id="5"/>
+    <airport id="842" airportCode="LDC" name="Lindeman Island" city="Lindeman" country_id="14"/>
+    <airport id="843" airportCode="LNZ" name="Linz - Hoersching" city="Linz" country_id="124"/>
+    <airport id="844" airportCode="DRP" name="Lisala" city="Lisala" country_id="150"/>
+    <airport id="845" airportCode="LIS" name="Lisbon - Lisboa" city="Lisbon" country_id="114"/>
+    <airport id="846" airportCode="LSY" name="Lismore" city="Lismore" country_id="14"/>
+    <airport id="847" airportCode="LIT" name="Little Rock" city="Little" country_id="5"/>
+    <airport id="848" airportCode="LPL" name="Liverpool" city="Liverpool" country_id="4"/>
+    <airport id="849" airportCode="LZR" name="Lizard Island" city="Lizard" country_id="14"/>
+    <airport id="850" airportCode="LJU" name="Ljubljana - Brnik" city="Ljubljana" country_id="151"/>
+    <airport id="851" airportCode="IRG" name="Lockhart River" city="Lockhart" country_id="14"/>
+    <airport id="852" airportCode="LFW" name="Lome" city="Lome" country_id="152"/>
+    <airport id="853" airportCode="YXU" name="London" city="London" country_id="50"/>
+    <airport id="854" airportCode="LON" name="London" city="London" country_id="4"/>
+    <airport id="855" airportCode="LCY" name="London - City Airport" city="London" country_id="4"/>
+    <airport id="856" airportCode="LGW" name="London - Gatwick" city="London" country_id="4"/>
+    <airport id="857" airportCode="LHR" name="London - Heathrow" city="London" country_id="4"/>
+    <airport id="858" airportCode="LTN" name="London - Luton" city="London" country_id="4"/>
+    <airport id="859" airportCode="STN" name="London - Stansted" city="London" country_id="4"/>
+    <airport id="860" airportCode="LGB" name="Long Beach" city="Long" country_id="5"/>
+    <airport id="861" airportCode="LIJ" name="Long Island" city="Long" country_id="5"/>
+    <airport id="862" airportCode="ISP" name="Long Island" city="Long" country_id="5"/>
+    <airport id="863" airportCode="LRE" name="Longreach" city="Longreach" country_id="14"/>
+    <airport id="864" airportCode="GGG" name="Longview/Kilgore" city="Longview/Kilgore" country_id="5"/>
+    <airport id="865" airportCode="LYR" name="Longyearbyen - Svalbard" city="Longyearbyen" country_id="153"/>
+    <airport id="866" airportCode="LTO" name="Loreto" city="Loreto" country_id="10"/>
+    <airport id="867" airportCode="LRT" name="Lorient" city="Lorient" country_id="23"/>
+    <airport id="868" airportCode="LAX" name="Los Angeles" city="Los" country_id="5"/>
+    <airport id="869" airportCode="SJD" name="Los Cabos" city="Los" country_id="10"/>
+    <airport id="870" airportCode="LMM" name="Los Mochis" city="Los" country_id="10"/>
+    <airport id="871" airportCode="TFN" name="Los Rodeos" city="Los" country_id="154"/>
+    <airport id="872" airportCode="LSZ" name="(Mali) Losinj - Losinj Arpt" city="(Mali)" country_id="106"/>
+    <airport id="873" airportCode="LDE" name="Lourdes/Tarbes" city="Lourdes/Tarbes" country_id="23"/>
+    <airport id="874" airportCode="SDF" name="Louisville" city="Louisville" country_id="5"/>
+    <airport id="875" airportCode="LAD" name="Luanda - 4 de Fevereiro" city="Luanda" country_id="71"/>
+    <airport id="876" airportCode="LBB" name="Lubbock" city="Lubbock" country_id="5"/>
+    <airport id="877" airportCode="LKO" name="Lucknow" city="Lucknow" country_id="22"/>
+    <airport id="878" airportCode="LUD" name="Luederitz" city="Luederitz" country_id="139"/>
+    <airport id="879" airportCode="MLA" name="Luga" city="Luga" country_id="155"/>
+    <airport id="880" airportCode="LUG" name="Lugano" city="Lugano" country_id="32"/>
+    <airport id="881" airportCode="LLA" name="Lulea" city="Lulea" country_id="122"/>
+    <airport id="882" airportCode="FBM" name="Lumbumbashi" city="Lumbumbashi" country_id="145"/>
+    <airport id="883" airportCode="LUN" name="Lusaka" city="Lusaka" country_id="91"/>
+    <airport id="884" airportCode="LUJ" name="Lusisiki" city="Lusisiki" country_id="20"/>
+    <airport id="885" airportCode="LUX" name="Luxembourg" city="Luxembourg" country_id="156"/>
+    <airport id="886" airportCode="LXR" name="Luxor" city="Luxor" country_id="9"/>
+    <airport id="887" airportCode="LWO" name="Lvov (Lwow, Lemberg)" city="Lvov" country_id="140"/>
+    <airport id="888" airportCode="LYH" name="Lynchburg" city="Lynchburg" country_id="5"/>
+    <airport id="889" airportCode="LYS" name="Lyon" city="Lyon" country_id="23"/>
+    <airport id="890" airportCode="MST" name="Maastricht/Aachen" city="Maastricht/Aachen" country_id="34"/>
+    <airport id="891" airportCode="MCP" name="Macapa" city="Macapa" country_id="42"/>
+    <airport id="892" airportCode="MCZ" name="Maceio" city="Maceio" country_id="42"/>
+    <airport id="893" airportCode="MKY" name="Mackay" city="Mackay" country_id="14"/>
+    <airport id="894" airportCode="MCN" name="Macon" city="Macon" country_id="5"/>
+    <airport id="895" airportCode="NOP" name="Mactan Island - Nab" city="Mactan" country_id="90"/>
+    <airport id="896" airportCode="MSN" name="Madison" city="Madison" country_id="5"/>
+    <airport id="897" airportCode="MAA" name="Madras (Chennai)" city="Madras" country_id="22"/>
+    <airport id="898" airportCode="MAD" name="Madrid - Barajas" city="Madrid" country_id="30"/>
+    <airport id="899" airportCode="SEZ" name="Mahe - Seychelles Int'l" city="Mahe" country_id="157"/>
+    <airport id="900" airportCode="MAH" name="Mahon" city="Mahon" country_id="30"/>
+    <airport id="901" airportCode="MTL" name="Maitland" city="Maitland" country_id="14"/>
+    <airport id="902" airportCode="MJN" name="Majunga" city="Majunga" country_id="38"/>
+    <airport id="903" airportCode="MZG" name="Makung" city="Makung" country_id="136"/>
+    <airport id="904" airportCode="SSG" name="Malabo" city="Malabo" country_id="158"/>
+    <airport id="905" airportCode="AGP" name="Malaga" city="Malaga" country_id="30"/>
+    <airport id="906" airportCode="MLE" name="Male - International" city="Male" country_id="159"/>
+    <airport id="907" airportCode="MYD" name="Malindi" city="Malindi" country_id="160"/>
+    <airport id="908" airportCode="MMA" name="Malmo (Malmoe)" city="Malmo" country_id="122"/>
+    <airport id="909" airportCode="MMX" name="Malmo (Malmoe) - Sturup" city="Malmo" country_id="122"/>
+    <airport id="910" airportCode="MJC" name="Man" city="Man" country_id="6"/>
+    <airport id="911" airportCode="MGA" name="Managua - Augusto C Sandino" city="Managua" country_id="161"/>
+    <airport id="912" airportCode="MAO" name="Manaus" city="Manaus" country_id="42"/>
+    <airport id="913" airportCode="MAN" name="Manchester" city="Manchester" country_id="4"/>
+    <airport id="914" airportCode="MHT" name="Manchester" city="Manchester" country_id="5"/>
+    <airport id="915" airportCode="MFO" name="Manguna" city="Manguna" country_id="147"/>
+    <airport id="916" airportCode="XMH" name="Manihi" city="Manihi" country_id="78"/>
+    <airport id="917" airportCode="MNL" name="Manila - Ninoy Aquino Int'l" city="Manila" country_id="90"/>
+    <airport id="918" airportCode="ZLO" name="Manzanillo" city="Manzanillo" country_id="10"/>
+    <airport id="919" airportCode="MTS" name="Manzini - Matsapha Int'l" city="Manzini" country_id="162"/>
+    <airport id="920" airportCode="MPM" name="Maputo - Maputo International" city="Maputo" country_id="66"/>
+    <airport id="921" airportCode="MDQ" name="Mar del Plata" city="Mar" country_id="84"/>
+    <airport id="922" airportCode="MAR" name="Maracaibo - La Chinita" city="Maracaibo" country_id="62"/>
+    <airport id="923" airportCode="MFQ" name="Maradi" city="Maradi" country_id="17"/>
+    <airport id="924" airportCode="MTH" name="Marathon" city="Marathon" country_id="5"/>
+    <airport id="925" airportCode="MEE" name="Mare" city="Mare" country_id="133"/>
+    <airport id="926" airportCode="MGH" name="Margate" city="Margate" country_id="20"/>
+    <airport id="927" airportCode="PMV" name="Margerita" city="Margerita" country_id="62"/>
+    <airport id="928" airportCode="MBX" name="Maribor" city="Maribor" country_id="151"/>
+    <airport id="929" airportCode="MHQ" name="Mariehamn (Maarianhamina)" city="Mariehamn" country_id="111"/>
+    <airport id="930" airportCode="MVR" name="Maroua" city="Maroua" country_id="105"/>
+    <airport id="931" airportCode="MQT" name="Marquette" city="Marquette" country_id="5"/>
+    <airport id="932" airportCode="RAK" name="Marrakech - Menara" city="Marrakech" country_id="18"/>
+    <airport id="933" airportCode="MUH" name="Marsa Matrah (Marsa Matruh)" city="Marsa" country_id="9"/>
+    <airport id="934" airportCode="MRS" name="Marseille" city="Marseille" country_id="23"/>
+    <airport id="935" airportCode="MHH" name="Marsh Harbour" city="Marsh" country_id="93"/>
+    <airport id="936" airportCode="MVY" name="Martha's Vineyard" city="Martha's" country_id="5"/>
+    <airport id="937" airportCode="MBH" name="Maryborough" city="Maryborough" country_id="14"/>
+    <airport id="938" airportCode="MSU" name="Maseru - Moshoeshoe Int'l" city="Maseru" country_id="163"/>
+    <airport id="939" airportCode="MCW" name="Mason City" city="Mason" country_id="5"/>
+    <airport id="940" airportCode="MVZ" name="Masvingo" city="Masvingo" country_id="85"/>
+    <airport id="941" airportCode="MMJ" name="Matsumoto, Nagano" city="Matsumoto," country_id="24"/>
+    <airport id="942" airportCode="MYJ" name="Matsuyama" city="Matsuyama" country_id="24"/>
+    <airport id="943" airportCode="MTO" name="Mattoon" city="Mattoon" country_id="5"/>
+    <airport id="944" airportCode="MUB" name="Maun" city="Maun" country_id="118"/>
+    <airport id="945" airportCode="MAU" name="Maupiti" city="Maupiti" country_id="78"/>
+    <airport id="946" airportCode="MRU" name="Mauritius - S.Seewoosagur Ram Int'l" city="Mauritius" country_id="164"/>
+    <airport id="947" airportCode="MAZ" name="Mayaguez" city="Mayaguez" country_id="21"/>
+    <airport id="948" airportCode="MZT" name="Mazatlan" city="Mazatlan" country_id="10"/>
+    <airport id="949" airportCode="MFE" name="McAllen" city="McAllen" country_id="5"/>
+    <airport id="950" airportCode="MES" name="Medan" city="Medan" country_id="100"/>
+    <airport id="951" airportCode="MDE" name="Medellin" city="Medellin" country_id="46"/>
+    <airport id="952" airportCode="MFR" name="Medford" city="Medford" country_id="5"/>
+    <airport id="953" airportCode="MED" name="Medina" city="Medina" country_id="101"/>
+    <airport id="954" airportCode="MKR" name="Meekatharra" city="Meekatharra" country_id="14"/>
+    <airport id="955" airportCode="MEL" name="Melbourne - Tullamarine" city="Melbourne" country_id="14"/>
+    <airport id="956" airportCode="MLB" name="Melbourne" city="Melbourne" country_id="5"/>
+    <airport id="957" airportCode="MEM" name="Memphis" city="Memphis" country_id="5"/>
+    <airport id="958" airportCode="MDZ" name="Mendoza" city="Mendoza" country_id="84"/>
+    <airport id="959" airportCode="MDC" name="Manado" city="Manado" country_id="100"/>
+    <airport id="960" airportCode="MCE" name="Merced" city="Merced" country_id="5"/>
+    <airport id="961" airportCode="MID" name="Merida" city="Merida" country_id="10"/>
+    <airport id="962" airportCode="MEI" name="Meridian" city="Meridian" country_id="5"/>
+    <airport id="963" airportCode="MIM" name="Merimbula" city="Merimbula" country_id="14"/>
+    <airport id="964" airportCode="MEZ" name="Messina" city="Messina" country_id="20"/>
+    <airport id="965" airportCode="MTM" name="Metlakatla" city="Metlakatla" country_id="5"/>
+    <airport id="966" airportCode="MZM" name="Metz" city="Metz" country_id="23"/>
+    <airport id="967" airportCode="MXL" name="Mexicali" city="Mexicali" country_id="10"/>
+    <airport id="968" airportCode="MEX" name="Mexico City" city="Mexico" country_id="10"/>
+    <airport id="969" airportCode="MEX" name="Mexico City - Juarez International" city="Mexico" country_id="10"/>
+    <airport id="970" airportCode="MFU" name="Mfuwe" city="Mfuwe" country_id="91"/>
+    <airport id="971" airportCode="MIA" name="Miami" city="Miami" country_id="5"/>
+    <airport id="972" airportCode="MWD" name="Mianwali" city="Mianwali" country_id="54"/>
+    <airport id="973" airportCode="MMM" name="Middlemount" city="Middlemount" country_id="14"/>
+    <airport id="974" airportCode="MAF" name="Midland/Odessa" city="Midland/Odessa" country_id="5"/>
+    <airport id="975" airportCode="MIK" name="Mikkeli" city="Mikkeli" country_id="111"/>
+    <airport id="976" airportCode="MIL" name="Milan" city="Milan" country_id="28"/>
+    <airport id="977" airportCode="LIN" name="Milan - Linate" city="Milan" country_id="28"/>
+    <airport id="978" airportCode="MXP" name="Milan - Malpensa" city="Milan" country_id="28"/>
+    <airport id="979" airportCode="BGY" name="Milan - Orio Al Serio" city="Milan" country_id="28"/>
+    <airport id="980" airportCode="MQL" name="Mildura" city="Mildura" country_id="14"/>
+    <airport id="981" airportCode="MLS" name="Miles City" city="Miles" country_id="5"/>
+    <airport id="982" airportCode="MFN" name="Milford Sound" city="Milford" country_id="51"/>
+    <airport id="983" airportCode="MKE" name="Milwaukee" city="Milwaukee" country_id="5"/>
+    <airport id="984" airportCode="MTT" name="Minatitlan" city="Minatitlan" country_id="10"/>
+    <airport id="985" airportCode="MRV" name="Mineralnye Vody" city="Mineralnye" country_id="16"/>
+    <airport id="986" airportCode="MSP" name="Minneapolis - St. Paul Int'l Airport" city="Minneapolis" country_id="5"/>
+    <airport id="987" airportCode="MOT" name="Minot" city="Minot" country_id="5"/>
+    <airport id="988" airportCode="MSQ" name="Minsk, International" city="Minsk," country_id="165"/>
+    <airport id="989" airportCode="MYY" name="Miri" city="Miri" country_id="73"/>
+    <airport id="990" airportCode="QML" name="Mirpur" city="Mirpur" country_id="54"/>
+    <airport id="991" airportCode="MSO" name="Missula" city="Missula" country_id="5"/>
+    <airport id="992" airportCode="MHE" name="Mitchell" city="Mitchell" country_id="5"/>
+    <airport id="993" airportCode="MMY" name="Miyako Jima (Ryuku Islands) - Hirara" city="Miyako" country_id="24"/>
+    <airport id="994" airportCode="MBM" name="Mkambati" city="Mkambati" country_id="20"/>
+    <airport id="995" airportCode="MFF" name="Moanda" city="Moanda" country_id="148"/>
+    <airport id="996" airportCode="MOB" name="Mobile" city="Mobile" country_id="5"/>
+    <airport id="997" airportCode="MOD" name="Modesto" city="Modesto" country_id="5"/>
+    <airport id="998" airportCode="MJD" name="Moenjodaro" city="Moenjodaro" country_id="54"/>
+    <airport id="999" airportCode="MGQ" name="Mogadischu" city="Mogadischu" country_id="166"/>
+    <airport id="1000" airportCode="OKU" name="Mokuti" city="Mokuti" country_id="139"/>
+    <airport id="1001" airportCode="MLI" name="Moline/Quad Cities" city="Moline/Quad" country_id="5"/>
+    <airport id="1002" airportCode="MBA" name="Mombasa - Moi International" city="Mombasa" country_id="160"/>
+    <airport id="1003" airportCode="MIR" name="Monastir" city="Monastir" country_id="102"/>
+    <airport id="1004" airportCode="MLU" name="Monroe" city="Monroe" country_id="5"/>
+    <airport id="1005" airportCode="MLW" name="Monrovia" city="Monrovia" country_id="167"/>
+    <airport id="1006" airportCode="ROB" name="Monrovia - Roberts Int'l" city="Monrovia" country_id="167"/>
+    <airport id="1007" airportCode="MBJ" name="Montenego Bay" city="Montenego" country_id="143"/>
+    <airport id="1008" airportCode="QGF" name="Montenegro" city="Montenegro" country_id="42"/>
+    <airport id="1009" airportCode="MRY" name="Monterey" city="Monterey" country_id="5"/>
+    <airport id="1010" airportCode="MTY" name="Monterrey" city="Monterrey" country_id="10"/>
+    <airport id="1011" airportCode="NTR" name="Monterrey - Aeropuerto Del Norte" city="Monterrey" country_id="10"/>
+    <airport id="1012" airportCode="MVD" name="Montevideo - Carrasco" city="Montevideo" country_id="168"/>
+    <airport id="1013" airportCode="MGM" name="Montgomery" city="Montgomery" country_id="5"/>
+    <airport id="1014" airportCode="MPL" name="Montpellier - Frejorgues" city="Montpellier" country_id="23"/>
+    <airport id="1015" airportCode="YMQ" name="Montreal" city="Montreal" country_id="50"/>
+    <airport id="1016" airportCode="YUL" name="Montreal - Dorval" city="Montreal" country_id="50"/>
+    <airport id="1017" airportCode="YMX" name="Montreal - Mirabel" city="Montreal" country_id="50"/>
+    <airport id="1018" airportCode="MTJ" name="Montrose/Tellruide" city="Montrose/Tellruide" country_id="5"/>
+    <airport id="1019" airportCode="MOZ" name="Moorea" city="Moorea" country_id="78"/>
+    <airport id="1020" airportCode="MOV" name="Moranbah" city="Moranbah" country_id="14"/>
+    <airport id="1021" airportCode="MRZ" name="Moree" city="Moree" country_id="14"/>
+    <airport id="1022" airportCode="MLM" name="Morelia" city="Morelia" country_id="10"/>
+    <airport id="1023" airportCode="MGW" name="Morgantown" city="Morgantown" country_id="5"/>
+    <airport id="1024" airportCode="HNA" name="Morioka, Hanamaki" city="Morioka," country_id="24"/>
+    <airport id="1025" airportCode="HAH" name="Moroni - Prince Said Ibrahim" city="Moroni" country_id="37"/>
+    <airport id="1026" airportCode="YVA" name="Moroni - Iconi" city="Moroni" country_id="37"/>
+    <airport id="1027" airportCode="MOW" name="Moscow - Metropolitan Area" city="Moscow" country_id="16"/>
+    <airport id="1028" airportCode="DME" name="Moscow - Domodedovo" city="Moscow" country_id="16"/>
+    <airport id="1029" airportCode="SVO" name="Moscow - Sheremetyevo" city="Moscow" country_id="16"/>
+    <airport id="1030" airportCode="VKO" name="Moscow - Vnukovo" city="Moscow" country_id="16"/>
+    <airport id="1031" airportCode="MWH" name="Moses Lake" city="Moses" country_id="5"/>
+    <airport id="1032" airportCode="OMO" name="Mostar" city="Mostar" country_id="169"/>
+    <airport id="1033" airportCode="OSM" name="Mosul" city="Mosul" country_id="53"/>
+    <airport id="1034" airportCode="MJL" name="Mouila" city="Mouila" country_id="148"/>
+    <airport id="1035" airportCode="MQQ" name="Moundou" city="Moundou" country_id="3"/>
+    <airport id="1036" airportCode="GTN" name="Mount Cook" city="Mount" country_id="51"/>
+    <airport id="1037" airportCode="MGB" name="Mount Gambier" city="Mount" country_id="14"/>
+    <airport id="1038" airportCode="MMG" name="Mount Magnet" city="Mount" country_id="14"/>
+    <airport id="1039" airportCode="ISA" name="Mt. Isa" city="Mt." country_id="14"/>
+    <airport id="1040" airportCode="MCL" name="Mt. McKinley" city="Mt." country_id="5"/>
+    <airport id="1041" airportCode="MUC" name="Muenchen (Munich) - Franz Josef Strauss" city="Muenchen" country_id="52"/>
+    <airport id="1042" airportCode="FMO" name="Muenster/Osnabrueck" city="Muenster/Osnabrueck" country_id="52"/>
+    <airport id="1043" airportCode="MSR" name="Muenster/Osnabrueck" city="Muenster/Osnabrueck" country_id="52"/>
+    <airport id="1044" airportCode="MLH" name="Mulhouse" city="Mulhouse" country_id="23"/>
+    <airport id="1045" airportCode="MUX" name="Multan" city="Multan" country_id="54"/>
+    <airport id="1046" airportCode="MJV" name="Murcia" city="Murcia" country_id="30"/>
+    <airport id="1047" airportCode="MMK" name="Murmansk" city="Murmansk" country_id="16"/>
+    <airport id="1048" airportCode="MCT" name="Muscat - Seeb" city="Muscat" country_id="170"/>
+    <airport id="1049" airportCode="MSL" name="Muscle Shoals" city="Muscle" country_id="5"/>
+    <airport id="1050" airportCode="MKG" name="Muskegon" city="Muskegon" country_id="5"/>
+    <airport id="1051" airportCode="MFG" name="Muzaffarabad" city="Muzaffarabad" country_id="54"/>
+    <airport id="1052" airportCode="MVB" name="Mvengue" city="Mvengue" country_id="148"/>
+    <airport id="1053" airportCode="JMK" name="Mykonos" city="Mykonos" country_id="45"/>
+    <airport id="1054" airportCode="MYR" name="Myrtle Beach" city="Myrtle" country_id="5"/>
+    <airport id="1055" airportCode="MJT" name="Mytilene (Lesbos)" city="Mytilene" country_id="45"/>
+    <airport id="1056" airportCode="MZF" name="Mzamba" city="Mzamba" country_id="20"/>
+    <airport id="1057" airportCode="NAN" name="Nadi" city="Nadi" country_id="171"/>
+    <airport id="1058" airportCode="NGS" name="Nagasaki" city="Nagasaki" country_id="24"/>
+    <airport id="1059" airportCode="NGO" name="Nagoya - Komaki AFB" city="Nagoya" country_id="24"/>
+    <airport id="1060" airportCode="NAG" name="Nagpur" city="Nagpur" country_id="22"/>
+    <airport id="1061" airportCode="NBO" name="Nairobi" city="Nairobi" country_id="160"/>
+    <airport id="1062" airportCode="ENC" name="Nancy" city="Nancy" country_id="23"/>
+    <airport id="1063" airportCode="YSR" name="Nanisivik" city="Nanisivik" country_id="50"/>
+    <airport id="1064" airportCode="NTE" name="Nantes" city="Nantes" country_id="23"/>
+    <airport id="1065" airportCode="ACK" name="Nantucket" city="Nantucket" country_id="5"/>
+    <airport id="1066" airportCode="NAP" name="Naples" city="Naples" country_id="28"/>
+
+</dataset>
+
+

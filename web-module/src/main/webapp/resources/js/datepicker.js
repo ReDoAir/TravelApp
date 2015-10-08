@@ -1,3 +1,5 @@
-$.fn.datepicker.dates['en'] = {
-    format: "dd/mm/yyyy"
-};
+$(function () {
+    $('#datetimepicker2').datetimepicker({
+        locale: 'nl'
+    });
+});

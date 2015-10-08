@@ -15,6 +15,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.Date;
 import java.util.DoubleSummaryStatistics;
+import java.util.List;
 
 @Named
 @RequestScoped
@@ -43,8 +44,8 @@ public class FlightController {
 
         flight.setAirline(partnerRepo.findPartner((String) SecurityUtils.getSubject().getSession().getAttribute("userName")).getAirline());
         flight.setFlightCode(flightCode);
-        flight.setArrivalDate(arrivalDate);
         flight.setDepartureDate(departureDate);
+        flight.setArrivalDate(arrivalDate);
         flight.setPrice(price);
         flight.setDepartAirport(airportRepo.getAirportByCode(departureAirport));
         flight.setArrivalAirport(airportRepo.getAirportByCode(arrivalAirport));
@@ -109,5 +110,9 @@ public class FlightController {
 
     public String getPlane() {
         return plane;
+    }
+
+    public List<Flight> getFlights(){
+        return flightRepo.getAllFlights();
     }
 }

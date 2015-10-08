@@ -5,6 +5,7 @@ import com.realdolmen.course.services.DateServices;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Date;
@@ -55,6 +56,10 @@ public class PeriodRepo {
     public void addPeriode(Period period)
     {
         em.persist(period);
+    }
+
+    public Period getPeriodById(Integer id){
+        return em.find(Period.class, id);
     }
 
     //still needs more, but the shit is not clear yet

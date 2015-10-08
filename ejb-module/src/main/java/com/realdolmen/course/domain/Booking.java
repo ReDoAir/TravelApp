@@ -3,6 +3,7 @@ package com.realdolmen.course.domain;
 import com.realdolmen.course.domain.auth.Customer;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -26,16 +27,23 @@ public class Booking implements Serializable {
     private Integer id;
 
     @ManyToOne
+    @NotNull
     private Customer customer;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date bookingDate;
 
     //customer included
+    @Basic(optional = false)
     private int count;
 
-    //todo : mapping implementation
-    //private List<Trip> trips;
+    @ManyToMany
+    @JoinTable(
+            name="trip_booking",
+            joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
+            inverseJoinColumns={@JoinColumn(name="booking", referencedColumnName="id")}
+    )
+    private List<Trip> trips;
 
     public Integer getId() {
         return id;
@@ -67,5 +75,13 @@ public class Booking implements Serializable {
 
     public void setBookingDate(Date bookingDate) {
         this.bookingDate = bookingDate;
+    }
+
+    public List<Trip> getTrips() {
+        return trips;
+    }
+
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
     }
 }

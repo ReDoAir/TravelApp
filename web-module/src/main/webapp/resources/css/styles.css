@@ -47,3 +47,8 @@
 .lblForm{
     margin-top: 10px;
 }
+
+.form-control.tableBtn{
+    width: 10%;
+    min-width: 100px;
+}

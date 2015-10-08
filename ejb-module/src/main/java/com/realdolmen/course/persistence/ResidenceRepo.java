@@ -42,6 +42,10 @@ public class ResidenceRepo {
         em.flush();
     }
 
+    public Residence getRepoWithPeriodId(Integer periodId) {
+        return em.createQuery("SELECT r FROM Residence r WHERE r.period.id = :periodId", Residence.class).setParameter("periodId", periodId).getSingleResult();
+    }
+
     //More implementation is needed to complete these tasks
 
 }

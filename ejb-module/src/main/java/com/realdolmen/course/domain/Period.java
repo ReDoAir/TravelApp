@@ -23,8 +23,10 @@ public class Period implements Serializable
     private Integer id;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @Column(unique = true)
     private Date departureDate;
     @Temporal(TemporalType.TIMESTAMP)
+    @Column(unique = true)
     private Date returnDate;
 
     public Period(Date departureDate, Date returnDate) {
@@ -57,5 +59,10 @@ public class Period implements Serializable
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("From : %s - To: %s", departureDate, returnDate);
     }
 }

@@ -1,5 +1,6 @@
 package com.realdolmen.course.persistence;
 
+import com.realdolmen.course.domain.Country;
 import com.realdolmen.course.domain.Trip;
 
 import javax.ejb.LocalBean;
@@ -7,11 +8,12 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.io.Serializable;
 import java.util.List;
 
 @Stateless
 @LocalBean
-public class TripRepo {
+public class TripRepo implements Serializable{
 
     @PersistenceContext
     EntityManager em;
@@ -38,7 +40,15 @@ public class TripRepo {
 
     //not yet on point (need to know relation trip - flight)
     public List<Trip> getTripsByDestinationWithEnoughPlaces(int numberOfPass) {
-        //return em.createQuery("SELECT t FROM Trip t WHERE t.flights IN (SELECT f FROM Flight f WHERE f.availablePlaces > :numberOfPass)", Trip.class).setParameter("numberOfPass", numberOfPass).getResultList();
-        return null;
+        return em.createQuery("SELECT t FROM Trip t WHERE t.toFlight IN (SELECT f FROM Flight f WHERE f.availablePlaces > :numberOfPass) AND t.fromFlight IN (SELECT f FROM Flight f WHERE f.availablePlaces > :numberOfPass)", Trip.class).setParameter("numberOfPass", numberOfPass).getResultList();
+
+    }
+
+    public List<String> getDestinations() {
+        return em.createQuery("SELECT t.destination FROM Trip t", String.class).getResultList();
+    }
+
+    public List<Trip> getTripsByCountry(String name){
+        return em.createQuery("SELECT t FROM Trip t WHERE t.destination IN (SELECT a.city FROM Country c JOIN c.airports a WHERE c.name = :name)", Trip.class).setParameter("name", name).getResultList();
     }
 }

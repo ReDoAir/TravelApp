@@ -24,6 +24,10 @@ public class CountryRepo {
         return em.createNamedQuery(FIND_ALL_COUNTRIES, Country.class).getResultList();
     }
 
+    public List<Country> getAllCountriesWithTrips(){
+        return em.createQuery("select a.country from Trip t JOIN t.fromFlight.departAirport a where t.destination = a.city", Country.class).getResultList();
+    }
+
     //returns list of countries based on name
     //when search string is not complete, multiple countries will fill the list
     //for example "Bel" => Belgium, Belarus

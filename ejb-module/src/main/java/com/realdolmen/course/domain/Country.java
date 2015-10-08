@@ -11,19 +11,27 @@ import java.util.List;
                 @NamedQuery(name="Country.findAllByName", query = "select c from Country c where c.name like :name")
         }
 )
-public class Country implements Serializable {
 
+
+public class Country implements Serializable, Comparable {
     public static final String FIND_ALL_COUNTRIES = "Country.findAll",
-    FIND_ALL_COUNTRIES_BY_NAME = "Country.findAllByName";
-
+            FIND_ALL_COUNTRIES_BY_NAME = "Country.findAllByName";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Basic(optional = false)
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "country")
     private List<Airport>airports;
+
+    public Country(String name) {
+        this.name = name;
+    }
+
+    public Country() {
+    }
 
     public Integer getId() {
         return id;
@@ -47,5 +55,11 @@ public class Country implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Country c = (Country) o;
+        return this.name.compareTo(c.getName());
     }
 }

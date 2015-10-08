@@ -5,9 +5,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by SDOAX36 on 6/10/2015.
- */
 public class CountryPersistenceTest extends DataPersistenceTest {
 
     @Test
@@ -32,6 +29,12 @@ public class CountryPersistenceTest extends DataPersistenceTest {
     public void canRetrieveCountryAirportList()throws Exception
     {
         //todo : fix test
-        assertEquals(7,entityManager().find(Country.class,1).getAirports().size());
+        assertEquals(7,entityManager().find(Country.class, 1).getAirports().size());
+    }
+
+    @Test
+    public void canRetrieveAirportsByCountry(){
+        List<String> list = entityManager ().createQuery("SELECT a.city FROM Country c JOIN c.airports a WHERE c.name = :name", String.class).setParameter("name", "Belgium").getResultList();
+        assertTrue(3 == list.size());
     }
 }
