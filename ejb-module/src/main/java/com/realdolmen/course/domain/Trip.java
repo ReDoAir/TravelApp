@@ -88,7 +88,7 @@ public class Trip implements Serializable{
     }
 
     public void setToFlight(Flight toFlight) {
-        if(toFlight != null && fromFlight != null && fromFlight.getId() != toFlight.getId()) {
+        if(toFlight != null) {
             this.toFlight = toFlight;
         }
     }
@@ -102,7 +102,7 @@ public class Trip implements Serializable{
     }
 
     public void setFromFlight(Flight fromFlight) {
-        if(fromFlight != null && toFlight != null && fromFlight.getId() != toFlight.getId()) {
+        if(fromFlight != null && fromFlight.getId() != toFlight.getId()) {
             this.fromFlight = fromFlight;
             destination = fromFlight.getDepartAirport().getCity();
         }

@@ -24,7 +24,7 @@
         <class>com.realdolmen.course.domain.Period</class>
 
         <properties>
-            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <property name="hibernate.hbm2ddl.auto" value="validate" />
         </properties>
     </persistence-unit>
 

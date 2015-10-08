@@ -1,43 +1,46 @@
-<!DOCTYPE html>
+<ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:p="http://primefaces.org/ui">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
-    <h:head>
-        <meta charset="UTF-8"/>
-        <title>travelApp</title>
-    </h:head>
-    <h:body>
-        <ui:composition template="/resources/template/default.xhtml">
+    <ui:define name="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <h:form>
+                                <h:commandLink style="color: white" action="#{authController.logout}">Log out</h:commandLink>
+                            </h:form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </ui:define>
 
-            <ui:define name="header">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
-                        </div>
+    <ui:define name="content">
+        <h:form styleClass="userForm">
+            <h2>Search a trip</h2>
 
-                        <ul class="nav navbar-nav">
-                            <li><h:link outcome="booktrip">Book a trip</h:link></li>
-                        </ul>
+            <div class="formEle">
+                <h:outputLabel for="numberofpass">Number of travellers: </h:outputLabel>
+                <h:inputText styleClass="form-control" id="numberofpass" value="#{searchController.count}"/>
+            </div>
 
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <h:form>
-                                        <h:commandLink style="color: white" action="#{authController.logout}">Log out</h:commandLink>
-                                    </h:form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </ui:define>
+            <h:message for="numberofpass"/>
 
-            <ui:define name="content">
+            <div class="formEle">
+                <h:outputLabel for="city">Select destination: </h:outputLabel>
+                <h:selectOneMenu id="city" styleClass="form-control" value="#{searchController.destination}">
+                    <f:selectItems value="#{searchController.destinations}" var="dest" itemLabel="#{dest}" itemValue="#{dest}" />
+                </h:selectOneMenu>
+            </div>
 
-            </ui:define>
+            <h:commandButton value="Search" styleClass="formEle form-control btn-default" action="#{searchController.search}" />
 
-        </ui:composition>
-
-    </h:body>
-</html>
+        </h:form>
+    </ui:define>
+</ui:composition>

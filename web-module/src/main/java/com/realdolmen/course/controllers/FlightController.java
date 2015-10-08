@@ -44,8 +44,8 @@ public class FlightController {
 
         flight.setAirline(partnerRepo.findPartner((String) SecurityUtils.getSubject().getSession().getAttribute("userName")).getAirline());
         flight.setFlightCode(flightCode);
-        flight.setArrivalDate(arrivalDate);
         flight.setDepartureDate(departureDate);
+        flight.setArrivalDate(arrivalDate);
         flight.setPrice(price);
         flight.setDepartAirport(airportRepo.getAirportByCode(departureAirport));
         flight.setArrivalAirport(airportRepo.getAirportByCode(arrivalAirport));

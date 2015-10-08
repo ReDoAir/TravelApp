@@ -24,40 +24,34 @@
             <ui:define name="content">
                 <h:form styleClass="userForm">
 
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Number of travellers" value="#{bookingController.count}">
-                        <f:convertNumber integerOnly="true" type="number"/>
-                    </h:inputText>
+                    <h:dataTable styleClass="table" value="#{searchController.trips}" var="trip">
 
-                    <h:selectOneMenu styleClass="form-control" value="#{tripController.destination}">
-                        <f:selectItems value="#{tripController.destinations}" var="dest"
-                                       itemLabel="#{dest.name}" itemValue="#{dest}}" />
-                    </h:selectOneMenu>
-
-                    <h:commandButton styleClass="form-control btn-default" action="#{tripController.tripsToDestination(bookingController.count)}" />
-
-                    <h:dataTable styleClass="table" value="#{tripController.trips}" var="trip">
                         <h:column>
-                            <f:facet name="header">Destination</f:facet>
-                            #{trip.destination.name}
+                            <f:facet name="header">Name</f:facet>
+                            #{trip.tripName}
                         </h:column>
 
                         <h:column>
                             <f:facet name="header">Begin</f:facet>
-                            #{trip.periodId.departureDate}
+                            #{trip.period.departureDate}
                         </h:column>
 
                         <h:column>
                             <f:facet name="header">End</f:facet>
-                            #{trip.periodId.returnDate}
+                            #{trip.period.returnDate}
                         </h:column>
 
                         <h:column>
-                            <h:commandButton value="Chose" action="#{bookingController.addTrip(trip.id)}"/>
+                            <f:facet name="header">Price</f:facet>
+                        </h:column>
+
+                        <h:column>
+                            <h:commandButton styleClass="btn-default" value="Chose" action="#{bookingController.addTrip(trip.id)}"/>
                         </h:column>
 
                     </h:dataTable>
 
-                    <h:commandButton value="Confirm" action="#{bookingController.createBooking(userController.userName)}"/>
+                    <h:commandButton styleClass="btn-default form-control" value="Confirm" action="#{bookingController.createBooking(userController.userName)}"/>
 
                 </h:form>
             </ui:define>

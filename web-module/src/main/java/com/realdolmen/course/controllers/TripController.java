@@ -1,8 +1,11 @@
 package com.realdolmen.course.controllers;
 
+import com.realdolmen.course.domain.Flight;
+import com.realdolmen.course.domain.Residence;
 import com.realdolmen.course.domain.Trip;
 import com.realdolmen.course.persistence.FlightRepo;
 import com.realdolmen.course.persistence.PeriodRepo;
+import com.realdolmen.course.persistence.ResidenceRepo;
 import com.realdolmen.course.persistence.TripRepo;
 
 import javax.enterprise.context.RequestScoped;
@@ -15,42 +18,38 @@ import java.util.List;
 @RequestScoped
 public class TripController {
 
-    private List<Trip> trips = new ArrayList<>();
-
     @Inject
     private TripRepo tripRepo;
     @Inject
     private PeriodRepo periodRepo;
     @Inject
     private FlightRepo flightRepo;
+    @Inject
+    private ResidenceRepo residenceRepo;
 
     private String name;
     private Integer periodId;
     private Integer depFlightId;
     private Integer returnFlightId;
 
-    public void tripsToDestination(int count){
-        trips = tripRepo.getTripsByDestinationWithEnoughPlaces(count);
-    }
-
-    public List<Trip> getTrips() {
-        return trips;
-    }
-
-    public void setTrips(List<Trip> trips) {
-        this.trips = trips;
-    }
-
     public void createTrip(){
         Trip trip = new Trip();
 
         trip.setTripName(name);
         trip.setPeriod(periodRepo.getPeriodById(periodId));
-        trip.setToFlight(flightRepo.getFlightById(depFlightId));
-        trip.setFromFlight(flightRepo.getFlightById(returnFlightId));
+        Flight depfight = flightRepo.getFlightById(depFlightId);
+        trip.setToFlight(depfight);
+        Flight retTrip = flightRepo.getFlightById(returnFlightId);
+        trip.setFromFlight(retTrip);
+        Residence residence = residenceRepo.getRepoWithPeriodId(periodId);
+
+        if(residence == null){
+            residenceRepo.addResidence(new Residence(periodRepo.getPeriodById(periodId),50.));
+        }
+
+        trip.addResidence(residence);
 
         tripRepo.addTrip(trip);
-        //trip.setDestination();
     }
 
     public void setName(String name) {

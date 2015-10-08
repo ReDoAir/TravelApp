@@ -138,9 +138,14 @@ public class Flight implements Serializable{
     }
 
     public void setArrivalDate(Date arrivalDate) {
-        if (departureDate.after(arrivalDate)) throw new ArrivalCannotBeBeforeDepartException();
+        if(departureDate != null){
+            if (departureDate.after(arrivalDate))
+            {
+                throw new ArrivalCannotBeBeforeDepartException();
+            }
 
-        this.arrivalDate = arrivalDate;
+            this.arrivalDate = arrivalDate;
+        }
     }
 
     public int getAvailablePlaces() {

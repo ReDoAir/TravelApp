@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Country implements Serializable {
+public class Country implements Serializable, Comparable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,5 +46,11 @@ public class Country implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Country c = (Country) o;
+        return this.name.compareTo(c.getName());
     }
 }

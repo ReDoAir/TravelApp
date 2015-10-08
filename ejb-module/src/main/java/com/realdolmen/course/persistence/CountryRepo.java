@@ -7,11 +7,13 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.awt.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Stateless
 @LocalBean
-public class CountryRepo {
+public class CountryRepo implements Serializable{
 
     @PersistenceContext
     EntityManager em;
@@ -19,6 +21,10 @@ public class CountryRepo {
     public List<Country> getAllCountries()
     {
         return em.createQuery("select c from Country c", Country.class).getResultList();
+    }
+
+    public List<Country> getAllCountriesWithTrips(){
+        return em.createQuery("select a.country from Trip t JOIN t.fromFlight.departAirport a where t.destination = a.city", Country.class).getResultList();
     }
 
     //returns list of countries based on name
