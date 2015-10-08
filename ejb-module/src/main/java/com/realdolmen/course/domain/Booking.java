@@ -8,7 +8,18 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@NamedQueries(
+        {
+                @NamedQuery(name="Booking.findAll",query = "select b from Booking b"),
+                @NamedQuery(name="Booking.findByBookingDate",query = "select b from Booking b where b.bookingDate = :bookingDate"),
+                @NamedQuery(name="Booking.findByCustomer",query = "select b from Booking b where b.customer = :customer")
+        }
+)
 public class Booking implements Serializable {
+
+    public static final String FIND_ALL_BOOKIGS = "Booking.findAll",
+    FIND_ALL_BY_BOOKINGDATE = "Booking.findByBookingDate",
+    FIND_BOOKINGS_BY_CUSTOMER = "Booking.findByCustomer";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

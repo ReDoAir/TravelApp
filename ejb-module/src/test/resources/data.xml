@@ -4,6 +4,8 @@
     <airline id="1000" name="JetAir"/>
     <airline id="2000" name="Thomas Cook"/>
     <airline id="3000" name="Sun web"/>
+    <airline id="4000" name="SunJets"/>
+    <airline id="5000" name="Thomas test"></airline>
     
     <country id="1" name="Denmark"/>
     <country id="2" name="Iran"/>
@@ -1293,5 +1295,23 @@
         <airport id="1065" airportCode="ACK" name="Nantucket" city="Nantucket" country_id="5"/>
         <airport id="1066" airportCode="NAP" name="Naples" city="Naples" country_id="28"/>
 
+    <booking id="1200" bookingDate="2015-10-08 12:00:00" count="5" customer_id="1300"/>
+    <booking id="1201" bookingDate="2015-11-08 12:00:00" count="5" customer_id="1300"/>
+    <booking id="1202" bookingDate="2015-10-09 12:00:00" count="5" customer_id="1300"/>
+    <booking id="1203" bookingDate="2015-12-08 12:00:00" count="5" customer_id="1300"/>
+
+    <flight id="3000" arrivalDate="2015-10-08 12:00:00" availablePlaces="355" departureDate="2015-10-08 22:00:00" flightCode="EDD12" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3001" arrivalDate="2015-10-09 22:00:00" availablePlaces="355" departureDate="2015-10-10 07:00:00" flightCode="EDD13" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3002" arrivalDate="2015-10-10 10:00:00" availablePlaces="0" departureDate="2015-10-10 20:00:00" flightCode="EDD14" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3003" arrivalDate="2015-10-11 12:00:00" availablePlaces="355" departureDate="2015-10-11 22:00:00" flightCode="EDD15" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3004" arrivalDate="2015-10-12 12:00:00" availablePlaces="355" departureDate="2015-10-12 22:00:00" flightCode="EDD16" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3005" arrivalDate="2015-10-13 12:00:00" availablePlaces="355" departureDate="2015-10-13 22:00:00" flightCode="EDD17" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3006" arrivalDate="2015-10-14 12:00:00" availablePlaces="355" departureDate="2015-10-14 22:00:00" flightCode="EDD18" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3007" arrivalDate="2015-10-15 12:00:00" availablePlaces="355" departureDate="2015-10-15 22:00:00" flightCode="EDD19" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+
+    <period id="2000" departureDate="2015-10-15 12:00:00" returnDate="2015-10-19 12:00:00"/>
+    <period id="2001" departureDate="2015-10-20 12:00:00" returnDate="2015-10-22 12:00:00"/>
+    <period id="2002" departureDate="2015-10-11 12:00:00" returnDate="2015-10-19 12:00:00"/>
+    <period id="2003" departureDate="2015-10-17 12:00:00" returnDate="2015-10-22 12:00:00"/>
 </dataset>
 

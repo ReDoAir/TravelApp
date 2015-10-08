@@ -1,9 +1,6 @@
 package com.realdolmen.course.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
@@ -11,7 +8,18 @@ import java.io.Serializable;
  * Created by SDOAX36 on 5/10/2015.
  */
 @Entity
+@NamedQueries(
+        {
+                @NamedQuery(name="Plane.findAllPlanes",query = "select p from Plane p"),
+                @NamedQuery(name="Plane.findPlaneWithCode", query = "select p from Plane p where p.planeCode like :planeCode"),
+                @NamedQuery(name="Plane.findAllPlanesWithNumberOfSeatsHigherThan",query = "select p from Plane p where p.numberOfSeats >= :number")
+        }
+)
 public class Plane implements Serializable{
+
+    public static final String FIND_ALL_PLANES="Plane.findAllPlanes",
+    FIND_PLANE_WITH_CODE="Plane.findPlaneWithCode",
+    FIND_ALL_PLANES_WITH_NUMBER_OF_SEATS_HIGHER_THAN="Plane.findAllPlanesWithNumberOfSeatsHigherThan";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

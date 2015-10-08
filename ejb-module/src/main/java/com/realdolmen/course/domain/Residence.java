@@ -6,7 +6,15 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name="Residence.findAll",query="select r from Residence r"),
+        @NamedQuery(name="Residence.findAllByPeriod", query = "select r from Residence r where r.periode = :period")
+})
 public class Residence implements Serializable{
+
+    public static final String FIND_ALL_RESIDENCE= "Residence.findAll",
+    FIND_ALL_RESIDENCE_BY_PERIOD="Residence.findAllByPeriod";
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

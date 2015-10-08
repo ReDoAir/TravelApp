@@ -24,7 +24,7 @@ public class User implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @NotNull
     @Column(unique = true)
@@ -64,7 +64,7 @@ public class User implements Serializable{
         this.password = password;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 

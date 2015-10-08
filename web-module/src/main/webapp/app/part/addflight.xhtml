@@ -1,85 +1,80 @@
-<!DOCTYPE html>
+<ui:composition template="/resources/template/default.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:b="http://bootsfaces.net/ui">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:b="http://bootsfaces.net/ui">
-    <h:head>
-        <meta charset="UTF-8"/>
-        <title>travelApp</title>
-    </h:head>
-    <h:body>
-        <ui:composition template="/resources/template/default.xhtml">
+    <ui:define name="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                </div>
 
-            <ui:define name="header">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
-                        </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <h:form>
+                                <h:commandLink style="color: white"
+                                               action="#{authController.logout}">Log out</h:commandLink>
+                            </h:form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </ui:define>
 
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <h:form>
-                                        <h:commandLink style="color: white" action="#{authController.logout}">Log out</h:commandLink>
-                                    </h:form>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </ui:define>
+    <ui:define name="content">
+        <h:form styleClass="userForm">
+            <h2>Add a flight</h2>
+            <h:inputText styleClass="form-control formEle" pt:placeholder="Flight code (format: ABC-123)"
+                         value="#{flightController.flightCode}"/>
 
-            <ui:define name="content">
-                <h:form styleClass="userForm">
-                    <h2>Add a flight</h2>
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Flight code (format: ABC-123)" value="#{flightController.flightCode}"/>
+            <h:inputText styleClass="form-control formEle" pt:placeholder="Price" value="#{flightController.price}">
+                <f:convertNumber integerOnly="true" type="number"/>
+            </h:inputText>
 
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Price" value="#{flightController.price}">
-                        <f:convertNumber integerOnly="true" type="number"/>
-                    </h:inputText>
+            <div class="lblForm">
+                <h:outputLabel for="depature">Departure date: </h:outputLabel>
+                <b:datepicker data-date-format="dd-mm-yyyy" showButtonPanel="true" changeMonth="true" changeYear="true"
+                              id="depature" mode="popup-icon" value="#{flightController.departureDate}"/>
+            </div>
 
-                    <div class="lblForm">
-                        <h:outputLabel for="depature">Departure date: </h:outputLabel>
-                            <b:datepicker data-date-format="dd-mm-yyyy"  showButtonPanel="true" changeMonth="true" changeYear="true" id="depature" mode="popup-icon" value="#{flightController.departureDate}"/>
-                    </div>
+            <div class="lblForm">
+                <h:outputLabel for="depAir">Depature Airport: </h:outputLabel>
+                <h:selectOneMenu id="depAir" styleClass="form-control" value="#{flightController.departureAirport}">
+                    <f:selectItems value="#{airportController.airports}" var="departure"
+                                   itemLabel="#{departure.name}" itemValue="#{departure.airportCode}"/>
+                </h:selectOneMenu>
+            </div>
 
-                    <div class="lblForm">
-                        <h:outputLabel for="depAir">Depature Airport: </h:outputLabel>
-                        <h:selectOneMenu id="depAir" styleClass="form-control" value="#{flightController.departureAirport}">
-                            <f:selectItems value="#{airportController.airports}" var="departure"
-                                           itemLabel="#{departure.name}" itemValue="#{departure.airportCode}" />
-                        </h:selectOneMenu>
-                    </div>
+            <div class="lblForm">
+                <h:outputLabel id="arrAir" styleClass="formEle" for="arrival">Arrival date: </h:outputLabel>
+                <b:datepicker data-date-format="dd-mm-yyyy" showButtonPanel="true" changeMonth="true" changeYear="true"
+                              id="arrival" mode="popup-icon" value="#{flightController.arrivalDate}"/>
+            </div>
 
-                    <div class="lblForm">
-                        <h:outputLabel id="arrAir" styleClass="formEle" for="arrival">Arrival date: </h:outputLabel>
-                            <b:datepicker data-date-format="dd-mm-yyyy" showButtonPanel="true" changeMonth="true" changeYear="true" id="arrival" mode="popup-icon" value="#{flightController.arrivalDate}"/>
-                    </div>
+            <div class="lblForm">
+                <h:outputLabel for="arrAir">Arrival Airport: </h:outputLabel>
+                <h:selectOneMenu styleClass="form-control" value="#{flightController.arrivalAirport}">
+                    <f:selectItems value="#{airportController.airports}" var="arrival"
+                                   itemLabel="#{arrival.name}" itemValue="#{arrival.airportCode}"/>
+                </h:selectOneMenu>
+            </div>
 
-                    <div class="lblForm">
-                        <h:outputLabel for="arrAir">Arrival Airport: </h:outputLabel>
-                        <h:selectOneMenu styleClass="form-control" value="#{flightController.arrivalAirport}">
-                            <f:selectItems value="#{airportController.airports}" var="arrival"
-                                           itemLabel="#{arrival.name}" itemValue="#{arrival.airportCode}" />
-                        </h:selectOneMenu>
-                    </div>
+            <div class="lblForm">
+                <h:outputLabel for="plane">Choose a plane: </h:outputLabel>
+                <h:selectOneMenu id="plane" styleClass="form-control" value="#{flightController.plane}">
+                    <f:selectItems value="#{planeController.planes}" var="plane"
+                                   itemLabel="#{plane.planeCode}" itemValue="#{plane.planeCode}"/>
+                </h:selectOneMenu>
+            </div>
 
-                    <div class="lblForm">
-                        <h:outputLabel for="plane">Choose a plane: </h:outputLabel>
-                        <h:selectOneMenu id="plane" styleClass="form-control" value="#{flightController.plane}">
-                            <f:selectItems value="#{planeController.planes}" var="plane"
-                                           itemLabel="#{plane.planeCode}" itemValue="#{plane.planeCode}" />
-                        </h:selectOneMenu>
-                    </div>
+            <h:commandButton styleClass="form-control formEle btn-default" value="Create"
+                             action="#{flightController.createFlight()}"/>
+        </h:form>
 
-                    <h:commandButton styleClass="form-control formEle btn-default" value="Create" action="#{flightController.createFlight()}"/>
-                </h:form>
+    </ui:define>
 
-            </ui:define>
-
-        </ui:composition>
-
-    </h:body>
-</html>
+</ui:composition>

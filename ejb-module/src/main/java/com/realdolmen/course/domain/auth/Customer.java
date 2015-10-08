@@ -2,18 +2,22 @@ package com.realdolmen.course.domain.auth;
 
 import com.realdolmen.course.domain.Booking;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
+@NamedQueries(
+        {
+                @NamedQuery(name = "Customer.findAll",query = "select c from Customer c"),
+                @NamedQuery(name = "Customer.findByUsername",query="select c from Customer c where c.username like :username")
+        }
+)
 public class Customer extends User {
 
+    public static final String FIND_ALL_CUSTOMERS = "Customer.findAll",
+    FIND_CUSTOMER_BY_USERNAME = "Customer.findByUsername";
 
     private String creditCard;
 

@@ -75,7 +75,7 @@ public class PartnerPersistenceTest extends DataPersistenceTest{
     @Test
     public void canRetrieveParnterById() throws Exception
     {
-        assertEquals("partner1",entityManager().find(Partner.class,1200L).getUsername());
+        assertEquals("partner1",entityManager().find(Partner.class,1200).getUsername());
     }
 
 }

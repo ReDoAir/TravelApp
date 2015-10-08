@@ -11,7 +11,20 @@ import java.util.List;
  * Created by SDOAX36 on 5/10/2015.
  */
 @Entity
+@NamedQueries(
+        {
+                @NamedQuery(name = "Airline.findAll",
+                        query = "select a from Airline a"),
+                @NamedQuery(name = "Airline.findAirlineByName",
+                        query = "select a from Airline a where a.name LIKE :airlineName")
+        }
+)
 public class Airline implements Serializable {
+
+    public static final String FIND_ALL_AIRLINES_Q = "Airline.findAll";
+    public static final String FIND_AIRLINE_BY_NAME_Q = "Airline.findAirlineByName";
+
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

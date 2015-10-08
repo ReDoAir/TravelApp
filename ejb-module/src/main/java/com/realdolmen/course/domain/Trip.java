@@ -1,12 +1,27 @@
 package com.realdolmen.course.domain;
 
+import javax.lang.model.element.Name;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name="Trip.findAll",query ="select t from Trip t"),
+        @NamedQuery(name="Trip.findAllByToFlight",query = "select t from Trip t where t.toFlight = :toFlight"),
+        @NamedQuery(name = "Trip.findAllByFromFlight",query = "select t from Trip t where t.fromFlight = :fromFlight"),
+        @NamedQuery(name="Trip.findAllByPeriod", query = "select t from Trip t where t.period = :period"),
+        @NamedQuery(name="Trip.findAllByDestination", query = "select t from Trip t where t.destination like :destination")
+})
 public class Trip implements Serializable{
+
+    public static final String FIND_ALL_TRIPS = "Trip.findAll",
+    FIND_ALL_TRIPS_BY_TO_FLIGHTS = "Trip.findAllByToFlight",
+    FIND_ALL_TRIPS_BY_FROM_FLIGHTS = "Trip.findAllByFromFlight",
+    FIND_ALL_TRIPS_BY_PERIODS = "Trip.findAllByPeriod",
+    FIND_ALL_TRIPS_BY_DESTINATION = "Trip.findAllByDestination";
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

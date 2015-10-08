@@ -6,7 +6,32 @@ import java.util.Date;
 
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name="Flight.findAll",query = "select f from Flight f"),
+        @NamedQuery(name="Flight.findAllByFlightCode",query = "select f from Flight f where f.flightCode like :flightCode"),
+        @NamedQuery(name="Flight.findAllByDepartureDate",query="select f from Flight f where f.departureDate between :startDate and :endDate"),
+        @NamedQuery(name="Flight.findAllByArrivalDate",query = "select f from Flight f where f.arrivalDate between :startDate and :endDate"),
+        @NamedQuery(name="Flight.findAllByDestinationAndDepartureDateBetween",query = "select f from Flight f where f.departAirport = :airport and f.departureDate between :startDate and :endDate"),
+        @NamedQuery(name="Flight.findAllByArrivalAirport",query = "select f from Flight f where f.arrivalAirport = :arrivalAirport"),
+        @NamedQuery(name="Flight.findAllByDepartureAirport",query = "select f from Flight f where f.departAirport = :departAirport"),
+        @NamedQuery(name="Flight.findAllByDepartureDateWithAvailableSeats",query ="select f from Flight f where f.departureDate between :startDate and :endDate and f.availablePlaces > 0" ),
+        @NamedQuery(name="Flight.findAllByDepartAirportWithAvailableSeats",query ="select f from Flight f where f.departAirport = :departureDate and f.availablePlaces > 0" ),
+        @NamedQuery(name="Flight.findAllByAirline",query = "select f from Flight f where f.airline = :airline")
+        //more of this please, but we will handle them when they occur
+})
 public class Flight implements Serializable{
+
+    public static final String FIND_ALL_FLIGHTS ="Flight.findAll",
+    FIND_ALL_FLIGHTS_BY_FLIGHT_CODE = "Flight.findAllByFlightCode",
+    FIND_ALL_FLIGHTS_BY_DEPARTUREDATE= "Flight.findAllByDepartureDate",
+    FIND_ALL_FLIGHTS_BY_ARRIVALDATE="Flight.findAllByArrivalDate",
+    FIND_ALL_FLIGHTS_BY_DEPARTURE_AIRPORT="Flight.findAllByDepartureAirport",
+    FIND_ALL_FLIGHTS_BY_ARRIVAL_AIRPORT ="Flight.findAllByArrivalAirport",
+    FIND_ALL_FLIGHTS_BY_DEPARTUREDATE_WITH_AVAILABLESEATS= "Flight.findAllByDepartureDateWithAvailableSeats",
+    FIND_ALL_FLIGHTS_BY_DESTINATION_AND_ARRIVALDATE_BETWEEN ="Flight.findAllByDestinationAndArivalDateBetween",
+    FIND_ALL_FLIGHTS_BY_DEPARTAIRPORT_WITH_AVIALABLESEATS="Flight.findAllByDepartAirportWithAvailableSeats",
+    FIND_ALL_FLIGHTS_BY_AIRLINE="Flight.findAllByAirline";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -32,9 +57,10 @@ public class Flight implements Serializable{
     @ManyToOne
     private Airport departAirport;
 
-    @ManyToOne
+
     //A plane can fly a flight, but it will not disappear when the flight is over, probably it will disappear during the flight => set boolean LOST on true
     //But this is not LOST nor the Malysian airlines => we have banned that airline company!!!! so a plane can be re-used later on! that is why this is ManyToOne
+    @ManyToOne
     private Plane plane;
 
 

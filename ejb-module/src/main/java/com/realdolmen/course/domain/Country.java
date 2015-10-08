@@ -5,7 +5,16 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@NamedQueries(
+        {
+                @NamedQuery(name="Country.findAll",query = "select c from Country c"),
+                @NamedQuery(name="Country.findAllByName", query = "select c from Country c where c.name like :name")
+        }
+)
 public class Country implements Serializable {
+
+    public static final String FIND_ALL_COUNTRIES = "Country.findAll",
+    FIND_ALL_COUNTRIES_BY_NAME = "Country.findAllByName";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

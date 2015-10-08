@@ -63,6 +63,6 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     @Test
     public void canFindCustomerById() throws Exception
     {
-        assertEquals("customer1",entityManager().find(Customer.class,1300L).getUsername());
+        assertEquals("customer1",entityManager().find(Customer.class,1300).getUsername());
     }
 }

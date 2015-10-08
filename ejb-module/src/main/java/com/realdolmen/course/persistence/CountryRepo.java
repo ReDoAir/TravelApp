@@ -9,16 +9,19 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
+import static com.realdolmen.course.domain.Country.FIND_ALL_COUNTRIES;
+import static com.realdolmen.course.domain.Country.FIND_ALL_COUNTRIES_BY_NAME;
+
 @Stateless
-@LocalBean
 public class CountryRepo {
 
     @PersistenceContext
+    public
     EntityManager em;
 
     public List<Country> getAllCountries()
     {
-        return em.createQuery("select c from Country c", Country.class).getResultList();
+        return em.createNamedQuery(FIND_ALL_COUNTRIES, Country.class).getResultList();
     }
 
     //returns list of countries based on name
@@ -26,7 +29,7 @@ public class CountryRepo {
     //for example "Bel" => Belgium, Belarus
     public List<Country> getCountriesByName(String name)
     {
-        return em.createQuery("select c from Country c where c.name like :name", Country.class).setParameter("name", "%" + name + "%").getResultList();
+        return em.createNamedQuery(FIND_ALL_COUNTRIES_BY_NAME, Country.class).setParameter("name", "%" + name + "%").getResultList();
     }
 
     public void addCountry(Country country)

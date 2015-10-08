@@ -18,7 +18,7 @@ public class UserRepo {
     @PersistenceContext
     private EntityManager em;
 
-    public User find(Long id) {
+    public User find(Integer id) {
         return em.find(User.class, id);
     }
 
@@ -37,7 +37,7 @@ public class UserRepo {
         return em.createNamedQuery("User.list", User.class).getResultList();
     }
 
-    public Long create(User user) {
+    public Integer create(User user) {
         em.persist(user);
         return user.getId();
     }
