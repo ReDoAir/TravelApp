@@ -42,6 +42,16 @@
                         </h:column>
 
                         <h:column>
+                            <f:facet name="header">Airlines</f:facet>
+                            #{trip.fromFlight.airline}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Departure</f:facet>
+                            #{trip.fromFlight.departAirport.name}
+                        </h:column>
+
+                        <h:column>
                             <f:facet name="header">Price</f:facet>
                         </h:column>
 
