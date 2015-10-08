@@ -6,10 +6,14 @@ import com.realdolmen.course.persistence.BookingRepo;
 import com.realdolmen.course.persistence.CustomerRepo;
 import com.realdolmen.course.persistence.TripRepo;
 
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Named
@@ -25,14 +29,22 @@ public class BookingController {
 
     private Booking booking;
 
-    private int count = 0;
     private List<Trip> addedTrips;
+
+    @Inject
+    private SearchController searchController;
+
+    @PostConstruct
+    public void init(){
+        addedTrips = new ArrayList<>();
+    }
 
     public void createBooking(String customerName) {
         Booking booking = new Booking();
-        booking.setCount(count);
-        booking.setCustomer(customerRepo.findCustomer(customerName));
-        //booking.setTrips(addedTrips);
+        booking.setCount(searchController.getCount() + 1);
+        booking.setCustomer(customerRepo.findCustomerByName(customerName));
+        booking.setTrips(addedTrips);
+        booking.setBookingDate(Date.from(Instant.now()));
         bookingRepo.addBooking(booking);
     }
 
@@ -46,10 +58,6 @@ public class BookingController {
 
     public void setBooking(Booking booking) {
         this.booking = booking;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
     }
 
     public List<Trip> getAddedTrips() {

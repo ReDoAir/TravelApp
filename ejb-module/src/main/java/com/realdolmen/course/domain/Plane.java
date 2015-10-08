@@ -15,6 +15,7 @@ public class Plane implements Serializable{
     private Integer id;
 
     @NotNull
+    @Column(unique = true)
     private String planeCode;
 
     @Basic(optional = false)

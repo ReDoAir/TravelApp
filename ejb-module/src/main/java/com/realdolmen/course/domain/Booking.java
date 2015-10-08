@@ -28,9 +28,9 @@ public class Booking implements Serializable {
 
     @ManyToMany
     @JoinTable(
-            name="book_trip",
-            joinColumns={@JoinColumn(name="book", referencedColumnName="id")},
-            inverseJoinColumns={@JoinColumn(name="trip", referencedColumnName="id")}
+            name="trip_booking",
+            joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
+            inverseJoinColumns={@JoinColumn(name="booking", referencedColumnName="id")}
     )
     private List<Trip> trips;
 

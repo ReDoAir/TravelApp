@@ -22,7 +22,7 @@
             </ui:define>
 
             <ui:define name="content">
-                <h:form styleClass="userForm">
+                <h:form>
 
                     <h:dataTable styleClass="table" value="#{searchController.trips}" var="trip">
 
@@ -43,12 +43,12 @@
 
                         <h:column>
                             <f:facet name="header">Airlines</f:facet>
-                            #{trip.fromFlight.airline}
+                            #{trip.fromFlight.airline.name}
                         </h:column>
 
                         <h:column>
                             <f:facet name="header">Departure</f:facet>
-                            #{trip.fromFlight.departAirport.name}
+                            #{trip.toFlight.departAirport.name}
                         </h:column>
 
                         <h:column>
@@ -61,7 +61,7 @@
 
                     </h:dataTable>
 
-                    <h:commandButton styleClass="btn-default form-control" value="Confirm" action="#{bookingController.createBooking(userController.userName)}"/>
+                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Confirm" action="#{bookingController.createBooking(userController.userName)}"/>
 
                 </h:form>
             </ui:define>
