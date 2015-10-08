@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,12 +14,15 @@ public class Trip implements Serializable{
     private Integer id;
 
     @ManyToOne
+    @NotNull
     private Flight toFlight;
 
     @ManyToOne
+    @NotNull
     private Flight fromFlight;
 
     @ManyToOne
+    @NotNull
     private Period period;
 
     @Basic(optional = false)
@@ -32,6 +36,7 @@ public class Trip implements Serializable{
     )
     private List<Residence> residences;
 
+    @Basic(optional = false)
     private String tripName;
 
     public Trip(Flight toFlight, Flight fromFlight, Period period, String tripName) {
@@ -83,7 +88,9 @@ public class Trip implements Serializable{
     }
 
     public void setToFlight(Flight toFlight) {
-        this.toFlight = toFlight;
+        if(toFlight != null && fromFlight != null && fromFlight.getId() != toFlight.getId()) {
+            this.toFlight = toFlight;
+        }
     }
 
     public Flight getFromFlight() {
@@ -95,7 +102,10 @@ public class Trip implements Serializable{
     }
 
     public void setFromFlight(Flight fromFlight) {
-        this.fromFlight = fromFlight;
+        if(fromFlight != null && toFlight != null && fromFlight.getId() != toFlight.getId()) {
+            this.fromFlight = fromFlight;
+            destination = fromFlight.getDepartAirport().getCity();
+        }
     }
 
     public Period getPeriod() {

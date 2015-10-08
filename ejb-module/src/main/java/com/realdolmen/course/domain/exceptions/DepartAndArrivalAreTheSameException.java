@@ -1,4 +1,4 @@
-package com.realdolmen.course.domain;
+package com.realdolmen.course.domain.exceptions;
 
 
 public class DepartAndArrivalAreTheSameException extends RuntimeException {

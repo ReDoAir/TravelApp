@@ -1,6 +1,10 @@
 package com.realdolmen.course.domain;
 
+import com.realdolmen.course.domain.exceptions.ArrivalCannotBeBeforeDepartException;
+import com.realdolmen.course.domain.exceptions.DepartAndArrivalAreTheSameException;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,28 +15,37 @@ public class Flight implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @NotNull
     private String flightCode;
 
+    @Basic(optional = false)
     private Double price;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @NotNull
     private Date departureDate;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @NotNull
     private Date arrivalDate;
 
+    @Basic(optional = false)
     private int availablePlaces;
 
     @ManyToOne
+    @NotNull
     private Airport arrivalAirport;
 
     @ManyToOne
+    @NotNull
     private Airline airline;
 
     @ManyToOne
+    @NotNull
     private Airport departAirport;
 
     @ManyToOne
+    @NotNull
     //A plane can fly a flight, but it will not disappear when the flight is over, probably it will disappear during the flight => set boolean LOST on true
     //But this is not LOST nor the Malysian airlines => we have banned that airline company!!!! so a plane can be re-used later on! that is why this is ManyToOne
     private Plane plane;
@@ -125,6 +138,8 @@ public class Flight implements Serializable{
     }
 
     public void setArrivalDate(Date arrivalDate) {
+        if (departureDate.after(arrivalDate)) throw new ArrivalCannotBeBeforeDepartException();
+
         this.arrivalDate = arrivalDate;
     }
 
@@ -134,5 +149,10 @@ public class Flight implements Serializable{
 
     public void setAvailablePlaces(int availablePlaces) {
         this.availablePlaces = availablePlaces;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Depart: %s - %s - Arrival: %s - %s",departureDate,departAirport.getCity(),arrivalDate, arrivalAirport.getCity());
     }
 }

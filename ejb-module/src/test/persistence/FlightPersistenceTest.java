@@ -1,7 +1,4 @@
-import com.realdolmen.course.domain.Airline;
-import com.realdolmen.course.domain.Airport;
-import com.realdolmen.course.domain.Flight;
-import com.realdolmen.course.domain.Plane;
+import com.realdolmen.course.domain.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,9 +13,11 @@ public class FlightPersistenceTest extends DataPersistenceTest {
     public void init(){
         Instant instant = Instant.now();
         Plane plane = new Plane("DDDD", 200);
+        Country country = new Country("Belgium");
         Airline airline = new Airline("TestAir");
-        Airport airport = new Airport("Depart", "DEP");
-        Airport airport2 = new Airport("Arrival", "ARR");
+        Airport airport = new Airport("Depart", "DEP", "Brussels", country);
+        Airport airport2 = new Airport("Arrival", "ARR", "Brussels", country);
+        entityManager().persist(country);
         entityManager().persist(airline);
         entityManager().persist(plane);
         entityManager().persist(airport);

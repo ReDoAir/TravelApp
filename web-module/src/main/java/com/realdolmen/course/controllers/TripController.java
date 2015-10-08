@@ -1,9 +1,10 @@
 package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.domain.Trip;
+import com.realdolmen.course.persistence.FlightRepo;
+import com.realdolmen.course.persistence.PeriodRepo;
 import com.realdolmen.course.persistence.TripRepo;
 
-import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -18,8 +19,15 @@ public class TripController {
 
     @Inject
     private TripRepo tripRepo;
+    @Inject
+    private PeriodRepo periodRepo;
+    @Inject
+    private FlightRepo flightRepo;
+
     private String name;
-    private String period;
+    private Integer periodId;
+    private Integer depFlightId;
+    private Integer returnFlightId;
 
     public void tripsToDestination(int count){
         trips = tripRepo.getTripsByDestinationWithEnoughPlaces(count);
@@ -35,7 +43,14 @@ public class TripController {
 
     public void createTrip(){
         Trip trip = new Trip();
+
         trip.setTripName(name);
+        trip.setPeriod(periodRepo.getPeriodById(periodId));
+        trip.setToFlight(flightRepo.getFlightById(depFlightId));
+        trip.setFromFlight(flightRepo.getFlightById(returnFlightId));
+
+        tripRepo.addTrip(trip);
+        //trip.setDestination();
     }
 
     public void setName(String name) {
@@ -46,11 +61,27 @@ public class TripController {
         return name;
     }
 
-    public void setPeriod(String period) {
-        this.period = period;
+    public Integer getPeriodId() {
+        return periodId;
     }
 
-    public String getPeriod() {
-        return period;
+    public void setPeriodId(Integer periodId) {
+        this.periodId = periodId;
+    }
+
+    public Integer getDepFlightId() {
+        return depFlightId;
+    }
+
+    public void setDepFlightId(Integer depFlightId) {
+        this.depFlightId = depFlightId;
+    }
+
+    public Integer getReturnFlightId() {
+        return returnFlightId;
+    }
+
+    public void setReturnFlightId(Integer returnFlightId) {
+        this.returnFlightId = returnFlightId;
     }
 }

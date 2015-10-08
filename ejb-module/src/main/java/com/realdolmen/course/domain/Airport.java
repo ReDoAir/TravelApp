@@ -1,6 +1,7 @@
 package com.realdolmen.course.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -17,7 +18,34 @@ public class Airport implements Serializable {
     @Basic(optional = false)
     private String airportCode;
 
+    @Basic(optional = false)
     private String city;
+
+    @ManyToOne
+    @NotNull
+    private Country country;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "arrivalAirport")
+    private List<Flight> arrivalFlights;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "departAirport")
+    private List<Flight> departFlights;
+
+    public Airport() {
+    }
+
+    public Airport(String name, String airportCode) {
+        this.name = name;
+        this.airportCode = airportCode;
+
+    }
+
+    public Airport(String name, String airportCode, String city, Country country) {
+        this.name = name;
+        this.airportCode = airportCode;
+        this.city = city;
+        this.country = country;
+    }
 
     public String getCity() {
         return city;
@@ -51,25 +79,6 @@ public class Airport implements Serializable {
         this.departFlights = departFlights;
     }
 
-    @ManyToOne
-    private Country country;
-
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "arrivalAirport")
-    private List<Flight> arrivalFlights;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "departAirport")
-    private List<Flight> departFlights;
-
-    public Airport() {
-    }
-
-    public Airport(String name, String airportCode) {
-        this.name = name;
-        this.airportCode = airportCode;
-
-    }
-
     public String getName() {
         return name;
     }
@@ -85,8 +94,6 @@ public class Airport implements Serializable {
     public void setAirportCode(String airportCode) {
         this.airportCode = airportCode;
     }
-
-
 
     public Integer getId() {
         return id;

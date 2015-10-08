@@ -29,5 +29,9 @@ public class FlightRepo {
         em.persist(flight);
     }
 
+    public Flight getFlightById(Integer flightId) {
+        return em.find(Flight.class, flightId);
+    }
+
     //still need more operations, we will do them later
 }

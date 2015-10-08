@@ -15,6 +15,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.Date;
 import java.util.DoubleSummaryStatistics;
+import java.util.List;
 
 @Named
 @RequestScoped
@@ -109,5 +110,9 @@ public class FlightController {
 
     public String getPlane() {
         return plane;
+    }
+
+    public List<Flight> getFlights(){
+        return flightRepo.getAllFlights();
     }
 }

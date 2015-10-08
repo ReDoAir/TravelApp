@@ -11,10 +11,18 @@ public class Country implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Basic(optional = false)
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "country")
     private List<Airport>airports;
+
+    public Country(String name) {
+        this.name = name;
+    }
+
+    public Country() {
+    }
 
     public Integer getId() {
         return id;

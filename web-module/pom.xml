@@ -46,13 +46,6 @@
 			<version>0.7.0</version>
 		</dependency>
 
-        <dependency>
-            <groupId>org.primefaces</groupId>
-            <artifactId>primefaces</artifactId>
-            <version>5.2</version>
-        </dependency>
-
-
-    </dependencies>
+	</dependencies>
 
 </project>

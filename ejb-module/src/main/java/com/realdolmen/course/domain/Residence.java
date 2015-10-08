@@ -3,7 +3,6 @@ package com.realdolmen.course.domain;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity
 public class Residence implements Serializable{
@@ -13,13 +12,14 @@ public class Residence implements Serializable{
     private Integer id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Period periode;
-
     @NotNull
+    private Period period;
+
+    @Basic(optional = false)
     private Double priceByDay;
 
-    public Residence(Period periode, Double priceByDay) {
-        this.periode = periode;
+    public Residence(Period period, Double priceByDay) {
+        this.period = period;
         this.priceByDay = priceByDay;
     }
 
@@ -36,7 +36,7 @@ public class Residence implements Serializable{
 
     public double getTotalPrice()
     {
-        int aantalDagen = periode.getDepartureDate().getDate() - periode.getReturnDate().getDate();
+        int aantalDagen = period.getDepartureDate().getDate() - period.getReturnDate().getDate();
         return aantalDagen*priceByDay;
     }
 }
