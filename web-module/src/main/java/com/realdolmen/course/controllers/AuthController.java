@@ -51,7 +51,7 @@ public class AuthController {
 
         }
         catch (AuthenticationException e) {
-            Messages.addGlobalError("Unknown user, please try again");
+            Messages.addGlobalError("Username and/or password were wrong");
             e.printStackTrace(); // TODO: logger.
         }
     }

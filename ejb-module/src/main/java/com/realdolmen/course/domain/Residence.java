@@ -4,10 +4,12 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+import static com.realdolmen.course.utils.DateUtil.daysBetween;
+
 @Entity
 @NamedQueries({
         @NamedQuery(name="Residence.findAll",query="select r from Residence r"),
-        @NamedQuery(name="Residence.findAllByPeriod", query = "select r from Residence r where r.periode = :period")
+        @NamedQuery(name="Residence.findAllByPeriod", query = "select r from Residence r where r.period = :period")
 })
 public class Residence implements Serializable{
 
@@ -44,7 +46,7 @@ public class Residence implements Serializable{
 
     public double getTotalPrice()
     {
-        int aantalDagen = period.getDepartureDate().getDate() - period.getReturnDate().getDate();
-        return aantalDagen*priceByDay;
+        int amountOfDays = daysBetween(period.getDepartureDate(), period.getReturnDate());
+        return amountOfDays * priceByDay;
     }
 }

@@ -29,7 +29,7 @@
                     <h:inputText pt:placeholder="name" styleClass="form-control formEle" value="#{tripController.name}"/>
 
                     <div class="lblForm">
-                        <h:outputLabel for="periodId">Choose periodId: </h:outputLabel>
+                        <h:outputLabel for="periodId">Choose a period: </h:outputLabel>
                         <h:selectOneMenu id="periodId" styleClass="form-control" value="#{tripController.periodId}">
                             <f:selectItems value="#{periodController.periods}" var="period"
                                            itemLabel="#{period}" itemValue="#{period.id}" />

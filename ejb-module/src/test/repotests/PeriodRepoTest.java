@@ -1,6 +1,6 @@
 import com.realdolmen.course.domain.Period;
 import com.realdolmen.course.persistence.PeriodRepo;
-import com.realdolmen.course.services.DateServices;
+import com.realdolmen.course.utils.DateUtil;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ public class PeriodRepoTest extends DataPersistenceTest {
     @Test
     public void getAllPeriodesFromArrivalDate()throws Exception
     {
-        Date date = DateServices.stringToDate("2015-10-19","yyyy-MM-dd");
+        Date date = DateUtil.stringToDate("2015-10-19", "yyyy-MM-dd");
         periods = repo.getAllPeriodsFromArrivalDate(date);
         returnListNotEmpty();
     }
@@ -43,7 +43,7 @@ public class PeriodRepoTest extends DataPersistenceTest {
     @Test
     public void getAllPeriodsFromDepartureDate()throws Exception
     {
-        Date date = DateServices.stringToDate("2015-10-15","yyyy-MM-dd");
+        Date date = DateUtil.stringToDate("2015-10-15", "yyyy-MM-dd");
         periods = repo.getAllPeriodsFromDepartureDate(date);
         returnListNotEmpty();
     }

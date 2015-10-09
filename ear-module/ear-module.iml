@@ -13,7 +13,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="MyTestPersistenceUnit" />
+          <factory-entry name="MyTestPersistenceUnit" value="fd0520cc-85aa-45d7-824b-62e574e2c4a4" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/../ejb-module/src/test/resources/META-INF/persistence.xml" />
       </configuration>

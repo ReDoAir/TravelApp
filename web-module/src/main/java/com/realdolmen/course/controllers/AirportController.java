@@ -18,6 +18,13 @@ public class AirportController {
     @Inject
     private AirportRepo airportRepo;
 
+    public List<Airport> getAirports(){
+        return airportRepo.getAllAirports();
+    }
+}
+
+/*
+*
     public List<String> completeText(String query) {
         List<String> results = new ArrayList<>();
         for(int i = 0; i < 10; i++) {
@@ -27,7 +34,4 @@ public class AirportController {
         return results;
     }
 
-    public List<Airport> getAirports(){
-        return airportRepo.getAllAirports();
-    }
-}
+*/

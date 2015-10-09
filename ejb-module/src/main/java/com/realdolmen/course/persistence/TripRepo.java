@@ -51,4 +51,9 @@ public class TripRepo implements Serializable{
     public List<Trip> getTripsByCountry(String name){
         return em.createQuery("SELECT t FROM Trip t WHERE t.destination IN (SELECT a.city FROM Country c JOIN c.airports a WHERE c.name = :name)", Trip.class).setParameter("name", name).getResultList();
     }
+
+    public void updateTrip(Trip trip) {
+        em.merge(trip);
+        em.flush();
+    }
 }

@@ -7,13 +7,14 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.io.Serializable;
 import java.util.List;
 
 import static com.realdolmen.course.domain.Country.FIND_ALL_COUNTRIES;
 import static com.realdolmen.course.domain.Country.FIND_ALL_COUNTRIES_BY_NAME;
 
 @Stateless
-public class CountryRepo {
+public class CountryRepo implements Serializable {
 
     @PersistenceContext
     public

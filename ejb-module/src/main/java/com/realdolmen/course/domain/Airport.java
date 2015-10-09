@@ -21,9 +21,6 @@ public class Airport implements Serializable {
     public static final String FIND_ALL_BY_CITY_Q = "Airport.findByCity",
     FIND_ALL_AIRPORTS_BY_NAME="Airport.findByName";
 
-
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

@@ -19,7 +19,6 @@ public class PlaneController {
     private PlaneRepo planeRepo;
 
     public List<Plane> getPlanes(){
-        List<Plane> planes =  planeRepo.getAllPlanes();
-        return planes;
+        return planeRepo.getAllPlanes();
     }
 }

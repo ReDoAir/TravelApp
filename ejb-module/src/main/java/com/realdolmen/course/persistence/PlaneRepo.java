@@ -61,4 +61,7 @@ public class PlaneRepo {
         em.remove(plane);
     }
 
+    public Plane getPlaneByCode(String planeCode) {
+        return em.createQuery("SELECT p FROM Plane p WHERE p.planeCode = :code", Plane.class).setParameter("code",planeCode).getSingleResult();
+    }
 }

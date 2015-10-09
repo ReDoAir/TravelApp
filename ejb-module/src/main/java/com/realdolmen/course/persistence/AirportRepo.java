@@ -37,7 +37,7 @@ public class AirportRepo {
     //list contains more entitys when airportCode is only half correct : BE1 will return BE11,BE12,...
     public List<Airport> getAirportsByCode(String airportCode)
     {
-        return em.createNamedQuery(FIND_AIRPORT_BY_CODE_Q).setParameter("airportCode", "%" + airportCode + "%").getResultList();
+        return em.createNamedQuery(FIND_AIRPORT_BY_CODE_Q, Airport.class).setParameter("airportCode", "%" + airportCode + "%").getResultList();
     }
 
     public List<Airport> getAirportsByCountry(Country country)
@@ -60,4 +60,7 @@ public class AirportRepo {
         em.persist(airport);
     }
 
+    public Airport getAirportByCode(String airportCode) {
+        return em.createQuery("SELECT a FROM Airport a WHERE a.airportCode = :code", Airport.class).setParameter("code", airportCode).getSingleResult();
+    }
 }

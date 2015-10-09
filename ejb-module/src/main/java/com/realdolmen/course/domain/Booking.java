@@ -37,7 +37,9 @@ public class Booking implements Serializable {
     @Basic(optional = false)
     private int count;
 
-    @ManyToMany
+    private double price;
+
+    @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(
             name="trip_booking",
             joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
@@ -83,5 +85,13 @@ public class Booking implements Serializable {
 
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }

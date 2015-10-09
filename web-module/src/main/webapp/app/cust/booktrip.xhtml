@@ -22,9 +22,12 @@
             </ui:define>
 
             <ui:define name="content">
-                <h:form>
+                <h:form styleClass="bookingForm">
 
-                    <h:dataTable styleClass="table" value="#{searchController.trips}" var="trip">
+                    <h2>Book your trip</h2>
+
+                    <h4>Available trips</h4>
+                    <h:dataTable id="availtrips" styleClass="table" value="#{searchController.trips}" var="trip">
 
                         <h:column>
                             <f:facet name="header">Name</f:facet>
@@ -52,17 +55,63 @@
                         </h:column>
 
                         <h:column>
-                            <f:facet name="header">Price</f:facet>
+                            <f:facet name="header">Price (Per Person)</f:facet>
+                            #{trip.price}
                         </h:column>
 
                         <h:column>
-                            <h:commandButton styleClass="btn-default" value="Chose" action="#{bookingController.addTrip(trip.id)}"/>
+                            <h:commandButton styleClass="btn-default" value="Chose" action="#{bookingController.addTrip(trip.id)}" rendered="#{!bookingController.alreadyAdded(trip)}"/>
+                            <h:outputText styleClass="tblText" value="Added" rendered="#{bookingController.alreadyAdded(trip)}"/>
                         </h:column>
 
                     </h:dataTable>
 
-                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Confirm" action="#{bookingController.createBooking(userController.userName)}"/>
+                    <h4>Chosen trips</h4>
+                    <h:dataTable id="addedtrips" styleClass="table formEle" value="#{bookingController.addedTrips}" var="addedTrip">
 
+                        <h:column>
+                            <f:facet name="header">Name</f:facet>
+                            #{addedTrip.tripName}
+                        </h:column>
+
+
+                        <h:column>
+                            <f:facet name="header">Begin</f:facet>
+                            #{addedTrip.period.departureDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">End</f:facet>
+                            #{addedTrip.period.returnDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Airlines</f:facet>
+                            #{addedTrip.fromFlight.airline.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Departure</f:facet>
+                            #{addedTrip.toFlight.departAirport.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Price(Per Person)</f:facet>
+                            #{addedTrip.price}
+                        </h:column>
+
+                        <h:column>
+                            <h:commandButton styleClass="btn-default" value="Delete" action="#{bookingController.delete(addedTrip.id)}" />
+                        </h:column>
+
+                    </h:dataTable>
+
+                    <h:outputText style="margin-bottom: 5px;" styleClass="formEle form-control tableBtn" id="totalPrice" value="Total price: € #{bookingController.totalPrice}"/>
+
+                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Next" action="#{bookingController.createBooking}"/>
+
+                    <h:messages warnClass="alert-dismissable alert-warning" errorClass="alert-error"/>
                 </h:form>
+
             </ui:define>
 </ui:composition>

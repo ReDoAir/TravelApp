@@ -1,5 +1,8 @@
 package com.realdolmen.course.domain;
 
+import com.realdolmen.course.domain.exceptions.ArrivalCannotBeBeforeDepartException;
+import com.realdolmen.course.domain.exceptions.DepartAndArrivalAreTheSameException;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;

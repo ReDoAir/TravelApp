@@ -24,8 +24,6 @@ public class Airline implements Serializable {
     public static final String FIND_ALL_AIRLINES_Q = "Airline.findAll";
     public static final String FIND_AIRLINE_BY_NAME_Q = "Airline.findAirlineByName";
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
