@@ -1,22 +1,13 @@
 package com.realdolmen.course.controllers;
 
-import com.realdolmen.course.domain.Airline;
-import com.realdolmen.course.domain.Airport;
 import com.realdolmen.course.domain.Flight;
-import com.realdolmen.course.domain.Plane;
-import com.realdolmen.course.persistence.AirportRepo;
-import com.realdolmen.course.persistence.FlightRepo;
-import com.realdolmen.course.persistence.PartnerRepo;
-import com.realdolmen.course.persistence.PlaneRepo;
 import com.realdolmen.course.services.FlightService;
 import org.apache.shiro.SecurityUtils;
 
-import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.Date;
-import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 @Named
@@ -43,57 +34,56 @@ public class FlightController {
         return arrivalDate;
     }
 
-    public Date getDepartureDate() {
-        return departureDate;
-    }
-
-    public String getFlightCode() {
-        return flightCode;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
     public void setArrivalDate(Date arrivalDate) {
         this.arrivalDate = arrivalDate;
+    }
+
+    public Date getDepartureDate() {
+        return departureDate;
     }
 
     public void setDepartureDate(Date departureDate) {
         this.departureDate = departureDate;
     }
 
+    public String getFlightCode() {
+        return flightCode;
+    }
+
     public void setFlightCode(String flightCode) {
         this.flightCode = flightCode;
+    }
+
+    public Double getPrice() {
+        return price;
     }
 
     public void setPrice(Double price) {
         this.price = price;
     }
 
-    public void setArrivalAirport(String arrivalAirport) {
-        this.arrivalAirport = arrivalAirport;
-    }
-
-    public void setDepartureAirport(String departureAirport) {
-        this.departureAirport = departureAirport;
-    }
-
-    public void setPlane(String plane) {
-        this.plane = plane;
-    }
-
-
     public String getArrivalAirport() {
         return arrivalAirport;
+    }
+
+    public void setArrivalAirport(String arrivalAirport) {
+        this.arrivalAirport = arrivalAirport;
     }
 
     public String getDepartureAirport() {
         return departureAirport;
     }
 
+    public void setDepartureAirport(String departureAirport) {
+        this.departureAirport = departureAirport;
+    }
+
     public String getPlane() {
         return plane;
+    }
+
+    public void setPlane(String plane) {
+        this.plane = plane;
     }
 
     public List<Flight> getFlights(){

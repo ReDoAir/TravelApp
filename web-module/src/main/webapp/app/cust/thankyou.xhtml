@@ -1,0 +1,37 @@
+<ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <ui:define name="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h:link styleClass="navbar-brand" outcome="home">Redo Air</h:link>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><h:link outcome="bookings">Bookings</h:link></li>
+                </ul>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <h:form>
+                                <h:commandLink style="color: white"
+                                               action="#{authController.logout}">Log out</h:commandLink>
+                            </h:form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </ui:define>
+
+    <ui:define name="content">
+        <h2>Thank you for making this order</h2>
+
+        <h3>You will receive a mail with your booking details soon...</h3>
+
+        <div>
+            <p>Click <h:link outcome="bookings">here</h:link> to see and overview of your bookings.</p>
+        </div>
+    </ui:define>
+
+</ui:composition>

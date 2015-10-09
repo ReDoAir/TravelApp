@@ -1,6 +1,6 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
-                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+        >
 
     <ui:define name="header">
         <nav class="navbar navbar-default">
@@ -8,6 +8,11 @@
                 <div class="navbar-header">
                     <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
                 </div>
+
+                <ul class="nav navbar-nav">
+                    <li><h:link outcome="bookings">Bookings</h:link></li>
+                </ul>
+
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>

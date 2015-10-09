@@ -1,21 +1,16 @@
 package com.realdolmen.course.persistence;
 
-import com.realdolmen.course.domain.Airline;
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.auth.Customer;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.awt.print.Book;
 import java.util.Date;
 import java.util.List;
 
-import static com.realdolmen.course.domain.Booking.FIND_ALL_BOOKIGS;
-import static com.realdolmen.course.domain.Booking.FIND_ALL_BY_BOOKINGDATE;
-import static com.realdolmen.course.domain.Booking.FIND_BOOKINGS_BY_CUSTOMER;
+import static com.realdolmen.course.domain.Booking.*;
 
 @Stateless
 @LocalBean
@@ -44,7 +39,7 @@ public class BookingRepo {
 
     public Booking findBookingById(int id)
     {
-        return em.find(Booking.class,id);
+        return em.find(Booking.class, id);
     }
 
     public void addBooking(Booking booking)
@@ -53,4 +48,12 @@ public class BookingRepo {
     }
 
 
+    public List<Booking> getAllBookingByUser(String userName) {
+        return em.createQuery("SELECT b FROM Booking b WHERE b.customer.username = :userName", Booking.class).setParameter("userName", userName).getResultList();
+    }
+
+    public void deleteBooking(Booking booking) {
+        em.remove(booking);
+        em.flush();
+    }
 }

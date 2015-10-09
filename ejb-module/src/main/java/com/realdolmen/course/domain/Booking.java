@@ -39,11 +39,11 @@ public class Booking implements Serializable {
 
     private double price;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany
     @JoinTable(
-            name="trip_booking",
-            joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
-            inverseJoinColumns={@JoinColumn(name="booking", referencedColumnName="id")}
+            name = "booking_trip",
+            joinColumns = {@JoinColumn(name = "booking", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "trip", referencedColumnName = "id")}
     )
     private List<Trip> trips;
 

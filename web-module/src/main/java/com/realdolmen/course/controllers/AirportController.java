@@ -4,11 +4,9 @@ package com.realdolmen.course.controllers;
 import com.realdolmen.course.domain.Airport;
 import com.realdolmen.course.persistence.AirportRepo;
 
-import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.ArrayList;
 import java.util.List;
 
 @Named

@@ -9,4 +9,6 @@ public class DepartAndArrivalAreTheSameException extends RuntimeException {
     public DepartAndArrivalAreTheSameException(String message, Throwable cause) {
         super(message, cause);
     }
+
+
 }

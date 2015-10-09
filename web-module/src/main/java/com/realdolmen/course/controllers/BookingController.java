@@ -1,5 +1,6 @@
 package com.realdolmen.course.controllers;
 
+import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.Trip;
 import com.realdolmen.course.services.BookingService;
 import com.realdolmen.course.services.TripService;
@@ -28,19 +29,25 @@ public class BookingController implements Serializable {
     private List<Trip> addedTrips;
     private double totalPrice = 0;
     private int count;
+    private List<String> paymentMethods;
 
     @PostConstruct
     public void init(){
         addedTrips = new ArrayList<>();
         count = searchController.getCount();
+        paymentMethods.add("CreditCard");
+        paymentMethods.add("Endorsement");
+        paymentMethods.add("Voucher");
     }
 
     public void createBooking() {
-        if(addedTrips.size() > 1) {
+        if (addedTrips.size() > 0) {
             String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
-            bookingService.createBooking(count, userName, addedTrips, totalPrice);
-        }else {
-            Messages.addGlobalError( "You did not select any trips yet");
+            if (bookingService.createBooking(count, userName, addedTrips, totalPrice) == -1) {
+                Messages.addGlobalError("Number of passengers cannot be 0");
+            }
+        } else {
+            Messages.addGlobalError("You did not select any trips yet");
         }
     }
 
@@ -53,6 +60,7 @@ public class BookingController implements Serializable {
         }else {
             addedTrips.add(trip);
             totalPrice += (trip.getPrice() * count);
+            System.out.println(addedTrips.get(0).getPrice());
         }
 
     }
@@ -61,8 +69,8 @@ public class BookingController implements Serializable {
         if(tripId != null){
             for(int i = 0; i < addedTrips.size(); i++){
                 if(Objects.equals(addedTrips.get(i).getId(), tripId)){
-                    addedTrips.remove(i);
                     totalPrice -= (addedTrips.get(i).getPrice() * count);
+                    addedTrips.remove(i);
                 }
             }
         }
@@ -93,5 +101,22 @@ public class BookingController implements Serializable {
         }
 
         return false;
+    }
+
+    public List<Booking> getBookings() {
+        String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
+        return bookingService.getAllBookingByUser(userName);
+    }
+
+    public void deleteBooking(Booking booking) {
+        bookingService.deleteBooking(booking);
+    }
+
+    public List<String> getPaymentMethods() {
+        return paymentMethods;
+    }
+
+    public void setPaymentMethods(List<String> paymentMethods) {
+        this.paymentMethods = paymentMethods;
     }
 }
