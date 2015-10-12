@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
-    <h:head>
-        <meta charset="UTF-8"/>
-        <title>travelApp</title>
-    </h:head>
-    <h:body>
-        <ui:composition template="/resources/template/default.xhtml">
+<ui:composition template="/resources/template/default.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                            <h:link styleClass="navbar-brand" outcome="home">Redo Air</h:link>
                         </div>
 
                         <ul class="nav navbar-nav">
@@ -32,12 +25,49 @@
                     </div>
                 </nav>
             </ui:define>
-
             <ui:define name="content">
+                <h:form styleClass="bookingForm">
+                    <h4>All trips</h4>
+                    <h:dataTable id="trips" styleClass="table" value="#{employeeController.allTrips}" var="trip">
 
+                        <h:column>
+                            <f:facet name="header">Name</f:facet>
+                            #{trip.tripName}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Begin</f:facet>
+                            #{trip.period.departureDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">End</f:facet>
+                            #{trip.period.returnDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Airlines</f:facet>
+                            #{trip.fromFlight.airline.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Departure</f:facet>
+                            #{trip.toFlight.departAirport.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Price (Per Person)</f:facet>
+                            #{trip.price}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Edit price</f:facet>
+                            <h:inputText pt:placeholder="Price" styleClass="tblText" value="#{employeeController.price}">
+                                <f:convertNumber integerOnly="true"/>
+                            </h:inputText>
+                            <h:commandButton styleClass="btn-default" value="Chose" action="#{employeeController.changePrice(trip)}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
             </ui:define>
-
-        </ui:composition>
-
-    </h:body>
-</html>
+</ui:composition>

@@ -4,11 +4,9 @@ package com.realdolmen.course.controllers;
 import com.realdolmen.course.domain.Airport;
 import com.realdolmen.course.persistence.AirportRepo;
 
-import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.ArrayList;
 import java.util.List;
 
 @Named
@@ -18,6 +16,13 @@ public class AirportController {
     @Inject
     private AirportRepo airportRepo;
 
+    public List<Airport> getAirports(){
+        return airportRepo.getAllAirports();
+    }
+}
+
+/*
+*
     public List<String> completeText(String query) {
         List<String> results = new ArrayList<>();
         for(int i = 0; i < 10; i++) {
@@ -27,7 +32,4 @@ public class AirportController {
         return results;
     }
 
-    public List<Airport> getAirports(){
-        return airportRepo.getAllAirports();
-    }
-}
+*/

@@ -3,15 +3,13 @@ package com.realdolmen.course.persistence;
 import com.realdolmen.course.domain.Airline;
 import com.realdolmen.course.domain.Airport;
 import com.realdolmen.course.domain.Flight;
-import com.realdolmen.course.services.DateServices;
+import com.realdolmen.course.utils.DateUtil;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TemporalType;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -41,14 +39,14 @@ public class FlightRepo {
     //for what it's worth
     public List<Flight> getAllFlightsByDepartureDate(Date date)
     {
-        Date endDate = DateServices.addAFewDays(date,1);
+        Date endDate = DateUtil.addAFewDays(date, 1);
         return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTUREDATE,Flight.class).setParameter("startDate", date, TemporalType.TIMESTAMP).setParameter("endDate",endDate,TemporalType.TIMESTAMP).getResultList();
     }
 
 
     public List<Flight>getAllFlightsByArrivalDate(Date date)
     {
-        Date endDate = DateServices.addAFewDays(date,1);
+        Date endDate = DateUtil.addAFewDays(date, 1);
         return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_ARRIVALDATE,Flight.class).setParameter("startDate",date).setParameter("endDate",endDate).getResultList();
     }
 
@@ -68,7 +66,7 @@ public class FlightRepo {
 
     public List<Flight>getAllFlightsByDepartureDateWithAvailableSeats(Date date)
     {
-        Date endDate = DateServices.addAFewDays(date,1);
+        Date endDate = DateUtil.addAFewDays(date, 1);
         return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTUREDATE_WITH_AVAILABLESEATS,Flight.class).setParameter("startDate",date).setParameter("endDate",endDate).getResultList();
     }
     public List<Flight>getAllFlightsByDestinationAndDepartureDateBetween(Airport departAirport,Date startDate,Date endDate)

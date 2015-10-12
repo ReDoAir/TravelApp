@@ -1,11 +1,10 @@
 package com.realdolmen.course.persistence;
 
 import com.realdolmen.course.domain.Period;
-import com.realdolmen.course.services.DateServices;
+import com.realdolmen.course.utils.DateUtil;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Date;
@@ -35,13 +34,13 @@ public class PeriodRepo {
 
     public List<Period>getAllPeriodsFromDepartureDate(Date date)
     {
-        Date endDate = DateServices.addAFewDays(date,1);
+        Date endDate = DateUtil.addAFewDays(date, 1);
         return em.createNamedQuery(FIND_ALL_PERIODS_FROM_DEPATUREDATE,Period.class).setParameter("startDate",date).setParameter("endDate", endDate).getResultList();
     }
 
     public List<Period>getAllPeriodsFromArrivalDate(Date date)
     {
-        Date endDate = DateServices.addAFewDays(date,1);
+        Date endDate = DateUtil.addAFewDays(date, 1);
         return em.createNamedQuery(FIND_ALL_PERIODS_FROM_ARRIVAL_DATE,Period.class).setParameter("startDate",date).setParameter("endDate",endDate).getResultList();
     }
 

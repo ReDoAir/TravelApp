@@ -9,7 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 //@Entity
-/*@NamedQueries({
+@NamedQueries({
         @NamedQuery(
                 name = "User.find",
                 query = "SELECT u FROM User u WHERE u.username = :username AND u.password = :password"),
@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
                 name = "User.list",
                 query = "SELECT u FROM User u")
 })
-*/
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User implements Serializable{

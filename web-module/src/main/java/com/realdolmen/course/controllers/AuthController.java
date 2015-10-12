@@ -1,20 +1,17 @@
 package com.realdolmen.course.controllers;
 
-import java.io.IOException;
-
-import javax.enterprise.context.RequestScoped;
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Named;
-
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.util.SavedRequest;
 import org.apache.shiro.web.util.WebUtils;
 import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
+import java.io.IOException;
 
 @Named
 @RequestScoped
@@ -31,13 +28,12 @@ public class AuthController {
 
     public void login() throws IOException {
         try {
-
             Subject currentUser = SecurityUtils.getSubject();
 
             currentUser.login(new UsernamePasswordToken(username, password, remember));
             SavedRequest savedRequest = WebUtils.getAndClearSavedRequest(Faces.getRequest());
 
-            //keep the username in the session
+            //keep the username in the session for booking , adding trips and adding flights
             SecurityUtils.getSubject().getSession().setAttribute("userName", username);
 
             //redirect to the right home page
@@ -51,7 +47,7 @@ public class AuthController {
 
         }
         catch (AuthenticationException e) {
-            Messages.addGlobalError("Unknown user, please try again");
+            Messages.addGlobalError("Username and/or password were wrong");
             e.printStackTrace(); // TODO: logger.
         }
     }

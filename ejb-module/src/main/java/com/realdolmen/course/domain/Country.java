@@ -11,11 +11,11 @@ import java.util.List;
                 @NamedQuery(name="Country.findAllByName", query = "select c from Country c where c.name like :name")
         }
 )
-
-
 public class Country implements Serializable, Comparable {
+
     public static final String FIND_ALL_COUNTRIES = "Country.findAll",
             FIND_ALL_COUNTRIES_BY_NAME = "Country.findAllByName";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

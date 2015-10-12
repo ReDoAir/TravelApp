@@ -4,9 +4,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-/**
- * Created by SDOAX36 on 5/10/2015.
- */
 @Entity
 @NamedQueries(
         {

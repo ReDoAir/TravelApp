@@ -1,4 +1,4 @@
-package com.realdolmen.course.services;
+package com.realdolmen.course.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * Created by SDOAX36 on 8/10/2015.
  */
-public class DateServices {
+public class DateUtil {
 
     public static Date addAFewDays(Date date,int aantalDays)
     {
@@ -33,6 +33,11 @@ public class DateServices {
     {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.format(date);
+    }
+
+    public static int daysBetween(Date d1, Date d2)
+    {
+        return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24));
     }
 
 }

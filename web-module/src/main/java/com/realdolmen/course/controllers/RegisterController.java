@@ -36,7 +36,7 @@ public class RegisterController {
             Faces.redirect("/web-module/app/anon/login.faces");
         }
         catch (RuntimeException e) {
-            Messages.addGlobalError("Registration failed: {0}", e.getMessage());
+            Messages.addGlobalError("Couldn't register user");
             e.printStackTrace(); // TODO: logger.
         }
     }

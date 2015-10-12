@@ -6,7 +6,7 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                            <h:link styleClass="navbar-brand" outcome="home">Redo Air</h:link>
                         </div>
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,7 +29,7 @@
                     <h:inputText pt:placeholder="name" styleClass="form-control formEle" value="#{tripController.name}"/>
 
                     <div class="lblForm">
-                        <h:outputLabel for="periodId">Choose periodId: </h:outputLabel>
+                        <h:outputLabel for="periodId">Choose a period: </h:outputLabel>
                         <h:selectOneMenu id="periodId" styleClass="form-control" value="#{tripController.periodId}">
                             <f:selectItems value="#{periodController.periods}" var="period"
                                            itemLabel="#{period}" itemValue="#{period.id}" />

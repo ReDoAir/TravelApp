@@ -43,6 +43,8 @@ public class Trip implements Serializable{
     @Basic(optional = false)
     private String destination;
 
+    private double price;
+
     @ManyToMany
     @JoinTable(
             name="trip_res",
@@ -143,5 +145,49 @@ public class Trip implements Serializable{
 
     public void setDestination(String destination) {
         this.destination = destination;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        if(price > 0) {
+            this.price = price;
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Trip)) return false;
+
+        Trip trip = (Trip) o;
+
+        if (Double.compare(trip.price, price) != 0) return false;
+        if (!id.equals(trip.id)) return false;
+        if (!toFlight.equals(trip.toFlight)) return false;
+        if (!fromFlight.equals(trip.fromFlight)) return false;
+        if (!period.equals(trip.period)) return false;
+        if (!destination.equals(trip.destination)) return false;
+        if (!residences.equals(trip.residences)) return false;
+        return tripName.equals(trip.tripName);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = id.hashCode();
+        result = 31 * result + toFlight.hashCode();
+        result = 31 * result + fromFlight.hashCode();
+        result = 31 * result + period.hashCode();
+        result = 31 * result + destination.hashCode();
+        temp = Double.doubleToLongBits(price);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + residences.hashCode();
+        result = 31 * result + tripName.hashCode();
+        return result;
     }
 }

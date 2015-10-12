@@ -1,9 +1,8 @@
 package com.realdolmen.course.controllers;
 
-import com.realdolmen.course.domain.Country;
 import com.realdolmen.course.domain.Trip;
 import com.realdolmen.course.persistence.CountryRepo;
-import com.realdolmen.course.persistence.TripRepo;
+import com.realdolmen.course.services.TripService;
 import org.omnifaces.util.Faces;
 
 import javax.enterprise.context.SessionScoped;
@@ -12,28 +11,23 @@ import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Named
 @SessionScoped
 public class SearchController implements Serializable{
 
+    private int count;
+    private String destination;
     private List<Trip> trips = new ArrayList<>();
 
     @Inject
-    private TripRepo tripRepo;
+    private TripService tripService;
     @Inject
     private CountryRepo countryRepo;
-    private List<String> destinations;
-
-    private String countryName;
-    private int count;
-    private String destination;
 
     public void tripsToDestination(){
-        trips = tripRepo.getTripsByDestinationWithEnoughPlaces(count);
+        trips = tripService.getTripsByDestinationWithEnoughPlaces(count);
     }
 
     public List<Trip> getTrips() {
@@ -45,7 +39,7 @@ public class SearchController implements Serializable{
     }
 
     public List<String> getDestinations() {
-        return tripRepo.getDestinations();
+        return tripService.getDestinations();
     }
 
     public String getDestination() {
@@ -63,6 +57,18 @@ public class SearchController implements Serializable{
     public void setCount(int count) {
         this.count = count;
     }
+
+    public void search() throws IOException {
+        tripsToDestination();
+        Faces.redirect("/web-module/app/cust/booktrip.faces");
+    }
+
+}
+
+
+/*
+    private List<String> destinations;
+    private String countryName;
 
     public List<String> getCountries(){
 
@@ -83,15 +89,11 @@ public class SearchController implements Serializable{
         this.countryName = countryName;
     }
 
-    public void search() throws IOException {
-        tripsToDestination();
-        Faces.redirect("/web-module/app/cust/booktrip.faces");
-    }
 
     public void countryChanged(){
         if(countryName != null && !countryName.equals("")) {
-            List<Trip> trips = tripRepo.getTripsByCountry(countryName);
+            List<Trip> trips = tripService.getTripsByCountry(countryName);
             destinations.addAll(trips.stream().map(Trip::getDestination).collect(Collectors.toList()));
         }
     }
-}
+* */

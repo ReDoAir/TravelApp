@@ -37,11 +37,13 @@ public class Booking implements Serializable {
     @Basic(optional = false)
     private int count;
 
+    private double price;
+
     @ManyToMany
     @JoinTable(
-            name="trip_booking",
-            joinColumns={@JoinColumn(name="trip", referencedColumnName="id")},
-            inverseJoinColumns={@JoinColumn(name="booking", referencedColumnName="id")}
+            name = "booking_trip",
+            joinColumns = {@JoinColumn(name = "booking", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "trip", referencedColumnName = "id")}
     )
     private List<Trip> trips;
 
@@ -83,5 +85,13 @@ public class Booking implements Serializable {
 
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
