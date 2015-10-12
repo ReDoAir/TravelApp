@@ -12,6 +12,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Stateless
@@ -56,6 +57,16 @@ public class TripService implements Serializable {
 
     public List<Trip> getTripsByDestinationWithEnoughPlaces(int count) {
         return tripRepo.getTripsByDestinationWithEnoughPlaces(count);
+    }
+
+    public List<Trip> getTripsByPeriodStartDate(Date from, Date to)
+    {
+        return tripRepo.getTripsByStartDateBetween(from, to);
+    }
+
+    public List<Trip>getTripsByPeriodEndDate(Date from, Date to)
+    {
+        return tripRepo.getTripsByEndDateBetween(from,to);
     }
 
     public List<String> getDestinations() {

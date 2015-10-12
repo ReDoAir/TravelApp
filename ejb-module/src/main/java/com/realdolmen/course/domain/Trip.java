@@ -13,7 +13,8 @@ import java.util.List;
         @NamedQuery(name="Trip.findAllByToFlight",query = "select t from Trip t where t.toFlight = :toFlight"),
         @NamedQuery(name = "Trip.findAllByFromFlight",query = "select t from Trip t where t.fromFlight = :fromFlight"),
         @NamedQuery(name="Trip.findAllByPeriod", query = "select t from Trip t where t.period = :period"),
-        @NamedQuery(name="Trip.findAllByDestination", query = "select t from Trip t where t.destination like :destination")
+        @NamedQuery(name="Trip.findAllByDestination", query = "select t from Trip t where t.destination like :destination"),
+        @NamedQuery(name="Trip.findAllByName",query = "select t from Trip t where t.tripName like :tripName")
 })
 public class Trip implements Serializable{
 
@@ -21,6 +22,7 @@ public class Trip implements Serializable{
     FIND_ALL_TRIPS_BY_TO_FLIGHTS = "Trip.findAllByToFlight",
     FIND_ALL_TRIPS_BY_FROM_FLIGHTS = "Trip.findAllByFromFlight",
     FIND_ALL_TRIPS_BY_PERIODS = "Trip.findAllByPeriod",
+    FIND_ALL_TRIPS_BY_TRIPNAME = "Trip.findAllByName",
     FIND_ALL_TRIPS_BY_DESTINATION = "Trip.findAllByDestination";
 
 

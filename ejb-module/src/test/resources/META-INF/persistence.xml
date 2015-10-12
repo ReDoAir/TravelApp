@@ -58,6 +58,9 @@
         <class>com.realdolmen.course.domain.auth.Employee</class>
         <class>com.realdolmen.course.domain.Plane</class>
         <class>com.realdolmen.course.domain.Period</class>
+        <class>com.realdolmen.course.domain.payment.CreditCard</class>
+        <class>com.realdolmen.course.domain.payment.Endorsement</class>
+        <class>com.realdolmen.course.domain.payment.PaymentMethod</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />

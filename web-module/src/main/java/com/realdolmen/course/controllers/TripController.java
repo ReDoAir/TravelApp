@@ -13,10 +13,13 @@ public class TripController {
     @Inject
     private TripService tripService;
 
+
     private String name;
     private Integer periodId;
     private Integer depFlightId;
     private Integer returnFlightId;
+
+
 
     public void createTrip(){
         tripService.createTrip(name, periodId, depFlightId, returnFlightId);
@@ -53,4 +56,5 @@ public class TripController {
     public void setReturnFlightId(Integer returnFlightId) {
         this.returnFlightId = returnFlightId;
     }
+
 }

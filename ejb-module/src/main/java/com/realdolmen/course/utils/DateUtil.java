@@ -29,7 +29,7 @@ public class DateUtil {
         }
     }
 
-    public static String stringToDate(Date date, String format)
+    public static String dateToString(Date date, String format)
     {
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.format(date);
