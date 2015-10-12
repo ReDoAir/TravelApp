@@ -20,6 +20,22 @@ public class PaymentMethod {
     @NotNull
     private Customer customer;
 
+<<<<<<< HEAD
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+=======
+    public PaymentMethod(String name) {
+        this.name = name;
+    }
+
+    public PaymentMethod() {
+>>>>>>> origin/master
+    }
+
     public Integer getId() {
         return id;
     }
@@ -28,19 +44,19 @@ public class PaymentMethod {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Customer getCustomer() {
         return customer;
     }
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

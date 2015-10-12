@@ -2,7 +2,12 @@ package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.Trip;
+import com.realdolmen.course.domain.exceptions.BookingException;
+import com.realdolmen.course.domain.payment.CreditCard;
+import com.realdolmen.course.domain.payment.Endorsement;
+import com.realdolmen.course.domain.payment.PaymentMethod;
 import com.realdolmen.course.services.BookingService;
+import com.realdolmen.course.services.CustomerService;
 import com.realdolmen.course.services.TripService;
 import org.apache.shiro.SecurityUtils;
 import org.omnifaces.util.Messages;
@@ -12,7 +17,9 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -25,30 +32,45 @@ public class BookingController implements Serializable {
     private TripService tripService;
     @Inject
     private SearchController searchController;
+    @Inject
+    private CustomerService customerService;
 
     private List<Trip> addedTrips;
     private double totalPrice = 0;
     private int count;
-    private List<String> paymentMethods;
+    private CreditCard creditCard;
+    //4388576018410707 -> example ccn
+    private String number;
+    private Date expire;
 
     @PostConstruct
     public void init(){
         addedTrips = new ArrayList<>();
         count = searchController.getCount();
-        paymentMethods.add("CreditCard");
-        paymentMethods.add("Endorsement");
-        paymentMethods.add("Voucher");
     }
 
-    public void createBooking() {
+    public String createBooking() {
         if (addedTrips.size() > 0) {
-            String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
-            if (bookingService.createBooking(count, userName, addedTrips, totalPrice) == -1) {
-                Messages.addGlobalError("Number of passengers cannot be 0");
+            if(creditCard != null) {
+                String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
+                customerService.addCreditCard(userName,creditCard);
+                try {
+                    if (bookingService.createBooking(count, userName, addedTrips, totalPrice) == -1) {
+                        Messages.addGlobalError("Number of passengers cannot be 0");
+                    }else{
+                        return "thankyou";
+                    }
+                } catch (BookingException b) {
+                    Messages.addGlobalError("Not enough available places");
+                }
+            }else {
+                Messages.addGlobalError("You need to add a credit card");
             }
         } else {
             Messages.addGlobalError("You did not select any trips yet");
         }
+
+        return "booktrip";
     }
 
     public void addTrip(Integer tripId){
@@ -112,11 +134,56 @@ public class BookingController implements Serializable {
         bookingService.deleteBooking(booking);
     }
 
-    public List<String> getPaymentMethods() {
-        return paymentMethods;
+    public void validateAndCreateCreditCard(){
+        if(number != null && !number.equals("") && expire != null){
+            if(isValid(number) && expire.after(Date.from(Instant.now()))) {
+                creditCard = new CreditCard(number,expire);
+                Messages.addInfo("payment", "Credit card is valid");
+            }else{
+                Messages.addError("payment", "Credit card is invalid");
+            }
+        }else {
+            Messages.addError("payment", "Please fill in your credit card number and expiry date");
+        }
+
     }
 
-    public void setPaymentMethods(List<String> paymentMethods) {
-        this.paymentMethods = paymentMethods;
+    private boolean isValid(String number) {
+
+        int sum = 0;
+        boolean alternate = false;
+
+        for (int i = number.length() - 1; i >= 0; i--)
+        {
+            int n = Integer.parseInt(number.substring(i, i + 1));
+            if (alternate)
+            {
+                n *= 2;
+                if (n > 9)
+                {
+                    n = (n % 10) + 1;
+                }
+            }
+            sum += n;
+            alternate = !alternate;
+        }
+
+        return (sum % 10 == 0);
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public Date getExpire() {
+        return expire;
+    }
+
+    public void setExpire(Date expire) {
+        this.expire = expire;
     }
 }

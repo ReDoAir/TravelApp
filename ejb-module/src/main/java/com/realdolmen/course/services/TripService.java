@@ -23,7 +23,7 @@ public class TripService implements Serializable {
     @Inject
     private PeriodRepo periodRepo;
     @Inject
-    private FlightRepo flightRepo;
+    private FlightService flightService;
     @Inject
     private ResidenceRepo residenceRepo;
 
@@ -34,10 +34,10 @@ public class TripService implements Serializable {
 
         trip.setPeriod(periodRepo.getPeriodById(periodId));
 
-        Flight depFight = flightRepo.getFlightById(depFlightId);
+        Flight depFight = flightService.getFlightById(depFlightId);
         trip.setToFlight(depFight);
 
-        Flight retTrip = flightRepo.getFlightById(returnFlightId);
+        Flight retTrip = flightService.getFlightById(returnFlightId);
         trip.setFromFlight(retTrip);
 
         List<Residence> residences = residenceRepo.getResidencesByPeriod(periodId);
@@ -101,5 +101,10 @@ public class TripService implements Serializable {
     public void updateTripPrice(Trip trip, double price) {
         trip.setPrice(price);
         tripRepo.updateTrip(trip);
+    }
+
+    public void updateAvailableSpotsTrip(Trip t, int count) {
+        flightService.updateAvailableSpotsOnFlight(t.getToFlight(), count);
+        flightService.updateAvailableSpotsOnFlight(t.getFromFlight(), count);
     }
 }

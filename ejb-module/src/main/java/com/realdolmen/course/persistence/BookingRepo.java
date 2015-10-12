@@ -53,7 +53,8 @@ public class BookingRepo {
     }
 
     public void deleteBooking(Booking booking) {
-        em.remove(booking);
+        Object managed = em.merge(booking);
+        em.remove(managed);
         em.flush();
     }
 }

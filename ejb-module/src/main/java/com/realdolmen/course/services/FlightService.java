@@ -46,4 +46,18 @@ public class FlightService implements Serializable {
     public List<Flight> getAllFlights() {
         return flightRepo.getAllFlights();
     }
+
+    public Flight getFlightById(Integer flightId) {
+        return flightRepo.getFlightById(flightId);
+    }
+
+    public void updateAvailableSpotsOnFlight(Flight flight, int count) {
+        int newAmount = flight.getAvailablePlaces() - count;
+        if(newAmount > 0) {
+            flight.setAvailablePlaces(newAmount);
+            flightRepo.updateFlight(flight);
+        } else{
+            throw new IllegalArgumentException("Available places cannot be less than 0");
+        }
+    }
 }

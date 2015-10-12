@@ -73,3 +73,11 @@
     width: 10%;
     min-width: 100px;
 }
+
+#mapdiv{
+    margin-left: 10px;
+}
+
+.rightSide{
+    float: right;
+}

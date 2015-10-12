@@ -18,9 +18,11 @@ import java.io.IOException;
 public class AuthController {
 
     public static final String HOME_URL = "/web-module/app/anon/index.faces";
-    public static final String CUST_URL = "/web-module/app/cust/home.faces";
+    public static final String CUST_URL = "/web-module/app/cust/search.faces";
     public static final String EMPL_URL = "/web-module/app/empl/home.faces";
     public static final String PART_URL = "/web-module/app/part/home.faces";
+    public static final String BOOKING_URL = "/web-module/app/cust/booktrip.faces";
+    public static final String SEARCH_URL = "/web-module/app/anon/search.faces";
 
     private String username;
     private String password;
@@ -38,7 +40,7 @@ public class AuthController {
 
             //redirect to the right home page
             if(currentUser.hasRole("CUSTOMER")) {
-                Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : CUST_URL);
+                Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : HOME_URL);
             }else if(currentUser.hasRole("PARTNER")){
                 Faces.redirect(savedRequest != null ? savedRequest.getRequestUrl() : PART_URL);
             }else if(currentUser.hasRole("EMPLOYEE")){
@@ -80,5 +82,9 @@ public class AuthController {
 
     public void setRemember(boolean remember) {
         this.remember = remember;
+    }
+
+    public void goToBookingPage() throws IOException {
+        Faces.redirect(BOOKING_URL);
     }
 }

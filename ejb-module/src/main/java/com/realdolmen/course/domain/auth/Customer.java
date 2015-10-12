@@ -3,10 +3,8 @@ package com.realdolmen.course.domain.auth;
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.payment.PaymentMethod;
 
-import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,10 +22,11 @@ public class Customer extends User {
     @OneToMany(mappedBy = "customer")
     private List<Booking> bookings;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.PERSIST)
     private List<PaymentMethod> paymentMethods;
 
     public Customer() {
+        paymentMethods = new ArrayList<>();
         addRole(Role.CUSTOMER);
     }
 
@@ -47,7 +46,8 @@ public class Customer extends User {
         return paymentMethods;
     }
 
-    public void setPaymentMethods(List<PaymentMethod> paymentMethods) {
-        this.paymentMethods = paymentMethods;
+    public void addPaymentMethod(PaymentMethod paymentMethod){
+        paymentMethod.setCustomer(this);
+        paymentMethods.add(paymentMethod);
     }
 }

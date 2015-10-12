@@ -1,14 +1,14 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
-                xmlns:ui="http://java.sun.com/jsf/facelets">
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:b="http://bootsfaces.net/ui">
 
     <ui:define name="header">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <h:link styleClass="navbar-brand" outcome="home">Redo Air</h:link>
+                    <h:link styleClass="navbar-brand" outcome="index">Redo Air</h:link>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li><h:link outcome="bookings">Bookings</h:link></li>
+                    <li><b:navLink outcome="bookings">Bookings</b:navLink></li>
                 </ul>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -25,12 +25,14 @@
     </ui:define>
 
     <ui:define name="content">
-        <h2>Thank you for making this order</h2>
+        <div class="userForm">
+            <h2>Thank you for making this order</h2>
 
-        <h3>You will receive a mail with your booking details soon...</h3>
+            <h3>You will receive a mail with your booking details soon...</h3>
 
-        <div>
-            <p>Click <h:link outcome="bookings">here</h:link> to see and overview of your bookings.</p>
+            <div>
+                <p>Click <h:link outcome="bookings">here</h:link> to see and overview of your bookings.</p>
+            </div>
         </div>
     </ui:define>
 

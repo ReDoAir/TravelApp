@@ -192,4 +192,12 @@ public class Trip implements Serializable{
         result = 31 * result + tripName.hashCode();
         return result;
     }
+
+    public int availablePlaces(){
+        return toFlight.getAvailablePlaces() - fromFlight.getAvailablePlaces() > 0 ? fromFlight.getAvailablePlaces() : toFlight.getAvailablePlaces();
+    }
+
+    public int spotsTaken(){
+        return toFlight.getPlane().getNumberOfSeats() - toFlight.getAvailablePlaces();
+    }
 }

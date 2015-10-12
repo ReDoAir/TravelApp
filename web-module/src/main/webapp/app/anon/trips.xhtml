@@ -1,0 +1,53 @@
+<ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
+        >
+
+            <ui:define name="content">
+                <h:form styleClass="bookingForm">
+                    <h2>Available trips</h2>
+                    <h:dataTable id="availtrips" styleClass="table" value="#{searchController.trips}" var="trip">
+
+                        <h:column>
+                            <f:facet name="header">Name</f:facet>
+                            #{trip.tripName}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Begin</f:facet>
+                            #{trip.period.departureDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">End</f:facet>
+                            #{trip.period.returnDate}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Airlines</f:facet>
+                            #{trip.fromFlight.airline.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Departure</f:facet>
+                            #{trip.toFlight.departAirport.name}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Price (Per Person)</f:facet>
+                            #{trip.price}
+                        </h:column>
+
+                        <h:column>
+                            <f:facet name="header">Spots taken</f:facet>
+                             #{trip.spotsTaken()}
+                        </h:column>
+
+                    </h:dataTable>
+
+                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Go to booking" action="#{authController.goToBookingPage()}"/>
+
+                    <h:messages errorClass="alert alert-error"/>
+                </h:form>
+
+            </ui:define>
+</ui:composition>
