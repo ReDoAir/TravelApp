@@ -9,7 +9,7 @@
             <h:inputSecret styleClass="form-control formEle" pt:placeholder="Password" id="password"  value="#{authController.password}"/>
             <h:outputLabel styleClass="formEle" for="rememberMe" value="Remember Me: " />
             <h:selectBooleanCheckbox style="margin-left: 5px; " id="rememberMe" value="#{authController.remember}" />
-            <h:commandButton styleClass="form-control btn-default formEle" value="Login" action="#{authController.login}" >
+            <h:commandButton styleClass="form-control btn-default tableBtn formEle" value="Login" action="#{authController.login}" >
                 <f:ajax execute="@form" render="@form" />
             </h:commandButton>
             <h:messages globalOnly="true" layout="table" errorClass="errorMess alert alert-danger" warnClass="alert alert-warning"/>

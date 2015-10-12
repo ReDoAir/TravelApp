@@ -21,6 +21,7 @@ public class AuthController {
     public static final String CUST_URL = "/web-module/app/cust/home.faces";
     public static final String EMPL_URL = "/web-module/app/empl/home.faces";
     public static final String PART_URL = "/web-module/app/part/home.faces";
+    public static final String BOOKING_URL = "/web-module/app/cust/booktrip.faces";
 
     private String username;
     private String password;
@@ -80,5 +81,9 @@ public class AuthController {
 
     public void setRemember(boolean remember) {
         this.remember = remember;
+    }
+
+    public void goToBookingPage() throws IOException {
+        Faces.redirect(BOOKING_URL);
     }
 }

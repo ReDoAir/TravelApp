@@ -65,7 +65,7 @@
                             <h:inputText pt:placeholder="Price" styleClass="tblText" value="#{employeeController.price}">
                                 <f:convertNumber integerOnly="true"/>
                             </h:inputText>
-                            <h:commandButton styleClass="btn-default" value="Chose" action="#{employeeController.changePrice(trip)}"/>
+                            <h:commandButton styleClass="btn-default form-control tableBtn" value="Chose" action="#{employeeController.changePrice(trip)}"/>
                         </h:column>
                     </h:dataTable>
                 </h:form>

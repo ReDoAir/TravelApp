@@ -3,6 +3,8 @@ package com.realdolmen.course.controllers;
 import com.realdolmen.course.domain.Trip;
 import com.realdolmen.course.persistence.CountryRepo;
 import com.realdolmen.course.services.TripService;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.omnifaces.util.Faces;
 
 import javax.enterprise.context.SessionScoped;
@@ -59,41 +61,15 @@ public class SearchController implements Serializable{
     }
 
     public void search() throws IOException {
+        Subject currentUser = SecurityUtils.getSubject();
         tripsToDestination();
-        Faces.redirect("/web-module/app/cust/booktrip.faces");
+
+        if(currentUser.hasRole("CUSTOMER")) {
+            Faces.redirect("/web-module/app/cust/booktrip.faces");
+        }else{
+            Faces.redirect("/web-module/app/anon/trips.faces");
+        }
+
     }
 
 }
-
-
-/*
-    private List<String> destinations;
-    private String countryName;
-
-    public List<String> getCountries(){
-
-        List<Country> countries = countryRepo.getAllCountriesWithTrips();
-        List<String> names = new ArrayList<>();
-        Collections.sort(countries);
-
-        names.addAll(countries.stream().map(Country::getName).collect(Collectors.toList()));
-
-        return names;
-    }
-
-    public String getCountryName() {
-        return countryName;
-    }
-
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
-    }
-
-
-    public void countryChanged(){
-        if(countryName != null && !countryName.equals("")) {
-            List<Trip> trips = tripService.getTripsByCountry(countryName);
-            destinations.addAll(trips.stream().map(Trip::getDestination).collect(Collectors.toList()));
-        }
-    }
-* */

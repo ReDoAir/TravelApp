@@ -2,6 +2,7 @@ package com.realdolmen.course.services;
 
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.Trip;
+import com.realdolmen.course.domain.exceptions.BookingException;
 import com.realdolmen.course.persistence.BookingRepo;
 import com.realdolmen.course.persistence.CustomerRepo;
 
@@ -19,6 +20,8 @@ public class BookingService implements Serializable{
     private BookingRepo bookingRepo;
     @Inject
     private CustomerRepo customerRepo;
+    @Inject
+    private TripService tripService;
 
     public int createBooking(int count, String userName, List<Trip> addedTrips, double totalPrice) {
         if (count > 0) {
@@ -28,7 +31,17 @@ public class BookingService implements Serializable{
             booking.setTrips(addedTrips);
             booking.setBookingDate(Date.from(Instant.now()));
             booking.setPrice(totalPrice);
+
+            for(Trip t : addedTrips){
+                try {
+                    tripService.updateAvailableSpotsTrip(t, count);
+                }catch(IllegalArgumentException e){
+                    throw new BookingException(e.getMessage());
+                }
+            }
+
             bookingRepo.addBooking(booking);
+
             return 0;
         } else {
             return -1;

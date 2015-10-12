@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class Endorsement extends PaymentMethod {
+
     @Basic(optional = false)
     private String bank;
 

@@ -11,12 +11,9 @@
         <ui:composition template="/resources/template/default.xhtml">
 
             <ui:define name="content">
-                <h2>Invalid user name or password.</h2>
+                <h2>To access this page you need to be authenticated</h2>
 
-                <p>Please enter a user name or password that is authorized to access this
-                    application.
-                </p>
-                <h:link outcome="login">Return to login page</h:link>
+                <h:link outcome="login">Go to login page</h:link>
             </ui:define>
 
         </ui:composition>

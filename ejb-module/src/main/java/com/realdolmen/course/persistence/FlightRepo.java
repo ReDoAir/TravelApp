@@ -31,7 +31,7 @@ public class FlightRepo {
 
     public List<Flight>getAllFlightsByFlightCode(String flightCode)
     {
-        return em.createNamedQuery(Flight.FIND_ALL_FLIGHTS_BY_FLIGHT_CODE, Flight.class).setParameter("flightCode","%"+flightCode+"%").getResultList();
+        return em.createNamedQuery(Flight.FIND_ALL_FLIGHTS_BY_FLIGHT_CODE, Flight.class).setParameter("flightCode", "%" + flightCode + "%").getResultList();
     }
 
     //date is the startdate, it should come as a day with our 00:00:00 => endDay + 1day
@@ -52,7 +52,7 @@ public class FlightRepo {
 
     public List<Flight>getAllFlightsByDepartureAirport(Airport airport)
     {
-        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTURE_AIRPORT,Flight.class).setParameter("departAirport",airport).getResultList();
+        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTURE_AIRPORT, Flight.class).setParameter("departAirport",airport).getResultList();
     }
 
     public List<Flight>getAllFlightsByArrivalAirport(Airport airport)
@@ -67,19 +67,19 @@ public class FlightRepo {
     public List<Flight>getAllFlightsByDepartureDateWithAvailableSeats(Date date)
     {
         Date endDate = DateUtil.addAFewDays(date, 1);
-        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTUREDATE_WITH_AVAILABLESEATS,Flight.class).setParameter("startDate",date).setParameter("endDate",endDate).getResultList();
+        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DEPARTUREDATE_WITH_AVAILABLESEATS,Flight.class).setParameter("startDate", date).setParameter("endDate",endDate).getResultList();
     }
     public List<Flight>getAllFlightsByDestinationAndDepartureDateBetween(Airport departAirport,Date startDate,Date endDate)
     {
         return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_DESTINATION_AND_ARRIVALDATE_BETWEEN,Flight.class)
-                .setParameter("airport",departAirport)
+                .setParameter("airport", departAirport)
                 .setParameter("startDate", startDate)
                 .setParameter("endDate", endDate)
                 .getResultList();
     }
     public List<Flight>getAllFlightsByAirline(Airline airline)
     {
-        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_AIRLINE,Flight.class).setParameter("airline",airline).getResultList();
+        return em.createNamedQuery(FIND_ALL_FLIGHTS_BY_AIRLINE, Flight.class).setParameter("airline", airline).getResultList();
     }
 
 
@@ -90,6 +90,10 @@ public class FlightRepo {
 
     public Flight getFlightById(Integer flightId) {
         return em.find(Flight.class, flightId);
+    }
+
+    public void updateFlight(Flight flight) {
+        em.merge(flight);
     }
 
     //still need more operations, we will do them later

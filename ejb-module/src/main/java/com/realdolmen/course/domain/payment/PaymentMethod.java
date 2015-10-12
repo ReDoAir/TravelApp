@@ -11,7 +11,7 @@ public class PaymentMethod {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Integer id;
 
     @Basic(optional = false)
     private String name;
@@ -20,20 +20,19 @@ public class PaymentMethod {
     @NotNull
     private Customer customer;
 
-    public String getId() {
+    public PaymentMethod(String name) {
+        this.name = name;
+    }
+
+    public PaymentMethod() {
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Customer getCustomer() {
@@ -42,5 +41,13 @@ public class PaymentMethod {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

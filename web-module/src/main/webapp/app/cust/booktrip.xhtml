@@ -1,6 +1,7 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
-        >
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
@@ -10,7 +11,7 @@
                         </div>
 
                         <ul class="nav navbar-nav">
-                            <li><h:link outcome="bookings">Bookings</h:link></li>
+                            <h:link outcome="bookings">Bookings</h:link>
                         </ul>
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -65,6 +66,11 @@
                         </h:column>
 
                         <h:column>
+                            <f:facet name="header">Spots taken</f:facet>
+                            #{trip.spotsTaken()}
+                        </h:column>
+
+                        <h:column>
                             <h:commandButton styleClass="btn-default" value="Chose" action="#{bookingController.addTrip(trip.id)}" rendered="#{!bookingController.alreadyAdded(trip)}"/>
                             <h:outputText styleClass="tblText" value="Added" rendered="#{bookingController.alreadyAdded(trip)}"/>
                         </h:column>
@@ -113,11 +119,18 @@
 
                     <h:outputText style="margin-bottom: 5px;" styleClass="formEle form-control tableBtn" id="totalPrice" value="Total price: € #{bookingController.totalPrice}"/>
 
-                    <h:selectOneMenu>
-                        <f:selectItems itemLabel="#{bookingController.paymentMethods}"/>
-                    </h:selectOneMenu>
+                    <div class="userForm">
+                        <h:outputLabel styleClass="formEle" for="payment">Credit Card: </h:outputLabel>
+                        <h:inputText  styleClass="form-control formEle" pt:placeholder="Credit Card Number" id="payment" value="#{bookingController.number}"/>
+                        <b:datepicker  styleClass="formEle" pt:placeholder="Expire date" showButtonPanel="true" changeMonth="true" changeYear="true" id="expire" mode="popup-icon" value="#{bookingController.expire}"/>
 
-                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Next" action="#{bookingController.createBooking}"/>
+                        <h:commandButton value="Validate" styleClass="btn-default form-control tableBtn formEle" action="#{bookingController.validateAndCreateCreditCard}"/>
+
+                        <h:message infoClass="alert alert-success formEle" errorClass="alert alert-error formEle" for="payment"/>
+                    </div>
+
+
+                    <h:commandButton styleClass="btn-default form-control tableBtn" value="Book" action="#{bookingController.createBooking}"/>
 
                     <h:messages errorClass="alert alert-error"/>
                 </h:form>

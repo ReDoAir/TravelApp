@@ -17,7 +17,7 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     @Before
     public void init() throws Exception
     {
-        customer1 = new Customer("gekkerd","secret","555d55d5d5555d5");
+        customer1 = new Customer("gekkerd","secret");
         customer2 = new Customer();
     }
 
@@ -35,7 +35,6 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     {
 
         customer2.setPassword("secret");
-        customer2.setCreditCard("mlskqdjfqsmdmflj");
         entityManager().persist(customer2);
         assertNull(customer2.getId());
     }
@@ -44,7 +43,6 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     public void canNotPersistWithoutPassword() throws Exception
     {
         customer2.setUsername("secretMotherFucker");
-        customer2.setCreditCard("mlskdjfmlkjdqf");
 
         entityManager().persist(customer2);
         assertNull(customer2.getId());

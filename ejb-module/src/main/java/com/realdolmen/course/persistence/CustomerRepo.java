@@ -17,4 +17,8 @@ public class CustomerRepo {
     public Customer findCustomerByName(String username) {
         return em.createQuery("SELECT c FROM Customer c WHERE c.username = :username", Customer.class).setParameter("username", username).getSingleResult();
     }
+
+    public void updateCustomer(Customer customer) {
+        em.merge(customer);
+    }
 }
