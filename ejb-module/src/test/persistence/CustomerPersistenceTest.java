@@ -35,10 +35,7 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     {
 
         customer2.setPassword("secret");
-<<<<<<< HEAD
-        //customer2.setCreditCard("mlskqdjfqsmdmflj");
-=======
->>>>>>> origin/master
+
         entityManager().persist(customer2);
         assertNull(customer2.getId());
     }
@@ -47,10 +44,7 @@ public class CustomerPersistenceTest extends DataPersistenceTest{
     public void canNotPersistWithoutPassword() throws Exception
     {
         customer2.setUsername("secretMotherFucker");
-<<<<<<< HEAD
-        //customer2.setCreditCard("mlskdjfmlkjdqf");
-=======
->>>>>>> origin/master
+
 
         entityManager().persist(customer2);
         assertNull(customer2.getId());
