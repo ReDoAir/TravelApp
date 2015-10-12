@@ -44,4 +44,7 @@ public class CountryRepo implements Serializable {
     }
 
 
+    public List<String> getDestinationsByCountry(String country) {
+        return em.createQuery("SELECT t.destination from Trip t where t.destination in (select a.city from Country c JOIN c.airports a where a.country.name = :name)",String.class).setParameter("name", country).getResultList();
+    }
 }

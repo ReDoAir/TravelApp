@@ -3,25 +3,22 @@
         >
 
     <ui:define name="content">
-        <h:form styleClass="userForm">
-            <h2>Search for a trip</h2>
+        <div class="userForm">
+            <h2>Select a country</h2>
+            <div id="mapdiv" style="width: 1000px; background-color:#EEEEEE; height: 600px;"></div>
+                <h:form styleClass="userForm">
+                    <div class="formEle">
+                        <h:outputLabel for="countryName">Country name: </h:outputLabel>
+                        <h:inputText id="countryName" styleClass="countryName form-control" value="#{worldMapController.country}"/>
+                    </div>
 
-            <div class="formEle">
-                <h:outputLabel for="numberofpass">Number of travellers: </h:outputLabel>
-                <h:inputText styleClass="form-control" id="numberofpass" value="#{searchController.count}"/>
-            </div>
+                    <div class="formEle">
+                        <h:outputLabel for="countryName">Numbers of travellers: </h:outputLabel>
+                        <h:inputText id="travelers" styleClass="countryName form-control" value="#{worldMapController.amount}"/>
+                    </div>
 
-            <h:message for="numberofpass"/>
-
-            <div class="formEle">
-                <h:outputLabel for="city">Select destination: </h:outputLabel>
-                <h:selectOneMenu id="city" styleClass="form-control" value="#{searchController.destination}">
-                    <f:selectItems value="#{searchController.destinations}" var="dest" itemLabel="#{dest}" itemValue="#{dest}" />
-                </h:selectOneMenu>
-            </div>
-
-            <h:commandButton value="Search" styleClass="formEle form-control tableBtn btn-default" action="#{searchController.search}" />
-
-        </h:form>
+                    <h:commandButton value="Search" styleClass="btn-default form-control tableBtn" action="#{worldMapController.search}" />
+                </h:form>
+        </div>
     </ui:define>
 </ui:composition>

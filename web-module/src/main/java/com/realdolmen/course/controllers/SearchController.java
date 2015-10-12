@@ -21,6 +21,7 @@ public class SearchController implements Serializable{
 
     private int count;
     private String destination;
+    private String country;
     private List<Trip> trips = new ArrayList<>();
 
     @Inject
@@ -70,6 +71,18 @@ public class SearchController implements Serializable{
             Faces.redirect("/web-module/app/anon/trips.faces");
         }
 
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public List<String> destinations(){
+        return countryRepo.getDestinationsByCountry(country);
     }
 
 }

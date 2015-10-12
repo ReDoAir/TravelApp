@@ -6,7 +6,7 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <h:link styleClass="navbar-brand" href="home">Redo Air</h:link>
+                    <h:link styleClass="navbar-brand" outcome="index">Redo Air</h:link>
                 </div>
 
                 <ul class="nav navbar-nav">
@@ -40,7 +40,7 @@
             <div class="formEle">
                 <h:outputLabel for="city">Select destination: </h:outputLabel>
                 <h:selectOneMenu id="city" styleClass="form-control" value="#{searchController.destination}">
-                    <f:selectItems value="#{searchController.destinations}" var="dest" itemLabel="#{dest}" itemValue="#{dest}" />
+                    <f:selectItems value="#{searchController.destinations()}" var="dest" itemLabel="#{dest}" itemValue="#{dest}" />
                 </h:selectOneMenu>
             </div>
 
