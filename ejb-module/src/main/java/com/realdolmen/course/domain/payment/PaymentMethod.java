@@ -20,20 +20,13 @@ public class PaymentMethod {
     @NotNull
     private Customer customer;
 
-<<<<<<< HEAD
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-=======
     public PaymentMethod(String name) {
         this.name = name;
     }
 
     public PaymentMethod() {
->>>>>>> origin/master
+
     }
 
     public Integer getId() {
