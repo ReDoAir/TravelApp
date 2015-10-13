@@ -9,12 +9,12 @@ import java.util.List;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name="Trip.findAll",query ="select t from Trip t"),
-        @NamedQuery(name="Trip.findAllByToFlight",query = "select t from Trip t where t.toFlight = :toFlight"),
-        @NamedQuery(name = "Trip.findAllByFromFlight",query = "select t from Trip t where t.fromFlight = :fromFlight"),
-        @NamedQuery(name="Trip.findAllByPeriod", query = "select t from Trip t where t.period = :period"),
-        @NamedQuery(name="Trip.findAllByDestination", query = "select t from Trip t where t.destination like :destination"),
-        @NamedQuery(name="Trip.findAllByName",query = "select t from Trip t where t.tripName like :tripName")
+        @NamedQuery(name="Trip.findAll",query ="select t from Trip t where t.toFlight.departureDate > :date"),
+        @NamedQuery(name="Trip.findAllByToFlight",query = "select t from Trip t where t.toFlight = :toFlight and t.toFlight.departureDate > :date"),
+        @NamedQuery(name = "Trip.findAllByFromFlight",query = "select t from Trip t where t.fromFlight = :fromFlight and t.toFlight.departureDate > :date"),
+        @NamedQuery(name="Trip.findAllByPeriod", query = "select t from Trip t where t.period = :period and t.toFlight.departureDate > :date"),
+        @NamedQuery(name="Trip.findAllByDestination", query = "select t from Trip t where t.destination like :destination and t.toFlight.departureDate > :date"),
+        @NamedQuery(name="Trip.findAllByName",query = "select t from Trip t where t.tripName like :tripName and t.toFlight.departureDate > :date")
 })
 public class Trip implements Serializable{
 
@@ -47,6 +47,7 @@ public class Trip implements Serializable{
 
     private double price;
 
+
     @ManyToMany
     @JoinTable(
             name="trip_res",
@@ -58,11 +59,14 @@ public class Trip implements Serializable{
     @Basic(optional = false)
     private String tripName;
 
+
+
     public Trip(Flight toFlight, Flight fromFlight, Period period, String tripName) {
         this.toFlight = toFlight;
         this.fromFlight = fromFlight;
         this.period = period;
         this.tripName = tripName;
+
         residences = new ArrayList<>();
     }
 

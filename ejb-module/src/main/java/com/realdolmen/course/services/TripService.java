@@ -48,6 +48,8 @@ public class TripService implements Serializable {
             residences.add(residence);
         }
 
+
+
         residences.forEach(trip::addResidence);
 
         calculatePriceForATrip(trip);

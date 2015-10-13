@@ -24,12 +24,12 @@ public class TripRepo implements Serializable{
 
     public List getAllTrips()
     {
-        return em.createNamedQuery(FIND_ALL_TRIPS,Trip.class).getResultList();
+        return em.createNamedQuery(FIND_ALL_TRIPS,Trip.class).setParameter("date",new Date()).getResultList();
     }
 
     public List<Trip> getTripsByName(String name)
     {
-        return em.createQuery(FIND_ALL_TRIPS_BY_TRIPNAME, Trip.class).setParameter("tripName", "%" + name + "%").getResultList();
+        return em.createQuery(FIND_ALL_TRIPS_BY_TRIPNAME, Trip.class).setParameter("tripName", "%" + name + "%").setParameter("date",new Date()).getResultList();
     }
 
     public void addTrip(Trip trip)
@@ -50,6 +50,7 @@ public class TripRepo implements Serializable{
 
     public List<Trip> getTripsByStartDateBetween(Date fromDate, Date toDate)
     {
+
         return em.createQuery("select t from Trip t where t.period.departureDate between :fromDate and :toDate").setParameter("fromDate",fromDate).setParameter("toDate",toDate).getResultList();
     }
 
