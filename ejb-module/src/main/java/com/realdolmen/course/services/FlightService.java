@@ -60,4 +60,8 @@ public class FlightService implements Serializable {
             throw new IllegalArgumentException("Available places cannot be less than 0");
         }
     }
+
+    public List<Flight> getAllFlightsByAirline(Airline airline) {
+        return flightRepo.getAllFlightsByAirline(airline);
+    }
 }

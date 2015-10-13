@@ -12,13 +12,10 @@ public class TripController {
 
     @Inject
     private TripService tripService;
-
-
     private String name;
     private Integer periodId;
     private Integer depFlightId;
     private Integer returnFlightId;
-
 
 
     public void createTrip(){

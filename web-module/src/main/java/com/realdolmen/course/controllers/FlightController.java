@@ -1,6 +1,8 @@
 package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.domain.Flight;
+import com.realdolmen.course.domain.auth.Partner;
+import com.realdolmen.course.persistence.PartnerRepo;
 import com.realdolmen.course.services.FlightService;
 import org.apache.shiro.SecurityUtils;
 
@@ -16,6 +18,8 @@ public class FlightController {
 
     @Inject
     private FlightService flightService;
+    @Inject
+    private PartnerRepo partnerRepo;
 
     private Date arrivalDate;
     private Date departureDate;
@@ -24,10 +28,11 @@ public class FlightController {
     private String arrivalAirport;
     private String departureAirport;
     private String plane;
+    private String userName;
 
     public void createFlight(){
-        String username = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
-        flightService.createFlight(username,flightCode,departureDate,arrivalDate,price,departureAirport,arrivalAirport,plane);
+        userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
+        flightService.createFlight(userName,flightCode,departureDate,arrivalDate,price,departureAirport,arrivalAirport,plane);
     }
 
     public Date getArrivalDate() {
@@ -88,5 +93,11 @@ public class FlightController {
 
     public List<Flight> getFlights(){
         return flightService.getAllFlights();
+    }
+
+    public List<Flight> getAllFlightsOfAirline(){
+        Partner partner = partnerRepo.findPartner(userName);
+
+        return flightService.getAllFlightsByAirline(partner.getAirline());
     }
 }
