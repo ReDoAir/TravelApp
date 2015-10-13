@@ -2,9 +2,9 @@ package com.realdolmen.course.services;
 
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.Trip;
-import com.realdolmen.course.domain.exceptions.BookingException;
 import com.realdolmen.course.persistence.BookingRepo;
 import com.realdolmen.course.persistence.CustomerRepo;
+import org.apache.log4j.Logger;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -15,6 +15,8 @@ import java.util.List;
 
 @Stateless
 public class BookingService implements Serializable{
+
+    private static final Logger logger = Logger.getLogger(BookingService.class);
 
     @Inject
     private BookingRepo bookingRepo;
@@ -36,7 +38,8 @@ public class BookingService implements Serializable{
                 try {
                     tripService.updateAvailableSpotsTrip(t, count);
                 }catch(IllegalArgumentException e){
-                    throw new BookingException(e.getMessage());
+                    logger.warn(e.getMessage());
+                    return -2;
                 }
             }
 

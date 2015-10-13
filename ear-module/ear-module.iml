@@ -28,6 +28,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ejb-module" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.12" level="project" />
     <orderEntry type="module" module-name="web-module" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.enterprise:cdi-api:1.2" level="project" />
@@ -103,5 +104,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.hornetq:hornetq-native:2.4.7.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hornetq:hornetq-jms-client:2.4.7.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-all:4.0.26.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.4" level="project" />
   </component>
 </module>
