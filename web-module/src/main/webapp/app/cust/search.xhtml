@@ -1,6 +1,6 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
-        >
+                xmlns:pf="http://primefaces.org/ui">
 
     <ui:define name="header">
         <nav class="navbar navbar-default">
@@ -31,17 +31,16 @@
             <h2>Search a trip</h2>
 
             <div class="formEle">
-                <h:outputLabel for="numberofpass">Number of travellers: </h:outputLabel>
-                <h:inputText styleClass="form-control" id="numberofpass" value="#{searchController.count}"/>
+                <pf:outputLabel for="numberofpass">Number of travellers: </pf:outputLabel>
+                <pf:inputText required="true" requiredMessage="Number of travellers is required" styleClass="form-control" id="numberofpass" value="#{searchController.count}"/>
+                <pf:message for="numberofpass"/>
             </div>
 
-            <h:message for="numberofpass"/>
-
             <div class="formEle">
-                <h:outputLabel for="city">Select destination: </h:outputLabel>
-                <h:selectOneMenu id="city" styleClass="form-control" value="#{searchController.destination}">
+                <pf:outputLabel for="city">Select destination: </pf:outputLabel>
+                <pf:selectOneMenu id="city" styleClass="form-control" value="#{searchController.destination}">
                     <f:selectItems value="#{searchController.destinations()}" var="dest" itemLabel="#{dest}" itemValue="#{dest}" />
-                </h:selectOneMenu>
+                </pf:selectOneMenu>
             </div>
 
             <h:commandButton value="Search" styleClass="formEle form-control tableBtn btn-default" action="#{searchController.search}" />

@@ -1,7 +1,7 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
                 xmlns:b="http://bootsfaces.net/ui"
-                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pf="http://primefaces.org/ui">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
@@ -33,7 +33,7 @@
                     <h2>Book your trip</h2>
 
                     <h4>Available trips</h4>
-                    <h:dataTable id="availtrips" styleClass="table" value="#{searchController.trips}" var="trip">
+                    <pf:dataTable id="availtrips" styleClass="table" value="#{searchController.trips}" var="trip">
 
                         <h:column>
                             <f:facet name="header">Name</f:facet>
@@ -75,10 +75,10 @@
                             <h:outputText styleClass="tblText" value="Added" rendered="#{bookingController.alreadyAdded(trip)}"/>
                         </h:column>
 
-                    </h:dataTable>
+                    </pf:dataTable>
 
                     <h4>Chosen trips</h4>
-                    <h:dataTable id="addedtrips" styleClass="table formEle" value="#{bookingController.addedTrips}" var="addedTrip">
+                    <pf:dataTable id="addedtrips" styleClass="table formEle" value="#{bookingController.addedTrips}" var="addedTrip">
 
                         <h:column>
                             <f:facet name="header">Name</f:facet>
@@ -115,18 +115,18 @@
                             <h:commandButton styleClass="btn-default" value="Delete" action="#{bookingController.delete(addedTrip.id)}" />
                         </h:column>
 
-                    </h:dataTable>
+                    </pf:dataTable>
 
                     <h:outputText style="margin-bottom: 5px;" styleClass="formEle form-control tableBtn" id="totalPrice" value="Total price: € #{bookingController.totalPrice}"/>
 
                     <div class="userForm">
-                        <h:outputLabel styleClass="formEle" for="payment">Credit Card: </h:outputLabel>
-                        <h:inputText  styleClass="form-control formEle" pt:placeholder="Credit Card Number" id="payment" value="#{bookingController.number}"/>
-                        <b:datepicker  styleClass="formEle" pt:placeholder="Expire date" showButtonPanel="true" changeMonth="true" changeYear="true" id="expire" mode="popup-icon" value="#{bookingController.expire}"/>
+                        <pf:outputLabel styleClass="formEle" for="payment">Credit Card: </pf:outputLabel>
+                        <pf:inputText required="true" requiredMessage="Credit Card Number is required" styleClass="form-control formEle" pt:placeholder="Credit Card Number" id="payment" value="#{bookingController.number}"/>
+                        <b:datepicker required="true" requiredMessage="Expiry date is required"  styleClass="formEle" pt:placeholder="Expire date" showButtonPanel="true" changeMonth="true" changeYear="true" id="expire" mode="popup-icon" value="#{bookingController.expire}"/>
 
                         <h:commandButton value="Validate" styleClass="btn-default form-control tableBtn formEle" action="#{bookingController.validateAndCreateCreditCard}"/>
 
-                        <h:message infoClass="alert alert-success formEle" errorClass="alert alert-error formEle" for="payment"/>
+                        <pf:message for="payment"/>
                     </div>
 
 

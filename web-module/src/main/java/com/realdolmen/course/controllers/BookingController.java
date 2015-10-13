@@ -13,6 +13,7 @@ import org.apache.shiro.SecurityUtils;
 import org.omnifaces.util.Messages;
 
 import javax.annotation.PostConstruct;
+import javax.ejb.EJBException;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -54,15 +55,11 @@ public class BookingController implements Serializable {
             if(creditCard != null) {
                 String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
                 customerService.addCreditCard(userName,creditCard);
-                try {
                     if (bookingService.createBooking(count, userName, addedTrips, totalPrice) == -1) {
                         Messages.addGlobalError("Number of passengers cannot be 0");
-                    }else{
+                    }else {
                         return "thankyou";
                     }
-                } catch (BookingException b) {
-                    Messages.addGlobalError("Not enough available places");
-                }
             }else {
                 Messages.addGlobalError("You need to add a credit card");
             }

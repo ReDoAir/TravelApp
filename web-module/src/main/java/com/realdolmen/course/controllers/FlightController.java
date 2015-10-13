@@ -2,10 +2,14 @@ package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.domain.Flight;
 import com.realdolmen.course.domain.auth.Partner;
+import com.realdolmen.course.domain.exceptions.BookingException;
+import com.realdolmen.course.domain.exceptions.FlightException;
 import com.realdolmen.course.persistence.PartnerRepo;
 import com.realdolmen.course.services.FlightService;
 import org.apache.shiro.SecurityUtils;
+import org.omnifaces.util.Messages;
 
+import javax.ejb.EJBException;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -32,7 +36,12 @@ public class FlightController {
 
     public void createFlight(){
         userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
-        flightService.createFlight(userName,flightCode,departureDate,arrivalDate,price,departureAirport,arrivalAirport,plane);
+        int result = flightService.createFlight(userName,flightCode,departureDate,arrivalDate,price,departureAirport,arrivalAirport,plane);
+        if(result == -1){
+            Messages.addError("arrival","Arrival cannot be before Departure");
+        }else if(result == -2){
+            Messages.addError("arrAir","Arrival airport cannot be the same Departure airport");
+        }
     }
 
     public Date getArrivalDate() {

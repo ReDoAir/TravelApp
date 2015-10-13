@@ -2,6 +2,9 @@ package com.realdolmen.course.services;
 
 import com.realdolmen.course.domain.Airline;
 import com.realdolmen.course.domain.Flight;
+import com.realdolmen.course.domain.exceptions.ArrivalCannotBeBeforeDepartException;
+import com.realdolmen.course.domain.exceptions.DepartAndArrivalAreTheSameException;
+import com.realdolmen.course.domain.exceptions.FlightException;
 import com.realdolmen.course.persistence.AirportRepo;
 import com.realdolmen.course.persistence.FlightRepo;
 import com.realdolmen.course.persistence.PartnerRepo;
@@ -25,21 +28,29 @@ public class FlightService implements Serializable {
     @Inject
     private AirportRepo airportRepo;
 
-    public void createFlight(String username, String flightCode, Date departureDate, Date arrivalDate, Double price, String departureAirport, String arrivalAirport, String plane){
-        Flight flight = new Flight();
+    public int createFlight(String username, String flightCode, Date departureDate, Date arrivalDate, Double price, String departureAirport, String arrivalAirport, String plane){
+        try {
+            Flight flight = new Flight();
 
-        Airline airline = partnerRepo.findPartner(username).getAirline();
+            Airline airline = partnerRepo.findPartner(username).getAirline();
 
-        flight.setAirline(airline);
-        flight.setFlightCode(flightCode);
-        flight.setDepartureDate(departureDate);
-        flight.setArrivalDate(arrivalDate);
-        flight.setPrice(price);
-        flight.setDepartAirport(airportRepo.getAirportByCode(departureAirport));
-        flight.setArrivalAirport(airportRepo.getAirportByCode(arrivalAirport));
-        flight.setPlane(planeRepo.getPlaneByCode(plane));
+            flight.setAirline(airline);
+            flight.setFlightCode(flightCode);
+            flight.setDepartureDate(departureDate);
+            flight.setArrivalDate(arrivalDate);
+            flight.setPrice(price);
+            flight.setDepartAirport(airportRepo.getAirportByCode(departureAirport));
+            flight.setArrivalAirport(airportRepo.getAirportByCode(arrivalAirport));
+            flight.setPlane(planeRepo.getPlaneByCode(plane));
 
-        flightRepo.addFlight(flight);
+            flightRepo.addFlight(flight);
+
+            return 0;
+        } catch (ArrivalCannotBeBeforeDepartException e) {
+           return -1;
+        }catch (DepartAndArrivalAreTheSameException e){
+            return -2;
+        }
     }
 
 
