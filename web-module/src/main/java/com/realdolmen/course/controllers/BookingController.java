@@ -2,10 +2,7 @@ package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.domain.Booking;
 import com.realdolmen.course.domain.Trip;
-import com.realdolmen.course.domain.exceptions.BookingException;
 import com.realdolmen.course.domain.payment.CreditCard;
-import com.realdolmen.course.domain.payment.Endorsement;
-import com.realdolmen.course.domain.payment.PaymentMethod;
 import com.realdolmen.course.services.BookingService;
 import com.realdolmen.course.services.CustomerService;
 import com.realdolmen.course.services.TripService;
@@ -54,15 +51,14 @@ public class BookingController implements Serializable {
             if(creditCard != null) {
                 String userName = (String) SecurityUtils.getSubject().getSession().getAttribute("userName");
                 customerService.addCreditCard(userName,creditCard);
-                try {
-                    if (bookingService.createBooking(count, userName, addedTrips, totalPrice) == -1) {
+                int result = bookingService.createBooking(count, userName, addedTrips, totalPrice);
+                    if (result == -1) {
                         Messages.addGlobalError("Number of passengers cannot be 0");
-                    }else{
+                    }else if(result == -2){
+                        Messages.addGlobalError("Trip is not available anymore");
+                    } else{
                         return "thankyou";
                     }
-                } catch (BookingException b) {
-                    Messages.addGlobalError("Not enough available places");
-                }
             }else {
                 Messages.addGlobalError("You need to add a credit card");
             }

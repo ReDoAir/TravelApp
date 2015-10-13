@@ -1,6 +1,6 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:b="http://bootsfaces.net/ui" xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+                xmlns:b="http://bootsfaces.net/ui" xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pf="http://primefaces.org/ui">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
@@ -25,44 +25,58 @@
             <ui:define name="content">
                 <h:form styleClass="userForm">
                     <h2>Add a flight</h2>
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Flight code (format: ABC-123)" value="#{flightController.flightCode}"/>
-
-                    <h:inputText styleClass="form-control formEle" pt:placeholder="Price" value="#{flightController.price}">
-                        <f:convertNumber integerOnly="true" type="number"/>
-                    </h:inputText>
 
                     <div class="lblForm">
-                        <h:outputLabel for="depature">Departure date: </h:outputLabel>
-                        <b:datepicker showButtonPanel="true" changeMonth="true" changeYear="true" id="depature" mode="popup-icon" value="#{flightController.departureDate}"/>
+                        <pf:outputLabel for="code" value="Flight code: "/>
+                        <pf:inputText id="code" styleClass="form-control formEle" required="true" requiredMessage="Flight code is required" pt:placeholder="format: ABC-123" value="#{flightController.flightCode}"/>
+                        <pf:message for="code" />
                     </div>
 
                     <div class="lblForm">
-                        <h:outputLabel for="depAir">Depature Airport: </h:outputLabel>
-                        <h:selectOneMenu id="depAir" styleClass="form-control" value="#{flightController.departureAirport}">
+                        <pf:outputLabel for="price" value="Price: "/>
+                        <pf:inputText id="price" styleClass="form-control formEle" required="true" requiredMessage="Price is required"  value="#{flightController.price}">
+                            <f:convertNumber integerOnly="true" type="number"/>
+                        </pf:inputText>
+                        <pf:message for="price" />
+                    </div>
+
+                    <div class="lblForm">
+                        <pf:outputLabel for="depart" styleClass="formEle" value="Departure date: " />
+                        <pf:calendar required="true" id="depart" styleClass="formEle" requiredMessage="Departure date is required" value="#{flightController.departureDate}" pattern="dd/MM/yyyy HH:mm:ss" />
+                        <pf:message for="depart" />
+                    </div>
+
+                    <div class="lblForm">
+                        <pf:outputLabel for="depAir" styleClass="formEle">Depature Airport: </pf:outputLabel>
+                        <pf:selectOneMenu id="depAir" value="#{flightController.departureAirport}">
                             <f:selectItems value="#{airportController.airports}" var="departure"
                                            itemLabel="#{departure.name}" itemValue="#{departure.airportCode}" />
-                        </h:selectOneMenu>
+                        </pf:selectOneMenu>
                     </div>
 
                     <div class="lblForm">
-                        <h:outputLabel id="arrAir" styleClass="formEle" for="arrival">Arrival date: </h:outputLabel>
-                        <b:datepicker showButtonPanel="true" changeMonth="true" changeYear="true" id="arrival" mode="popup-icon" value="#{flightController.arrivalDate}"/>
+                        <pf:outputLabel styleClass="formEle" for="arrival" value="Arrival date: " />
+                        <pf:calendar required="true" styleClass="formEle" id="arrival" requiredMessage="Arrival date is required" value="#{flightController.arrivalDate}" pattern="dd/MM/yyyy HH:mm:ss" />
+                        <pf:message for="arrival" />
                     </div>
 
+
                     <div class="lblForm">
-                        <h:outputLabel for="arrAir">Arrival Airport: </h:outputLabel>
-                        <h:selectOneMenu styleClass="form-control" value="#{flightController.arrivalAirport}">
+                        <pf:outputLabel for="arrAir">Arrival Airport: </pf:outputLabel>
+                        <pf:selectOneMenu id="arrAir" value="#{flightController.arrivalAirport}">
                             <f:selectItems value="#{airportController.airports}" var="arrival"
                                            itemLabel="#{arrival.name}" itemValue="#{arrival.airportCode}" />
-                        </h:selectOneMenu>
+                        </pf:selectOneMenu>
+                        <pf:message for="arrAir" />
                     </div>
 
                     <div class="lblForm">
-                        <h:outputLabel for="plane">Choose a plane: </h:outputLabel>
-                        <h:selectOneMenu id="plane" styleClass="form-control" value="#{flightController.plane}">
+                        <pf:outputLabel for="plane">Choose a plane: </pf:outputLabel>
+                        <pf:selectOneMenu id="plane" value="#{flightController.plane}">
                             <f:selectItems value="#{planeController.planes}" var="plane"
                                            itemLabel="#{plane.planeCode}" itemValue="#{plane.planeCode}" />
-                        </h:selectOneMenu>
+                        </pf:selectOneMenu>
+                        <pf:message for="plane" />
                     </div>
 
                     <h:commandButton styleClass="form-control formEle btn-default" value="Create" action="#{flightController.createFlight()}"/>

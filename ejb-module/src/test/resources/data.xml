@@ -180,19 +180,19 @@
     <country id="171" name="Fiji"/>
 
 
-    <user id="1200" password="mqsldkjfsmdkljfq" username="partner1"></user>
-    <user id="1202" password="mqsldkjfsmdkljfq" username="partner2"></user>
-    <user id="1203" password="mqsldkjfsmdkljfq" username="partner3"></user>
-    <user id="1204" password="mqsldkjfsmdkljfq" username="partner4"></user>
-    <user id="1205" password="mqsldkjfsmdkljfq" username="partner5"></user>
-    <user id="1206" password="mqsldkjfsmdkljfq" username="partner6"></user>
+    <user id="1200" password="mqsldkjfsmdkljfq" username="partner1"/>
+    <user id="1202" password="mqsldkjfsmdkljfq" username="partner2"/>
+    <user id="1203" password="mqsldkjfsmdkljfq" username="partner3"/>
+    <user id="1204" password="mqsldkjfsmdkljfq" username="partner4"/>
+    <user id="1205" password="mqsldkjfsmdkljfq" username="partner5"/>
+    <user id="1206" password="mqsldkjfsmdkljfq" username="partner6"/>
 
-    <userroles userId="1200" role="PARTNER"></userroles>
-    <userroles userId="1202" role="PARTNER"></userroles>
-    <userroles userId="1203" role="PARTNER"></userroles>
-    <userroles userId="1204" role="PARTNER"></userroles>
-    <userroles userId="1205" role="PARTNER"></userroles>
-    <userroles userId="1206" role="PARTNER"></userroles>
+    <userroles userId="1200" role="PARTNER"/>
+    <userroles userId="1202" role="PARTNER"/>
+    <userroles userId="1203" role="PARTNER"/>
+    <userroles userId="1204" role="PARTNER"/>
+    <userroles userId="1205" role="PARTNER"/>
+    <userroles userId="1206" role="PARTNER"/>
 
     <partner id="1200" airline_id="1000"/>
     <partner id="1202" airline_id="1000"/>
@@ -213,19 +213,19 @@
     <plane id="2222" planeCode="BBBB" numberOfSeats="100" />
     <plane id="3333" planeCode="CCCC" numberOfSeats="150" />
 
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1300"></customer>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1302"></customer>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1303"></customer>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1304"></customer>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1305"></customer>
-    <customer creditCard="sdmlqkfjqsdmlfkj" id="1306"></customer>
+    <customer id="1300"/>
+    <customer id="1302"/>
+    <customer id="1303"/>
+    <customer id="1304"/>
+    <customer id="1305"/>
+    <customer id="1306"/>
 
-    <userroles userId="1300" role="CUSTOMER"></userroles>
-    <userroles userId="1302" role="CUSTOMER"></userroles>
-    <userroles userId="1303" role="CUSTOMER"></userroles>
-    <userroles userId="1304" role="CUSTOMER"></userroles>
-    <userroles userId="1305" role="CUSTOMER"></userroles>
-    <userroles userId="1306" role="CUSTOMER"></userroles>
+    <userroles userId="1300" role="CUSTOMER"/>
+    <userroles userId="1302" role="CUSTOMER"/>
+    <userroles userId="1303" role="CUSTOMER"/>
+    <userroles userId="1304" role="CUSTOMER"/>
+    <userroles userId="1305" role="CUSTOMER"/>
+    <userroles userId="1306" role="CUSTOMER"/>
 
 
         <airport id="1" airportCode="AAR" name="Aarhus" city="Aarhus" country_id="1"/>
@@ -1295,23 +1295,23 @@
         <airport id="1065" airportCode="ACK" name="Nantucket" city="Nantucket" country_id="5"/>
         <airport id="1066" airportCode="NAP" name="Naples" city="Naples" country_id="28"/>
 
-    <booking id="1200" bookingDate="2015-10-08 12:00:00" count="5" customer_id="1300"/>
-    <booking id="1201" bookingDate="2015-11-08 12:00:00" count="5" customer_id="1300"/>
-    <booking id="1202" bookingDate="2015-10-09 12:00:00" count="5" customer_id="1300"/>
-    <booking id="1203" bookingDate="2015-12-08 12:00:00" count="5" customer_id="1300"/>
+    <booking id="1200" bookingDate="2015-10-08 12:00:00" count="5" price="1000" customer_id="1300"/>
+    <booking id="1201" bookingDate="2015-11-08 12:00:00" count="5" price="1000" customer_id="1300"/>
+    <booking id="1202" bookingDate="2015-10-09 12:00:00" count="5" price="1000" customer_id="1300"/>
+    <booking id="1203" bookingDate="2015-12-08 12:00:00" count="5" price="1000" customer_id="1300"/>
 
-    <flight id="3000" arrivalDate="2015-10-08 12:00:00" availablePlaces="355" departureDate="2015-10-08 22:00:00" flightCode="EDD12" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3001" arrivalDate="2015-10-09 22:00:00" availablePlaces="355" departureDate="2015-10-10 07:00:00" flightCode="EDD13" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3002" arrivalDate="2015-10-10 10:00:00" availablePlaces="0" departureDate="2015-10-10 20:00:00" flightCode="EDD14" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3003" arrivalDate="2015-10-11 12:00:00" availablePlaces="355" departureDate="2015-10-11 22:00:00" flightCode="EDD15" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3004" arrivalDate="2015-10-12 12:00:00" availablePlaces="355" departureDate="2015-10-12 22:00:00" flightCode="EDD16" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3005" arrivalDate="2015-10-13 12:00:00" availablePlaces="355" departureDate="2015-10-13 22:00:00" flightCode="EDD17" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3006" arrivalDate="2015-10-14 12:00:00" availablePlaces="355" departureDate="2015-10-14 22:00:00" flightCode="EDD18" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
-    <flight id="3007" arrivalDate="2015-10-15 12:00:00" availablePlaces="355" departureDate="2015-10-15 22:00:00" flightCode="EDD19" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521"/>
+    <flight id="3000" arrivalDate="2015-10-08 12:00:00" availablePlaces="355" departureDate="2015-10-08 22:00:00" flightCode="EDD12" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="1111"/>
+    <flight id="3001" arrivalDate="2015-10-09 22:00:00" availablePlaces="355" departureDate="2015-10-10 07:00:00" flightCode="EDD13" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="1111"/>
+    <flight id="3002" arrivalDate="2015-10-10 10:00:00" availablePlaces="0" departureDate="2015-10-10 20:00:00" flightCode="EDD14" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="1111"/>
+    <flight id="3003" arrivalDate="2015-10-11 12:00:00" availablePlaces="355" departureDate="2015-10-11 22:00:00" flightCode="EDD15" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="2222"/>
+    <flight id="3004" arrivalDate="2015-10-12 12:00:00" availablePlaces="355" departureDate="2015-10-12 22:00:00" flightCode="EDD16" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="2222"/>
+    <flight id="3005" arrivalDate="2015-10-13 12:00:00" availablePlaces="355" departureDate="2015-10-13 22:00:00" flightCode="EDD17" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="2222"/>
+    <flight id="3006" arrivalDate="2015-10-14 12:00:00" availablePlaces="355" departureDate="2015-10-14 22:00:00" flightCode="EDD18" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="3333"/>
+    <flight id="3007" arrivalDate="2015-10-15 12:00:00" availablePlaces="355" departureDate="2015-10-15 22:00:00" flightCode="EDD19" price="199.22" airline_id="1000" arrivalAirport_id="851" departAirport_id="521" plane_id="3333"/>
 
     <period id="2000" departureDate="2015-10-15 12:00:00" returnDate="2015-10-19 12:00:00"/>
-    <period id="2001" departureDate="2015-10-20 12:00:00" returnDate="2015-10-22 12:00:00"/>
-    <period id="2002" departureDate="2015-10-11 12:00:00" returnDate="2015-10-19 12:00:00"/>
+    <period id="2001" departureDate="2015-10-20 12:00:00" returnDate="2015-10-21 12:00:00"/>
+    <period id="2002" departureDate="2015-10-11 12:00:00" returnDate="2015-10-23 12:00:00"/>
     <period id="2003" departureDate="2015-10-17 12:00:00" returnDate="2015-10-22 12:00:00"/>
 </dataset>
 

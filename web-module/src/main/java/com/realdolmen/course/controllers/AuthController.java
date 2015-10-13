@@ -1,5 +1,6 @@
 package com.realdolmen.course.controllers;
 
+import com.realdolmen.course.domain.auth.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;

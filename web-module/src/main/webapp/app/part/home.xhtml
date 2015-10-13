@@ -1,5 +1,5 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:h="http://xmlns.jcp.org/jsf/html">
+                xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:pf="http://primefaces.org/ui">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
@@ -27,7 +27,48 @@
             </ui:define>
 
             <ui:define name="content">
+                <div class="bookingForm">
+                    <h4>All flights</h4>
+                    <pf:dataTable id="flights" styleClass="table table-responsive" value="#{flightController.flights}" var="flight" widgetVar="flights" emptyMessage="No flights found!">
 
+                        <pf:column headerText="Airline" filterMatchMode="contains">
+                            <h:outputText value="#{flight.airline.name}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Flight code" filterMatchMode="contains">
+                            <h:outputText value="#{flight.flightCode}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Departure Airport" filterMatchMode="contains">
+                            <h:outputText value="#{flight.departAirport.name}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Departure Time" filterMatchMode="contains">
+                            <h:outputText value="#{flight.departureDate}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Arrival Airport" filterMatchMode="contains">
+                            <h:outputText value="#{flight.arrivalAirport.name}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Arrival Date" filterMatchMode="contains">
+                            <h:outputText value="#{flight.arrivalDate}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Plane" filterMatchMode="contains">
+                            <h:outputText value="#{flight.plane.planeCode}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Available places" filterMatchMode="contains">
+                            <h:outputText value="#{flight.availablePlaces}"/>
+                        </pf:column>
+
+                        <pf:column headerText="Price" filterMatchMode="contains">
+                            <h:outputText value="#{flight.price}"/>
+                        </pf:column>
+
+                    </pf:dataTable>
+                </div>
             </ui:define>
 
 </ui:composition>

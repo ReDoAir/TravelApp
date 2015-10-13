@@ -22,7 +22,7 @@ public class TripRepo implements Serializable{
     @PersistenceContext
     EntityManager em;
 
-    public List getAllTrips()
+    public List<Trip> getAllTrips()
     {
         return em.createNamedQuery(FIND_ALL_TRIPS,Trip.class).setParameter("date",new Date()).getResultList();
     }

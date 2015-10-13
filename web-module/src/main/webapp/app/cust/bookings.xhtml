@@ -1,6 +1,6 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
-        >
+                xmlns:pf="http://primefaces.org/ui">
 
     <ui:define name="header">
         <nav class="navbar navbar-default">
@@ -28,7 +28,7 @@
     <ui:define name="content">
         <h:form styleClass="bookingForm">
             <h4>Your bookings</h4>
-            <h:dataTable id="bookings" styleClass="table" value="#{bookingController.bookings}" var="booking">
+            <pf:dataTable id="bookings" styleClass="table" value="#{bookingController.bookings}" var="booking">
 
                 <h:column>
                     <f:facet name="header">Date</f:facet>
@@ -49,7 +49,7 @@
                     <h:commandButton styleClass="btn-default form-control tableBtn" value="Cancel"
                                      action="#{bookingController.deleteBooking(booking)}"/>
                 </h:column>
-            </h:dataTable>
+            </pf:dataTable>
         </h:form>
     </ui:define>
 </ui:composition>

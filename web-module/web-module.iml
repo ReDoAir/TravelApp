@@ -36,6 +36,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ejb-module" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.shiro:shiro-core:1.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.3" level="project" />
@@ -116,5 +117,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.hornetq:hornetq-native:2.4.7.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hornetq:hornetq-jms-client:2.4.7.Final" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.netty:netty-all:4.0.26.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.4" level="project" />
   </component>
 </module>

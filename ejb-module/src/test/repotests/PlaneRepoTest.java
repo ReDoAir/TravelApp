@@ -30,8 +30,6 @@ public class PlaneRepoTest extends DataPersistenceTest {
         resultListNotEmpty();
     }
 
-    @Test
-
     private void resultListNotEmpty()
     {
         assertTrue(planes.size()>0);
