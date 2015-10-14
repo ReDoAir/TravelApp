@@ -24,6 +24,8 @@ public class SearchController implements Serializable{
     private String country;
     private List<Trip> trips = new ArrayList<>();
 
+    private Trip trip;
+
     @Inject
     private TripService tripService;
     @Inject
@@ -83,6 +85,14 @@ public class SearchController implements Serializable{
 
     public List<String> destinations(){
         return countryRepo.getDestinationsByCountry(country);
+    }
+
+    public Trip getTrip() {
+        return trip;
+    }
+
+    public void setTrip(Trip trip) {
+        this.trip = trip;
     }
 
 }

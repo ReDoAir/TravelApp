@@ -8,9 +8,11 @@
                 <div class="navbar-header">
                     <h:link styleClass="navbar-brand" outcome="index">Redo Air</h:link>
                 </div>
+                <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><h:link outcome="bookings">Bookings</h:link></li>
                 </ul>
+                </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -26,6 +28,7 @@
     </ui:define>
 
     <ui:define name="content">
+        <div class="container">
         <h:form styleClass="bookingForm">
             <h4>Your bookings</h4>
             <pf:dataTable id="bookings" styleClass="table" value="#{bookingController.bookings}" var="booking">
@@ -51,5 +54,6 @@
                 </h:column>
             </pf:dataTable>
         </h:form>
+        </div>
     </ui:define>
 </ui:composition>

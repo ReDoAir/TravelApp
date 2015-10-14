@@ -3,7 +3,8 @@
         >
 
     <ui:define name="content">
-        <div class="userForm">
+        <div class="container">
+            <div class="userForm">
             <h2>Select a country</h2>
             <div id="mapdiv" style="width: 1000px; background-color:#EEEEEE; height: 600px;"></div>
                 <h:form styleClass="userForm">
@@ -19,6 +20,7 @@
 
                     <h:commandButton value="Search" styleClass="btn-default form-control tableBtn" action="#{worldMapController.search}" />
                 </h:form>
+            </div>
         </div>
     </ui:define>
 </ui:composition>

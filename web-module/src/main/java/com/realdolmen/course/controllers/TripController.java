@@ -1,8 +1,14 @@
 package com.realdolmen.course.controllers;
 
 import com.realdolmen.course.services.TripService;
+import org.primefaces.event.FileUploadEvent;
+import org.primefaces.model.UploadedFile;
+
 
 import javax.enterprise.context.RequestScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -53,5 +59,6 @@ public class TripController {
     public void setReturnFlightId(Integer returnFlightId) {
         this.returnFlightId = returnFlightId;
     }
+
 
 }

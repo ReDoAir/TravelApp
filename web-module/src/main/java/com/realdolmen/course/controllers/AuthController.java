@@ -1,6 +1,6 @@
 package com.realdolmen.course.controllers;
 
-import com.realdolmen.course.domain.auth.User;
+import com.realdolmen.course.domain.Trip;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -85,7 +85,8 @@ public class AuthController {
         this.remember = remember;
     }
 
-    public void goToBookingPage() throws IOException {
+    public void goToBookingPage(Trip trip) throws IOException {
+        Faces.setSessionAttribute("trip",trip);
         Faces.redirect(BOOKING_URL);
     }
 }

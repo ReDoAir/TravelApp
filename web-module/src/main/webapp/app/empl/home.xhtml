@@ -27,6 +27,7 @@
                 </nav>
             </ui:define>
             <ui:define name="content">
+                <div class="container">
                 <h:form styleClass="bookingForm">
                     <h4>All trips</h4>
                     <pf:dataTable id="trips" styleClass="table table-responsive" value="#{employeeController.allTrips}" var="trip" widgetVar="trips" emptyMessage="No trips found!" filteredValue="#{employeeController.filteredTrips}">
@@ -81,10 +82,11 @@
                             <h:commandButton styleClass="btn-default" value="Chose" action="#{employeeController.changePrice(trip)}"/>
                         </pf:column>
                     </pf:dataTable>
-                    <h:commandLink value="Download">
+                    <pf:commandButton value="Download">
                         <pf:graphicImage library="images" name="xml.png" width="24"/>
                         <pf:dataExporter target="trips" type="xml" fileName="trips"/>
-                    </h:commandLink>
+                    </pf:commandButton>
                 </h:form>
+                </div>
             </ui:define>
 </ui:composition>

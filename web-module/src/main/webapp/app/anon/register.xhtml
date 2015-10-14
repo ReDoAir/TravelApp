@@ -4,6 +4,7 @@
                 xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <ui:define name="content">
+        <div class="container">
         <h:form id="register" styleClass="userForm">
             <h2>Register</h2>
             <h:inputText styleClass="form-control formEle" id="username" pt:placeholder="Username"
@@ -29,6 +30,7 @@
             <h:messages errorClass="alert alert-danger" warnClass="alert alert-warning" globalOnly="true"
                         layout="table"/>
         </h:form>
+        </div>
     </ui:define>
 
 </ui:composition>

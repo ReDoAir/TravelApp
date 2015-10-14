@@ -1,6 +1,7 @@
 <ui:composition template="/resources/template/default.xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://xmlns.jcp.org/jsf/core"
-                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:pf="http://primefaces.org/ui">
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:pf="http://primefaces.org/ui">
 
             <ui:define name="header">
                 <nav class="navbar navbar-default">
@@ -23,43 +24,50 @@
             </ui:define>
 
             <ui:define name="content">
-                <h:form styleClass="userForm">
+                <div class="container">
+                <h:form styleClass="form-horizontal">
                     <h2>Add a trip</h2>
+                    <div class="form-group">
+                        <h:outputLabel styleClass="col-sm-2 control-label" for="name">Trip name</h:outputLabel>
 
-                        <div class="lblForm">
-                            <pf:outputLabel for="name" value="Trip name: "/>
-                            <pf:inputText id="name" required="true" requiredMessage="Name is required" styleClass="form-control formEle" value="#{tripController.name}"/>
-                            <pf:message for="name"/>
+                        <div class="col-sm-10">
+                            <h:inputText pt:placeholder="name" id="name" styleClass="form-control" value="#{tripController.name}"/>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <h:outputLabel for="periodId" styleClass="col-sm-2 control-label">Choose a period: </h:outputLabel>
+                        <div class="col-sm-10">
+                            <h:selectOneMenu id="periodId" styleClass="form-control" value="#{tripController.periodId}">
+                             <f:selectItems value="#{periodController.periods}" var="period"
+                                           itemLabel="#{period}" itemValue="#{period.id}" />
+                            </h:selectOneMenu>
+                        </div>
+                    </div>
 
-                        <div class="lblForm">
-                            <pf:outputLabel for="periodId">Choose a period: </pf:outputLabel>
-                            <pf:selectOneMenu id="periodId" value="#{tripController.periodId}">
-                                <f:selectItems value="#{periodController.periods}" var="period"
-                                               itemLabel="#{period}" itemValue="#{period.id}" />
-                            </pf:selectOneMenu>
+                    <div class="form-group">
+                        <h:outputLabel styleClass="col-sm-2 control-label" for="depart">Choose departure flight: </h:outputLabel>
+                        <div class="col-sm-10">
+                        <h:selectOneMenu id="depart" styleClass="form-control" value="#{tripController.depFlightId}">
+                            <f:selectItems value="#{flightController.flights}" var="depflight"
+                                           itemLabel="#{depflight}" itemValue="#{depflight.id}" />
+                        </h:selectOneMenu>
                         </div>
+                    </div>
 
-                        <div class="lblForm">
-                            <pf:outputLabel for="depart">Choose departure flight: </pf:outputLabel>
-                            <pf:selectOneMenu id="depart" value="#{tripController.depFlightId}">
-                                <f:selectItems value="#{flightController.flights}" var="depflight"
-                                               itemLabel="#{depflight}" itemValue="#{depflight.id}" />
-                            </pf:selectOneMenu>
-                            <pf:message for="depart"/>
+                    <div class="form-group">
+                        <h:outputLabel styleClass="col-sm-2 control-label" for="return">Choose return flight: </h:outputLabel>
+                        <div class="col-sm-10">
+                        <h:selectOneMenu id="return" styleClass="form-control" value="#{tripController.returnFlightId}">
+                            <f:selectItems value="#{flightController.flights}" var="retflight"
+                                           itemLabel="#{retflight}" itemValue="#{retflight.id}" />
+                        </h:selectOneMenu>
                         </div>
-
-                        <div class="lblForm">
-                            <pf:outputLabel for="return">Choose return flight: </pf:outputLabel>
-                            <pf:selectOneMenu id="return" value="#{tripController.returnFlightId}">
-                                <f:selectItems value="#{flightController.flights}" var="retflight"
-                                               itemLabel="#{retflight}" itemValue="#{retflight.id}" />
-                            </pf:selectOneMenu>
-                            <pf:message for="return"/>
-                        </div>
-                    <h:commandButton styleClass="form-control formEle btn-default" value="Create" action="#{tripController.createTrip()}"/>
+                    </div>
+                    <div class="form-group">
+                    <h:commandButton styleClass="btn-default" value="Create" action="#{tripController.createTrip()}"/>
+                    </div>
                 </h:form>
-
+                </div>
             </ui:define>
 
 </ui:composition>

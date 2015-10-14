@@ -7,6 +7,7 @@ import com.realdolmen.course.services.BookingService;
 import com.realdolmen.course.services.CustomerService;
 import com.realdolmen.course.services.TripService;
 import org.apache.shiro.SecurityUtils;
+import org.omnifaces.util.Faces;
 import org.omnifaces.util.Messages;
 
 import javax.annotation.PostConstruct;
@@ -40,9 +41,16 @@ public class BookingController implements Serializable {
     private String number;
     private Date expire;
 
+    private Trip trip;
+
+
     @PostConstruct
     public void init(){
+        trip = Faces.getSessionAttribute("trip");
+        System.out.println("Init BookController :: "+trip.getId());
         addedTrips = new ArrayList<>();
+        addedTrips.add(trip);
+
         count = searchController.getCount();
     }
 
@@ -83,8 +91,18 @@ public class BookingController implements Serializable {
 
     }
 
+    public Trip getTrip() {
+        return trip;
+    }
+
+    public void setTrip(Trip trip) {
+        this.trip = trip;
+    }
+
+
     public void delete(Integer tripId){
         if(tripId != null){
+            System.out.println(tripId);
             for(int i = 0; i < addedTrips.size(); i++){
                 if(Objects.equals(addedTrips.get(i).getId(), tripId)){
                     totalPrice -= (addedTrips.get(i).getPrice() * count);

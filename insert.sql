@@ -1250,7 +1250,13 @@ INSERT INTO `airport` (`id`,`airportCode`,`city`,`name`,`country_id`) VALUES (10
 INSERT INTO `airport` (`id`,`airportCode`,`city`,`name`,`country_id`) VALUES (1065,'ACK','Nantucket','Nantucket',5);
 INSERT INTO `airport` (`id`,`airportCode`,`city`,`name`,`country_id`) VALUES (1066,'NAP','Naples','Naples',28);
 
-INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (1,'2015-10-08 12:00:00','2015-11-09 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (1,'2015-12-08 12:00:00','2015-12-09 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (2,'2015-11-08 12:00:00','2015-11-09 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (3,'2015-12-18 12:00:00','2015-12-19 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (4,'2016-01-08 12:00:00','2016-01-10 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (5,'2016-04-08 12:00:00','2016-04-09 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (6,'2015-11-28 12:00:00','2015-11-29 12:00:00');
+INSERT INTO `period` (`id`,`departureDate`,`returnDate`) VALUES (7,'2016-11-08 12:00:00','2016-11-09 12:00:00');
 INSERT INTO `residence` (`id`,`priceByDay`,`period_id`) VALUES (1,50,1);
 
 insert into plane (planeCode, numberOfSeats) values ('045245405-0', 146);
@@ -1354,8 +1360,14 @@ insert into plane (planeCode, numberOfSeats) values ('108822480-6', 494);
 insert into plane (planeCode, numberOfSeats) values ('560018333-X', 267);
 insert into plane (planeCode, numberOfSeats) values ('825378694-8', 236);
 
-INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (1,'2015-10-09 12:00:00',146,'2015-10-08 12:00:00','ABC-123',250,2,97,228,1);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (1,'2015-10-22 12:00:00',146,'2015-10-25 12:00:00','ABC-123',250,2,97,228,1);
 INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (2,'2015-11-10 12:00:00',191,'2015-11-09 12:00:00','DEF-456',250,2,228,97,2);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (3,'2015-10-22 12:00:00',146,'2015-10-25 12:00:00','ABC-123',250,2,97,228,1);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (4,'2015-11-17 12:00:00',191,'2015-11-28 12:00:00','DEF-456',250,2,228,97,2);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (5,'2015-10-22 12:00:00',146,'2015-10-25 12:00:00','ABC-123',250,2,97,228,1);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (6,'2015-11-10 12:00:00',191,'2015-11-09 12:00:00','DEF-456',250,2,228,97,2);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (7,'2015-10-22 12:00:00',146,'2015-10-25 12:00:00','ABC-123',250,2,97,228,1);
+INSERT INTO `flight` (`id`,`arrivalDate`,`availablePlaces`,`departureDate`,`flightCode`,`price`,`airline_id`,`arrivalAirport_id`,`departAirport_id`,`plane_id`) VALUES (8,'2015-11-10 12:00:00',191,'2015-11-09 12:00:00','DEF-456',250,2,228,97,2);
 
 INSERT INTO `user` (`id`,`password`,`username`) VALUES (2,'7f3fa48ca885678134842fa7456f3ece53a97f843b610185d900ac4e467c7490','partner');
 INSERT INTO `user` (`id`,`password`,`username`) VALUES (3,'9d586dc0a48a2ed04839e0a69750893438e8d379e2fa45e94e82c5b3abb00daa','emp');
